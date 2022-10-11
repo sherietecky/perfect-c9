@@ -1,1 +1,13 @@
-import express from express
+import express from "express";
+import path from "path";
+
+let app = express();
+
+app.get("/", (req, res) => {
+  res.sendFile(path.resolve("public", "index.html"));
+  return;
+});
+
+app.listen(3000, () => {
+  console.log("listening on port 3000");
+});
