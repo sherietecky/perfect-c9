@@ -6,7 +6,7 @@ MVC, Knex (Andrew)
 redis
 
 project:
-draft workflow
+draft workflowls
 1.login
 2.save browsing history 
 3.upload photo

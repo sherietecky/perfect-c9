@@ -7,7 +7,7 @@ let app = express();
 
 dotenv.config();
 
-const client = new pg.Client({
+export const client = new pg.Client({
   database: process.env.DB_NAME,
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
