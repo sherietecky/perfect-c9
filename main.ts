@@ -15,9 +15,19 @@ const client = new pg.Client({
 
 client.connect();
 
+app.use(express.static("public"));
+
 app.get("/", (req, res) => {
   res.sendFile(path.resolve("public", "index.html"));
-  return;
+});
+
+app.get("/trydb", async (req, res) => {
+  const response = await client.query(
+    `select username, password from users where username=$1`,
+    ["mary"]
+  );
+  // console.log(response.rows);
+  res.json(response.rows[0]);
 });
 
 app.listen(3000, () => {
