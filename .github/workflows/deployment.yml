@@ -37,6 +37,7 @@ jobs:
       uses: fifsky/ssh-action@master
       with:
         command: |
+          cat ~/.ssh/id_rsa
           cd perfect-c9/
           git pull
           npm install
