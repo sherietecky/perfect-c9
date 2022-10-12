@@ -9,3 +9,4 @@ create table users (
     password varchar(255) not null
 );
 
+insert into users (username, password) values ('mary', 'iammary');
