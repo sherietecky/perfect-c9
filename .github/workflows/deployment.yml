@@ -5,11 +5,11 @@ on:
       - '*'
   workflow_dispatch:
 
-env:
-  POSTGRES_DB: perfectc9
-  POSTGRES_USER: postgres
-  POSTGRES_PASSWORD: postgres
-  POSTGRES_HOST: postgres
+# env:
+#   POSTGRES_DB: perfectc9
+#   POSTGRES_USER: postgres
+#   POSTGRES_PASSWORD: postgres
+#   POSTGRES_HOST: postgres
 
 jobs:
   # testing:
