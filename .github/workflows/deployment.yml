@@ -44,4 +44,4 @@ jobs:
           forever restart 0
         host: perfect-c9.homes
         user: ubuntu
-        key: ${{secrets.DEPOLY}}
+        key: ${{secrets.DEPLOY}}
