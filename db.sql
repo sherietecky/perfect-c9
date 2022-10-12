@@ -8,3 +8,5 @@ create table users (
     username varchar(30) not null unique,
     password varchar(255) not null
 );
+
+insert into users (username, password) values ('mary', 'iammary');
