@@ -5,6 +5,10 @@ scraping
 MVC, Knex (Andrew)
 redis
 
+DB
+
+
+
 project:
 draft workflowls
 1.login
@@ -51,3 +55,6 @@ Main feature
 
 optional:
 - scarpe recipe
+- save search price history
+- corn job regular check price
+- visualise price change over a period of time
