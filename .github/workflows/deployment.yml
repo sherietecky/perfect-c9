@@ -14,30 +14,31 @@ env:
 jobs:
   testing:
     runs-on: ubuntu-latest
-    container: node:latest
-    services:
-      postgres:
-        image: postgres
-        env: 
-          DB_NAME: ${{env.POSTGRES_DB}}
-          DB_USER: ${{env.POSTGRES_USER}}
-          DB_PASSWORD: ${{env.POSTGRES_PASSWORD}}
-        ports:
-          - 5432:5432
+    # container: node:latest
+    # services:
+    #   postgres:
+    #     image: postgres:13
+    #     env: 
+    #       DB_NAME: ${{env.POSTGRES_DB}}
+    #       DB_USER: ${{env.POSTGRES_USER}}
+    #       DB_PASSWORD: ${{env.POSTGRES_PASSWORD}}
+    #     ports:
+    #       - 5432:5432
     steps:
-      - uses: actions/checkout@v3
-
-      - name: To testing
-        env: 
-          DB_NAME: perfectc9
-          DB_USER: postgres
-          DB_PASSWORD: postgres
-          DB_HOST: postgres
-        run: |
+      - name: Doing testing
+        uses: fifsky/ssh-action@master
+        with:
+        command: |
+          cat ~/.ssh/id_rsa
+          cd perfect-c9/
           git pull
           yarn install 
           yarn add knex pg @types/pg
           yarn jest
+        host: perfect-c9.homes
+        user: ubuntu
+        key: ${{secrets.DEPLOY}}
+
   deploy:
     runs-on: ubuntu-latest
     needs: testing
