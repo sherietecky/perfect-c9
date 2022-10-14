@@ -28,6 +28,7 @@ jobs:
       - run: |
           git pull
           yarn install 
+          yarn add knex pg @types/pg
           yarn jest
   deploy:
     runs-on: ubuntu-latest
