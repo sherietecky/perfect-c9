@@ -15,6 +15,16 @@ const config: { [key: string]: Knex.Config } = {
     },
   },
 
+  testing: {
+    client: "postgresql",
+    connection: {
+      database: process.env.DB_NAME,
+      user: process.env.USER,
+      password: process.env.DB_PASSWORD,
+      host: process.env.DB_HOST,
+    },
+  },
+
   staging: {
     client: "postgresql",
     connection: {
