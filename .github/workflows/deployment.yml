@@ -14,11 +14,11 @@ env:
 jobs:
   testing:
     runs-on: ubuntu-latest
-      env: 
-        DB_NAME: ${{env.POSTGRES_DB}}
-        DB_USER: ${{env.POSTGRES_USER}}
-        DB_PASSWORD: ${{env.POSTGRES_PASSWORD}}
-        DB_HOST: ${{env.POSTGRES_HOST}}
+    env: 
+      DB_NAME: ${{env.POSTGRES_DB}}
+      DB_USER: ${{env.POSTGRES_USER}}
+      DB_PASSWORD: ${{env.POSTGRES_PASSWORD}}
+      DB_HOST: ${{env.POSTGRES_HOST}}
     container: node:latest
     services:
       postgres:
