@@ -15,3 +15,13 @@ describe("sample test case", () => {
     console.log("good result");
   });
 });
+
+describe("sample DB", () => {
+  beforeEach(() => {
+    client.query(`create database testing`);
+    client.query(`drop database testing`);
+  });
+
+  // it("create and drop a DB", async () => {
+  // });
+});
