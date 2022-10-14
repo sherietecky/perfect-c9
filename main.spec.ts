@@ -17,11 +17,8 @@ describe("sample test case", () => {
 });
 
 describe("sample DB", () => {
-  beforeEach(() => {
+  it("create and drop a DB", async () => {
     client.query(`create database testing`);
     client.query(`drop database testing`);
   });
-
-  // it("create and drop a DB", async () => {
-  // });
 });
