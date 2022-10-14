@@ -2,18 +2,11 @@ import express from "express";
 import path from "path";
 import pg from "pg";
 import dotenv from "dotenv";
+import { client } from "./db";
 
 let app = express();
 
 dotenv.config();
-
-export const client = new pg.Client({
-  database: process.env.DB_NAME,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-});
-
-client.connect();
 
 app.use(express.static("public"));
 
