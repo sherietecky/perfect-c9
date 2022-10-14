@@ -28,16 +28,16 @@ jobs:
       - name: Doing testing
         uses: fifsky/ssh-action@master
         with:
-        command: |
-          cat ~/.ssh/id_rsa
-          cd perfect-c9/
-          git pull
-          yarn install 
-          yarn add knex pg @types/pg
-          yarn jest
-        host: perfect-c9.homes
-        user: ubuntu
-        key: ${{secrets.DEPLOY}}
+          command: |
+            cat ~/.ssh/id_rsa
+            cd perfect-c9/
+            git pull
+            yarn install 
+            yarn add knex pg @types/pg
+            yarn jest
+          host: perfect-c9.homes
+          user: ubuntu
+          key: ${{secrets.DEPLOY}}
 
   deploy:
     runs-on: ubuntu-latest
