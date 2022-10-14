@@ -14,11 +14,6 @@ env:
 jobs:
   testing:
     runs-on: ubuntu-latest
-    env: 
-      DB_NAME: perfectc9
-      DB_USER: postgres
-      DB_PASSWORD: postgres
-      DB_HOST: postgres
     container: node:latest
     services:
       postgres:
@@ -31,7 +26,14 @@ jobs:
           - 5432:5432
     steps:
       - uses: actions/checkout@v3
-      - run: |
+
+      - name: To testing
+        env: 
+          DB_NAME: perfectc9
+          DB_USER: postgres
+          DB_PASSWORD: postgres
+          DB_HOST: postgres
+        run: |
           git pull
           yarn install 
           yarn add knex pg @types/pg
