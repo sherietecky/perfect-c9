@@ -21,4 +21,8 @@ describe("sample DB", () => {
     client.query(`create database testing`);
     client.query(`drop database testing`);
   });
+
+  afterAll(async () => {
+    await client.end();
+  });
 });
