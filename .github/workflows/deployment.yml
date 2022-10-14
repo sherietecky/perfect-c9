@@ -19,8 +19,8 @@ jobs:
       postgres:
         image: postgres
         env: 
-          POSTGRES_DB: perfectc9
-          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: ${{env.POSTGRES_DB}}
+          POSTGRES_PASSWORD: ${{env.POSTGRES_PASSWORD}}
         ports:
           - 5432:5432
     steps:
