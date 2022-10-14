@@ -33,8 +33,7 @@ jobs:
             cd perfect-c9/
             git pull
             yarn install 
-            yarn add knex pg @types/pg
-            yarn jest
+            yarn jest --forceExit
           host: perfect-c9.homes
           user: ubuntu
           key: ${{secrets.DEPLOY}}
