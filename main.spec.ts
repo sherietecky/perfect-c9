@@ -18,8 +18,8 @@ describe("sample test case", () => {
 
 describe("sample DB", () => {
   it("create and drop a DB", async () => {
-    client.query(`create database testing`);
-    client.query(`drop database testing`);
+    await client.query(`create database testing`);
+    await client.query(`drop database testing`);
   });
 
   afterAll(async () => {
