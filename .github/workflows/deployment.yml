@@ -15,10 +15,10 @@ jobs:
   testing:
     runs-on: ubuntu-latest
     env: 
-      DB_NAME: ${{env.POSTGRES_DB}}
-      DB_USER: ${{env.POSTGRES_USER}}
-      DB_PASSWORD: ${{env.POSTGRES_PASSWORD}}
-      DB_HOST: ${{env.POSTGRES_HOST}}
+      DB_NAME: perfectc9
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_HOST: postgres
     container: node:latest
     services:
       postgres:
