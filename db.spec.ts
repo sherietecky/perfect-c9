@@ -11,14 +11,11 @@ describe("sample test case", () => {
 });
 
 describe("DB", () => {
-  // beforeAll(async () => {
-  //   await client.query(`create table test;`);
-  // });
   it("connect to DB", async () => {
     await client.query(`drop table users;`);
     await initializeDB();
   });
-  afterAll(async () => {
-    await client.end();
-  });
+  // afterAll(async () => {
+  //   await client.end();
+  // });
 });
