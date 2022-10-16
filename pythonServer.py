@@ -8,4 +8,4 @@ def test(request):
     return json({"hello": "world Sanic"})
 
 if __name__ == "__main__":
-    app.run(host="perfect-c9.homes", port=8000)
+    app.run(host='0.0.0.0',port=8000)
