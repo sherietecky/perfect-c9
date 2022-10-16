@@ -1,14 +1,12 @@
 // try DB
-let pagename = document.querySelector("#test-name");
-let psw = document.querySelector("#test-password");
-
 async function trydb() {
   const res = await fetch("/trydb");
   const json = await res.json();
   console.log(json.username);
+  console.log(json.password);
 
-  pagename.textContent = json.username;
-  psw.textContent = json.password;
+  document.querySelector("#test-name").textContent = json.username;
+  document.querySelector("#test-password").textContent = json.password;
 }
 
 trydb();

@@ -19,7 +19,7 @@ app.get("/trydb", async (req, res) => {
     `select username, password from users where id=$1`,
     ["1"]
   );
-  // console.log(response.rows);
+  console.log(response.rows);
   res.json(response.rows[0]);
 });
 
