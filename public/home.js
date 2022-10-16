@@ -1,3 +1,4 @@
+// try DB
 let pagename = document.querySelector(".name");
 let psw = document.querySelector(".psw");
 
@@ -11,3 +12,17 @@ async function trydb() {
 }
 
 trydb();
+
+// use the camera
+let canvas = document.querySelector("#canvas");
+let context = canvas.getContext("2d");
+let video = document.querySelector("#live-video");
+
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices
+    .getUserMedia({ video: ture, sound: false })
+    .then((stream) => {
+      video.srcObject = stream;
+      video.play();
+    });
+}
