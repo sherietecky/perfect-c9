@@ -17,12 +17,27 @@ trydb();
 let canvas = document.querySelector("#canvas");
 let context = canvas.getContext("2d");
 let video = document.querySelector("#live-video");
+const constraints = {
+  audio: false,
+  video: true
+};
 
-if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-  navigator.mediaDevices
-    .getUserMedia({ video: ture, sound: false })
-    .then((stream) => {
-      video.srcObject = stream;
-      video.play();
-    });
-}
+// if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+navigator.mediaDevices
+  .getUserMedia(constraints) 
+  .then((stream) => {
+    video.srcObject = stream;
+    video.play();
+  })
+  .catch((error) => {
+    if (error.name === "PermissionDeniedError") {
+      console.error(
+        "Permissions have not been granted to use your camera and " +
+          "microphone, you need to allow the page access to your devices in " +
+          "order for the demo to work."
+      );
+    } else {
+      console.error(`getUserMedia error: ${error.name}`, error);
+    }
+  });
+// }
