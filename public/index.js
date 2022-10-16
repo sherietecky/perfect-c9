@@ -1,6 +1,6 @@
 // try DB
-let pagename = document.querySelector(".name");
-let psw = document.querySelector(".psw");
+let pagename = document.querySelector("#test-name");
+let psw = document.querySelector("#test-password");
 
 async function trydb() {
   const res = await fetch("/trydb");
