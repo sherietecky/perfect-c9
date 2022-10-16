@@ -16,8 +16,8 @@ app.get("/", (req, res) => {
 
 app.get("/trydb", async (req, res) => {
   const response = await client.query(
-    `select username, password from users where username=$1`,
-    ["mary"]
+    `select username, password from users where id=$1`,
+    ["1"]
   );
   // console.log(response.rows);
   res.json(response.rows[0]);
