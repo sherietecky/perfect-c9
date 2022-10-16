@@ -22,7 +22,7 @@ const constraints = {
   video: true
 };
 
-// if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 navigator.mediaDevices
   .getUserMedia(constraints) 
   .then((stream) => {
@@ -40,4 +40,9 @@ navigator.mediaDevices
       console.error(`getUserMedia error: ${error.name}`, error);
     }
   });
-// }
+}
+
+document.querySelector('#snap').addEventListener("click",()=>{
+  context.drawImage(video,0,0,640,480)
+  // use this image to search
+})
