@@ -40,11 +40,11 @@ navigator.mediaDevices
   });
 }
 
-document.querySelector('#snap').addEventListener("click",()=>{
+document.querySelector('#snapBtn').addEventListener("click",()=>{
   context.drawImage(video,0,0,640,480) 
-  let image = new Image()
-  image = context.drawImage(video,0,0,640,480)
-  console.log(image)
+ //  let image = new Image()
+ //  image = context.drawImage(video,0,0,640,480)
+ //  console.log(image)
   // use this image to search
 })
 /*
@@ -68,8 +68,8 @@ document.querySelector('#snap').addEventListener("click",()=>{
   }
   
   document.querySelector('#snapBtn').addEventListener("click",()=>{
-    // event.preventDefault()
     context.drawImage(video,0,0,640,480) 
+<<<<<<< HEAD
     // canvas.toBlob(function(blob){
     //   const formData = new FormData();
     //   formData.append('video', blob);
@@ -78,4 +78,8 @@ document.querySelector('#snap').addEventListener("click",()=>{
     // console.log(formData);
   })
 >>>>>>> refs/remotes/origin/main
+
+=======
+  })
+>>>>>>> 1169f53ccda9684193f71ffe888638147ec44320
 */
