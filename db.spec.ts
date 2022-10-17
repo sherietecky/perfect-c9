@@ -4,7 +4,7 @@ import pg from "pg";
 
 dotenv.config();
 
-describe("sample test case", () => {
+describe("sample fake test case", () => {
   it("should pass", async () => {
     console.log("good result");
   });
