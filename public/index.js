@@ -41,11 +41,17 @@ navigator.mediaDevices
 }
 
 document.querySelector('#snapBtn').addEventListener("click",()=>{
+  event.preventDefault()
   context.drawImage(video,0,0,640,480) 
-    canvas.toBlob(function(blob){
+    canvas.toBlob((blob)=>{
       const formData = new FormData();
       formData.append('video', blob);
-      // fetch();
     },'image/jpg')
-    console.log(formData);
+    
+    recognizePhoto(formData)
 })
+
+
+async function recognizePhoto () {
+let result = await fetch(`/recognize`);
+}
