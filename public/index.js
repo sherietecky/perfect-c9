@@ -21,7 +21,6 @@ const constraints = {
 };
 
 if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-<<<<<<< HEAD
 navigator.mediaDevices
   .getUserMedia(constraints) 
   .then((stream) => {
@@ -48,7 +47,8 @@ document.querySelector('#snap').addEventListener("click",()=>{
   console.log(image)
   // use this image to search
 })
-=======
+/*
+=
   navigator.mediaDevices
     .getUserMedia(constraints) 
     .then((stream) => {
@@ -78,3 +78,4 @@ document.querySelector('#snap').addEventListener("click",()=>{
     // console.log(formData);
   })
 >>>>>>> refs/remotes/origin/main
+*/
