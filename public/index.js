@@ -24,7 +24,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 navigator.mediaDevices
   .getUserMedia(constraints) 
   .then((stream) => {
-    video.srcObject = stream;
+    video.srcObject = stre;
     video.play();
   })
   .catch((error) => {
@@ -41,6 +41,9 @@ navigator.mediaDevices
 }
 
 document.querySelector('#snap').addEventListener("click",()=>{
-  context.drawImage(video,0,0,640,480)
+  context.drawImage(video,0,0,640,480) 
+  let image = new Image()
+  image = context.drawImage(video,0,0,640,480)
+  console.log(image)
   // use this image to search
 })
