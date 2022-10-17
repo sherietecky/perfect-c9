@@ -51,15 +51,8 @@ document.querySelector('#snapBtn').addEventListener("click",()=>{
     recognizePhoto(formData)
 })
 
-*/
-=======
-  })
->>>>>>> 1169f53ccda9684193f71ffe888638147ec44320
-
-
-=======
 
 async function recognizePhoto () {
 let result = await fetch(`/recognize`);
 }
->>>>>>> 56f11d78c2008e9ae32b5a5af39a071be6318222
+
