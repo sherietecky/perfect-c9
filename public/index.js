@@ -70,6 +70,7 @@ document.querySelector('#snapBtn').addEventListener("click",()=>{
   document.querySelector('#snapBtn').addEventListener("click",()=>{
     context.drawImage(video,0,0,640,480) 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // canvas.toBlob(function(blob){
     //   const formData = new FormData();
     //   formData.append('video', blob);
@@ -83,3 +84,6 @@ document.querySelector('#snapBtn').addEventListener("click",()=>{
   })
 >>>>>>> 1169f53ccda9684193f71ffe888638147ec44320
 */
+=======
+  })
+>>>>>>> 1169f53ccda9684193f71ffe888638147ec44320
