@@ -24,7 +24,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 navigator.mediaDevices
   .getUserMedia(constraints) 
   .then((stream) => {
-    video.srcObject = stream;
+    video.srcObject = mediaStream;
     video.play();
   })
   .catch((error) => {
@@ -40,14 +40,13 @@ navigator.mediaDevices
   });
 }
 
-document.querySelector('#snapBtn').addEventListener("click",()=>{
-  // event.preventDefault()
-  context.drawImage(video,0,0,640,480) 
-  let image = new Image()
-  canvas.toBlob(function(blob){
-    const formData = new FormData();
-    formData.append('video', blob);
-    console.log(formData);
-    // fetch();
-  },'image/jpg')
-})
+// document.querySelector('#snapBtn').addEventListener("click",()=>{
+//   // event.preventDefault()
+//   context.drawImage(video,0,0,640,480) 
+//   canvas.toBlob(function(blob){
+//     const formData = new FormData();
+//     formData.append('video', blob);
+//     // fetch();
+//   },'image/jpg')
+//   console.log(formData);
+// })
