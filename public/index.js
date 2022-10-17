@@ -25,7 +25,6 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
     .getUserMedia(constraints) 
     .then((stream) => {
       video.srcObject = stream;
-      video.play();
     })
     .catch((error) => {
       if (error.name === "PermissionDeniedError") {
