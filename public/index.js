@@ -21,6 +21,34 @@ const constraints = {
 };
 
 if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+navigator.mediaDevices
+  .getUserMedia(constraints) 
+  .then((stream) => {
+    video.srcObject = stream;
+    video.play();
+  })
+  .catch((error) => {
+    if (error.name === "PermissionDeniedError") {
+      console.error(
+        "Permissions have not been granted to use your camera and " +
+          "microphone, you need to allow the page access to your devices in " +
+          "order for the demo to work."
+      );
+    } else {
+      console.error(`getUserMedia error: ${error.name}`, error);
+    }
+  });
+}
+
+document.querySelector('#snapBtn').addEventListener("click",()=>{
+  context.drawImage(video,0,0,640,480) 
+ //  let image = new Image()
+ //  image = context.drawImage(video,0,0,640,480)
+ //  console.log(image)
+  // use this image to search
+})
+/*
+=
   navigator.mediaDevices
     .getUserMedia(constraints) 
     .then((stream) => {
@@ -40,8 +68,9 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
   }
   
   document.querySelector('#snapBtn').addEventListener("click",()=>{
-    // event.preventDefault()
     context.drawImage(video,0,0,640,480) 
+<<<<<<< HEAD
+<<<<<<< HEAD
     // canvas.toBlob(function(blob){
     //   const formData = new FormData();
     //   formData.append('video', blob);
@@ -49,3 +78,12 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
     // },'image/jpg')
     // console.log(formData);
   })
+>>>>>>> refs/remotes/origin/main
+
+=======
+  })
+>>>>>>> 1169f53ccda9684193f71ffe888638147ec44320
+*/
+=======
+  })
+>>>>>>> 1169f53ccda9684193f71ffe888638147ec44320
