@@ -24,7 +24,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 navigator.mediaDevices
   .getUserMedia(constraints) 
   .then((stream) => {
-    video.srcObject = stre;
+    video.srcObject = stream;
     video.play();
   })
   .catch((error) => {
@@ -40,10 +40,14 @@ navigator.mediaDevices
   });
 }
 
-document.querySelector('#snap').addEventListener("click",()=>{
+document.querySelector('#snapBtn').addEventListener("click",()=>{
+  event.preventDefault() // will delete
   context.drawImage(video,0,0,640,480) 
   let image = new Image()
-  image = context.drawImage(video,0,0,640,480)
-  console.log(image)
-  // use this image to search
+  canvas.toBlob(function(blob){
+    const formData = new FormData();
+    formData.append('video', blob);
+    console.log(formData);
+    // fetch();
+  },'image/jpg')
 })
