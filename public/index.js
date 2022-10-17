@@ -21,32 +21,32 @@ const constraints = {
 };
 
 if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-navigator.mediaDevices
-  .getUserMedia(constraints) 
-  .then((stream) => {
-    video.srcObject = stream;
-    video.play();
+  navigator.mediaDevices
+    .getUserMedia(constraints) 
+    .then((stream) => {
+      video.srcObject = stream;
+      video.play();
+    })
+    .catch((error) => {
+      if (error.name === "PermissionDeniedError") {
+        console.error(
+          "Permissions have not been granted to use your camera and " +
+            "microphone, you need to allow the page access to your devices in " +
+            "order for the demo to work."
+        );
+      } else {
+        console.error(`getUserMedia error: ${error.name}`, error);
+      }
+    });
+  }
+  
+  document.querySelector('#snapBtn').addEventListener("click",()=>{
+    // event.preventDefault()
+    context.drawImage(video,0,0,640,480) 
+    // canvas.toBlob(function(blob){
+    //   const formData = new FormData();
+    //   formData.append('video', blob);
+    //   // fetch();
+    // },'image/jpg')
+    // console.log(formData);
   })
-  .catch((error) => {
-    if (error.name === "PermissionDeniedError") {
-      console.error(
-        "Permissions have not been granted to use your camera and " +
-          "microphone, you need to allow the page access to your devices in " +
-          "order for the demo to work."
-      );
-    } else {
-      console.error(`getUserMedia error: ${error.name}`, error);
-    }
-  });
-}
-
-document.querySelector('#snapBtn').addEventListener("click",()=>{
-  // event.preventDefault()
-  context.drawImage(video,0,0,640,480) 
-  // canvas.toBlob(function(blob){
-  //   const formData = new FormData();
-  //   formData.append('video', blob);
-  //   // fetch();
-  // },'image/jpg')
-  // console.log(formData);
-})
