@@ -41,51 +41,25 @@ navigator.mediaDevices
 }
 
 document.querySelector('#snapBtn').addEventListener("click",()=>{
+  event.preventDefault()
   context.drawImage(video,0,0,640,480) 
- //  let image = new Image()
- //  image = context.drawImage(video,0,0,640,480)
- //  console.log(image)
-  // use this image to search
+    canvas.toBlob((blob)=>{
+      const formData = new FormData();
+      formData.append('video', blob);
+    },'image/jpg')
+    
+    recognizePhoto(formData)
 })
-/*
-=
-  navigator.mediaDevices
-    .getUserMedia(constraints) 
-    .then((stream) => {
-      video.srcObject = stream;
-    })
-    .catch((error) => {
-      if (error.name === "PermissionDeniedError") {
-        console.error(
-          "Permissions have not been granted to use your camera and " +
-            "microphone, you need to allow the page access to your devices in " +
-            "order for the demo to work."
-        );
-      } else {
-        console.error(`getUserMedia error: ${error.name}`, error);
-      }
-    });
-  }
-  
-  document.querySelector('#snapBtn').addEventListener("click",()=>{
-    context.drawImage(video,0,0,640,480) 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // canvas.toBlob(function(blob){
-    //   const formData = new FormData();
-    //   formData.append('video', blob);
-    //   // fetch();
-    // },'image/jpg')
-    // console.log(formData);
-  })
->>>>>>> refs/remotes/origin/main
 
-=======
-  })
->>>>>>> 1169f53ccda9684193f71ffe888638147ec44320
 */
 =======
   })
 >>>>>>> 1169f53ccda9684193f71ffe888638147ec44320
 
 
+=======
+
+async function recognizePhoto () {
+let result = await fetch(`/recognize`);
+}
+>>>>>>> 56f11d78c2008e9ae32b5a5af39a071be6318222
