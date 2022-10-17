@@ -40,12 +40,5 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
   }
   
   document.querySelector('#snapBtn').addEventListener("click",()=>{
-    // event.preventDefault()
     context.drawImage(video,0,0,640,480) 
-    // canvas.toBlob(function(blob){
-    //   const formData = new FormData();
-    //   formData.append('video', blob);
-    //   // fetch();
-    // },'image/jpg')
-    // console.log(formData);
   })
