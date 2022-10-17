@@ -1,5 +1,6 @@
 import { Page, chromium } from "playwright";
 var fs = require("fs");
+import request from "request";
 
 async function main(category: string) {
   const browser = await chromium.launch({ headless: false });
@@ -42,6 +43,12 @@ async function main(category: string) {
       price.push(element.innerText);
     });
 
+    let image: string[] = [];
+    let searchImage = Array.from(
+      document.querySelectorAll("img.product-image-photo")
+    ).map((image: any) => image.getAttribute("data-src"));
+    image = searchImage;
+
     // let print: string[]= [];
 
     // for (let item in items) {
@@ -56,10 +63,10 @@ async function main(category: string) {
     //     }
     //   });
 
-    return { items, quantity, price };
+    return { items, quantity, price, image };
   });
 
-  console.log("search results: ", result);
+  console.log("AeonCity Search Results: ", result);
 }
 
 main("蘋果");
