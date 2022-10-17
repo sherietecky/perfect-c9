@@ -24,6 +24,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 navigator.mediaDevices
   .getUserMedia(constraints) 
   .then((stream) => {
+    video.srcObject = stream;
     video.play();
   })
   .catch((error) => {
