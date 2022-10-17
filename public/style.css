@@ -1,0 +1,27 @@
+/* body {
+  margin: 0;
+} */
+
+div.resultDisplay > img {
+  height: 100px;
+  width: 100px;
+  display: inline;
+}
+
+div.resultDisplay > h2 {
+  display: inline;
+}
+
+div.productName,
+div.quantity,
+div.price {
+  display: inline;
+}
+
+div.resultDisplay {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+}

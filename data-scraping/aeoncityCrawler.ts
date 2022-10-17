@@ -1,8 +1,7 @@
 import { Page, chromium } from "playwright";
 var fs = require("fs");
-import request from "request";
 
-async function main(category: string) {
+export async function aeoncityCrawler(category: string) {
   const browser = await chromium.launch({ headless: false });
   let page = await browser.newPage();
   let url =
@@ -26,14 +25,13 @@ async function main(category: string) {
     searchItems.forEach((element: any) => {
       items.push(element.innerText);
     });
-    // return items;
+    console.log(items.length);
 
     let quantity: string[] = [];
     let searchQuant = document.querySelectorAll(".listing_unit_size");
     searchQuant.forEach((element: any) => {
       quantity.push(element.innerText);
     });
-    // return quantity;
 
     let price: string[] = [];
     let searchPrice = document.querySelectorAll(
@@ -49,24 +47,16 @@ async function main(category: string) {
     ).map((image: any) => image.getAttribute("data-src"));
     image = searchImage;
 
-    // let print: string[]= [];
-
-    // for (let item in items) {
-    //   for (let quant in quantity) {
-    //     return { item: quant };
-    //   }
-    //     let print:[] = []
-    //     for (let i = 0; i <= items.length; i++){
-    // // for (let j=0; j<= quantity.length; j++){
-    //         print.push( {items[i]: quantity[i]} );
-    //         return print;
-    //     }
-    //   });
-
     return { items, quantity, price, image };
   });
 
   console.log("AeonCity Search Results: ", result);
+  console.log(
+    result.items.length,
+    result.quantity.length,
+    result.price.length,
+    result.image.length
+  );
 }
 
-main("蘋果");
+aeoncityCrawler("檸檬茶");
