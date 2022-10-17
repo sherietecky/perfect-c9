@@ -42,10 +42,10 @@ navigator.mediaDevices
 
 document.querySelector('#snapBtn').addEventListener("click",()=>{
   context.drawImage(video,0,0,640,480) 
-    // canvas.toBlob(function(blob){
-    //   const formData = new FormData();
-    //   formData.append('video', blob);
-    //   // fetch();
-    // },'image/jpg')
-    // console.log(formData);
+    canvas.toBlob(function(blob){
+      const formData = new FormData();
+      formData.append('video', blob);
+      // fetch();
+    },'image/jpg')
+    console.log(formData);
 })
