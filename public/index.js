@@ -41,7 +41,7 @@ navigator.mediaDevices
 }
 
 document.querySelector('#snapBtn').addEventListener("click",()=>{
-  event.preventDefault() // will delete
+  // event.preventDefault()
   context.drawImage(video,0,0,640,480) 
   let image = new Image()
   canvas.toBlob(function(blob){
