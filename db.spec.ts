@@ -4,18 +4,8 @@ import pg from "pg";
 
 dotenv.config();
 
-describe("sample test case", () => {
+describe("sample fake test case", () => {
   it("should pass", async () => {
     console.log("good result");
   });
-});
-
-describe("DB", () => {
-  it("connect to DB", async () => {
-    await client.query(`drop table users;`);
-    await initializeDB();
-  });
-  // afterAll(async () => {
-  //   await client.end();
-  // });
 });
