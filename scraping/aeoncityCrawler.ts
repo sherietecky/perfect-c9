@@ -1,5 +1,4 @@
 import { Page, chromium } from "playwright";
-var fs = require("fs");
 
 export async function aeoncityCrawler(keyword: string) {
   const browser = await chromium.launch({ headless: false });
@@ -12,8 +11,6 @@ export async function aeoncityCrawler(keyword: string) {
     item: string;
     price: any;
   };
-
-  // json file
 
   await page.goto(url);
 
