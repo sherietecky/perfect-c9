@@ -10,6 +10,7 @@ let app = express();
 dotenv.config();
 
 app.use(express.static("public"));
+app.use(express.static("predict_images"));
 
 app.get("/", (req, res) => {
   res.sendFile(path.resolve("public", "index.html"));
@@ -20,42 +21,31 @@ app.get("/trydb", async (req, res) => {
     `select username, password from users where id=$1`,
     ["1"]
   );
-  console.log(response.rows);
   res.json(response.rows[0]);
 });
 
 // get the snap photo
-const uploadDir = "snap";
+const uploadDir = "predict_images";
 const form = formidable({
   uploadDir,
   keepExtensions: true,
   maxFiles: 1,
-  maxFileSize: 10000 * 1024 ** 2, // the default limit is 200KB
+  maxFileSize: 10000 * 1024 ** 2, // the default limit is 10MB
   filter: (part) => part.mimetype?.startsWith("image/") || false,
 });
 
-app.post("/post", (req, res) => {
+app.post("/snap", (req, res) => {
   form.parse(req, async (err, fields, files) => {
-    if (err) {
-      // error
-      return;
-    }
-    let image = files.request_image;
+    console.log({fields, files})
+    let image = files.predict_image;
     let imageFile = Array.isArray(image) ? image[0] : image;
     let image_filename = imageFile ? imageFile.newFilename : "";
-
-    let sql = `INSERT INTO "request" (`;
-
-    let result = await client.query(sql);
-    // console.log("job posted, job no:", result.rows[0].id);
-    res.status(200);
+    let result = await fetch(`http://127.0.0.1:8000/predict?filename=${image_filename}`)
+    // TODO use env file
+    let output = await result.json()
+    res.json(output);
   });
 });
-
-//
-
-
-
 
 app.listen(3000, () => {
   console.log("listening on port 3000");

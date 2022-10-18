@@ -10,31 +10,33 @@
   <body>
     <h1>Use the Camera to capture</h1>
     <video id="video" width="640" height="480" autoplay></video>
-    <!-- <button id="snapBtn">Snap</button> -->
+    <button id="snapBtn">Snap</button>
 
     <form
-      name="snap"
-      id="snap"
+    id="form"
       method="post"
       action="/snap"
       enctype="multipart/form-data"
     >
-      <input id="snapBtn" type="submit">Snap</input>
+      <input type="file" name="predict_image" id="predict_image"/>
+      <button type="submit">submit</button>
     </form>
 
     <canvas id="canvas" width="640" height="480"></canvas>
     <script src="index.js"></script>
 
-    <h1>Hello World</h1>
-    <p id="test-name">test-name</p>
-    <p id="test-password">test-password</p>
-    
     <h2>Results</h2>
     <div class="resultDisplay">
       <img src="/predict_images/coke.jpg" alt="" />
       <div class="productName">[product name]</div>
+      <div class="possibility">[possibility]</div>
+      
       <div class="quantity">[quantity]</div>
       <div class="price">[price]</div>
     </div>
+
+    <h1>Hello World</h1>
+    <p id="test-name">test-name</p>
+    <p id="test-password">test-password</p>
   </body>
 </html>
