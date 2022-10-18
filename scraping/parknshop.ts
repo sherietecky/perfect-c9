@@ -48,17 +48,36 @@ async function parknshopCrawler(keyword: string) {
 
       let bargain: string[] = [];
       let searchBargain = document.querySelectorAll(
-        ".productInfo .productHighlight .ellipsis"
+        ".productInfo .productHighlight"
       );
+
       searchBargain.forEach((element: any) => {
-        if (element.innerText === "最新推廣") {
-          bargain.push("");
-        } else {
+        if (!element.childNodes[0].classList) {
+          bargain.push("/");
+          // } else if (element.innerText === "最新推廣") {
+          //   bargain.push("/");
+        } else if (element.childNodes[0].classList.contains("ellipsis")) {
           bargain.push(element.innerText);
         }
       });
 
-      return { image, productName, productUnit, price, bargain };
+      // searchBargain.forEach((element: any) => {
+      //   if (element.innerText === "最新推廣") {
+      //     bargain.push("");
+      //   } else {
+      //     bargain.push(element.innerText);
+      //   }
+      // });
+
+      let link: string[] = [];
+      let searchlinks = Array.from(
+        document.querySelectorAll("a.productImage")
+      ).map(
+        (link: any) => "https://www.parknshop.com" + link.getAttribute("href")
+      );
+      link = searchlinks;
+
+      return { image, productName, productUnit, price, bargain, link };
     });
     console.log("result: ", result);
   }
