@@ -1,3 +1,6 @@
+// loader
+loading.style.display = "none"
+
 // try DB
 async function trydb() {
   const res = await fetch("/trydb");
@@ -41,13 +44,10 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 }
 
 document.querySelector("#snapBtn").addEventListener("click", async () => {
+  loading.style.display = "flex"
   context.drawImage(video, 0, 0, 600, 600);
-
   const dataURL = canvas.toDataURL("image/jpeg", 0.8);
-  // console.log(dataURL);
 
-  // const formData = new FormData();
-  // formData.append('predict_image', dataURL);
   var blob = dataURItoBlob(dataURL);
   var fd = new FormData(document.forms[0]);
   fd.append("predict_image", blob);
@@ -59,14 +59,20 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
 
   let json = res.json()
   json.then(function(result) {
-    document.querySelector(".productName").textContent = result["result"];
-    document.querySelector(".possibility").textContent = result["possibility"];
- });
+    let possibility = parseInt(result["possiability"])
+    if (possibility > 40) {
+      document.querySelector(".productName").textContent = result["result"];
+      document.querySelector(".possibility").textContent = `${possibility}%`;
+    } else {
+      document.querySelector(".productName").textContent = "未能確定結果";
+    }
+   });
+ loading.style.display = "none"
+
 
 });
 
-// const photo = await getImage({ canvas, width: 600, height: 600 });
-
+// convert dataURI to Blob
 function dataURItoBlob(dataURI) {
   // convert base64/URLEncoded data component to raw binary data held in a string
   var byteString;
@@ -85,6 +91,8 @@ function dataURItoBlob(dataURI) {
 
   return new Blob([ia], { type: mimeString });
 }
+
+
 
 // async function getImage({
 //   canvas,

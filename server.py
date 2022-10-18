@@ -21,9 +21,9 @@ def predict(request):
     import tensorflow as tf
 
     imgSize = 160
-    class_names = ['可口可樂', '橙', '牛油果', '維他奶', '茄子', '蘋果', '西蘭花', '香蕉']
+    class_names = ['可口可樂', '啤酒', '寶礦力', '橙', '檸檬茶', '牛奶','牛油果', '益力多', '維他奶', '茄子', '蘋果', '西蘭花', '香蕉']
 
-    model_dir = "./myTrainingModel.h5"
+    model_dir = "./perfect-c9.model_v3"
     predict_Model = tf.keras.models.load_model(model_dir)
 
     # imgPath = "./predict_images/coke.jpg"

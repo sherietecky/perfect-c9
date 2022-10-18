@@ -36,11 +36,10 @@ const form = formidable({
 
 app.post("/snap", (req, res) => {
   form.parse(req, async (err, fields, files) => {
-    console.log({fields, files})
     let image = files.predict_image;
     let imageFile = Array.isArray(image) ? image[0] : image;
     let image_filename = imageFile ? imageFile.newFilename : "";
-    let result = await fetch(`http://127.0.0.1:8000/predict?filename=${image_filename}`)
+    let result = await fetch(`${process.env.HOST}:8000/predict?filename=${image_filename}`)
     // TODO use env file
     let output = await result.json()
     res.json(output);

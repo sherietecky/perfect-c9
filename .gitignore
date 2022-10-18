@@ -1,6 +1,12 @@
 node_modules
+tecky-project-c9.pem
 key-oliver.pem
 key-sherie.pem
 predict_images
 myenv
 myTrainingModel.h5
+perfect-c9.model_v1
+perfect-c9.model_v2
+perfect-c9.model_v3
+perfect-c9.model_v4
+perfect-c9.model_v5
