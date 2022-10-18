@@ -1,10 +1,8 @@
 lecture review:
-deploy tgt
-train model
-scraping
+v deploy tgt
+v train model
+v scraping
 MVC, Knex (Andrew)
-redis
-
 DB
 
 
