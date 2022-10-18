@@ -3,3 +3,4 @@ key-oliver.pem
 key-sherie.pem
 predict_images
 myenv
+myTrainingModel.h5
