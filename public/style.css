@@ -1,6 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap");
+
 /* body {
   margin: 0;
+  background-image: url("background01-compressed.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 100vh;
+  background-color: #dedede;
+  display: flex;
 } */
+
+/* background */
+
+body {
+  background: #3399ff;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.ripple-background > div {
+  z-index: -100;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small {
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium {
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large {
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge {
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge {
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1 {
+  opacity: 0.2;
+}
+
+.shade2 {
+  opacity: 0.5;
+}
+
+.shade3 {
+  opacity: 0.7;
+}
+
+.shade4 {
+  opacity: 0.8;
+}
+
+.shade5 {
+  opacity: 0.9;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+/* take pic section */
+
+.takePic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.takePic > h1 {
+  text-align: center;
+  width: 100vw;
+  margin-bottom: 0;
+}
+
+.takePic > video {
+  height: auto;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.takePic > button {
+  width: 10vw;
+  height: 5vh;
+}
+
+.takePic > canvas {
+}
 
 div.resultDisplay > img {
   height: 100px;
@@ -26,10 +151,6 @@ div.resultDisplay {
   flex-direction: column;
 }
 
-body {
-  display: flex;
-}
-
 #loading {
   display: flex;
   justify-content: center;
@@ -53,11 +174,26 @@ body {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-
 @media (max-width: 700px) {
+  .takePic > h1 {
+    font-size: 30px;
+  }
 
+  .takePic > video {
+    height: auto;
+    width: 90vw;
+  }
+
+  .takePic > button {
+    width: 20vw;
+    height: 10vh;
+  }
 }

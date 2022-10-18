@@ -8,20 +8,31 @@
     <title>HOME</title>
   </head>
   <body>
-    
+
+    <!-- background ripple -->
+    <div class="ripple-background">
+      <div class="circle xxlarge shade1"></div>
+      <div class="circle xlarge shade2"></div>
+      <div class="circle large shade3"></div>
+      <div class="circle medium shade4"></div>
+      <div class="circle small shade5"></div>
+    </div>
+
+<!-- loader -->
     <div id="loading">
       <div id="loader"></div>
     </div>
 
+<!-- whole page container -->
     <div id="container">
-      <h1>Use the Camera to capture</h1>
-      <video id="video" width="600" height="600" autoplay></video>
-      <p>
 
+      <!-- take pic section -->
+      <div class="takePic">
+        <h1>你想搵咩? 影來睇睇</h1>
+        <video id="video" autoplay></video>
         <button id="snapBtn">Snap</button>
-      </p>
-  
-      <!-- <form
+
+        <!-- <form
       id="form"
         method="post"
         action="/snap"
@@ -30,23 +41,34 @@
         <input type="file" name="predict_image" id="predict_image"/>
         <button type="submit">submit</button>
       </form> -->
-  
-      <canvas id="canvas" width="640" height="480"></canvas>
-      <script src="index.js"></script>
-  
+
+        <canvas id="canvas" width="640" height="480"></canvas>
+      </div>
+
+      <!-- result section -->
       <h2>Results</h2>
       <div class="resultDisplay">
         <img src="/predict_images/coke.jpg" alt="" />
         <div class="productName">[product name]</div>
         <div class="possibility">[possibility]</div>
-        
+
         <div class="quantity">[quantity]</div>
         <div class="price">[price]</div>
       </div>
-  
-      <h1>Hello World</h1>
+
+<hr>
+<!-- testing connection section -->
+      <h4>Hello World</h4>
       <p id="test-name">test-name</p>
       <p id="test-password">test-password</p>
+
+
+    <!-- end of whole page container   -->
     </div>
+
+
+
+
+    <script src="index.js"></script>
   </body>
 </html>
