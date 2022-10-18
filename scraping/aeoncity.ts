@@ -44,7 +44,13 @@ export async function aeoncityCrawler(keyword: string) {
     ).map((image: any) => image.getAttribute("data-src"));
     image = searchImage;
 
-    return { items, quantity, price, image };
+    let link: string[] = [];
+    let searchlinks = Array.from(
+      document.querySelectorAll("div.product-item-photo > a")
+    ).map((link: any) => link.getAttribute("href"));
+    link = searchlinks;
+
+    return { items, quantity, price, image, link };
   });
 
   console.log("AeonCity Search Results: ", result);
@@ -52,7 +58,8 @@ export async function aeoncityCrawler(keyword: string) {
     result.items.length,
     result.quantity.length,
     result.price.length,
-    result.image.length
+    result.image.length,
+    result.link.length
   );
 }
 
