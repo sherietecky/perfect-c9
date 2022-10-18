@@ -1,12 +1,12 @@
 import { Page, chromium } from "playwright";
 var fs = require("fs");
 
-export async function aeoncityCrawler(category: string) {
+export async function aeoncityCrawler(keyword: string) {
   const browser = await chromium.launch({ headless: false });
   let page = await browser.newPage();
   let url =
     "https://www.aeoncity.com.hk/kh_zh/catalogsearch/result/index/?product_list_limit=100&q=" +
-    category;
+    keyword;
   type PriceList = {
     category: string;
     item: string;

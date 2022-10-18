@@ -1,11 +1,11 @@
 import { Page, chromium } from "playwright";
 
-async function parknshopCrawler(category: string) {
+async function parknshopCrawler(keyword: string) {
   const browser = await chromium.launch({ headless: false });
   let page = await browser.newPage();
   let url =
     "https://www.parknshop.com/zh-hk/search?text=" +
-    category +
+    keyword +
     "&useDefaultSearch=false";
 
   await page.goto(url);
