@@ -58,6 +58,11 @@ async function parknshopCrawler(keyword: string) {
           //   bargain.push("/");
         } else if (element.childNodes[0].classList.contains("ellipsis")) {
           bargain.push(element.innerText);
+        } else if (
+          element.childNodes[0].classList.contains("ellipsis") &&
+          element.innerText === "最新推廣"
+        ) {
+          bargain.push("/");
         }
       });
 
