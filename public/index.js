@@ -45,7 +45,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 
 document.querySelector("#snapBtn").addEventListener("click", async () => {
   loading.style.display = "flex";
-  context.drawImage(video, 0, 0, 600, 600);
+  context.drawImage(video, 0, 0, 640, 480);
   const dataURL = canvas.toDataURL("image/jpeg", 0.8);
 
   var blob = dataURItoBlob(dataURL);
@@ -65,12 +65,12 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
     console.log(result["result"]);
     if (possibilityNum > 40) {
       document.querySelector(".productName").textContent = result["result"];
-      document.querySelector(".possibility").textContent = `${possibility}%`;
+      document.querySelector(".possibility").textContent = `${possibilityNum}%`;
       let newCookie;
       if (!getCookie("perfectc9")) {
-        document.querySelector(".history").textContent = result["result"];
         newCookie = `{"history": ["${result["result"]}"]}`;
         setCookie("perfectc9", newCookie, 999);
+        refreshCookie();
       } else {
         let cookieJSON = JSON.parse(getCookie("perfectc9"));
         let arr = cookieJSON["history"];

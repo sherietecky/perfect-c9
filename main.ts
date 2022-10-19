@@ -56,14 +56,22 @@ const form = formidable({
 });
 
 app.post("/snap", (req, res) => {
+
   form.parse(req, async (err, fields, files) => {
+
+    
     let image = files.predict_image;
     let imageFile = Array.isArray(image) ? image[0] : image;
     let image_filename = imageFile ? imageFile.newFilename : "";
+    try {
     let result = await fetch(`${process.env.HOST}:8000/predict?filename=${image_filename}`)
-    // TODO use env file
+    // TODO server need to change env file
     let output = await result.json()
     res.json(output);
+    } catch (error) {
+      res.end("cannot connect to DB");
+    }
+
   });
 });
 
