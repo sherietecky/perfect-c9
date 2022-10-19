@@ -4,6 +4,7 @@ import pg from "pg";
 import dotenv from "dotenv";
 import { client } from "./db";
 import formidable from "formidable";
+// import expressSession from 'express-session'
 
 let app = express();
 
@@ -11,6 +12,26 @@ dotenv.config();
 
 app.use(express.static("public"));
 app.use(express.static("predict_images"));
+
+// app.use(
+//   expressSession({
+//     secret: 'Tecky Academy teaches typescript',
+//     resave: true,
+//     saveUninitialized: true,
+//   }),
+// )
+
+// declare module 'express-session' {
+//   interface SessionData {
+//     name?: string
+//   }
+// }
+
+// app.get('/session', (req, res) => {
+//   req.session.name = 'Tecky Academy'
+//   console.log(req.session)
+//   res.write(req.session.name)
+// })
 
 app.get("/", (req, res) => {
   res.sendFile(path.resolve("public", "index.html"));
