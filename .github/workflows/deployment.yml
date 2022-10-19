@@ -39,6 +39,7 @@ jobs:
           key: ${{secrets.DEPLOY}}
 
   deploy:
+    if: github.ref_name == 'production'
     runs-on: ubuntu-latest
     needs: testing
     steps:
