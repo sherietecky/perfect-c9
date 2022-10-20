@@ -64,7 +64,7 @@ async function main(keyword: string) {
     ).map((link: any) => link.getAttribute("href"));
     link = searchlinks;
 
-    return { items, quantity, price, image, link };
+    return { items, quantity, price, image, link, keyword };
 
     // let resultArr: any = [];
     // for (let i = 0; i <= items.length; i++) {
@@ -88,28 +88,31 @@ async function main(keyword: string) {
 
     // return { resultArr, keyword };
   }, keyword);
-  let id:number
+
+  let marketidNUM: number;
   let marketID = async function getMarketID(knex: Knex) {
     let result1 = await knex("market")
       .select("id")
       .where("market_name", "AeonCity");
     // console.log("marketID: ", result1);
-    console.log(result1);
-    id = result1[0].id
+    console.log("market id: ", result1);
+    marketidNUM = result1[0].id;
     //return result1;
   };
-  marketID(knex);
+  await marketID(knex);
 
+  let productidNUM: number;
   let productID = async function getProductID(knex: Knex) {
     let result2 = await knex("product")
       .select("id")
       .where("product_name", result.keyword);
-    console.log("productID: ", result2);
-    return result2;
+    console.log("product id:", result2);
+    productidNUM = result2[0].id;
+    // return result2;
   };
-  productID(knex);
+  await productID(knex);
 
-  let finalresult = function final() {
+  let finalresult = () => {
     let resultArr: any = [];
     for (let i = 0; i <= result.items.length; i++) {
       resultArr.push({
@@ -121,17 +124,19 @@ async function main(keyword: string) {
         image: "",
         link: "",
       });
-      
-      resultArr[i].market = id
-      resultArr[i].item = result.keyword;
+
+      resultArr[i].market = marketidNUM;
+      resultArr[i].item = productidNUM;
       resultArr[i].product = result.items[i];
       resultArr[i].quantity = result.quantity[i];
       resultArr[i].price = result.price[i];
       resultArr[i].image = result.image[i];
       resultArr[i].link = result.link[i];
     }
-    final();
+    console.log(resultArr);
+    return resultArr;
   };
+  let res = finalresult();
 
   // console.log("AeonCity Search Results: ", result);
   // console.log(
@@ -144,8 +149,9 @@ async function main(keyword: string) {
 
   // convert arrays to json
   jsonfile.writeFileSync(
-    path.join(__dirname, "..", "market_json", `aeon.json`),
-    result.resultArr
+    path.join(__dirname, "..", "market_json", `aeon1.json`),
+    res
+    // result.resultArr
   );
 }
 
