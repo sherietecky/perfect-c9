@@ -11,10 +11,6 @@ perfect-c9.model_v3
 perfect-c9.model_v3.zip
 perfect-c9.model_v4
 perfect-c9.model_v5
-<<<<<<< HEAD
-package-lock.js
 package.json
-.env
-=======
 package-lock.json
->>>>>>> f1995cbc580e3d814592301eb56a7492108644e8
+.env
