@@ -13,6 +13,13 @@ const config: { [key: string]: Knex.Config } = {
       password: process.env.DB_PASSWORD,
       host: process.env.DB_HOST,
     },
+    pool: {
+      min: 2,
+      max: 10,
+    },
+    migrations: {
+      tableName: "knex_migrations",
+    },
   },
 
   testing: {
