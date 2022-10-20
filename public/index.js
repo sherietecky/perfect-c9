@@ -2,17 +2,17 @@
 loading.style.display = "none";
 
 // try DB
-async function trydb() {
-  const res = await fetch("/trydb");
-  const json = await res.json();
-  console.log(json.username);
-  console.log(json.password);
+// async function trydb() {
+//   const res = await fetch("/trydb");
+//   const json = await res.json();
+//   console.log(json.username);
+//   console.log(json.password);
 
-  document.querySelector("#test-name").textContent = json.username;
-  document.querySelector("#test-password").textContent = json.password;
-}
+//   document.querySelector("#test-name").textContent = json.username;
+//   document.querySelector("#test-password").textContent = json.password;
+// }
 
-trydb();
+// trydb();
 
 // use the camera
 let canvas = document.querySelector("#canvas");

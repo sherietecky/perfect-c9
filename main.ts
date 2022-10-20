@@ -2,7 +2,7 @@ import express from "express";
 import path from "path";
 import pg from "pg";
 import dotenv from "dotenv";
-import { client } from "./db";
+// import { client } from "./db";
 import formidable from "formidable";
 // import expressSession from 'express-session'
 
@@ -37,13 +37,13 @@ app.get("/", (req, res) => {
   res.sendFile(path.resolve("public", "index.html"));
 });
 
-app.get("/trydb", async (req, res) => {
-  const response = await client.query(
-    `select username, password from users where id=$1`,
-    ["1"]
-  );
-  res.json(response.rows[0]);
-});
+// app.get("/trydb", async (req, res) => {
+//   const response = await client.query(
+//     `select username, password from users where id=$1`,
+//     ["1"]
+//   );
+//   res.json(response.rows[0]);
+// });
 
 // get the snap photo
 const uploadDir = "predict_images";
