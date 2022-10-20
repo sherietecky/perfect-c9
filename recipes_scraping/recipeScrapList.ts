@@ -16,7 +16,7 @@ export async function recipeScrapping(category: string) {
 
   await page.waitForTimeout(4000);
 
-  const result = await page.evaluate(() => {
+  const result = await page.evaluate((category) => {
     let recipes_object: {
       [T: string]: string[] | number;
     } = {};
@@ -103,20 +103,58 @@ export async function recipeScrapping(category: string) {
     }
 
     return recipesByItems;
-  });
-  console.log(result);
-  console.log(JSON.stringify(result));
-  await page.waitForTimeout(4000);
+  }, category);
+  await page.waitForTimeout(2000);
   await browser.close();
-  // let result_json = JSON.stringify(result);
 
-  jsonfile.writeFileSync(
-    path.join(__dirname, "..", "recipes_json", "recipes.json"),
-    result
-  );
+  return result;
+  // console.log(JSON.stringify(result));
+  // let result_json = JSON.stringify(result);
 
   //   fs.writeFileSync(path.join(__dirname, "jsonData", "aeon.json"), result_json);
   //   return JSON.stringify(result);
 }
 
-recipeScrapping("蘋果");
+function autoScrap_promisfy(category: string) {
+  return new Promise(async (resolve, reject) => {
+    let result = await recipeScrapping(category);
+    resolve(result);
+  });
+}
+
+async function autoScrap(product_list: string[]) {
+  let result_arr: object[] = [];
+  let result_object: any = {};
+  for (let i = 0; i < product_list.length; i++) {
+    console.log(i, product_list.length);
+    let result: any = await autoScrap_promisfy(product_list[i]);
+    // console.log(result);
+    result_object[product_list[i]] = result;
+    // console.log(result_all);
+  }
+
+  jsonfile.writeFileSync(
+    path.join(__dirname, "..", "recipes_json", "recipes.json"),
+    result_object,
+    { flag: "w" }
+  );
+}
+
+autoScrap([
+  "可口可樂",
+  "啤酒",
+  "寶礦力",
+  "橙",
+  "檸檬茶",
+  "牛奶",
+  "牛油果",
+  "益力多",
+  "維他奶",
+  "茄子",
+  "蘋果",
+  "西蘭花",
+  "香蕉",
+]);
+// recipeScrapping("蘋果");
+// recipeScrapping("可樂");
+// recipeScrapping("牛奶");
