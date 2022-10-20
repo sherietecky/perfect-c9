@@ -173,6 +173,19 @@ div.resultDisplay {
   animation: spin 2s linear infinite;
 }
 
+.history {
+display: flex;
+flex-wrap: wrap;
+padding-left: 10px
+}
+
+.history div {
+ outline: 1px solid lightblue ;
+margin-right: 10px;
+padding: 5px;
+background-color: lightcyan;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);

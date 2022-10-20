@@ -4,6 +4,7 @@ import pg from "pg";
 import dotenv from "dotenv";
 import { client } from "./db";
 import formidable from "formidable";
+// import expressSession from 'express-session'
 
 let app = express();
 
@@ -11,6 +12,26 @@ dotenv.config();
 
 app.use(express.static("public"));
 app.use(express.static("predict_images"));
+
+// app.use(
+//   expressSession({
+//     secret: 'Tecky Academy teaches typescript',
+//     resave: true,
+//     saveUninitialized: true,
+//   }),
+// )
+
+// declare module 'express-session' {
+//   interface SessionData {
+//     name?: string
+//   }
+// }
+
+// app.get('/session', (req, res) => {
+//   req.session.name = 'Tecky Academy'
+//   console.log(req.session)
+//   res.write(req.session.name)
+// })
 
 app.get("/", (req, res) => {
   res.sendFile(path.resolve("public", "index.html"));
@@ -35,14 +56,22 @@ const form = formidable({
 });
 
 app.post("/snap", (req, res) => {
+
   form.parse(req, async (err, fields, files) => {
+
+    
     let image = files.predict_image;
     let imageFile = Array.isArray(image) ? image[0] : image;
     let image_filename = imageFile ? imageFile.newFilename : "";
+    try {
     let result = await fetch(`${process.env.HOST}:8000/predict?filename=${image_filename}`)
-    // TODO use env file
+    // TODO server need to change env file
     let output = await result.json()
     res.json(output);
+    } catch (error) {
+      res.end("cannot connect to DB");
+    }
+
   });
 });
 
