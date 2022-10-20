@@ -20,7 +20,7 @@ let context = canvas.getContext("2d");
 let video = document.querySelector("#video");
 const constraints = {
   audio: false,
-  video: true,
+  video: {facingMode: 'environment'}
 };
 
 if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
