@@ -21,7 +21,7 @@ async function main(keyword: string) {
   await page.goto(url);
   await page.waitForTimeout(2000);
 
-  let result = await page.evaluate((): any => {
+  let result = await page.evaluate((keyword): any => {
     // let result: Array<PriceList> = [];
     // let result: [] = [];
 
@@ -57,16 +57,23 @@ async function main(keyword: string) {
     ).map((link: any) => link.getAttribute("href"));
     link = searchlinks;
 
+
+
+
     // return { items, quantity, price, image, link };
     let resultArr: any = [];
     for (let i = 0; i <= items.length; i++) {
       resultArr.push({
+        market: "",
+        item: "",
         product: "",
         quantity: "",
         price: "",
         image: "",
         link: "",
       });
+      resultArr[i].market = "AeonCity";
+      resultArr[i].item = keyword;
       resultArr[i].product = items[i];
       resultArr[i].quantity = quantity[i];
       resultArr[i].price = price[i];
@@ -75,7 +82,7 @@ async function main(keyword: string) {
     }
 
     return resultArr;
-  });
+  }, keyword);
 
   // console.log("AeonCity Search Results: ", result);
   // console.log(
@@ -87,7 +94,10 @@ async function main(keyword: string) {
   // );
 
   // convert arrays to json
-  jsonfile.writeFileSync(path.join(__dirname, "aeon.json"), result);
+  jsonfile.writeFileSync(
+    path.join(__dirname, "..", "market_json", `aeon.json`),
+    result
+  );
 }
 
 main("檸檬茶");
