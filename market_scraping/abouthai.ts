@@ -11,7 +11,7 @@ async function scrapAbouthai(keyword: string) {
   let page = await browser.newPage();
   let url = "https://www.abouthai.com/search?keyword=" + keyword;
 
-  await page.goto(url);
+  await page.goto(url, { timeout: 60000 });
   await page.waitForTimeout(3000);
 
   let image = await page.evaluate(() => {
@@ -94,21 +94,68 @@ async function scrapAbouthai(keyword: string) {
   };
   let res = finalresult();
 
-  // console.log("AeonCity Search Results: ", result);
-  // console.log(
-  //   result.items.length,
-  //   result.quantity.length,
-  //   result.price.length,
-  //   result.image.length,
-  //   result.link.length
-  // );
+  await page.waitForTimeout(4000);
+  await browser.close();
 
-  // convert arrays to json
+  return res;
+}
+
+function autoScrap_promisfy(keyword: string) {
+  return new Promise(async (resolve, reject) => {
+    let result = await scrapAbouthai(keyword);
+    resolve(result);
+  });
+}
+
+async function autoScrap(product_list: string[]) {
+  let result_arr: object[] = [];
+  let result_object: any = {};
+  for (let i = 0; i < product_list.length; i++) {
+    console.log(i, product_list.length);
+    let result: any = await autoScrap_promisfy(product_list[i]);
+    // console.log(result);
+    result_object[product_list[i]] = result;
+    // console.log(result_all);
+  }
+
   jsonfile.writeFileSync(
-    path.join(__dirname, "..", "market_json", "abouthai.json"),
-    res
-    // result.resultArr
+    path.join(__dirname, "..", "market_json", "abouthaiAll.json"),
+    result_object,
+    { flag: "w" }
   );
 }
 
-scrapAbouthai("蘋果");
+autoScrap([
+  "可口可樂",
+  "啤酒",
+  "寶礦力",
+  "橙",
+  "檸檬茶",
+  "牛奶",
+  "牛油果",
+  "益力多",
+  "維他奶",
+  "茄子",
+  "蘋果",
+  "西蘭花",
+  "香蕉",
+]);
+
+// console.log("AeonCity Search Results: ", result);
+// console.log(
+//   result.items.length,
+//   result.quantity.length,
+//   result.price.length,
+//   result.image.length,
+//   result.link.length
+// );
+
+// convert arrays to json
+//   jsonfile.writeFileSync(
+//     path.join(__dirname, "..", "market_json", "abouthai.json"),
+//     res
+//     // result.resultArr
+//   );
+// }
+
+// scrapAbouthai("蘋果");

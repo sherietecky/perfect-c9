@@ -13,7 +13,7 @@ async function scrapPakgai(keyword: string) {
     keyword +
     "&useDefaultSearch=false";
 
-  await page.goto(url);
+  await page.goto(url, { timeout: 60000 });
   await page.waitForTimeout(2000);
 
   // scroll
@@ -101,7 +101,7 @@ async function scrapPakgai(keyword: string) {
     let result1 = await knex("market")
       .select("id")
       .where("market_name", "ParknShop 百佳");
-    // console.log("market id: ", result1);
+    console.log("market id: ", result1);
     marketidNUM = result1[0].id;
     //return result1;
   };
@@ -147,11 +147,58 @@ async function scrapPakgai(keyword: string) {
   };
   let response = finalresult();
 
-  // convert arrays to json
+  await page.waitForTimeout(4000);
+  await browser.close();
+
+  return response;
+}
+
+function autoScrap_promisfy(keyword: string) {
+  return new Promise(async (resolve, reject) => {
+    let result = await scrapPakgai(keyword);
+    resolve(result);
+  });
+}
+
+async function autoScrap(product_list: string[]) {
+  let result_arr: object[] = [];
+  let result_object: any = {};
+  for (let i = 0; i < product_list.length; i++) {
+    console.log(i, product_list.length);
+    let result: any = await autoScrap_promisfy(product_list[i]);
+    // console.log(result);
+    result_object[product_list[i]] = result;
+    // console.log(result_all);
+  }
+
   jsonfile.writeFileSync(
-    path.join(__dirname, "..", "market_json", "pakgai.json"),
-    response
+    path.join(__dirname, "..", "market_json", "pakgaiAll.json"),
+    result_object,
+    { flag: "w" }
   );
 }
 
-scrapPakgai("檸檬茶");
+autoScrap([
+  "可口可樂",
+  "啤酒",
+  "寶礦力",
+  "橙",
+  "檸檬茶",
+  "牛奶",
+  "牛油果",
+  "益力多",
+  "維他奶",
+  "茄子",
+  "蘋果",
+  "西蘭花",
+  "香蕉",
+]);
+
+// convert arrays to json
+//   jsonfile.writeFileSync(
+//     path.join(__dirname, "..", "market_json", "pakgai.json"),
+//     response
+//   );
+// }
+
+// scrapPakgai("檸檬茶");
