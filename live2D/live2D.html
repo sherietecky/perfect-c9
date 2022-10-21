@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>格價專員v1.0.1</title>
+    <style>
+        .live2d {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        canvas {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- background ripple -->
+    <div class="ripple-background">
+        <div class="circle xxlarge shade1"></div>
+        <div class="circle xlarge shade2"></div>
+        <div class="circle large shade3"></div>
+        <div class="circle medium shade4"></div>
+        <div class="circle small shade5"></div>
+    </div>
+
+    <!-- loader -->
+    <div id="loading">
+        <div id="loader"></div>
+    </div>
+
+    <!-- whole page container -->
+    <div id="container">
+
+        <!-- take pic section -->
+        <div class="takePic">
+            <h1>你想搵咩? 影來睇睇</h1>
+            <video id="video" autoplay></video>
+            <button id="snapBtn">Snap</button>
+
+            <!-- <form
+      id="form"
+        method="post"
+        action="/snap"
+        enctype="multipart/form-data"
+      >
+        <input type="file" name="predict_image" id="predict_image"/>
+        <button type="submit">submit</button>
+      </form> -->
+
+            <canvas id="canvas" width="640" height="480"></canvas>
+        </div>
+
+        <!-- result section -->
+        <h2>Results</h2>
+        <div class="resultDisplay">
+            <img src="/predict_images/coke.jpg" alt="" />
+            <div class="productName">[product name]</div>
+            <div class="possibility">[possibility]</div>
+            <div>search history:</div>
+            <div class="history">[history]</div>
+            <div class="quantity">[quantity]</div>
+            <div class="price">[price]</div>
+        </div>
+
+        <hr>
+        <!-- testing connection section -->
+        <h4>Hello World</h4>
+        <p id="test-name">test-name</p>
+        <p id="test-password">test-password</p>
+
+
+        <!-- end of whole page container   -->
+    </div>
+
+    <div>
+        <div style="position:fixed;bottom:0;background-color: white;">
+            <button id="Change" class="active">换人</button>
+            <button id="texure" class="active">换衣服</button>
+            <text>当前：模型编号 </text><text id="model_id"></text><text>；衣服编号 </text><text id="texure_id"></text>
+            <input type="number" id="model" placeholder="模型编号">
+            <input type="number" id="Texure" placeholder="衣服编号">
+            <button onclick="JumpToModel()">跳转</button>
+            <a href="live2d_3">Live2d Cubism 3</a>
+            <a target="_blank" href="https://github.com/imuncle/live2d">Github</a>
+        </div>
+        <ol id="model_info" style="margin-top:30px ;"></ol>
+        <canvas class="live2d" id="live2d" width="300" height="800"></canvas>
+    </div>
+
+
+
+    <script src="index.js"></script>
+    <script src="js/LAppDefine.js"></script>
+    <script src="js/live2d.js"></script>
+    <script>
+        // for (model in LAppDefine.MODELS) {
+        //     if (LAppDefine.MODELS[model].length == 1) {
+        //         document.getElementById("model_info").innerHTML += "<li>" + LAppDefine.MODELS[model][0] + "</li>";
+        //     } else {
+        //         var content = "<li>" + LAppDefine.MODELS[model][0] + "</li><ol>";
+        //         for (texure in LAppDefine.MODELS[model]) {
+        //             content += "<li>" + LAppDefine.MODELS[model][texure] + "</li>";
+        //             if (texure == LAppDefine.MODELS[model].length - 1) {
+        //                 content += "</ol>";
+        //             }
+        //         }
+        //         document.getElementById("model_info").innerHTML += content;
+        //     }
+        // }
+
+        var current_model_id = 1;
+        var current_texure_id = 1;
+        document.getElementById("model_id").innerHTML = current_model_id;
+        document.getElementById("texure_id").innerHTML = current_texure_id;
+
+        function JumpToModel() {
+            if (document.getElementById("model").value == "") document.getElementById("model").value = "7";
+            if (document.getElementById("Texure").value == "") document.getElementById("Texure").value = "1";
+            current_model_id = parseInt(document.getElementById("model").value);
+            current_texure_id = parseInt(document.getElementById("Texure").value);
+            var model_id = current_model_id - 1;
+            var texure_id = current_texure_id - 1;
+            if (model_id > LAppDefine.MODELS.length - 1) {
+                model_id = LAppDefine.MODELS.length - 1;
+                texure_id = 0;
+            } else if (texure_id > LAppDefine.MODELS[model_id].length - 1) {
+                texure_id = LAppDefine.MODELS[model_id].length - 1;
+            }
+            loadlive2d(LAppDefine.CANVAS_ID, LAppDefine.MODELS[model_id][texure_id]);
+            document.getElementById("model_id").innerHTML = current_model_id;
+            document.getElementById("texure_id").innerHTML = current_texure_id;
+        }
+
+        // btnChangeExure = document.getElementById(LAppDefine.TEXURE_BUTTON_ID);
+
+        // btnChangeExure.addEventListener('click', function (e) {
+        //     current_texure_id++;
+        //     if (current_texure_id > LAppDefine.MODELS[current_model_id - 1].length) current_texure_id = 1;
+        //     document.getElementById("model_id").innerHTML = current_model_id;
+        //     document.getElementById("texure_id").innerHTML = current_texure_id;
+        //     loadlive2d(LAppDefine.CANVAS_ID, LAppDefine.MODELS[current_model_id - 1][current_texure_id - 1]);
+        // })
+        // btnChangeModel = document.getElementById(LAppDefine.BUTTON_ID);
+        // btnChangeModel.addEventListener("click", function (e) {
+        //     current_model_id++;
+        //     current_texure_id = 1;
+        //     if (current_model_id > LAppDefine.MODELS.length) current_model_id = 1;
+        //     loadlive2d(LAppDefine.CANVAS_ID, LAppDefine.MODELS[current_model_id - 1][current_texure_id - 1]);
+        //     document.getElementById("model_id").innerHTML = current_model_id;
+        //     document.getElementById("texure_id").innerHTML = current_texure_id;
+        // })
+        JumpToModel()
+        // loadlive2d("live2d", "model/22/model.default.json");
+    </script>
+
+</body>
+
+</html>
