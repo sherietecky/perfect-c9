@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bg_ripple.css" />
     <link rel="stylesheet" href="style.css" />
     <title>格價專員v1.0.2</title>
   </head>
@@ -39,9 +40,9 @@
         <input type="file" name="predict_image" id="predict_image"/>
         <button type="submit">submit</button>
       </form> -->
-<div class="canva-container">
-  <canvas id="canvas" width="400" height="400"></canvas>
-</div>
+        <div class="canva-container">
+          <canvas id="canvas" width="400" height="400"></canvas>
+        </div>
       </div>
 
       <!-- result section -->
@@ -53,14 +54,15 @@
         <div>search history:</div>
         <div class="history">[history]</div>
       </div>
-
+      <hr />
       <!-- search bar -->
       <h2>打字 Search</h2>
-      <input type="text" />
-
+      <input class="searchField" type="text" />
+      <button class="searchBtn">搵下先</button>
+      <hr />
       <!-- price section -->
-      <div class="priceDisplay">
         <h2>各市場價格</h2>
+      <div class="priceDisplay">
         <div class="priceCard">
           <img class="productPic" src="../predict_images/coke.jpg" alt="" />
           <p class="supermarket">[supermarket]</p>
