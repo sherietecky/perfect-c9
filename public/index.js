@@ -4,19 +4,6 @@ let priceCard = document.querySelector(".priceCard");
 // loader
 loading.style.display = "none";
 
-// try DB
-// async function trydb() {
-//   const res = await fetch("/trydb");
-//   const json = await res.json();
-//   console.log(json.username);
-//   console.log(json.password);
-
-//   document.querySelector("#test-name").textContent = json.username;
-//   document.querySelector("#test-password").textContent = json.password;
-// }
-
-// trydb();
-
 // use the camera
 let canvas = document.querySelector("#canvas");
 let context = canvas.getContext("2d");
@@ -26,7 +13,7 @@ const constraints = {
   video: {
     facingMode: "environment",
     // mandatory: {
-    //   minWidth: 200,
+    // minWidth: 200,
     // maxWidth: 200,
     // minHeight: 200,
     // maxHeight: 200}
