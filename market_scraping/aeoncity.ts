@@ -5,23 +5,7 @@ import path from "path";
 import { knex } from "../db";
 import { Knex } from "knex";
 
-// async function abc() {
-
-// async function getMarketID(knex: Knex) {
-//   let resultone = await knex("market")
-//     .select("id")
-//     .where("market_name", "AeonCity");
-//   console.log(resultone);
-//   return resultone;
-// }
-// getMarketID(knex);
-
-//   let two = await getMarketID(knex);
-//   console.log(two);
-// }
-// abc();
-
-async function main(keyword: string) {
+async function scrapAeon(keyword: string) {
   const browser = await chromium.launch({ headless: false });
   let page = await browser.newPage();
   let url =
@@ -94,8 +78,7 @@ async function main(keyword: string) {
     let result1 = await knex("market")
       .select("id")
       .where("market_name", "AeonCity");
-    // console.log("marketID: ", result1);
-    console.log("market id: ", result1);
+    // console.log("market id: ", result1);
     marketidNUM = result1[0].id;
     //return result1;
   };
@@ -106,7 +89,7 @@ async function main(keyword: string) {
     let result2 = await knex("product")
       .select("id")
       .where("product_name", result.keyword);
-    console.log("product id:", result2);
+    // console.log("product id:", result2);
     productidNUM = result2[0].id;
     // return result2;
   };
@@ -114,20 +97,20 @@ async function main(keyword: string) {
 
   let finalresult = () => {
     let resultArr: any = [];
-    for (let i = 0; i <= result.items.length; i++) {
+    for (let i = 0; i < result.items.length; i++) {
       resultArr.push({
-        market: "",
-        item: "",
-        product: "",
+        market_id: "",
+        search_item_id: "",
+        product_display_name: "",
         quantity: "",
         price: "",
         image: "",
         link: "",
       });
 
-      resultArr[i].market = marketidNUM;
-      resultArr[i].item = productidNUM;
-      resultArr[i].product = result.items[i];
+      resultArr[i].market_id = marketidNUM;
+      resultArr[i].search_item_id = productidNUM;
+      resultArr[i].product_display_name = result.items[i];
       resultArr[i].quantity = result.quantity[i];
       resultArr[i].price = result.price[i];
       resultArr[i].image = result.image[i];
@@ -149,10 +132,10 @@ async function main(keyword: string) {
 
   // convert arrays to json
   jsonfile.writeFileSync(
-    path.join(__dirname, "..", "market_json", `aeon1.json`),
+    path.join(__dirname, "..", "market_json", "aeon.json"),
     res
     // result.resultArr
   );
 }
 
-main("檸檬茶");
+scrapAeon("檸檬茶");

@@ -1,6 +1,11 @@
 import { Page, chromium } from "playwright";
+import fs from "fs";
+import jsonfile from "jsonfile";
+import path from "path";
+import { knex } from "../db";
+import { Knex } from "knex";
 
-async function parknshopCrawler(keyword: string) {
+async function scrapPakgai(keyword: string) {
   const browser = await chromium.launch({ headless: false });
   let page = await browser.newPage();
   let url =
@@ -9,83 +14,144 @@ async function parknshopCrawler(keyword: string) {
     "&useDefaultSearch=false";
 
   await page.goto(url);
-  let picDesc: string[] = [];
-  for (let i = 0; i < 5; i++) {
-    await page.mouse.wheel(0, 2000);
-    await page.waitForTimeout(Math.random() * 10001);
+  await page.waitForTimeout(2000);
 
-    // scrap
-    // 1. image
-    // 2. product name
-    // 3. unit
-    // 5. price
-    // 6. cheaper price
+  // scroll
+  // let response: any;
 
-    let result = await page.evaluate((): any => {
-      let image: string[] = [];
-      let serachImage = Array.from(
-        document.querySelectorAll(".productImage .is-initialized > img")
-      ).map((image: any) => image.getAttribute("src"));
-      image = serachImage;
+  // for (let i = 0; i < 3; i++) {
+  //   await page.mouse.wheel(0, 1000);
+  //   await page.waitForTimeout(Math.random() * 10001);
 
-      let productName: string[] = [];
-      let searchName = document.querySelectorAll(".productName");
-      searchName.forEach((element: any) => {
-        productName.push(element.innerText);
-      });
+  // scrap
+  // 1. image
+  // 2. product name
+  // 3. unit
+  // 5. price
+  // 6. cheaper price
 
-      let productUnit: string[] = [];
-      let searchUnit = document.querySelectorAll(".productUnit");
-      searchUnit.forEach((element: any) => {
-        productUnit.push(element.innerText);
-      });
+  let result = await page.evaluate((keyword): any => {
+    let image: string[] = [];
+    let serachImage = Array.from(
+      document.querySelectorAll(".productImage .is-initialized > img")
+    ).map((image: any) => image.getAttribute("src"));
+    image = serachImage;
 
-      let price: string[] = [];
-      let searchPrice = document.querySelectorAll(".currentPrice");
-      searchPrice.forEach((element: any) => {
-        price.push(element.innerText);
-      });
-
-      let bargain: string[] = [];
-      let searchBargain = document.querySelectorAll(
-        ".productInfo .productHighlight"
-      );
-
-      searchBargain.forEach((element: any) => {
-        if (!element.childNodes[0].classList) {
-          bargain.push("/");
-          // } else if (element.innerText === "最新推廣") {
-          //   bargain.push("/");
-        } else if (element.childNodes[0].classList.contains("ellipsis")) {
-          bargain.push(element.innerText);
-        } else if (
-          element.childNodes[0].classList.contains("ellipsis") &&
-          element.innerText === "最新推廣"
-        ) {
-          bargain.push("/");
-        }
-      });
-
-      // searchBargain.forEach((element: any) => {
-      //   if (element.innerText === "最新推廣") {
-      //     bargain.push("");
-      //   } else {
-      //     bargain.push(element.innerText);
-      //   }
-      // });
-
-      let link: string[] = [];
-      let searchlinks = Array.from(
-        document.querySelectorAll("a.productImage")
-      ).map(
-        (link: any) => "https://www.parknshop.com" + link.getAttribute("href")
-      );
-      link = searchlinks;
-
-      return { image, productName, productUnit, price, bargain, link };
+    let productName: string[] = [];
+    let searchName = document.querySelectorAll(".productName");
+    searchName.forEach((element: any) => {
+      productName.push(element.innerText);
     });
-    console.log("result: ", result);
-  }
+
+    let productUnit: string[] = [];
+    let searchUnit = document.querySelectorAll(".productUnit");
+    searchUnit.forEach((element: any) => {
+      productUnit.push(element.innerText);
+    });
+
+    let price: string[] = [];
+    let searchPrice = document.querySelectorAll(".currentPrice");
+    searchPrice.forEach((element: any) => {
+      price.push(element.innerText);
+    });
+
+    let bargain: string[] = [];
+    let searchBargain = document.querySelectorAll(
+      ".productInfo .productHighlight"
+    );
+
+    searchBargain.forEach((element: any) => {
+      if (!element.childNodes[0].classList) {
+        bargain.push("/");
+        // } else if (element.innerText === "最新推廣") {
+        //   bargain.push("/");
+      } else if (element.childNodes[0].classList.contains("ellipsis")) {
+        bargain.push(element.innerText);
+      } else if (
+        element.childNodes[0].classList.contains("ellipsis") &&
+        element.innerText === "最新推廣"
+      ) {
+        bargain.push("/");
+      }
+    });
+
+    // searchBargain.forEach((element: any) => {
+    //   if (element.innerText === "最新推廣") {
+    //     bargain.push("");
+    //   } else {
+    //     bargain.push(element.innerText);
+    //   }
+    // });
+
+    let link: string[] = [];
+    let searchlinks = Array.from(
+      document.querySelectorAll("a.productImage")
+    ).map(
+      (link: any) => "https://www.parknshop.com" + link.getAttribute("href")
+    );
+    link = searchlinks;
+
+    return { image, productName, productUnit, price, bargain, link, keyword };
+  }, keyword);
+
+  // console.log(result);
+
+  let marketidNUM: number;
+  let marketID = async function getMarketID(knex: Knex) {
+    let result1 = await knex("market")
+      .select("id")
+      .where("market_name", "ParknShop 百佳");
+    // console.log("market id: ", result1);
+    marketidNUM = result1[0].id;
+    //return result1;
+  };
+  await marketID(knex);
+
+  let productidNUM: number;
+  let productID = async function getProductID(knex: Knex) {
+    let result2 = await knex("product")
+      .select("id")
+      .where("product_name", result.keyword);
+    // console.log("product id:", result2);
+    productidNUM = result2[0].id;
+    // return result2;
+  };
+  await productID(knex);
+
+  //create json-like array
+  let finalresult = () => {
+    let resultArr: any = [];
+    for (let i = 0; i < result.productName.length; i++) {
+      resultArr.push({
+        market_id: "",
+        search_item_id: "",
+        product_display_name: "",
+        quantity: "",
+        price: "",
+        bargain: "",
+        image: "",
+        link: "",
+      });
+
+      resultArr[i].market_id = marketidNUM;
+      resultArr[i].search_item_id = productidNUM;
+      resultArr[i].product_display_name = result.productName[i];
+      resultArr[i].quantity = result.productUnit[i];
+      resultArr[i].price = result.price[i];
+      resultArr[i].bargain = result.bargain[i];
+      resultArr[i].image = result.image[i];
+      resultArr[i].link = result.link[i];
+    }
+    console.log(resultArr);
+    return resultArr;
+  };
+  let response = finalresult();
+
+  // convert arrays to json
+  jsonfile.writeFileSync(
+    path.join(__dirname, "..", "market_json", "pakgai.json"),
+    response
+  );
 }
 
-parknshopCrawler("牛油果");
+scrapPakgai("檸檬茶");
