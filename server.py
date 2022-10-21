@@ -1,5 +1,6 @@
 from sanic import Sanic
 from sanic.response import json
+import tensorflow as tf
 import numpy as np
 
 app = Sanic("predict")
@@ -17,8 +18,6 @@ def try_request(request):
 
 @app.route("/predict")
 def predict(request):    
-    import tensorflow as tf
-
     with tf.compat.v1.Session() as sess:
     
         imgSize = 160

@@ -42,6 +42,10 @@ body {
   height: 5vh;
 }
 
+#snapBtn {
+  z-index: 999;
+}
+
 /* result section */
 
 div.resultDisplay > img {
