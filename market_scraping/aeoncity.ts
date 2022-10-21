@@ -5,23 +5,7 @@ import path from "path";
 import { knex } from "../db";
 import { Knex } from "knex";
 
-// async function abc() {
-
-// async function getMarketID(knex: Knex) {
-//   let resultone = await knex("market")
-//     .select("id")
-//     .where("market_name", "AeonCity");
-//   console.log(resultone);
-//   return resultone;
-// }
-// getMarketID(knex);
-
-//   let two = await getMarketID(knex);
-//   console.log(two);
-// }
-// abc();
-
-async function main(keyword: string) {
+async function scrapAeon(keyword: string) {
   const browser = await chromium.launch({ headless: false });
   let page = await browser.newPage();
   let url =
@@ -148,10 +132,10 @@ async function main(keyword: string) {
 
   // convert arrays to json
   jsonfile.writeFileSync(
-    path.join(__dirname, "..", "market_json", `aeon.json`),
+    path.join(__dirname, "..", "market_json", "aeon.json"),
     res
     // result.resultArr
   );
 }
 
-main("檸檬茶");
+scrapAeon("檸檬茶");
