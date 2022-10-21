@@ -22,6 +22,31 @@ export async function seed(knex: Knex): Promise<void> {
   await seedRow("market", { market_name: "HKTVMall" });
   await seedRow("market", { market_name: "Abouthai 阿布泰" });
 
+  const marketName = [
+    "AeonCity",
+    "ParknShop 百佳",
+    "HKTVMall",
+    "Abouthai 阿布泰",
+  ];
+
+// andrew's method to handle id changing in every seed run:
+// returning data and id in every seed run and put it into a map
+// export the map to the file that needs the id
+
+  // const markets = await knex("market").insert(marketName).returning("*");
+  /*[ {id:9,market_name:"AenoCity"},{}] */
+  // export const marketObject = markets.reduce((map, market) => {
+  //   return {
+  //     ...map,
+  //     [market.market_name]: market.id,
+  //   };
+  // }, {}); 
+  /*{
+    "AenoCity":9,
+    "ParknShop 百佳":7,
+  }*/
+
+
   await seedRow("product", { product_name: "可口可樂" });
   await seedRow("product", { product_name: "啤酒" });
   await seedRow("product", { product_name: "寶礦力" });

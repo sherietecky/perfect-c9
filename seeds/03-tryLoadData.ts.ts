@@ -34,6 +34,67 @@ export async function seed(knex: Knex): Promise<void> {
       }))
     );
 
+    const pakgaiData = jsonfile.readFileSync(
+      path.join(__dirname, "..", "market_json", "pakgai.json")
+    );
+
+    //Scrape Done! --> import the mapped array from andrew's method
+    // const prices = pakgaiData.map(data=>{
+    //   return {
+    //     market_id: marketObject[data.market_name],
+    //     product_id: productObject[data.product_name],
+    //     display_pic: data.image,
+    //     product_name: data.product_display_name,
+    //     price: data.price,
+    //     bargain: data.bargain,
+    //     product_link: data.link,
+    //   }
+    // });
+
+    await trx("price").insert(
+      pakgaiData.map((data: any) => ({
+        market_id: data.market_id,
+        product_id: data.search_item_id,
+        display_pic: data.image,
+        product_name: data.product_display_name,
+        price: data.price,
+        bargain: data.bargain,
+        product_link: data.link,
+      }))
+    );
+
+    const hktvmallData = jsonfile.readFileSync(
+      path.join(__dirname, "..", "market_json", "hktvmall.json")
+    );
+
+    await trx("price").insert(
+      hktvmallData.map((data: any) => ({
+        market_id: data.market_id,
+        product_id: data.search_item_id,
+        display_pic: data.image,
+        product_name: data.product_display_name,
+        price: data.price,
+        // bargain: data.bargain,
+        product_link: data.link,
+      }))
+    );
+
+    const abouthaiData = jsonfile.readFileSync(
+      path.join(__dirname, "..", "market_json", "abouthai.json")
+    );
+
+    await trx("price").insert(
+      abouthaiData.map((data: any) => ({
+        market_id: data.market_id,
+        product_id: data.search_item_id,
+        display_pic: data.image,
+        product_name: data.product_display_name,
+        price: data.price,
+        // bargain: data.bargain,
+        product_link: data.link,
+      }))
+    );
+
     await trx.commit();
   } catch (err: any) {
     console.error(err.message);
