@@ -100,7 +100,7 @@ async function scrapPakgai(keyword: string) {
   let marketID = async function getMarketID(knex: Knex) {
     let result1 = await knex("market")
       .select("id")
-      .where("market_name", "AeonCity");
+      .where("market_name", "ParknShop 百佳");
     // console.log("market id: ", result1);
     marketidNUM = result1[0].id;
     //return result1;
