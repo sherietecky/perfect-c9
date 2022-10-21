@@ -1,3 +1,6 @@
+let searchBtn = document.querySelector(".searchBtn");
+let priceCard = document.querySelector(".priceCard");
+
 // loader
 loading.style.display = "none";
 
@@ -67,8 +70,11 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
     body: fd,
   });
 
+  let predictResult;
+
   let json = res.json();
-  json.then(function (result) {
+  json.then(async function (result) {
+    predictResult = result["result"];
     let possibility = result["possibility"].toString();
     let tempNumArr = possibility.split(".");
     let possibilityNum = parseInt(tempNumArr[0]);
@@ -99,9 +105,27 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
     } else {
       document.querySelector(".productName").textContent = "未能確定結果";
     }
+
+    const res = await fetch(`/marketdata?product=${result["result"]}`);
+    let json = await res.json();
+
+    for (let data of json) {
+      console.log(data);
+
+      let node = priceCard.cloneNode(true);
+      node.querySelector(".productPic").src = data.display_pic;
+      node.querySelector(".supermarket").textContent = data.market_name;
+      // node.querySelector(".quantity").textContentsrc = data.unit;
+      node.querySelector(".price").textContent = data.price;
+      node.querySelector(".bargain").textContent = data.bargain;
+      document.querySelector(".priceDisplay").append(node);
+    }
+    priceCard.remove();
   });
   loading.style.display = "none";
 });
+
+console.log(predictResult);
 
 // convert dataURI to Blob
 function dataURItoBlob(dataURI) {
@@ -194,8 +218,8 @@ if (!getCookie("perfectc9")) {
 
 // manual search button
 
-let searchBtn = document.querySelector(".searchBtn");
-let priceCard = document.querySelector(".priceCard");
+// let searchBtn = document.querySelector(".searchBtn");
+// let priceCard = document.querySelector(".priceCard");
 
 searchBtn.addEventListener("click", async () => {
   let searchFieldText = document.querySelector(".searchField").value;
@@ -221,21 +245,21 @@ searchBtn.addEventListener("click", async () => {
 
 // load price data after AI result
 
-json.then(async function (result) {
-  // async function getPriceData(){
-  const res = await fetch(`/marketdata?product=${result["result"]}`);
-  let json = await res.json();
+// json.then(async function (result) {
+//   // async function getPriceData(){
+//   const res = await fetch(`/marketdata?product=${predictResult}`);
+//   let json = await res.json();
 
-  for (let data of json) {
-    console.log(data);
+//   for (let data of json) {
+//     console.log(data);
 
-    let node = priceCard.cloneNode(true);
-    node.querySelector(".productPic").src = data.display_pic;
-    node.querySelector(".supermarket").textContent = data.market_name;
-    // node.querySelector(".quantity").textContentsrc = data.unit;
-    node.querySelector(".price").textContent = data.price;
-    node.querySelector(".bargain").textContent = data.bargain;
-    document.querySelector(".priceDisplay").append(node);
-  }
-  priceCard.remove();
-});
+//     let node = priceCard.cloneNode(true);
+//     node.querySelector(".productPic").src = data.display_pic;
+//     node.querySelector(".supermarket").textContent = data.market_name;
+//     // node.querySelector(".quantity").textContentsrc = data.unit;
+//     node.querySelector(".price").textContent = data.price;
+//     node.querySelector(".bargain").textContent = data.bargain;
+//     document.querySelector(".priceDisplay").append(node);
+//   }
+//   priceCard.remove();
+// });
