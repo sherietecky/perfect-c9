@@ -14,14 +14,23 @@
       right: 0;
     }
 
-    canvas {
+    canvas#live2d {
       border: 2px solid black;
+    }
+
+    @media only screen and (max-width: 768px) {
+      canvas#live2d {
+        width: 150px;
+        height: 225px;
+      }
     }
   </style>
 </head>
 
 <body>
   <!-- background ripple -->
+  <iframe src="https://gametable.org/games/tic-tac-toe/" title="W3Schools Free Online Web Tutorials"
+    height="300"></iframe>
   <div class="ripple-background">
     <div class="circle xxlarge shade1"></div>
     <div class="circle xlarge shade2"></div>
@@ -92,14 +101,14 @@
     <!-- end of whole page container   -->
   </div>
   <div>
-    <canvas class="live2d" id="live2d" width="300" height="800"></canvas>
+    <canvas class="live2d" id="live2d" width="300" height="400"></canvas>
   </div>
 
   <script src="index.js"></script>
   <script src="js/LAppDefine.js"></script>
   <script src="js/live2d.js"></script>
   <script>
-    loadlive2d(LAppDefine.CANVAS_ID, LAppDefine.MODELS[6][0]);
+    loadlive2d(LAppDefine.CANVAS_ID, LAppDefine.MODELS[0][3]);
     // loadlive2d("live2d", "model/22/model.default.json");
   </script>
 </body>

@@ -1,5 +1,5 @@
 var LAppDefine = {
-  //这里配置canvsa元素的id
+  //这里配置canvas元素的id
   CANVAS_ID: "live2d",
 
   //是否允许拖拽，默认为true
