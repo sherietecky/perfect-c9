@@ -127,6 +127,21 @@ body {
 .takePic > canvas {
 }
 
+/* snap button */
+#snapBtn {
+  margin: 10px;
+}
+
+/* canva container */
+
+@media only screen and (max-width: 632px) {
+  .canva-container {
+    /* padding: 10px; */
+  }
+}
+
+
+
 div.resultDisplay > img {
   height: 100px;
   width: 100px;
