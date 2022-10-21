@@ -5,6 +5,8 @@ import dotenv from "dotenv";
 // import { client } from "./db";
 import formidable from "formidable";
 // import expressSession from 'express-session'
+import { knex } from "./db";
+import { Knex } from "knex";
 
 let app = express();
 
@@ -56,22 +58,36 @@ const form = formidable({
 });
 
 app.post("/snap", (req, res) => {
-
   form.parse(req, async (err, fields, files) => {
-
-    
     let image = files.predict_image;
     let imageFile = Array.isArray(image) ? image[0] : image;
     let image_filename = imageFile ? imageFile.newFilename : "";
     try {
-    let result = await fetch(`http://${process.env.HOST}:8000/predict?filename=${image_filename}`)
-    let output = await result.json()
-    res.json(output);
+      let result = await fetch(
+        `http://${process.env.HOST}:8000/predict?filename=${image_filename}`
+      );
+      let output = await result.json();
+      res.json(output);
     } catch (error) {
       res.end("cannot connect to DB");
     }
-
   });
+});
+
+app.get("/marketdata", async (req, res) => {
+  const { product } = req.query;
+  try {
+    const response = await knex.raw(
+      `select * from price join product on price.product_id = product.id join market on price.market_id = market.id where product.product_name='${product}'`
+    );
+    // order by price
+    res.json(response.rows);
+    // console.log(response.rows);
+    return;
+  } catch (error) {
+    console.log(error);
+    res.json({ message: error });
+  }
 });
 
 app.listen(3000, () => {

@@ -21,14 +21,15 @@ let video = document.querySelector("#video");
 const constraints = {
   audio: false,
   video: {
-    facingMode: 'environment',
-  // mandatory: {
-  //   minWidth: 200,
-  // maxWidth: 200,
-  // minHeight: 200,
-  // maxHeight: 200}
-  width: 400, height: 400
-  }
+    facingMode: "environment",
+    // mandatory: {
+    //   minWidth: 200,
+    // maxWidth: 200,
+    // minHeight: 200,
+    // maxHeight: 200}
+    width: 400,
+    height: 400,
+  },
 };
 
 if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -54,7 +55,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 document.querySelector("#snapBtn").addEventListener("click", async () => {
   loading.style.display = "flex";
   // context.drawImage(video, 0, 0, 640, 640);
-  context.drawImage(video,0,0,400,400,0,0,400,400);
+  context.drawImage(video, 0, 0, 400, 400, 0, 0, 400, 400);
   const dataURL = canvas.toDataURL("image/jpeg", 0.8);
 
   var blob = dataURItoBlob(dataURL);
@@ -85,7 +86,7 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         let arr = cookieJSON["history"];
         if (arr.includes(result["result"])) {
           let resultIndex = arr.indexOf(result["result"]);
-          arr.splice(resultIndex, 1)
+          arr.splice(resultIndex, 1);
           arr.unshift(result["result"]);
           cookieJSON["history"] = arr;
         } else {
@@ -190,3 +191,51 @@ if (!getCookie("perfectc9")) {
 //     tmpCanvas.toBlob(resolve, mime, quality);
 //   });
 // }
+
+// manual search button
+
+let searchBtn = document.querySelector(".searchBtn");
+let priceCard = document.querySelector(".priceCard");
+
+searchBtn.addEventListener("click", async () => {
+  let searchFieldText = document.querySelector(".searchField").value;
+  console.log(searchFieldText);
+
+  const result = await fetch(`/marketdata?product=${searchFieldText}`);
+  let json = await result.json();
+  console.log(json);
+
+  for (let data of json) {
+    console.log(data);
+
+    let node = priceCard.cloneNode(true);
+    node.querySelector(".productPic").src = data.display_pic;
+    node.querySelector(".supermarket").textContent = data.market_name;
+    // node.querySelector(".quantity").textContentsrc = data.unit;
+    node.querySelector(".price").textContent = data.price;
+    node.querySelector(".bargain").textContent = data.bargain;
+    document.querySelector(".priceDisplay").append(node);
+  }
+  priceCard.remove();
+});
+
+// load price data after AI result
+
+json.then(async function (result) {
+  // async function getPriceData(){
+  const res = await fetch(`/marketdata?product=${result["result"]}`);
+  let json = await res.json();
+
+  for (let data of json) {
+    console.log(data);
+
+    let node = priceCard.cloneNode(true);
+    node.querySelector(".productPic").src = data.display_pic;
+    node.querySelector(".supermarket").textContent = data.market_name;
+    // node.querySelector(".quantity").textContentsrc = data.unit;
+    node.querySelector(".price").textContent = data.price;
+    node.querySelector(".bargain").textContent = data.bargain;
+    document.querySelector(".priceDisplay").append(node);
+  }
+  priceCard.remove();
+});
