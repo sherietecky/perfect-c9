@@ -65,7 +65,6 @@ app.post("/snap", (req, res) => {
     let image_filename = imageFile ? imageFile.newFilename : "";
     try {
     let result = await fetch(`http://${process.env.HOST}:8000/predict?filename=${image_filename}`)
-    // TODO server need to change env file
     let output = await result.json()
     res.json(output);
     } catch (error) {

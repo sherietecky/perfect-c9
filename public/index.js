@@ -20,7 +20,15 @@ let context = canvas.getContext("2d");
 let video = document.querySelector("#video");
 const constraints = {
   audio: false,
-  video: true,
+  video: {
+    facingMode: 'environment',
+  // mandatory: {
+  //   minWidth: 200,
+  // maxWidth: 200,
+  // minHeight: 200,
+  // maxHeight: 200}
+  width: 400, height: 400
+  }
 };
 
 if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -45,7 +53,8 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 
 document.querySelector("#snapBtn").addEventListener("click", async () => {
   loading.style.display = "flex";
-  context.drawImage(video, 0, 0, 640, 480);
+  // context.drawImage(video, 0, 0, 640, 640);
+  context.drawImage(video,0,0,400,400,0,0,400,400);
   const dataURL = canvas.toDataURL("image/jpeg", 0.8);
 
   var blob = dataURItoBlob(dataURL);
