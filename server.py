@@ -1,6 +1,6 @@
 from sanic import Sanic
 from sanic.response import json
-
+import tensorflow as tf
 import numpy as np
 
 app = Sanic("predict")
@@ -18,8 +18,6 @@ def try_request(request):
 
 @app.route("/predict")
 def predict(request):    
-    import tensorflow as tf
-
     imgSize = 160
     class_names = ['可口可樂', '啤酒', '寶礦力', '橙', '檸檬茶', '牛奶','牛油果', '益力多', '維他奶', '茄子', '蘋果', '西蘭花', '香蕉']
 
