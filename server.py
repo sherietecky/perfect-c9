@@ -1,5 +1,9 @@
 from sanic import Sanic
 from sanic.response import json
+import os
+
+print(os.name)
+
 # import tensorflow as tf
 import numpy as np
 
