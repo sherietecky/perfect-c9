@@ -49,7 +49,7 @@
   <!-- whole page container -->
   <div id="container">
     <!-- take pic section -->
-    <div class="takePic">
+    <section class="takePic">
       <h1>你想搵咩? 影來睇睇</h1>
       <video id="video" autoplay></video>
       <button id="snapBtn">Snap</button>
@@ -66,36 +66,50 @@
       <div class="canva-container">
         <canvas id="canvas" width="400" height="400"></canvas>
       </div>
-    </div>
+    </section>
 
     <!-- result section -->
     <h2>Results</h2>
-    <div class="resultDisplay">
+    <section class="resultDisplay">
       <img src="/predict_images/coke.jpg" alt="" />
       <div class="productName">[product name]</div>
       <div class="possibility">[possibility]</div>
       <div>search history:</div>
       <div class="history">[history]</div>
-    </div>
+    </section>
 
     <!-- search bar -->
     <h2>打字 Search</h2>
     <input class="searchField" type="text" />
     <button class="searchBtn">搵野</button>
-
+    <hr />
     <!-- price section -->
-    <div class="priceDisplay">
-      <h2>各市場價格</h2>
-      <div class="priceCard">
+   <h2>各市場價格</h2>
+    <section class="priceDisplay">
+      <div class="priceCard"">
+        <a class="productLink" href="https://www.tecky.io">
         <img class="productPic" src="../predict_images/coke.jpg" alt="" />
         <p class="supermarket">[supermarket]</p>
         <p class="quantity">[quantity]</p>
         <p class="price">[price]</p>
         <p class="bargain">[bargain]</p>
+        </a>
       </div>
-    </div>
-
+    </section>
     <hr />
+<!-- recipe section -->
+<h2>相關食譜</h2>
+<section class="recipeSection">
+<div class="recipeCard">
+  <a class="recipeLink" href="https://www.tecky.io">
+  <img class="recipePic" src="../predict_images/coke.jpg" />
+  <p class="recipeName">[recipe name]</p>
+  <p class="ingredients">[ingredients]</p>
+  </a>
+</div>
+</section>
+
+<hr />
     <!-- testing connection section -->
     <h4>Hello World</h4>
     <p id="test-name">test-name</p>
@@ -103,6 +117,8 @@
 
     <!-- end of whole page container   -->
   </div>
+
+  <!-- game  -->
   <div>
     <canvas class="live2d" id="live2d" width="300" height="400"></canvas>
   </div>
