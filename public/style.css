@@ -18,26 +18,26 @@ body {
 
 /* take pic section */
 
-.takePic {
+section.takePic {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.takePic > h1 {
+section.takePic > h1 {
   text-align: center;
   width: 100vw;
   margin-bottom: 0;
 }
 
-.takePic > video {
+section.takePic > video {
   height: auto;
   width: auto;
   padding: 0;
   margin: 0;
 }
 
-.takePic > button {
+section.takePic > button {
   width: 10vw;
   height: 5vh;
 }
@@ -48,29 +48,31 @@ body {
 
 /* result section */
 
-div.resultDisplay > img {
+section.resultDisplay > img {
   height: 100px;
   width: 100px;
   display: inline;
 }
 
-div.resultDisplay > h2 {
+section.resultDisplay > h2 {
   display: inline;
 }
 
-div.productName,
-div.quantity,
-div.price {
+section.productName,
+section.quantity,
+section.price {
   display: inline;
 }
 
-div.resultDisplay {
+section.resultDisplay {
   border-width: 1px;
   border-color: black;
   border-style: solid;
   display: flex;
   flex-direction: column;
 }
+
+/* loading */
 
 #loading {
   display: flex;
@@ -126,9 +128,25 @@ div.resultDisplay {
   display: inline;
 }
 
+.priceCard > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .priceCard > p {
   display: inline;
   line-height: normal;
+}
+
+.recipeCard > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.recipeCard .recipePic {
+  height: 100px;
+  width: 100px;
+  display: inline;
 }
 
 @keyframes spin {
