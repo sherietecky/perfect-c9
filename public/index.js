@@ -218,6 +218,11 @@ if (!getCookie("perfectc9")) {
 // manual search button
 
 searchBtn.addEventListener("click", async () => {
+  let parent = document.querySelector(".priceDisplay");
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
+
   sortButtonsContainer.style.display = "flex";
   let searchFieldText = document.querySelector(".searchField").value;
   console.log(searchFieldText);
@@ -244,6 +249,8 @@ searchBtn.addEventListener("click", async () => {
     while (parent.firstChild) {
       parent.removeChild(parent.firstChild);
     }
+    let searchFieldText = document.querySelector(".searchField").value;
+    console.log(searchFieldText);
 
     const result = await fetch(`/marketdata/${searchFieldText}/1`);
     let json = await result.json();
@@ -268,6 +275,9 @@ searchBtn.addEventListener("click", async () => {
     while (parent.firstChild) {
       parent.removeChild(parent.firstChild);
     }
+    let searchFieldText = document.querySelector(".searchField").value;
+    console.log(searchFieldText);
+
     const result = await fetch(`/marketdata/${searchFieldText}/2`);
     let json = await result.json();
     console.log(json);
@@ -291,6 +301,9 @@ searchBtn.addEventListener("click", async () => {
     while (parent.firstChild) {
       parent.removeChild(parent.firstChild);
     }
+
+    let searchFieldText = document.querySelector(".searchField").value;
+    console.log(searchFieldText);
     const result = await fetch(`/marketdata/${searchFieldText}/3`);
     let json = await result.json();
     console.log(json);
@@ -314,6 +327,9 @@ searchBtn.addEventListener("click", async () => {
     while (parent.firstChild) {
       parent.removeChild(parent.firstChild);
     }
+
+    let searchFieldText = document.querySelector(".searchField").value;
+    console.log(searchFieldText);
     const result = await fetch(`/marketdata/${searchFieldText}/4`);
     let json = await result.json();
     console.log(json);
@@ -337,6 +353,8 @@ searchBtn.addEventListener("click", async () => {
     while (parent.firstChild) {
       parent.removeChild(parent.firstChild);
     }
+    let searchFieldText = document.querySelector(".searchField").value;
+    console.log(searchFieldText);
     const result = await fetch(`/marketdata/${searchFieldText}`);
     let json = await result.json();
     console.log(json);
