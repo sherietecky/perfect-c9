@@ -7,6 +7,7 @@ let market2 = document.querySelector("button.market2");
 let market3 = document.querySelector("button.market3");
 let market4 = document.querySelector("button.market4");
 let showAll = document.querySelector("button.showAll");
+let recipeCard = document.querySelector(".recipeCard");
 
 // loader, sorting buttons and search results template removed
 loading.style.display = "none";
@@ -245,6 +246,20 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         document.querySelector(".priceDisplay").append(node);
       }
     });
+
+    const result_recipe = await fetch(`/recipes/${result["result"]}`);
+    let json_recipe = await result_recipe.json();
+    console.log(json_recipe);
+
+    for (let data of json_recipe) {
+      console.log(data);
+      let node = recipeCard.cloneNode(true);
+      node.querySelector(".recipeCard > a").href = data.url;
+      node.querySelector(".recipePic").src = data.image;
+      node.querySelector(".recipeName").textContent = data.recipe_name;
+      node.querySelector(".ingredients").textContent = data.ingredients;
+      document.querySelector(".recipeSection").append(node);
+    }
 
     loading.style.display = "none";
   });
@@ -505,4 +520,18 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
   });
+
+  const result_recipe = await fetch(`/recipes/${searchFieldText}`);
+  let json_recipe = await result_recipe.json();
+  console.log(json_recipe);
+
+  for (let data of json_recipe) {
+    console.log(data);
+    let node = recipeCard.cloneNode(true);
+    node.querySelector(".recipeCard > a").href = data.url;
+    node.querySelector(".recipePic").src = data.image;
+    node.querySelector(".recipeName").textContent = data.recipe_name;
+    node.querySelector(".ingredients").textContent = data.ingredients;
+    document.querySelector(".recipeSection").append(node);
+  }
 });
