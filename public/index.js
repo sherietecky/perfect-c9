@@ -13,6 +13,7 @@ let recipeCard = document.querySelector(".recipeCard");
 loading.style.display = "none";
 sortButtonsContainer.style.display = "none";
 priceCard.remove();
+recipeCard.remove();
 
 // use the camera
 let canvas = document.querySelector("#canvas");
@@ -522,6 +523,11 @@ searchBtn.addEventListener("click", async () => {
   });
 
   const result_recipe = await fetch(`/recipes/${searchFieldText}`);
+  // let parentRecipe = document.querySelector(".recipeSection");
+  // while (parentRecipe.firstChild) {
+  //   parentRecipe.removeChild(parent.firstChild);
+  // }
+
   let json_recipe = await result_recipe.json();
   console.log(json_recipe);
 

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="bg_ripple.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="tabs.css">
   <title>格價專員v1.1.0</title>
   <style>
     .live2d {
@@ -83,8 +84,20 @@
     <input class="searchField" type="text" />
     <button class="searchBtn">搵野</button>
     <hr />
-    <!-- price section -->
-   <h2>各市場價格</h2>
+
+
+<!-- tabs for price and recipes -->
+
+
+<div class="wrapper">
+  <div class="tabs">
+    <div class="tab">
+      <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+      <label for="tab-1" class="tab-label">價格</label>
+      <div class="tab-content">
+
+
+         <h2>各市場價格</h2>
 
       <div class="sortButtonsContainer">
         <button class="showAll">全部舖頭</button>
@@ -93,7 +106,7 @@
         <button class="market3">HKTVMall</button>
         <button class="market4">阿布泰</button>
       </div>    
-      <section class="priceDisplay"></section>
+      <section class="priceDisplay">
   <!-- <div class="parent"> -->
       <div class="priceCard"">
         <a class="productLink" href="https://www.tecky.io" >
@@ -107,9 +120,62 @@
       </div>
       <!-- </div> -->
     </section>
-    <hr />
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod optio veritatis eaque, neque assumenda quisquam magni doloremque, dolores sequi exercitationem officia laboriosam ad distinctio repellat qui. Aliquid cumque in consectetur!
+       </div>
+    
+    
+    
+    </div>
+    <div class="tab recipeTab">
+      <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+      <label for="tab-2" class="tab-label">食譜</label>
+      <div class="tab-content">
+        <h2>相關食譜</h2>
+<section class="recipeSection">
+<div class="recipeCard">
+  <a class="recipeLink" href="https://www.tecky.io">
+  <img class="recipePic" src="../predict_images/coke.jpg" />
+  <p class="recipeName">[recipe name]</p>
+  <p class="ingredients">[ingredients]</p>
+  </a>
+</div>
+</section>
+        
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, ab. Nisi totam velit nostrum voluptas tempora nesciunt labore consequatur, impedit explicabo sit cum. Velit, odio? Optio illo tempore quasi blanditiis? </div>
+    </div>
+    
+  </div>
+
+</div>
+
+
+
+
+    <!-- price section -->
+   <!-- <h2>各市場價格</h2>
+
+      <div class="sortButtonsContainer">
+        <button class="showAll">全部舖頭</button>
+        <button class="market1">AeonCity</button>
+        <button class="market2">百佳</button>
+        <button class="market3">HKTVMall</button>
+        <button class="market4">阿布泰</button>
+      </div>    
+      <section class="priceDisplay"></section> -->
+      <!-- <div class="priceCard"">
+        <a class="productLink" href="https://www.tecky.io" >
+        <img class="productPic" src="../predict_images/coke.jpg" alt="" />
+        <p class="supermarket"></p>
+        <p class="displayName"></p>
+        <p class="quantity"></p>
+        <p class="price"></p>
+        <p class="bargain"></p>
+        </a>
+      </div>
+    </section>
+    <hr /> -->
 <!-- recipe section -->
-<h2>相關食譜</h2>
+<!-- <h2>相關食譜</h2>
 <section class="recipeSection">
 <div class="recipeCard">
   <a class="recipeLink" href="https://www.tecky.io">
@@ -121,7 +187,7 @@
 </section>
 
 <hr />
-   
+    -->
 
     <!-- end of whole page container   -->
   </div>
@@ -140,6 +206,7 @@
 <!-- javascript -->
 
   <script src="index.js"></script>
+  <script src="tabs.js"></script>
   <script src="js/LAppDefine.js"></script>
   <script src="js/live2d.js"></script>
   <script>
