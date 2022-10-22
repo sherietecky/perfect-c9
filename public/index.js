@@ -521,12 +521,18 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
   });
+});
+
+searchBtn.addEventListener("click", async () => {
+  // let parentRecipe =
+  //   document.querySelector(".recipeSection").nextElementSibling;
+  // while (parentRecipe.firstChild) {
+  //   parentRecipe.removeChild(parentRecipe.firstChild);
+  // }
+  let searchFieldText = document.querySelector(".searchField").value;
+  console.log(searchFieldText);
 
   const result_recipe = await fetch(`/recipes/${searchFieldText}`);
-  // let parentRecipe = document.querySelector(".recipeSection");
-  // while (parentRecipe.firstChild) {
-  //   parentRecipe.removeChild(parent.firstChild);
-  // }
 
   let json_recipe = await result_recipe.json();
   console.log(json_recipe);
