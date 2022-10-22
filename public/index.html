@@ -16,7 +16,7 @@
     }
 
     canvas#live2d {
-      border: 2px solid black;
+      /* border: 2px solid black; */
     }
 
     @media only screen and (max-width: 768px) {
@@ -41,6 +41,9 @@
   <!-- loader -->
   <div id="loading">
     <div id="loader"></div>
+    <div id="loading_game">
+      <script src="https://cdn.htmlgames.com/embed.js?game=CarromPool&amp;bgcolor=white"></script>
+    </div>
   </div>
 
   <!-- whole page container -->
@@ -118,10 +121,6 @@
   <!-- game  -->
   <div>
     <canvas class="live2d" id="live2d" width="300" height="400"></canvas>
-  </div>
-
-  <div id="loading_game">
-    <script src="https://cdn.htmlgames.com/embed.js?game=CarromPool&amp;bgcolor=white"></script>
   </div>
 
   <script src="index.js"></script>

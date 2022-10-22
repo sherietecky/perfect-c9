@@ -42,10 +42,6 @@ section.takePic > button {
   height: 5vh;
 }
 
-#snapBtn {
-  z-index: 999;
-}
-
 /* result section */
 
 section.resultDisplay > img {
