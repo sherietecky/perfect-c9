@@ -1,13 +1,15 @@
 import { chromium } from "playwright";
-import { readJsonConfigFile } from "typescript";
 import fs from "fs";
 import jsonfile from "jsonfile";
 import path from "path";
+import { knex } from "../db";
+import { Knex } from "knex";
 
+// let productidNUM: number;
 export async function recipeScrapping(category: string) {
   const browser = await chromium.launch({
     headless: false,
-    channel: "msedge",
+    // channel: "msedge",
   });
 
   const context = await browser.newContext();
@@ -20,6 +22,16 @@ export async function recipeScrapping(category: string) {
     let recipes_object: {
       [T: string]: string[] | number;
     } = {};
+
+    //  let productidNUM: number;
+    // let productID = async function getProductID(knex: Knex) {
+    //   let result = await knex("product")
+    //     .select("id")
+    //     .where("product_name", category);
+    //   productidNUM = result[0].id;
+    //   // return result[0].id
+    // };
+    // productID(knex);
 
     //===================================================================================================
 
@@ -76,6 +88,8 @@ export async function recipeScrapping(category: string) {
     });
     recipes_object["urls"] = url_list;
 
+    //===================================================================================================
+
     recipes_object["names_length"] = nameList.length;
     recipes_object["ingredients_length"] = ingredientsList.length;
     recipes_object["images_length"] = image_list.length;
@@ -94,6 +108,7 @@ export async function recipeScrapping(category: string) {
       //   });
 
       recipesByItems.push({
+        // product_id: productidNUM,
         name: recipes_object["names"][i],
         ingredient: recipes_object["ingredients"][i],
         image: recipes_object["images"][i],
@@ -134,7 +149,7 @@ async function autoScrap(product_list: string[]) {
   }
 
   jsonfile.writeFileSync(
-    path.join(__dirname, "..", "recipes_json", "recipes.json"),
+    path.join(__dirname, "..", "recipes_json", "recipesWID.json"),
     result_object,
     { flag: "w" }
   );

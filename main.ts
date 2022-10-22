@@ -40,11 +40,14 @@ app.get("/", (req, res) => {
 });
 
 // app.get("/trydb", async (req, res) => {
-//   const response = await client.query(
-//     `select username, password from users where id=$1`,
-//     ["1"]
-//   );
-//   res.json(response.rows[0]);
+//   try {
+//     const resp = await knex.raw(`select * from users`);
+//     res.json(resp.rows);
+//     return;
+//   } catch (error) {
+//     console.log(error);
+//     res.json({ message: error });
+//   }
 // });
 
 // get the snap photo
@@ -80,7 +83,7 @@ app.get("/marketdata", async (req, res) => {
   const { product } = req.query;
   try {
     const response = await knex.raw(
-      `select * from price join product on price.product_id = product.id join market on price.market_id = market.id where product.product_name='${product}'`
+      `select * from price join product on price.product_id = product.id join market on price.market_id = market.id where product.product_name='${product}' order by price`
     );
     // order by price
     res.json(response.rows);
