@@ -13,6 +13,12 @@ interface PriceData {
   link: string;
 }
 
+function stripNumClean(price: string) {
+  let newPrice = price.replace(/[^\d.-]/g, "");
+  let newPriceNum = +newPrice;
+  return newPriceNum;
+}
+
 export async function seed(knex: Knex): Promise<void> {
   const trx = await knex.transaction();
   try {
@@ -35,7 +41,7 @@ export async function seed(knex: Knex): Promise<void> {
           display_pic: obj.image,
           product_display_name: obj.product_display_name,
           quantity: obj.quantity,
-          price: obj.price,
+          price: stripNumClean(obj.price),
           bargain: obj.bargain,
           product_link: obj.link,
         });
@@ -57,7 +63,7 @@ export async function seed(knex: Knex): Promise<void> {
           display_pic: obj.image,
           product_display_name: obj.product_display_name,
           quantity: obj.quantity,
-          price: obj.price,
+          price: stripNumClean(obj.price),
           bargain: obj.bargain,
           product_link: obj.link,
         });
@@ -79,7 +85,7 @@ export async function seed(knex: Knex): Promise<void> {
           display_pic: obj.image,
           product_display_name: obj.product_display_name,
           quantity: obj.quantity,
-          price: obj.price,
+          price: stripNumClean(obj.price),
           bargain: obj.bargain,
           product_link: obj.link,
         });
@@ -101,7 +107,7 @@ export async function seed(knex: Knex): Promise<void> {
           display_pic: obj.image,
           product_display_name: obj.product_display_name,
           quantity: obj.quantity,
-          price: obj.price,
+          price: stripNumClean(obj.price),
           bargain: obj.bargain,
           product_link: obj.link,
         });

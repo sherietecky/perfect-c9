@@ -100,10 +100,13 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
       console.log(data);
 
       let node = priceCard.cloneNode(true);
+      node.querySelector(".priceCard > a").href = data.product_link;
       node.querySelector(".productPic").src = data.display_pic;
       node.querySelector(".supermarket").textContent = data.market_name;
-      // node.querySelector(".quantity").textContentsrc = data.unit;
-      node.querySelector(".price").textContent = data.price;
+      node.querySelector(".displayName").textContent =
+        data.product_display_name;
+      node.querySelector(".quantity").textContentsrc = data.quantity;
+      node.querySelector(".price").textContent = "$" + data.price;
       node.querySelector(".bargain").textContent = data.bargain;
       document.querySelector(".priceDisplay").append(node);
     }
@@ -218,35 +221,15 @@ searchBtn.addEventListener("click", async () => {
 
   for (let data of json) {
     console.log(data);
-
     let node = priceCard.cloneNode(true);
+    node.querySelector(".priceCard > a").href = data.product_link;
     node.querySelector(".productPic").src = data.display_pic;
     node.querySelector(".supermarket").textContent = data.market_name;
-    // node.querySelector(".quantity").textContentsrc = data.unit;
-    node.querySelector(".price").textContent = data.price;
+    node.querySelector(".displayName").textContent = data.product_display_name;
+    node.querySelector(".quantity").textContentsrc = data.quantity;
+    node.querySelector(".price").textContent = "$" + data.price;
     node.querySelector(".bargain").textContent = data.bargain;
     document.querySelector(".priceDisplay").append(node);
   }
   priceCard.remove();
 });
-
-// load price data after AI result
-
-// json.then(async function (result) {
-//   // async function getPriceData(){
-//   const res = await fetch(`/marketdata?product=${predictResult}`);
-//   let json = await res.json();
-
-//   for (let data of json) {
-//     console.log(data);
-
-//     let node = priceCard.cloneNode(true);
-//     node.querySelector(".productPic").src = data.display_pic;
-//     node.querySelector(".supermarket").textContent = data.market_name;
-//     // node.querySelector(".quantity").textContentsrc = data.unit;
-//     node.querySelector(".price").textContent = data.price;
-//     node.querySelector(".bargain").textContent = data.bargain;
-//     document.querySelector(".priceDisplay").append(node);
-//   }
-//   priceCard.remove();
-// });
