@@ -7,7 +7,7 @@ interface PriceData {
   search_item_id: number;
   product_display_name: string;
   quantity: string;
-  price: string;
+  price: number;
   bargain: string;
   image: string;
   link: string;

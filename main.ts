@@ -79,13 +79,12 @@ app.post("/snap", (req, res) => {
   });
 });
 
-app.get("/marketdata", async (req, res) => {
-  const { product } = req.query;
+app.get("/marketdata/:product", async (req, res) => {
+  const { product } = req.params;
   try {
     const response = await knex.raw(
       `select * from price join product on price.product_id = product.id join market on price.market_id = market.id where product.product_name='${product}' order by price`
     );
-    // order by price
     res.json(response.rows);
     // console.log(response.rows);
     return;
@@ -94,6 +93,32 @@ app.get("/marketdata", async (req, res) => {
     res.json({ message: error });
   }
 });
+
+app.get("/marketdata/:product/:marketID", async (req, res) => {
+  const { product } = req.params;
+  let marketID = parseInt(req.params.marketID);
+  console.log(req.params);
+  try {
+    const response = await knex.raw(
+      `select * from price join product on price.product_id = product.id join market on price.market_id = market.id where product.product_name='${product}' AND price.market_id=${marketID} order by price`
+    );
+    res.json(response.rows);
+    return;
+  } catch (error) {
+    console.log(error);
+    res.json({ message: error });
+  }
+});
+
+app.get("/recipes/:product", async (req,res)=> {
+const { product } = req.params;
+const response = await knex.raw(
+  `select * from recipe join product on recipe.product_id = product.id where product.product_name = '${product}'`
+);
+res.json(response.rows);
+return;
+
+})
 
 app.listen(3000, () => {
   console.log("listening on port 3000");

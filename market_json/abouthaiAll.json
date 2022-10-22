@@ -1,0 +1,688 @@
+{
+  "可口可樂": [],
+  "啤酒": [
+    {
+      "market_id": 4,
+      "search_item_id": 2,
+      "product_display_name": "香港城釀 蜜月 - 啤酒花龍眼蜜蜂蜜酒 375ml\n",
+      "quantity": " ",
+      "price": "48.0",
+      "image": "https://www.abouthai.com/P1/stock_cover/CITIBREW-0727785115261/CITIBREW-0727785115261a.jpg",
+      "link": "https://www.abouthai.com/product/CITIBREW-0727785115261"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 2,
+      "product_display_name": "Cheers泰星精選白啤酒4巨罐優惠裝",
+      "quantity": " ",
+      "price": "39.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/CHEERS-8850571234531/CHEERS-8850571234531a.jpg",
+      "link": "https://www.abouthai.com/product/CHEERS-8850571234531"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 2,
+      "product_display_name": "勝獅 啤酒樽裝 330ml x 4",
+      "quantity": " ",
+      "price": "35.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/SINGHA-8850999171883/SINGHA-8850999171883a.jpg",
+      "link": "https://www.abouthai.com/product/SINGHA-8850999171883"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 2,
+      "product_display_name": "勝獅 啤酒罐裝 330ml x 6",
+      "quantity": " ",
+      "price": "45.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/SINGHA-8850999113036/SINGHA-8850999113036_a.jpg",
+      "link": "https://www.abouthai.com/product/SINGHA-8850999113036"
+    }
+  ],
+  "寶礦力": [],
+  "橙": [
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "C-VITT 橙味維他命C飲品 140ml ",
+      "quantity": " ",
+      "price": "6.5 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/CVITT-8851123237031/CVITT-8851123237031_a.jpg",
+      "link": "https://www.abouthai.com/product/CVITT-8851123237031"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "Peoli 維他命C軟糖 - 橙味 15g",
+      "quantity": " ",
+      "price": "5.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/PEOLI-8853141814201/PEOLI-8853141814201-A.jpg",
+      "link": "https://www.abouthai.com/product/PEOLI-8853141814201"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "美粒果 橙汁飲品 180ml",
+      "quantity": " ",
+      "price": "6.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/MINUTEMAID-8851959192924/MINUTEMAID-8851959192924.png",
+      "link": "https://www.abouthai.com/product/MINUTEMAID-8851959192924"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "C Vitt  維他命啜啜啫喱 - 橙味 150g",
+      "quantity": " ",
+      "price": "9.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/CVITT-8850274025092/CVITT-8850274025092_a.jpg",
+      "link": "https://www.abouthai.com/product/CVITT-8850274025092"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "芬達汽水 - 香橙味 325ml\n",
+      "quantity": " ",
+      "price": "6.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/FANTA-8851959132166/FANTA-8851959132166-FRONT-1200.jpg",
+      "link": "https://www.abouthai.com/product/FANTA-8851959132166"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "Fresh Doze 維他命C 200% 補給沖劑 (橙味)",
+      "quantity": " ",
+      "price": "6.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/FRESH DOZE-8859524500105/FRESH-DOZE-8859524500105a.jpg",
+      "link": "https://www.abouthai.com/product/FRESH DOZE-8859524500105"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "瑞士糖 - 蘋果, 橙, 黑加侖子, 紅桑子味 45g\n",
+      "quantity": " ",
+      "price": "7.5 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/SUGUS-8851929010920/SUGUS-8851929010920.jpg",
+      "link": "https://www.abouthai.com/product/SUGUS-8851929010920"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "瑞士糖 - 菠蘿, 橙, 黑加侖子, 紅桑子味 45g\n",
+      "quantity": " ",
+      "price": "7.5 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/SUGUS-8851929008347/SUGUS-8851929008347.jpg",
+      "link": "https://www.abouthai.com/product/SUGUS-8851929008347"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "Boots 柔嫩保濕護手霜 - 橙花 & 茉莉 100ml",
+      "quantity": " ",
+      "price": "39.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/BOOTS-5000167189735/BOOTS-5000167189735a.jpg",
+      "link": "https://www.abouthai.com/product/BOOTS-5000167189735"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "Champion 香味垃圾袋 (24x28吋) - 香橙味 15個裝",
+      "quantity": " ",
+      "price": "15.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/CHAMPION-8851079001861/CHAMPION-8851079001861.jpg",
+      "link": "https://www.abouthai.com/product/CHAMPION-8851079001861"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "Champion 香味垃圾袋 (18x20吋) - 香橙味 30個裝",
+      "quantity": " ",
+      "price": "15.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/CHAMPION-8851079001854/CHAMPION-8851079001854.jpg",
+      "link": "https://www.abouthai.com/product/CHAMPION-8851079001854"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "VITTO-C 維他命C飲品 - 橙味 (含2%果汁)\n",
+      "quantity": " ",
+      "price": "6.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/VITTO-8857126457223/VITTO-8857126457223A.jpg",
+      "link": "https://www.abouthai.com/product/VITTO-8857126457223"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "Lily Fresh 100% 熱情果香橙胡蘿蔔汁 250ml\n",
+      "quantity": " ",
+      "price": "12.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/LILY FRESH-8859428900087/LILY FRESH-8859428900087.jpg",
+      "link": "https://www.abouthai.com/product/LILY FRESH-8859428900087"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "阿布泰 3D 動物杯 - 橙色虎紋貓\n",
+      "quantity": " ",
+      "price": "78.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/ABOUTHAI-8859589903491/ABOUTHAI-8859589903491.jpg",
+      "link": "https://www.abouthai.com/product/ABOUTHAI-8859589903491"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "Best Foods 唧唧香橙味果醬 90g\n",
+      "quantity": " ",
+      "price": "14.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/BEST FOODS-8851932432375/BEST-FOODS-8851932432375a.jpg",
+      "link": "https://www.abouthai.com/product/BEST FOODS-8851932432375"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "JAMJEL 泰國手製紥染上下身套裝 - 亮橙 (Free size)\n",
+      "quantity": " ",
+      "price": "189.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/JAMJEL-8859589901466/JAMJEL-8859589901466_2.jpg",
+      "link": "https://www.abouthai.com/product/JAMJEL-8859589901466"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "鸚鵡牌 亮白保濕護膚沐浴乳 - 甜美橙香 450ml\n",
+      "quantity": " ",
+      "price": "37.5 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/PARROT-8851929019275/PARROT-8851929019275a.jpg",
+      "link": "https://www.abouthai.com/product/PARROT-8851929019275"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "Vfoods 威化餅 - 香橙味100g",
+      "quantity": " ",
+      "price": "12.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/VFOODS-8858223008523/VFOODS-8858223008523a.jpg",
+      "link": "https://www.abouthai.com/product/VFOODS-8858223008523"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "果汁先生橙汁飲品 360毫升",
+      "quantity": " ",
+      "price": "8.5 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/MR.JUICY-4891133566176/MR.JUICY-4891133566176_a.jpg",
+      "link": "https://www.abouthai.com/product/MR.JUICY-4891133566176"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 4,
+      "product_display_name": "Sunsilk 修護護髮素 - 橙色 425ml",
+      "quantity": " ",
+      "price": "58.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/SUNSILK-8851932354288/SUNSILK-8851932354288_.jpg",
+      "link": "https://www.abouthai.com/product/SUNSILK-8851932354288"
+    }
+  ],
+  "檸檬茶": [
+    {
+      "market_id": 4,
+      "search_item_id": 5,
+      "product_display_name": "手標牌 即沖3合1檸檬茶 20g x 5包",
+      "quantity": " ",
+      "price": "12.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/CHATRAMUE-8850370420975/Thai_Tea_ChaTraMue_Brand_Instant_3in1_Lemon_Tea_8850370420975_a.jpg",
+      "link": "https://www.abouthai.com/product/CHATRAMUE-8850370420975"
+    }
+  ],
+  "牛奶": [
+    {
+      "market_id": 4,
+      "search_item_id": 6,
+      "product_display_name": "Richly Brownie 牛奶吐司餅乾 - 咸蛋味  50g\n",
+      "quantity": " ",
+      "price": "18.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/RICHLY BROWNIE-8857123896278/RICHLY-BROWNIE-8857123896278.jpg",
+      "link": "https://www.abouthai.com/product/RICHLY BROWNIE-8857123896278"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 6,
+      "product_display_name": "Richly Brownie 牛奶吐司餅乾 - 抹茶味 50g\n",
+      "quantity": " ",
+      "price": "18.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/RICHLY BROWNIE-8857123896261/RICHLY-BROWNIE-8857123896261.jpg",
+      "link": "https://www.abouthai.com/product/RICHLY BROWNIE-8857123896261"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 6,
+      "product_display_name": "Maskology 涼浸浸系列-牛奶冰 (160mm) 15pcs",
+      "quantity": " ",
+      "price": "58.0",
+      "image": "https://www.abouthai.com/P1/stock_cover/MASKOLOGY-4897118602372/MASKOLOGY-4897118602372_a.jpg",
+      "link": "https://www.abouthai.com/product/MASKOLOGY-4897118602372"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 6,
+      "product_display_name": "Maskology 涼浸浸系列-牛奶冰 (175mm) 15pcs",
+      "quantity": " ",
+      "price": "58.0",
+      "image": "https://www.abouthai.com/P1/stock_cover/MASKOLOGY-4897118602426/MASKOLOGY-4897118602426.jpg",
+      "link": "https://www.abouthai.com/product/MASKOLOGY-4897118602426"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 6,
+      "product_display_name": "Campus  泡芙 - 牛奶味 40g\n",
+      "quantity": " ",
+      "price": "8.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/CAMPUS-8851004211204/CAMPUS-8851004211204_a.jpg",
+      "link": "https://www.abouthai.com/product/CAMPUS-8851004211204"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 6,
+      "product_display_name": "Nextfood無添加糖健康抹茶牛奶 7包裝",
+      "quantity": " ",
+      "price": "99.0",
+      "image": "https://www.abouthai.com/P1/stock_cover/NEXTFOOD-4710601070680/NEXTFOOD-4710601070680-a.jpg",
+      "link": "https://www.abouthai.com/product/NEXTFOOD-4710601070680"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 6,
+      "product_display_name": "iMee 牛奶海鮮味杯麵 70g",
+      "quantity": " ",
+      "price": "6.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/IMEE-8858829604198/IMEE-8858829604198a.jpg",
+      "link": "https://www.abouthai.com/product/IMEE-8858829604198"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 6,
+      "product_display_name": "Vfoods 威化餅 - 牛奶味100g",
+      "quantity": " ",
+      "price": "12.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/VFOODS-8858223008516/VFOODS-8858223008516-FRONT1-ORIGINAL.jpg",
+      "link": "https://www.abouthai.com/product/VFOODS-8858223008516"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 6,
+      "product_display_name": "Roller Corn 特濃玉米條 - 牛奶味 65g",
+      "quantity": " ",
+      "price": "8.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/ROLLER CORN-8852681011217/ROLLER CORN-8852681011217_a.jpg",
+      "link": "https://www.abouthai.com/product/ROLLER CORN-8852681011217"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 6,
+      "product_display_name": "Maskology 涼浸浸系列-牛奶冰 (142mm) 15pcs\n",
+      "quantity": " ",
+      "price": "48.0",
+      "image": "https://www.abouthai.com/P1/stock_cover/MASKOLOGY-4897118602327/MASKOLOGY-4897118602327_a.jpg",
+      "link": "https://www.abouthai.com/product/MASKOLOGY-4897118602327"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 6,
+      "product_display_name": "EURO 蛋糕 - 北海道牛奶味 17g x 12\n",
+      "quantity": " ",
+      "price": "21.5 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/EURO CAKE-8850425011776/EURO-CAKE-8850425011776-FRONT-ORIGINAL.jpg",
+      "link": "https://www.abouthai.com/product/EURO CAKE-8850425011776"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 6,
+      "product_display_name": "*Atreus牛奶保濕洗面奶 100毫升",
+      "quantity": " ",
+      "price": "26.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/ATREUS-8859441000177/ATREUS-8859441000177.jpg",
+      "link": "https://www.abouthai.com/product/ATREUS-8859441000177"
+    }
+  ],
+  "牛油果": [
+    {
+      "market_id": 4,
+      "search_item_id": 7,
+      "product_display_name": "137 Degrees 牛油果杏仁奶 1L",
+      "quantity": " ",
+      "price": "44.5 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/137DEGREES-8859636810246/137DEGREES-8859636810246a.jpg",
+      "link": "https://www.abouthai.com/product/137DEGREES-8859636810246"
+    }
+  ],
+  "益力多": [],
+  "維他奶": [],
+  "茄子": [],
+  "蘋果": [
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "Akaliko 大豆香薰蠟燭 (大) - 蘋果馬天尼 395g\n",
+      "quantity": " ",
+      "price": "218.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/AKALIKO-8859100608256/AKALIKO-8859100608256.jpg",
+      "link": "https://www.abouthai.com/product/AKALIKO-8859100608256"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "Botanique - 綠 - 冬日蘋果 30ml\n",
+      "quantity": " ",
+      "price": "148.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/BOTANIQUE-8859630313170/BOTANIQUE-8859630313170.jpg",
+      "link": "https://www.abouthai.com/product/BOTANIQUE-8859630313170"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "Malee 100% 蘋果汁 1L",
+      "quantity": " ",
+      "price": "24.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/MALEE-8853333000023/MALEE-8853333000023.jpg",
+      "link": "https://www.abouthai.com/product/MALEE-8853333000023"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "Malee 100% 蘋果汁 (200ml) x 3 包",
+      "quantity": " ",
+      "price": "19.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/MALEE-8853333010107/MALEE-8853333010107.jpg",
+      "link": "https://www.abouthai.com/product/MALEE-8853333010107"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "Farm Rak 嬰幼兒蔬菜脆米餅 - 紫薯 & 蘋果汁 20g",
+      "quantity": " ",
+      "price": "16.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/FARMRAK-8859185700463/FARMRAK-8859185700463_a.jpg",
+      "link": "https://www.abouthai.com/product/FARMRAK-8859185700463"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "Wel-B 嬰幼兒益生菌乳酪粒 - 蘋果味 42g (7g x 6包)",
+      "quantity": " ",
+      "price": "52.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/WELB-8858859002711/WELB-8858859002711.jpg",
+      "link": "https://www.abouthai.com/product/WELB-8858859002711"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "瑞士糖 - 蘋果, 橙, 黑加侖子, 紅桑子味 45g\n",
+      "quantity": " ",
+      "price": "7.5 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/SUGUS-8851929010920/SUGUS-8851929010920.jpg",
+      "link": "https://www.abouthai.com/product/SUGUS-8851929010920"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "Champion 香味垃圾袋 (24x28吋) - 蘋果味 15個裝",
+      "quantity": " ",
+      "price": "15.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/CHAMPION-8851079001915/CHAMPION-8851079001915.jpg",
+      "link": "https://www.abouthai.com/product/CHAMPION-8851079001915"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "Champion 香味垃圾袋 (18x20吋) - 蘋果味 30個裝",
+      "quantity": " ",
+      "price": "15.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/CHAMPION-8851079001892/CHAMPION-8851079001915.jpg",
+      "link": "https://www.abouthai.com/product/CHAMPION-8851079001892"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "VITTO-C 維他命C飲品 - 蘋果味 (含2%果汁)\n",
+      "quantity": " ",
+      "price": "6.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/VITTO-8857126457285/VITTO-8857126457285A.jpg",
+      "link": "https://www.abouthai.com/product/VITTO-8857126457285"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "Sage 有氣茶－蘋果桂花烏龍 果汁入 330ml\n",
+      "quantity": " ",
+      "price": "28.0",
+      "image": "https://www.abouthai.com/P1/stock_cover/SAGE-4897107640354/SAGE-4897107640354-a.jpg",
+      "link": "https://www.abouthai.com/product/SAGE-4897107640354"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "固力果 Pretz 百力滋 - 蘋果味 34g",
+      "quantity": " ",
+      "price": "8.9",
+      "image": "https://www.abouthai.com/P1/stock_cover/GLICO-8851019030999/GLICO-8851019030999_a.jpg",
+      "link": "https://www.abouthai.com/product/GLICO-8851019030999"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "果汁先生富士蘋果汁飲品 360毫升",
+      "quantity": " ",
+      "price": "8.5 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/MR.JUICY-4891133566831/MR.JUICY-4891133566831.jpg",
+      "link": "https://www.abouthai.com/product/MR.JUICY-4891133566831"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "GREENDAY 蘋果脆脆 12克",
+      "quantity": " ",
+      "price": "18.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/GREENDAY-8858358008047/GREENDAY-8858358008047.jpg",
+      "link": "https://www.abouthai.com/product/GREENDAY-8858358008047"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "Botanique - LA CHALOTTE 噴霧- 灰 - 冬日蘋果 100ml\n",
+      "quantity": " ",
+      "price": "288.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/BOTANIQUE-8859630321434/BOTANIQUE-8859630321434.jpg",
+      "link": "https://www.abouthai.com/product/BOTANIQUE-8859630321434"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "Botanique - 少女 - 白 -冬日蘋果 140ml\n",
+      "quantity": " ",
+      "price": "288.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/BOTANIQUE-8859630312975/BOTANIQUE-8859630312975.jpg",
+      "link": "https://www.abouthai.com/product/BOTANIQUE-8859630312975"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "美粒果 - 蘋果梳打 - 500ml\n",
+      "quantity": " ",
+      "price": "9.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/COCACOLA-4890008266241/COCACOLA-4890008266241.jpg",
+      "link": "https://www.abouthai.com/product/COCACOLA-4890008266241"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "Nextfood 即食燕麥片 -焦糖餅乾蘋果藍莓 350g",
+      "quantity": " ",
+      "price": "79.0",
+      "image": "https://www.abouthai.com/P1/stock_cover/NEXTFOOD-4899959019975BI/NEXTFOOD-4899959019975BI-a.jpg",
+      "link": "https://www.abouthai.com/product/NEXTFOOD-4899959019975BI"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "Nextfood 即食燕麥片 - 荔枝玫瑰蘋果 350g",
+      "quantity": " ",
+      "price": "79.0",
+      "image": "https://www.abouthai.com/P1/stock_cover/NEXTFOOD-4899959019944BI/NEXTFOOD-4899959019944BI-a.jpg",
+      "link": "https://www.abouthai.com/product/NEXTFOOD-4899959019944BI"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 11,
+      "product_display_name": "Sappe 啫喱飲品 (青蘋果味) 增加纖維 150g克",
+      "quantity": " ",
+      "price": "7.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/SAPPE-8850389302088/SAPPE-8850389302088a.jpg",
+      "link": "https://www.abouthai.com/product/SAPPE-8850389302088"
+    }
+  ],
+  "西蘭花": [],
+  "香蕉": [
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "HOM 香蕉脆片_咸蛋味",
+      "quantity": " ",
+      "price": "19.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/HOM-8857200140553/HOM-8857200140553.jpg",
+      "link": "https://www.abouthai.com/product/HOM-8857200140553"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "HOM 香蕉脆片_洋蔥忌廉味",
+      "quantity": " ",
+      "price": "19.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/HOM-8857200140546/HOM-8857200140546.jpg",
+      "link": "https://www.abouthai.com/product/HOM-8857200140546"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "HOM 香蕉脆片_日本海苔味",
+      "quantity": " ",
+      "price": "19.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/HOM-8857200140539/HOM-8857200140539.jpg",
+      "link": "https://www.abouthai.com/product/HOM-8857200140539"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "HOM 香蕉脆片_粟米芝士味",
+      "quantity": " ",
+      "price": "19.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/HOM-8857200140522/HOM-8857200140522.jpg",
+      "link": "https://www.abouthai.com/product/HOM-8857200140522"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "HOM 香蕉脆片_火熱BBQ味",
+      "quantity": " ",
+      "price": "19.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/HOM-8857200140515/HOM-8857200140515.jpg",
+      "link": "https://www.abouthai.com/product/HOM-8857200140515"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "Jiraporn 泰國香蕉片 80g",
+      "quantity": " ",
+      "price": "15.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/JIRAPORN-8857112520986/JIRAPORN-8857112520986_a.jpg",
+      "link": "https://www.abouthai.com/product/JIRAPORN-8857112520986"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "Jiraporn 100% 天然生曬香蕉乾 100g",
+      "quantity": " ",
+      "price": "17.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/JIRAPORN-8857112520658/JIRAPORN-8857112520658_a.jpg",
+      "link": "https://www.abouthai.com/product/JIRAPORN-8857112520658"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "Try Me 香蕉脆片 55g\n",
+      "quantity": " ",
+      "price": "19.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/TRY ME-8857123255150/TRY-ME-8857123255150-A.jpg",
+      "link": "https://www.abouthai.com/product/TRY ME-8857123255150"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "Bangkok Banana 香蕉片 - 燒烤味 70g",
+      "quantity": " ",
+      "price": "15.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/BANGKOK BANANA-8859164270024/BANGKOK BANANA-8859164270024_a.jpg",
+      "link": "https://www.abouthai.com/product/BANGKOK BANANA-8859164270024"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "Banana Joe 東京吉士味香蕉脆片 50克",
+      "quantity": " ",
+      "price": "12.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/BANANA JOE-8859018411214/BANANA JOE-8859018411214a.jpg",
+      "link": "https://www.abouthai.com/product/BANANA JOE-8859018411214"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "皇冠牌 香蕉滋潤修復軟膏 20g",
+      "quantity": " ",
+      "price": "20.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/SUPREME-8857123031068/Supreme_Banana_Balm_for_RoughDry_Skin_20g_8857123031068_a.jpg",
+      "link": "https://www.abouthai.com/product/SUPREME-8857123031068"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "固力果Pocky 百力滋 - 香蕉味 25g",
+      "quantity": " ",
+      "price": "5.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/GLICO-8851019010274/GLICO-8851019010274_b.jpg",
+      "link": "https://www.abouthai.com/product/GLICO-8851019010274"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "Wel-B 天然凍乾水果脆片 - 士多啤梨+香蕉 22g\n",
+      "quantity": " ",
+      "price": "19.0 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/WELB-8858859000694/WELB-8858859000694.jpg",
+      "link": "https://www.abouthai.com/product/WELB-8858859000694"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "Banana Joe 燒烤味香蕉脆片 50g",
+      "quantity": " ",
+      "price": "12.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/BANANA JOE-8859018411719/Banana_Joe_Hickory_BBQ_Flav_Banana_Chips_8859018411719_a.jpg",
+      "link": "https://www.abouthai.com/product/BANANA JOE-8859018411719"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "Banana Joe 泰式甜辣味香蕉脆片 50克",
+      "quantity": " ",
+      "price": "12.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/BANANA JOE-8859018411511/Banana_Joe_Thai_Sweet_Chilli_Flav_Banana_Chips_8859018411511_a.jpg",
+      "link": "https://www.abouthai.com/product/BANANA JOE-8859018411511"
+    },
+    {
+      "market_id": 4,
+      "search_item_id": 13,
+      "product_display_name": "Banana Joe 海鹽味香蕉脆片 50克",
+      "quantity": " ",
+      "price": "12.9 ",
+      "image": "https://www.abouthai.com/P1/stock_cover/BANANA JOE-8859018411115/BANANA-JOE-8859018411115a.jpg",
+      "link": "https://www.abouthai.com/product/BANANA JOE-8859018411115"
+    }
+  ]
+}
