@@ -127,10 +127,11 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
       while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
       }
-      let searchFieldText = document.querySelector(".searchField").value;
-      console.log(searchFieldText);
 
-      const result = await fetch(`/marketdata/${searchFieldText}/1`);
+      // let searchItem = document.querySelector(".productName").textContent
+      // console.log(searchItem);
+
+      const result = await fetch(`/marketdata/${result["result"]}/1`);
       let json = await result.json();
       console.log(json);
       for (let data of json) {
@@ -153,10 +154,8 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
       while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
       }
-      let searchFieldText = document.querySelector(".searchField").value;
-      console.log(searchFieldText);
 
-      const result = await fetch(`/marketdata/${searchFieldText}/2`);
+      const result = await fetch(`/marketdata/${result["result"]}/2`);
       let json = await result.json();
       console.log(json);
       for (let data of json) {
@@ -180,9 +179,7 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         parent.removeChild(parent.firstChild);
       }
 
-      let searchFieldText = document.querySelector(".searchField").value;
-      console.log(searchFieldText);
-      const result = await fetch(`/marketdata/${searchFieldText}/3`);
+      const result = await fetch(`/marketdata/${result["result"]}/3`);
       let json = await result.json();
       console.log(json);
       for (let data of json) {
@@ -206,9 +203,7 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         parent.removeChild(parent.firstChild);
       }
 
-      let searchFieldText = document.querySelector(".searchField").value;
-      console.log(searchFieldText);
-      const result = await fetch(`/marketdata/${searchFieldText}/4`);
+      const result = await fetch(`/marketdata/${result["result"]}/4`);
       let json = await result.json();
       console.log(json);
       for (let data of json) {
@@ -231,9 +226,8 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
       while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
       }
-      let searchFieldText = document.querySelector(".searchField").value;
-      console.log(searchFieldText);
-      const result = await fetch(`/marketdata/${searchFieldText}`);
+
+      const result = await fetch(`/marketdata/${result["result"]}`);
       let json = await result.json();
       console.log(json);
       for (let data of json) {
