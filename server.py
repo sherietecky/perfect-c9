@@ -22,6 +22,8 @@ def try_request(request):
 def predict(request):    
     # if os.name != 'posix':
     import tensorflow as tf
+
+    print("hello, you can connect to python server")
     
     imgSize = 160
     class_names = ['可口可樂', '啤酒', '寶礦力', '橙', '檸檬茶', '牛奶','牛油果', '益力多', '維他奶', '茄子', '蘋果', '西蘭花', '香蕉']

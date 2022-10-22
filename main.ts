@@ -58,6 +58,8 @@ const form = formidable({
 });
 
 app.post("/snap", (req, res) => {
+  console.log("you can connect to main.ts");
+
   form.parse(req, async (err, fields, files) => {
     let image = files.predict_image;
     let imageFile = Array.isArray(image) ? image[0] : image;
