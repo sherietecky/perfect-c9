@@ -1,3 +1,4 @@
+let searchField = document.querySelector("input.searchField");
 let searchBtn = document.querySelector(".searchBtn");
 let priceCard = document.querySelector(".priceCard");
 let sortButtonsContainer = document.querySelector(".sortButtonsContainer");
@@ -341,6 +342,13 @@ if (!getCookie("perfectc9")) {
 // }
 
 // manual search button
+
+searchField.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    searchBtn.click();
+  }
+});
 
 searchBtn.addEventListener("click", async () => {
   let parent = document.querySelector(".priceDisplay");

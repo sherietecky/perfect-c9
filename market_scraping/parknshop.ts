@@ -62,7 +62,7 @@ async function scrapPakgai(keyword: string) {
 
     searchBargain.forEach((element: any) => {
       if (!element.childNodes[0].classList) {
-        bargain.push("/");
+        bargain.push("");
         // } else if (element.innerText === "最新推廣") {
         //   bargain.push("/");
       } else if (element.childNodes[0].classList.contains("ellipsis")) {
@@ -71,7 +71,7 @@ async function scrapPakgai(keyword: string) {
         element.childNodes[0].classList.contains("ellipsis") &&
         element.innerText === "最新推廣"
       ) {
-        bargain.push("/");
+        bargain.push("");
       }
     });
 

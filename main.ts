@@ -108,6 +108,16 @@ app.get("/marketdata/:product/:marketID", async (req, res) => {
   }
 });
 
+app.get("/recipes/:product", async (req,res)=> {
+const { product } = req.params;
+const response = await knex.raw(
+  `select * from recipe join product on recipe.product_id = product.id where product.product_name = '${product}'`
+);
+res.json(response.rows);
+return;
+
+})
+
 app.listen(3000, () => {
   console.log("listening on port 3000");
 });
