@@ -28,8 +28,8 @@ export async function seed(knex: Knex): Promise<void> {
         product_id: obj.product_id,
         recipe_name: obj.recipe_name,
         ingredients: obj.ingredients,
-        image: obj.image,
-        url: obj.link,
+        image: obj.image_URL,
+        url: obj.recipe_URL,
       });
     }
   }
