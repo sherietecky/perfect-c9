@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  border: 2px solid black;
+}
+
+#gameContainer {
+  outline: 2px solid black;
+  height: 500px;
+  width: 700px;
+  position: relative;
+}
+
+.display#dis_1 {
+  outline: 2px solid blue;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display#dis_2 {
+  outline: 2px solid blue;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#question_container {
+  border: 2px solid red;
+  height: 200px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#question_container #question {
+  border: 2px solid brown;
+  font-size: 40px;
+}
+
+#question_container p:nth-child(2) {
+  font-size: 50px;
+}
+
+#answers {
+  border: 2px solid red;
+  height: 100px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#answers .answer {
+  border: 2px solid purple;
+  margin: 0px 30px;
+  height: 80px;
+  width: 170px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#count_cointainer .counts {
+  display: flex;
+  font-size: 20px;
+}
+#count_cointainer .counts p {
+  margin: 20px 40px 0px 40px;
+}

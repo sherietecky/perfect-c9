@@ -17,7 +17,7 @@
     }
 
     /* canvas#live2d { */
-      /* border: 2px solid black; */
+    /* border: 2px solid black; */
     /* } */
 
     @media only screen and (max-width: 768px) {
@@ -43,7 +43,8 @@
   <div id="loading">
     <div id="loader"></div>
     <div id="loading_game">
-      <script src="https://cdn.htmlgames.com/embed.js?game=CarromPool&amp;bgcolor=white"></script>
+      <!-- <script src="https://cdn.htmlgames.com/embed.js?game=CarromPool&amp;bgcolor=white"></script> -->
+      <object type="text/html" data="loading_game.html" width="600" height="800"></object>
     </div>
   </div>
 
@@ -86,73 +87,78 @@
     <hr />
 
 
-<!-- tabs for price and recipes -->
+    <!-- tabs for price and recipes -->
 
 
-<div class="wrapper">
-  <div class="tabs">
-    <div class="tab">
-      <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
-      <label for="tab-1" class="tab-label">價格</label>
-      <div class="tab-content">
+    <div class="wrapper">
+      <div class="tabs">
+        <div class="tab">
+          <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+          <label for="tab-1" class="tab-label">價格</label>
+          <div class="tab-content">
 
 
-         <h2>各市場價格</h2>
+            <h2>各市場價格</h2>
 
-      <div class="sortButtonsContainer">
-        <button class="showAll">全部舖頭</button>
-        <button class="market1">AeonCity</button>
-        <button class="market2">百佳</button>
-        <button class="market3">HKTVMall</button>
-        <button class="market4">阿布泰</button>
-      </div>    
-      <section class="priceDisplay">
-  <!-- <div class="parent"> -->
-      <div class="priceCard"">
-        <a class="productLink" href="https://www.tecky.io" >
-        <img class="productPic" src="../predict_images/coke.jpg" alt="" />
-        <p class="supermarket"></p>
-        <p class="displayName"></p>
-        <p class="quantity"></p>
-        <p class="price"></p>
-        <p class="bargain"></p>
-        </a>
+            <div class="sortButtonsContainer">
+              <button class="showAll">全部舖頭</button>
+              <button class="market1">AeonCity</button>
+              <button class="market2">百佳</button>
+              <button class="market3">HKTVMall</button>
+              <button class="market4">阿布泰</button>
+            </div>
+            <section class="priceDisplay">
+              <!-- <div class="parent"> -->
+              <div class="priceCard"">
+        <a class=" productLink" href="https://www.tecky.io">
+                <img class="productPic" src="../predict_images/coke.jpg" alt="" />
+                <p class="supermarket"></p>
+                <p class="displayName"></p>
+                <p class="quantity"></p>
+                <p class="price"></p>
+                <p class="bargain"></p>
+                </a>
+              </div>
+              <!-- </div> -->
+            </section>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod optio veritatis eaque, neque assumenda
+            quisquam magni doloremque, dolores sequi exercitationem officia laboriosam ad distinctio repellat qui.
+            Aliquid cumque in consectetur!
+          </div>
+
+
+
+        </div>
+        <div class="tab recipeTab">
+          <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+          <label for="tab-2" class="tab-label">食譜</label>
+          <div class="tab-content">
+            <h2>相關食譜</h2>
+            <section class="recipeSection">
+              <div class="recipeCard">
+                <a class="recipeLink" href="https://www.tecky.io">
+                  <img class="recipePic" src="../predict_images/coke.jpg" />
+                  <p class="recipeName">[recipe name]</p>
+                  <p class="ingredients">[ingredients]</p>
+                </a>
+              </div>
+            </section>
+
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, ab. Nisi totam velit nostrum voluptas
+            tempora nesciunt labore consequatur, impedit explicabo sit cum. Velit, odio? Optio illo tempore quasi
+            blanditiis?
+          </div>
+        </div>
+
       </div>
-      <!-- </div> -->
-    </section>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod optio veritatis eaque, neque assumenda quisquam magni doloremque, dolores sequi exercitationem officia laboriosam ad distinctio repellat qui. Aliquid cumque in consectetur!
-       </div>
-    
-    
-    
-    </div>
-    <div class="tab recipeTab">
-      <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
-      <label for="tab-2" class="tab-label">食譜</label>
-      <div class="tab-content">
-        <h2>相關食譜</h2>
-<section class="recipeSection">
-<div class="recipeCard">
-  <a class="recipeLink" href="https://www.tecky.io">
-  <img class="recipePic" src="../predict_images/coke.jpg" />
-  <p class="recipeName">[recipe name]</p>
-  <p class="ingredients">[ingredients]</p>
-  </a>
-</div>
-</section>
-        
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, ab. Nisi totam velit nostrum voluptas tempora nesciunt labore consequatur, impedit explicabo sit cum. Velit, odio? Optio illo tempore quasi blanditiis? </div>
-    </div>
-    
-  </div>
 
-</div>
+    </div>
 
 
 
 
     <!-- price section -->
-   <!-- <h2>各市場價格</h2>
+    <!-- <h2>各市場價格</h2>
 
       <div class="sortButtonsContainer">
         <button class="showAll">全部舖頭</button>
@@ -162,7 +168,7 @@
         <button class="market4">阿布泰</button>
       </div>    
       <section class="priceDisplay"></section> -->
-      <!-- <div class="priceCard"">
+    <!-- <div class="priceCard"">
         <a class="productLink" href="https://www.tecky.io" >
         <img class="productPic" src="../predict_images/coke.jpg" alt="" />
         <p class="supermarket"></p>
@@ -174,8 +180,8 @@
       </div>
     </section>
     <hr /> -->
-<!-- recipe section -->
-<!-- <h2>相關食譜</h2>
+    <!-- recipe section -->
+    <!-- <h2>相關食譜</h2>
 <section class="recipeSection">
 <div class="recipeCard">
   <a class="recipeLink" href="https://www.tecky.io">
@@ -197,13 +203,13 @@
     <canvas class="live2d" id="live2d" width="300" height="400"></canvas>
   </div>
 
- <!-- testing connection section -->
-    <!-- <h4>Hello World</h4>
+  <!-- testing connection section -->
+  <!-- <h4>Hello World</h4>
     <p id="test-name">test-name</p>
     <p id="test-password">test-password</p> -->
 
 
-<!-- javascript -->
+  <!-- javascript -->
 
   <script src="index.js"></script>
   <script src="tabs.js"></script>
