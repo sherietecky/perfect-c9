@@ -27,10 +27,8 @@ export async function up(knex: Knex): Promise<void> {
 
   await knex.schema.createTable("price", (table) => {
     table.increments("id");
-    table.integer("market_id").unsigned();
-    table.foreign("market_id").references("market.id");
-    table.integer("product_id").unsigned();
-    table.foreign("product_id").references("product.id");
+    table.integer("market_id").unsigned().references("market.id");
+    table.integer("product_id").unsigned().references("product.id");
     table.integer("price");
     table.date("scrapped_date");
     table.string("display_pic");

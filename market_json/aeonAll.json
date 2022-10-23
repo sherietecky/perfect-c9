@@ -3208,7 +3208,7 @@
   "西蘭花": [
     {
       "market_id": 1,
-      "search_item_id": 42,
+      "search_item_id": 12,
       "product_display_name": "嘉寶 有機芝士白豆西蘭花泡芙條",
       "quantity": "45G",
       "price": "HK$43.50",
@@ -3217,7 +3217,7 @@
     },
     {
       "market_id": 1,
-      "search_item_id": 42,
+      "search_item_id": 12,
       "product_display_name": "MAEIL西蘭花雞肉即食粥",
       "quantity": "100G",
       "price": "HK$19.90",
@@ -3226,7 +3226,7 @@
     },
     {
       "market_id": 1,
-      "search_item_id": 42,
+      "search_item_id": 12,
       "product_display_name": "Maeil 葡萄及西蘭花",
       "quantity": "25G",
       "price": "HK$19.00",
@@ -3235,7 +3235,7 @@
     },
     {
       "market_id": 1,
-      "search_item_id": 42,
+      "search_item_id": 12,
       "product_display_name": "金姳熙 西蘭花芝士3",
       "quantity": "90G",
       "price": "HK$85.00",
@@ -3244,7 +3244,7 @@
     },
     {
       "market_id": 1,
-      "search_item_id": 42,
+      "search_item_id": 12,
       "product_display_name": "LPO有機西蘭花和菠菜意粉醬",
       "quantity": "",
       "price": "HK$40.00",

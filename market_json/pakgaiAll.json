@@ -1513,7 +1513,7 @@
   "西蘭花": [
     {
       "market_id": 2,
-      "search_item_id": 42,
+      "search_item_id": 12,
       "product_display_name": "西蘭花(每個)",
       "quantity": "EACH",
       "price": "$5.90",
@@ -1523,7 +1523,7 @@
     },
     {
       "market_id": 2,
-      "search_item_id": 42,
+      "search_item_id": 12,
       "product_display_name": "BELCANDO 狗鮮肉濕包-三文魚+西蘭花",
       "quantity": "100G",
       "price": "$24.00",
@@ -1533,7 +1533,7 @@
     },
     {
       "market_id": 2,
-      "search_item_id": 42,
+      "search_item_id": 12,
       "product_display_name": "媽媽農場 紐西蘭花生醬（奇亞籽）",
       "quantity": "380G",
       "price": "$51.00",
@@ -1543,7 +1543,7 @@
     },
     {
       "market_id": 2,
-      "search_item_id": 42,
+      "search_item_id": 12,
       "product_display_name": "媽媽農場 紐西蘭花生醬（亞麻籽，葵花籽，杏仁）",
       "quantity": "380G",
       "price": "$51.00",
@@ -1553,7 +1553,7 @@
     },
     {
       "market_id": 2,
-      "search_item_id": 42,
+      "search_item_id": 12,
       "product_display_name": "嘉寶 有機手指泡芙條芝士白豆蓉西蘭花味",
       "quantity": "1.59OZ",
       "price": "$45.00",
@@ -1563,7 +1563,7 @@
     },
     {
       "market_id": 2,
-      "search_item_id": 42,
+      "search_item_id": 12,
       "product_display_name": "FULL GREEN 西蘭花椰菜花飯 (*商戶直送-ORGANIC MAMA LTD) *滿$500免運",
       "quantity": "200G",
       "price": "$38.00",
@@ -1573,7 +1573,7 @@
     },
     {
       "market_id": 2,
-      "search_item_id": 42,
+      "search_item_id": 12,
       "product_display_name": "TIBERINO 全天然即煮西蘭花猫耳朵粉",
       "quantity": "200G",
       "price": "$48.00",
@@ -1583,7 +1583,7 @@
     },
     {
       "market_id": 2,
-      "search_item_id": 42,
+      "search_item_id": 12,
       "product_display_name": "ELLA'S KITCHEN Ella's Kitchen 有機梨豌豆及西蘭花蓉120克",
       "quantity": "120G",
       "price": "$23.90",
@@ -1593,7 +1593,7 @@
     },
     {
       "market_id": 2,
-      "search_item_id": 42,
+      "search_item_id": 12,
       "product_display_name": "喜寶 喜寶西蘭花海魚伴麵條 220克",
       "quantity": "220G",
       "price": "$32.80",
