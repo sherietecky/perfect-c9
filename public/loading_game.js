@@ -54,11 +54,11 @@ function generateQuestion() {
       question.textContent = `${num3} - ${num1} + ${num2}`;
     }
   }
-  if (num_answer_position <= 10) {
+  if ((num_answer_position = 1)) {
     answer_boxes[0].textContent = returnAnswer();
     answer_boxes[1].textContent = returnAnswer() + 10;
     answer_boxes[2].textContent = returnAnswer() - 10;
-  } else if (num_answer_position <= 20) {
+  } else if ((num_answer_position = 2)) {
     answer_boxes[0].textContent = returnAnswer() + 10;
     answer_boxes[1].textContent = returnAnswer();
     answer_boxes[2].textContent = returnAnswer() - 10;
