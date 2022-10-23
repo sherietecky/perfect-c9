@@ -31,8 +31,6 @@ let count_wrong = document.querySelector(
 let wrong_no = 0;
 count_wrong.textContent = wrong_no;
 
-generateQuestion();
-
 function generateQuestion() {
   num_question_type = getRandomInt(100);
   num1 = getRandomInt_multi(20);
@@ -54,11 +52,12 @@ function generateQuestion() {
       question.textContent = `${num3} - ${num1} + ${num2}`;
     }
   }
-  if ((num_answer_position = 1)) {
+  console.log(num_answer_position);
+  if (num_answer_position == 1) {
     answer_boxes[0].textContent = returnAnswer();
     answer_boxes[1].textContent = returnAnswer() + 10;
     answer_boxes[2].textContent = returnAnswer() - 10;
-  } else if ((num_answer_position = 2)) {
+  } else if (num_answer_position == 2) {
     answer_boxes[0].textContent = returnAnswer() + 10;
     answer_boxes[1].textContent = returnAnswer();
     answer_boxes[2].textContent = returnAnswer() - 10;
@@ -91,6 +90,8 @@ for (let [index, answer_box] of answer_boxes.entries()) {
     }
   });
 }
+
+generateQuestion();
 
 function returnAnswer() {
   let answer;
