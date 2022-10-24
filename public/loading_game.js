@@ -8,12 +8,24 @@ function getRandomInt_plus(max) {
   return Math.floor(Math.random() * max) + 100;
 }
 
+function getRandomInt_difference(max) {
+  let a = (Math.floor(Math.random() * max) + 1) * 10 - 30;
+  console.log(a);
+  if (a == 0) {
+    return getRandomInt_difference(max);
+  } else if (a !== 0) {
+    return a;
+  }
+}
+// console.log(getRandomInt_difference(5));
+
 let num_question_type;
 let num1;
 let num2;
 let num3;
 let num_plus_or_minus;
 let num_answer_position;
+let num_answer_difference;
 let question = document.querySelector("#question_container p:nth-child(2)");
 const answer_boxes = document.querySelectorAll(".answer");
 const success_popup = document.getElementById("success");
@@ -52,19 +64,31 @@ function generateQuestion() {
       question.textContent = `${num3} - ${num1} + ${num2}`;
     }
   }
-  console.log(num_answer_position);
+  // console.log(num_answer_position);
   if (num_answer_position == 1) {
     answer_boxes[0].textContent = returnAnswer();
-    answer_boxes[1].textContent = returnAnswer() + 10;
-    answer_boxes[2].textContent = returnAnswer() - 10;
+    answer_boxes[1].textContent = returnAnswer() + getRandomInt_difference(5);
+    answer_boxes[2].textContent = returnAnswer() + getRandomInt_difference(5);
+    if (answer_boxes[1].textContent == answer_boxes[2].textContent) {
+      answer_boxes[1].textContent = returnAnswer() + getRandomInt_difference(5);
+      answer_boxes[2].textContent = returnAnswer() + getRandomInt_difference(5);
+    }
   } else if (num_answer_position == 2) {
-    answer_boxes[0].textContent = returnAnswer() + 10;
+    answer_boxes[0].textContent = returnAnswer() + getRandomInt_difference(5);
     answer_boxes[1].textContent = returnAnswer();
-    answer_boxes[2].textContent = returnAnswer() - 10;
+    answer_boxes[2].textContent = returnAnswer() + getRandomInt_difference(5);
+    if (answer_boxes[0].textContent == answer_boxes[2].textContent) {
+      answer_boxes[0].textContent = returnAnswer() + getRandomInt_difference(5);
+      answer_boxes[2].textContent = returnAnswer() + getRandomInt_difference(5);
+    }
   } else {
-    answer_boxes[0].textContent = returnAnswer() + 10;
-    answer_boxes[1].textContent = returnAnswer() - 10;
+    answer_boxes[0].textContent = returnAnswer() + getRandomInt_difference(5);
+    answer_boxes[1].textContent = returnAnswer() + getRandomInt_difference(5);
     answer_boxes[2].textContent = returnAnswer();
+    if (answer_boxes[0].textContent == answer_boxes[1].textContent) {
+      answer_boxes[0].textContent = returnAnswer() + getRandomInt_difference(5);
+      answer_boxes[1].textContent = returnAnswer() + getRandomInt_difference(5);
+    }
   }
 }
 

@@ -8,6 +8,7 @@ let market3 = document.querySelector("button.market3");
 let market4 = document.querySelector("button.market4");
 let showAll = document.querySelector("button.showAll");
 let recipeCard = document.querySelector(".recipeCard");
+let image_display = document.querySelector("div.resultDisplay > img");
 
 // loader, sorting buttons and search results template removed
 loading.style.display = "none";
@@ -61,6 +62,8 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
   context.drawImage(video, 0, 0, 400, 400, 0, 0, 400, 400);
   const dataURL = canvas.toDataURL("image/jpeg", 0.8);
 
+  canvas.style.display = "none";
+
   var blob = dataURItoBlob(dataURL);
   var fd = new FormData(document.forms[0]);
   fd.append("predict_image", blob);
@@ -69,6 +72,12 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
     method: "post",
     body: fd,
   });
+
+  const result_image = await fetch("/result_image");
+  let json_image = await result_image.json();
+  console.log(json_image);
+
+  image_display.src = `${json_image}`;
 
   let json = res.json();
   json.then(async function (result) {
@@ -253,7 +262,7 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
     console.log(json_recipe);
 
     for (let data of json_recipe) {
-      console.log(data);
+      // console.log(data);
       let node = recipeCard.cloneNode(true);
       node.querySelector(".recipeCard > a").href = data.url;
       node.querySelector(".recipePic").src = data.image;

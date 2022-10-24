@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="tabs.css">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#63C5DA">
-  <!-- <meta name='mobile-web-app-capable' content='yes'/> -->
+  <meta content='yes' name='mobile-web-app-capable' />
   <link rel="apple-touch-icon" href="/icon/icon96.png">
   <meta name="apple-mobile-web-app-status-bar" content="#63C5DA">
-  <title>格價專員v1.2.0</title>
+  <title>格價專員v1.1.0</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
     <div id="loading_game" style="background-color: rgb(81, 76, 76);">
       <!-- <script src="https://cdn.htmlgames.com/embed.js?game=CarromPool&amp;bgcolor=white"></script> -->
       <!-- <object type="text/html" data="loading_game.html" width="600" height="800"></object> -->
-      <iframe src="loading_game.html" height="510" width="720"></iframe>
+      <iframe src="loading_game.html"></iframe>
     </div>
   </div>
 
@@ -190,7 +190,7 @@
   <div id="live2d_container">
     <div id="interaction_part">
       <div class="resultDisplay displayContent">
-        <img src="/predict_images/coke.jpg" class="result_content" alt="" />
+        <img src="" class="result_content" alt="請先對著想辨認的產品拍照" />
         <div id="result_info" class="result_content">
           <div class="productName">[product name]</div>
           <div class="possibility">[possibility]</div>
@@ -219,8 +219,8 @@
   <script>
     loadlive2d(LAppDefine.CANVAS_ID, LAppDefine.MODELS[0][3]);
     // loadlive2d("live2d", "model/22/model.default.json");
-    </script>
-    <script src="app.js"></script>
+  </script>
+  <script src="app.js"></script>
 </body>
 
 </html>
