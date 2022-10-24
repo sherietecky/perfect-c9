@@ -134,8 +134,8 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
       // let searchItem = document.querySelector(".productName").textContent
       // console.log(searchItem);
 
-      const result = await fetch(`/marketdata/${result["result"]}/1`);
-      let json = await result.json();
+      const res1 = await fetch(`/marketdata/${result["result"]}/1`);
+      let json = await res1.json();
       console.log(json);
       for (let data of json) {
         console.log(data);
@@ -158,8 +158,8 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         parent.removeChild(parent.firstChild);
       }
 
-      const result = await fetch(`/marketdata/${result["result"]}/2`);
-      let json = await result.json();
+      const res2 = await fetch(`/marketdata/${result["result"]}/2`);
+      let json = await res2.json();
       console.log(json);
       for (let data of json) {
         console.log(data);
@@ -182,8 +182,8 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         parent.removeChild(parent.firstChild);
       }
 
-      const result = await fetch(`/marketdata/${result["result"]}/3`);
-      let json = await result.json();
+      const res3 = await fetch(`/marketdata/${result["result"]}/3`);
+      let json = await res3.json();
       console.log(json);
       for (let data of json) {
         console.log(data);
@@ -206,8 +206,8 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         parent.removeChild(parent.firstChild);
       }
 
-      const result = await fetch(`/marketdata/${result["result"]}/4`);
-      let json = await result.json();
+      const res4 = await fetch(`/marketdata/${result["result"]}/4`);
+      let json = await res4.json();
       console.log(json);
       for (let data of json) {
         console.log(data);
@@ -230,8 +230,8 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         parent.removeChild(parent.firstChild);
       }
 
-      const result = await fetch(`/marketdata/${result["result"]}`);
-      let json = await result.json();
+      const resAll = await fetch(`/marketdata/${result["result"]}`);
+      let json = await resAll.json();
       console.log(json);
       for (let data of json) {
         console.log(data);
