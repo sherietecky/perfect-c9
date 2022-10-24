@@ -20,6 +20,7 @@ recipeCard.remove();
 
 // use the camera
 let canvas = document.querySelector("#canvas");
+canvas.style.display = "none";
 let context = canvas.getContext("2d");
 let video = document.querySelector("#video");
 // add for ios to try
@@ -64,7 +65,7 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
   context.drawImage(video, 0, 0, 400, 400, 0, 0, 400, 400);
   const dataURL = canvas.toDataURL("image/jpeg", 0.8);
 
-  canvas.style.display = "none";
+  // canvas.style.display = "none";
 
   var blob = dataURItoBlob(dataURL);
   var fd = new FormData(document.forms[0]);
@@ -615,7 +616,8 @@ let searchHistory = document.querySelectorAll(".history > div");
 
 searchHistory.forEach((div) => {
   div.addEventListener("click", async () => {
-    let searchWord = div.innerHTML;
+    searchField.value = "";
+    let searchWord = div.textContent;
 
     let parent = document.querySelector(".priceDisplay");
     while (parent.firstChild) {
@@ -657,11 +659,14 @@ searchHistory.forEach((div) => {
     }
 
     market1.addEventListener("click", async () => {
+      searchField.value = "";
       let parent = document.querySelector(".priceDisplay");
       while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
       }
-      let searchWord = div.innerHTML;
+      // parent.innerHTML = "";
+
+      let searchWord = div.textContent;
 
       const result = await fetch(`/marketdata/${searchWord}/1`);
       let json = await result.json();
@@ -682,6 +687,7 @@ searchHistory.forEach((div) => {
     });
 
     market2.addEventListener("click", async () => {
+      searchField.value = "";
       let parent = document.querySelector(".priceDisplay");
       while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
@@ -707,6 +713,7 @@ searchHistory.forEach((div) => {
     });
 
     market3.addEventListener("click", async () => {
+      searchField.value = "";
       let parent = document.querySelector(".priceDisplay");
       while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
@@ -732,6 +739,7 @@ searchHistory.forEach((div) => {
     });
 
     market4.addEventListener("click", async () => {
+      searchField.value = "";
       let parent = document.querySelector(".priceDisplay");
       while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
@@ -757,6 +765,7 @@ searchHistory.forEach((div) => {
     });
 
     showAll.addEventListener("click", async () => {
+      searchField.value = "";
       let parent = document.querySelector(".priceDisplay");
       while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
@@ -782,25 +791,14 @@ searchHistory.forEach((div) => {
     });
 
     tabTwo.addEventListener("click", async () => {
+      searchField.value = "";
       document.querySelector(".recipeSection").innerHTML = "";
       let searchWord = div.innerHTML;
       const result_recipe = await fetch(`/recipes/${searchWord}`);
 
       let json_recipe = await result_recipe.json();
       console.log(json_recipe);
-      // let parentRecipe = document.querySelector(".recipeSection");
-      // recipeCard.innerHTML = data
-      //   .map(
-      //     (obj) => `
-      // <div class="recipeCard">
-      //                 <a class="recipeLink" href="${obj.url}">
-      //                   <img class="recipePic" src="${image}">
-      //                   <p class="recipeName">${recipe_name}</p>
-      //                   <p class="ingredients">${ingredients}/p>
-      //                 </a>
-      //               </div>`
-      //   )
-      //   .join("");
+
       for (let data of json_recipe) {
         console.log(data);
         let node = recipeCard.cloneNode(true);
