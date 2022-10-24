@@ -150,6 +150,17 @@ section.resultDisplay {
   padding: 5px;
   background-color: lightcyan;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.history div:hover {
+  background-color: rgb(118, 244, 244);
+  transform: scale(1.25);
+}
+
+.history div:active {
+  background-color: blue;
+  color: white;
 }
 
 /* tab */
@@ -158,6 +169,13 @@ section.resultDisplay {
   width: 95vw;
 }
 
+.tabs {
+  position: relative;
+}
+
+#live2d_container {
+  z-index: 10;
+}
 /* price display section */
 
 .priceDisplay {
@@ -363,10 +381,6 @@ div.sortButtonsContainer > button:hover {
 section.resultDisplay {
   position: fixed;
 }
-
-/* canvas#live2d { */
-/* border: 2px solid black; */
-/* } */
 
 @media only screen and (max-width: 800px) {
   canvas#live2d {
