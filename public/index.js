@@ -265,7 +265,7 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
           document.querySelector(".recipeSection").append(node);
         }
       });
-      // 4. cookie if else
+      // 4. cookie + search history
       let newCookie;
       if (!getCookie("perfectc9")) {
         newCookie = `{"history": ["${result["result"]}"]}`;
@@ -608,3 +608,6 @@ searchBtn.addEventListener("click", async () => {
     }
   });
 });
+
+
+let selectedHistory = document.querySelector("")

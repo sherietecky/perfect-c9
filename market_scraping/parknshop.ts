@@ -6,7 +6,7 @@ import { knex } from "../db";
 import { Knex } from "knex";
 
 async function scrapPakgai(keyword: string) {
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch({ headless: true });
   let page = await browser.newPage();
   let url =
     "https://www.parknshop.com/zh-hk/search?text=" +
