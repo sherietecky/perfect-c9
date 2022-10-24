@@ -1,15 +1,15 @@
 #success.popup {
   display: none;
   position: fixed;
-  top: 30%;
-  left: 38%;
+  top: 25%;
+  left: 30%;
 }
 
 #error {
   display: none;
   position: fixed;
-  top: 30%;
-  left: 38%;
+  top: 25%;
+  left: 30%;
 }
 
 .popup-content {
@@ -65,4 +65,54 @@
 }
 #e_button {
   background: #ff3636;
+}
+
+@media only screen and (max-width: 600px) {
+  #success.popup {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 28%;
+  }
+
+  #error {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 28%;
+  }
+  .popup-content {
+    /* display: block; */
+    width: 250px;
+    height: 200px;
+    background: white;
+    box-shadow: 4px 4px 70px 10px rgb(0 0 0/11%);
+    border-radius: 25px;
+  }
+  .imgbox {
+    text-align: center;
+  }
+  .img {
+    width: 52px;
+    margin-top: 40px;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: auto;
+  }
+  .button {
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 25px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+  }
 }
