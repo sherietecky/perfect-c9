@@ -148,7 +148,9 @@ section.takePic > button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
+
 
 .inputBox {
   position: relative;
@@ -173,9 +175,11 @@ section.takePic > button {
   padding: 12px 10px 10px 10px;
   pointer-events: none;
   color: var(--darker-green);
+  transition: all 1s;
 }
 
-.inputBox input:focus ~ span {
+.inputBox input:hover ~ span,
+.inputBox input:focus ~ span  {
   color: var(--dark-green);
   transform: translateX(10px) translateY(-7px);
   font-size: 0.65rem;
