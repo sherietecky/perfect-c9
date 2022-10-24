@@ -6,8 +6,17 @@ import { knex } from "../db";
 import { Knex } from "knex";
 
 async function scrapPakgai(keyword: string) {
-  const browser = await chromium.launch({ headless: false });
-  let page = await browser.newPage();
+
+  const browser = await chromium.launch({
+    headless: true,
+    // /home/ubuntu/chromedriver
+    executablePath: "/home/ubuntu/chromedriver"
+    // executablePath: process.env.NODE_ENV === "production"?
+    //   "/home/ubuntu/chromedriver":
+    //   "C:\\Program Files (x86)\\Google\\Chrome\\Application\\Chrome.exe",
+  });
+  const context = await browser.newContext();
+  let page = await context.newPage();
   let url =
     "https://www.parknshop.com/zh-hk/search?text=" +
     keyword +

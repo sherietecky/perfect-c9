@@ -119,7 +119,7 @@ section.resultDisplay {
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 50, 0.3);
+  background-color: rgba(2, 50, 0, 0.707);
   z-index: 100;
 }
 
@@ -150,6 +150,17 @@ section.resultDisplay {
   padding: 5px;
   background-color: lightcyan;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.history div:hover {
+  background-color: rgb(118, 244, 244);
+  transform: scale(1.25);
+}
+
+.history div:active {
+  background-color: blue;
+  color: white;
 }
 
 /* tab */
@@ -158,12 +169,114 @@ section.resultDisplay {
   width: 95vw;
 }
 
+.tabs {
+  position: relative;
+}
+
+#live2d_container {
+  z-index: 10;
+}
 /* price display section */
 
 .priceDisplay {
   display: grid;
   gap: 15px 15px;
   grid-template-columns: auto auto auto auto auto auto;
+}
+
+.typeSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+input.searchField {
+  width: 300px;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: grey;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 20px;
+  background-color: #cef1db;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-style: italic;
+}
+::-moz-placeholder {
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  font-style: italic;
+}
+
+input.searchField:focus {
+  background-color: rgb(28, 143, 101);
+  color: white;
+}
+
+.searchBtn {
+  width: 150px;
+  height: 50px;
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  /* box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px; */
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.searchBtn:hover {
+  box-shadow: 10px 9px 62px -18px rgba(88, 207, 173, 0.75);
+  transform: scale(1.1) rotate(-1deg);
+}
+
+div.sortButtonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+div.sortButtonsContainer > button {
+  margin: 0.2rem;
+  width: 200px;
+  height: 80px;
+  background-color: rgb(109, 215, 132);
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+
+div.sortButtonsContainer > button:hover {
+  transform: translateY(-4px);
+  box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.35);
+  transition: all 0.4s;
+  cursor: pointer;
+  background-color: rgb(28, 143, 101);
+  color: white;
 }
 
 .recipeSection {

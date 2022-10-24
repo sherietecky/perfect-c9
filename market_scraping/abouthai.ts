@@ -7,7 +7,7 @@ import { knex } from "../db";
 import { Knex } from "knex";
 
 async function scrapAbouthai(keyword: string) {
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch({ headless: true });
   let page = await browser.newPage();
   let url = "https://www.abouthai.com/search?keyword=" + keyword;
 
