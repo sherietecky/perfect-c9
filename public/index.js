@@ -144,14 +144,11 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
       document.querySelector(".possibility").textContent = `${possibilityNum}%`;
 
       // 2. show scraped price details + sorting buttons
-<<<<<<< HEAD
       const res = await fetch(`/marketdata/${result["result"]}`);
       let json = await res.json();
-=======
 
       // const res = await fetch(`/marketdata/${result["result"]}`);
       // let json = await res.json();
->>>>>>> 3924162405ab71fbb6c823064c67a3df1194cfbd
 
       // sortButtonsContainer.style.display = "flex";
 
