@@ -28,19 +28,18 @@ body {
 /* title */
 
 #title {
-   /*  leverage cascade for cross-browser gradients  */
-   background: linear-gradient(
-    to right, 
-    #0bfeff, 
-    #0bff50
-    /* hsl(98 100% 62%), 
+  /*  leverage cascade for cross-browser gradients  */
+  background: linear-gradient(
+    to right,
+    #0bfeff,
+    #0bff50 /* hsl(98 100% 62%), 
     hsl(204 100% 59%) */
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-weight:bolder
+  font-weight: bolder;
 }
 
 /* take pic section */
@@ -68,6 +67,78 @@ section.takePic > button {
   width: 10vw;
   height: 5vh;
 }
+
+/* search */
+
+.typeSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputBox {
+  position: relative;
+  width: 200px;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid var(--darker-green);
+  /* background: var(--green); */
+  outline: none;
+  color: var(--darker-green);
+  transition: font-size 2s 1s;
+  /*  transition not working */
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 12px 10px 10px 10px;
+  pointer-events: none;
+  color: var(--darker-green);
+}
+
+.inputBox input:focus ~ span {
+  color: var(--dark-green);
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65rem;
+  padding: 0 10px;
+  background: var(--pale-yellow);
+  font-weight: bolder;
+}
+
+/* input.searchField {
+  width: 200px;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: grey;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 20px;
+  background-color: #cef1db;
+} */
+
+/* ::-webkit-input-placeholder {
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-style: italic;
+}
+::-moz-placeholder {
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  font-style: italic;
+} */
+
+/* input.searchField:focus {
+  background-color: rgb(28, 143, 101);
+  color: white;
+} */
 
 /* result section */
 
@@ -212,43 +283,6 @@ section.resultDisplay {
   display: grid;
   gap: 15px 15px;
   grid-template-columns: auto auto auto auto auto auto;
-}
-
-.typeSearch {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-input.searchField {
-  width: 200px;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border: grey;
-  border-style: solid;
-  border-width: 1px;
-  font-size: 20px;
-  background-color: #cef1db;
-}
-
-::-webkit-input-placeholder {
-  font-style: italic;
-}
-:-moz-placeholder {
-  font-style: italic;
-}
-::-moz-placeholder {
-  font-style: italic;
-}
-:-ms-input-placeholder {
-  font-style: italic;
-}
-
-input.searchField:focus {
-  background-color: rgb(28, 143, 101);
-  color: white;
 }
 
 .searchBtn {
@@ -511,41 +545,47 @@ section.resultDisplay {
   }
 }
 
-
 /* bubble speech */
 #interaction_part {
   position: relative;
-  margin: .5em auto;
+  margin: 0.5em auto;
   padding: 1em;
-  width: 10em; height: 4em;
-  border-radius: .25em;
+  width: 10em;
+  height: 4em;
+  border-radius: 0.25em;
   transform: rotate(0deg) rotateY(15deg);
-  background: #629bdd!important;
+  background: #629bdd !important;
   font: 2em/4;
   text-align: center;
 }
-#interaction_part:before, #interaction_part:after {
+#interaction_part:before,
+#interaction_part:after {
   position: absolute;
-  z-index: -1 ;
-  content: '';
+  z-index: -1;
+  content: "";
 }
 #interaction_part:after {
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   border-radius: inherit;
-  transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+  transform: rotate(2deg) translate(0.35em, -0.15em) scale(1.02);
   background: #f4fbfe;
 }
 #interaction_part:before {
   border: solid 0 transparent;
   border-right: solid 3.5em #f4fbfe;
-  border-bottom: solid .25em #629bdd;
-  bottom: .25em; left: 1.25em;
-  width: 0; height: 1em;
+  border-bottom: solid 0.25em #629bdd;
+  bottom: 0.25em;
+  left: 1.25em;
+  width: 0;
+  height: 1em;
   transform: rotate(45deg) skewX(75deg);
 }
 
 @media (max-width: 700px) {
   .resultDisplay.displayContent img {
-    display:none
+    display: none;
   }
 }
