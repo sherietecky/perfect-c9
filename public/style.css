@@ -119,7 +119,7 @@ section.resultDisplay {
   right: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 50, 0.3);
+  background-color: rgba(2, 50, 0, 0.707);
   z-index: 100;
 }
 
@@ -163,8 +163,69 @@ section.resultDisplay {
 .priceDisplay {
   display: grid;
   gap: 15px 15px;
-  grid-template-columns:  auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
+}
 
+h2.searchHeader {
+  color: rgb(28, 143, 101);
+}
+
+.searchBtn {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  /* box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px; */
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.searchBtn:hover {
+  /* box-shadow: 10px 9px 62px -18px; */
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+div.sortButtonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+div.sortButtonsContainer > button {
+  margin: 0.2rem;
+  width: 200px;
+  height: 40px;
+  background-color: rgb(109, 215, 132);
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+
+div.sortButtonsContainer > button:hover {
+  transform: translateY(-4px);
+  box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.35);
+  transition: all 0.4s;
+  cursor: pointer;
+  background-color: rgb(28, 143, 101);
+  color: white;
 }
 
 .recipeSection {
@@ -175,12 +236,12 @@ section.resultDisplay {
 
 @media (max-width: 1600px) {
   .priceDisplay {
-    grid-template-columns:  auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
   }
 }
 @media (max-width: 1300px) {
   .priceDisplay {
-    grid-template-columns:  auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
   }
   .recipeSection {
     grid-template-columns: auto auto auto;
@@ -189,7 +250,7 @@ section.resultDisplay {
 
 @media (max-width: 1000px) {
   .priceDisplay {
-    grid-template-columns:  auto auto auto;
+    grid-template-columns: auto auto auto;
   }
 }
 
