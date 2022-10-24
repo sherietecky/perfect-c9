@@ -776,7 +776,7 @@ searchHistory.forEach((div) => {
       let json = await result.json();
       console.log(json);
       for (let data of json) {
-        console.log(data);
+        // console.log(data);
         let node = priceCard.cloneNode(true);
         node.querySelector(".priceCard > a").href = data.product_link;
         node.querySelector(".productPic").src = data.display_pic;
