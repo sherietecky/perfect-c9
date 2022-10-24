@@ -83,7 +83,6 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
     if (possibilityNum > 40) {
       // if posssibility num > 40
       // 1. show result
-
       document.querySelector(".productName").textContent = result["result"];
       document.querySelector(".possibility").textContent = `${possibilityNum}%`;
 
@@ -118,8 +117,9 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         while (parent.firstChild) {
           parent.removeChild(parent.firstChild);
         }
+        let item = document.querySelector(".productName").textContent;
 
-        const res1 = await fetch(`/marketdata/${result["result"]}/1`);
+        const res1 = await fetch(`/marketdata/${item}/1`);
         let json = await res1.json();
         console.log(json);
         for (let data of json) {
@@ -142,8 +142,9 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         while (parent.firstChild) {
           parent.removeChild(parent.firstChild);
         }
+        let item = document.querySelector(".productName").textContent;
 
-        const res2 = await fetch(`/marketdata/${result["result"]}/2`);
+        const res2 = await fetch(`/marketdata/${item}/2`);
         let json = await res2.json();
         console.log(json);
         for (let data of json) {
@@ -166,8 +167,8 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         while (parent.firstChild) {
           parent.removeChild(parent.firstChild);
         }
-
-        const res3 = await fetch(`/marketdata/${result["result"]}/3`);
+        let item = document.querySelector(".productName").textContent;
+        const res3 = await fetch(`/marketdata/${item}/3`);
         let json = await res3.json();
         console.log(json);
         for (let data of json) {
@@ -190,8 +191,8 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         while (parent.firstChild) {
           parent.removeChild(parent.firstChild);
         }
-
-        const res4 = await fetch(`/marketdata/${result["result"]}/4`);
+        let item = document.querySelector(".productName").textContent;
+        const res4 = await fetch(`/marketdata/${item}/4`);
         let json = await res4.json();
         console.log(json);
         for (let data of json) {
@@ -214,8 +215,8 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         while (parent.firstChild) {
           parent.removeChild(parent.firstChild);
         }
-
-        const resAll = await fetch(`/marketdata/${result["result"]}`);
+        let item = document.querySelector(".productName").textContent;
+        const resAll = await fetch(`/marketdata/${item}`);
         let json = await resAll.json();
         console.log(json);
         for (let data of json) {
@@ -236,7 +237,9 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
       // 3. fetch scraped recipe
 
       tabTwo.addEventListener("click", async () => {
-        const result_recipe = await fetch(`/recipes/${result["result"]}`);
+        document.querySelector(".recipeSection").innerHTML = "";
+        let item = document.querySelector(".productName").textContent;
+        const result_recipe = await fetch(`/recipes/${item}`);
         let json_recipe = await result_recipe.json();
         console.log(json_recipe);
 
@@ -384,7 +387,7 @@ searchBtn.addEventListener("click", async () => {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
   }
-
+  document.querySelector(".recipeSection").innerHTML = "";
   sortButtonsContainer.style.display = "flex";
 
   let searchFieldText = document.querySelector(".searchField").value;
@@ -405,6 +408,32 @@ searchBtn.addEventListener("click", async () => {
     node.querySelector(".price").textContent = "$" + data.price;
     node.querySelector(".bargain").textContent = data.bargain;
     document.querySelector(".priceDisplay").append(node);
+  }
+
+  const result_recipe = await fetch(`/recipes/${searchFieldText}`);
+  let json_recipe = await result_recipe.json();
+  console.log(json_recipe);
+  // let parentRecipe = document.querySelector(".recipeSection");
+  // recipeCard.innerHTML = data
+  //   .map(
+  //     (obj) => `
+  // <div class="recipeCard">
+  //                 <a class="recipeLink" href="${obj.url}">
+  //                   <img class="recipePic" src="${image}">
+  //                   <p class="recipeName">${recipe_name}</p>
+  //                   <p class="ingredients">${ingredients}/p>
+  //                 </a>
+  //               </div>`
+  //   )
+  //   .join("");
+  for (let data of json_recipe) {
+    console.log(data);
+    let node = recipeCard.cloneNode(true);
+    node.querySelector(".recipeCard > a").href = data.url;
+    node.querySelector(".recipePic").src = data.image;
+    node.querySelector(".recipeName").textContent = data.recipe_name;
+    node.querySelector(".ingredients").textContent = data.ingredients;
+    document.querySelector(".recipeSection").append(node);
   }
 
   market1.addEventListener("click", async () => {
@@ -536,30 +565,34 @@ searchBtn.addEventListener("click", async () => {
     }
   });
 
-  const result_recipe = await fetch(`/recipes/${searchFieldText}`);
+  tabTwo.addEventListener("click", async () => {
+    document.querySelector(".recipeSection").innerHTML = "";
+    let searchFieldText = document.querySelector(".searchField").value;
+    const result_recipe = await fetch(`/recipes/${searchFieldText}`);
 
-  let json_recipe = await result_recipe.json();
-  console.log(json_recipe);
-  // let parentRecipe = document.querySelector(".recipeSection");
-  // recipeCard.innerHTML = data
-  //   .map(
-  //     (obj) => `
-  // <div class="recipeCard">
-  //                 <a class="recipeLink" href="${obj.url}">
-  //                   <img class="recipePic" src="${image}">
-  //                   <p class="recipeName">${recipe_name}</p>
-  //                   <p class="ingredients">${ingredients}/p>
-  //                 </a>
-  //               </div>`
-  //   )
-  //   .join("");
-  for (let data of json_recipe) {
-    console.log(data);
-    let node = recipeCard.cloneNode(true);
-    node.querySelector(".recipeCard > a").href = data.url;
-    node.querySelector(".recipePic").src = data.image;
-    node.querySelector(".recipeName").textContent = data.recipe_name;
-    node.querySelector(".ingredients").textContent = data.ingredients;
-    document.querySelector(".recipeSection").append(node);
-  }
+    let json_recipe = await result_recipe.json();
+    console.log(json_recipe);
+    // let parentRecipe = document.querySelector(".recipeSection");
+    // recipeCard.innerHTML = data
+    //   .map(
+    //     (obj) => `
+    // <div class="recipeCard">
+    //                 <a class="recipeLink" href="${obj.url}">
+    //                   <img class="recipePic" src="${image}">
+    //                   <p class="recipeName">${recipe_name}</p>
+    //                   <p class="ingredients">${ingredients}/p>
+    //                 </a>
+    //               </div>`
+    //   )
+    //   .join("");
+    for (let data of json_recipe) {
+      console.log(data);
+      let node = recipeCard.cloneNode(true);
+      node.querySelector(".recipeCard > a").href = data.url;
+      node.querySelector(".recipePic").src = data.image;
+      node.querySelector(".recipeName").textContent = data.recipe_name;
+      node.querySelector(".ingredients").textContent = data.ingredients;
+      document.querySelector(".recipeSection").append(node);
+    }
+  });
 });
