@@ -52,8 +52,6 @@ jobs:
           cd perfect-c9/
           git pull
           npm install
-          pm2 restart "Express Server"
-          pm2 restart "Python Server"
         host: perfect-c9.homes
         user: ubuntu
         key: ${{secrets.DEPLOY}}
