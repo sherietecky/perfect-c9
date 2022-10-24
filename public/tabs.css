@@ -8,14 +8,14 @@ body {
   line-height: 1.618em;
 }
 .wrapper {
-  max-width: 50rem;
+  /* max-width: 50rem; */
   width: 100%;
   margin: 0 auto;
 }
 .tabs {
   position: relative;
   margin: 3rem 0;
-  background: #1abc9c;
+  /* background: #1abc9c; */
   height: 14.75rem;
 }
 .tabs::before,
@@ -50,7 +50,7 @@ body {
   transition: top 0.25s;
 }
 .tab-content {
-  height: 30rem;
+  min-height: 30rem;
   position: absolute;
   z-index: 1;
   top: 2.75em;
