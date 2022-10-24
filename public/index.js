@@ -12,6 +12,54 @@ let recipeCard = document.querySelector(".recipeCard");
 let image_display = document.querySelector("div.resultDisplay > img");
 let tabTwo = document.querySelector("#tabTwo");
 
+if (Notification.permission === 'granted') {
+  console.log('already have the notification permission')
+} else if (Notification.permission === 'denied'){
+  Notification.requestPermission().then((permission)=>{
+    console.log(permission)
+  })
+}
+
+function displayNotification(){
+  const notif = new Notification('Message from Perfect C9', {
+    body: "Your result is ready!!!",
+    icon: "https://www.citypng.com/public/uploads/preview/-31622652360keqnmdomq3.png"
+  });
+
+  notif.onClick = (event) => {
+    event.waitUntil(clients.matchAll({
+      type: "window",
+      includeUncontrolled: true
+  }).then(function (clientList) {
+      if (data.WebUrl) {
+          let client = null;
+  
+          for (let i = 0; i < clientList.length; i++) {
+              let item = clientList[i];
+  
+              if (item.url) {
+                  client = item;
+                  break;
+              }
+          }
+  
+          if (client && 'navigate' in client) {
+              client.focus();
+              event.notification.close();
+              return client.navigate(data.WebUrl);
+          }
+          else {
+              event.notification.close();
+              // if client doesn't have navigate function, try to open a new browser window
+              return clients.openWindow(data.WebUrl);
+          }
+      }
+  }));
+  }
+}
+
+
+
 // loader, sorting buttons and search results template removed
 loading.style.display = "none";
 sortButtonsContainer.style.display = "none";
@@ -88,7 +136,6 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
     let possibility = result["possibility"].toString();
     let tempNumArr = possibility.split(".");
     let possibilityNum = parseInt(tempNumArr[0]);
-    console.log(result["result"]);
 
     if (possibilityNum > 40) {
       // if posssibility num > 40
@@ -97,7 +144,6 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
       document.querySelector(".possibility").textContent = `${possibilityNum}%`;
 
       // 2. show scraped price details + sorting buttons
-
       const res = await fetch(`/marketdata/${result["result"]}`);
       let json = await res.json();
 
@@ -287,6 +333,11 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         setCookie("perfectc9", JSON.stringify(cookieJSON), 999);
         refreshCookie();
       }
+
+      // 5. show notification
+      displayNotification()
+
+
       // else if possibility is not > 40
     } else {
       document.querySelector(".productName").textContent = "未能確定結果";

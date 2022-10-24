@@ -195,7 +195,7 @@ section.resultDisplay {
 }
 
 input.searchField {
-  width: 250px;
+  width: 200px;
   padding: 6px;
   margin-top: 8px;
   margin-right: 16px;
@@ -225,7 +225,7 @@ input.searchField:focus {
 }
 
 .searchBtn {
-  width: 150px;
+  width: 180px;
   height: 50px;
   background-color: #c2fbd7;
   border-radius: 100px;
@@ -515,4 +515,10 @@ section.resultDisplay {
   bottom: .25em; left: 1.25em;
   width: 0; height: 1em;
   transform: rotate(45deg) skewX(75deg);
+}
+
+@media (max-width: 700px) {
+  .resultDisplay.displayContent img {
+    display:none
+  }
 }
