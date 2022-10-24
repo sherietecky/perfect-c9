@@ -97,7 +97,7 @@ app.get("/marketdata/:product", async (req, res) => {
 app.get("/marketdata/:product/:marketID", async (req, res) => {
   const { product } = req.params;
   let marketID = parseInt(req.params.marketID);
-  console.log(req.params);
+  // console.log(req.params);
   try {
     const response = await knex.raw(
       `select * from price join product on price.product_id = product.id join market on price.market_id = market.id where product.product_name='${product}' AND price.market_id=${marketID} order by price`
