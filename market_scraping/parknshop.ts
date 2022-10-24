@@ -10,9 +10,10 @@ async function scrapPakgai(keyword: string) {
   const browser = await chromium.launch({
     headless: true,
     // /home/ubuntu/chromedriver
-    executablePath: process.env.NODE_ENV === "production"?
-      "/home/ubuntu/chromedriver":
-      "C:\\Program Files (x86)\\Google\\Chrome\\Application\\Chrome.exe",
+    executablePath: "/home/ubuntu/chromedriver"
+    // executablePath: process.env.NODE_ENV === "production"?
+    //   "/home/ubuntu/chromedriver":
+    //   "C:\\Program Files (x86)\\Google\\Chrome\\Application\\Chrome.exe",
   });
   const context = await browser.newContext();
   let page = await context.newPage();
