@@ -58,6 +58,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 let predictResult;
 
 document.querySelector("#snapBtn").addEventListener("click", async () => {
+  searchField.value = "";
   loading.style.display = "flex";
   // context.drawImage(video, 0, 0, 640, 640);
   context.drawImage(video, 0, 0, 400, 400, 0, 0, 400, 400);
