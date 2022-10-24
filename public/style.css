@@ -1,7 +1,8 @@
 :root {
   --darker-green: #036666;
   --dark-green: #527e3a;
-  --green: #a8bc8b;
+  --green: RGB(26,188,156);
+  --light-green: #c2fbd7;
   --pale-yellow: #fefadc;
   --pink: #f6d4ba;
   --dark-pink: #f1a67e;
@@ -109,6 +110,8 @@ section.takePic > button {
   border-radius: 23px;
   background: white;
   transition: all 1s;
+  cursor: pointer;
+
 }
 
 #snapBtn:hover {
@@ -160,8 +163,7 @@ section.takePic > button {
 .inputBox input {
   width: 100%;
   padding: 10px;
-  border: 3px solid var(--darker-green);
-  /* background: var(--green); */
+  border: 3px solid green;
   outline: none;
   border-radius: 10px;
   color: var(--darker-green);
@@ -186,6 +188,40 @@ section.takePic > button {
   padding: 0 10px;
   background: var(--pale-yellow);
   font-weight: bolder;
+}
+
+/* search button */
+
+.searchBtn {
+  width: 120px;
+  height: 45px;
+  background-color: var(--light-green);
+  border-radius: 100px;
+  /* box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px; */
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.searchBtn:hover {
+  /* box-shadow: 10px 9px 62px -18px rgba(88, 207, 173, 0.75); */
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+transform: scale(1.1) rotate(-1deg);
 }
 
 /* input.searchField {
@@ -345,7 +381,7 @@ section.resultDisplay {
 /* tab */
 
 .tab-content {
-  width: 95vw;
+  width: 100vw;
 }
 
 .tabs {
@@ -363,36 +399,7 @@ section.resultDisplay {
   grid-template-columns: auto auto auto auto auto auto;
 }
 
-.searchBtn {
-  width: 180px;
-  height: 50px;
-  background-color: #c2fbd7;
-  border-radius: 100px;
-  /* box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
-    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
-    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
-    rgba(44, 187, 99, 0.15) 0 16px 32px; */
-  color: green;
-  cursor: pointer;
-  display: inline-block;
-  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
-  padding: 7px 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 250ms;
-  border: 0;
-  font-size: 16px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin: 10px;
-  font-size: 20px;
-}
 
-.searchBtn:hover {
-  box-shadow: 10px 9px 62px -18px rgba(88, 207, 173, 0.75);
-  transform: scale(1.1) rotate(-1deg);
-}
 
 div.sortButtonsContainer {
   display: flex;
@@ -406,10 +413,11 @@ div.sortButtonsContainer > button {
   margin: 0.2rem;
   width: 200px;
   height: 80px;
-  background-color: rgb(109, 215, 132);
+  background-color: var(--green);
   border-style: solid;
   border-width: 1px;
   border-color: grey;
+  color: white
 }
 
 div.sortButtonsContainer > button:hover {
@@ -417,7 +425,7 @@ div.sortButtonsContainer > button:hover {
   box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.35);
   transition: all 0.4s;
   cursor: pointer;
-  background-color: rgb(28, 143, 101);
+  background-color: var(--darker-green);
   color: white;
 }
 
