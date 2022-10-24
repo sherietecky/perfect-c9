@@ -1,8 +1,8 @@
 from sanic import Sanic
 from sanic.response import json
 import os
-if os.name == 'posix':
-    import tensorflow as tf
+# if os.name == 'posix':
+#     import tensorflow as tf
 import numpy as np
 
 app = Sanic("predict")
