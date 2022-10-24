@@ -5,5 +5,8 @@ self.addEventListener('activate',(evt)=> {
     console.log('sw activated')
 })
 self.addEventListener('fetch',(evt)=> {
-    console.log('fetch', evt)
+    // console.log('fetch', evt)
+    // self.registration.showNotification(data.title,{
+    //     body: "test notice"
+    // })
 })

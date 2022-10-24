@@ -1,3 +1,4 @@
+let predictProduct = document.querySelector(".productName");
 let searchField = document.querySelector("input.searchField");
 let searchBtn = document.querySelector(".searchBtn");
 let priceCard = document.querySelector(".priceCard");
@@ -8,7 +9,11 @@ let market3 = document.querySelector("button.market3");
 let market4 = document.querySelector("button.market4");
 let showAll = document.querySelector("button.showAll");
 let recipeCard = document.querySelector(".recipeCard");
+<<<<<<< HEAD
 let image_display = document.querySelector("div.resultDisplay > img");
+=======
+let tabTwo = document.querySelector("#tabTwo");
+>>>>>>> be255a64c3cbe7ddc5955ae9356ec9bdf9a714db
 
 // loader, sorting buttons and search results template removed
 loading.style.display = "none";
@@ -20,15 +25,14 @@ recipeCard.remove();
 let canvas = document.querySelector("#canvas");
 let context = canvas.getContext("2d");
 let video = document.querySelector("#video");
+// add for ios to try
+video.setAttribute('autoplay', '');
+video.setAttribute('muted', '');
+video.setAttribute('playsinline', '');
 const constraints = {
   audio: false,
   video: {
     facingMode: "environment",
-    // mandatory: {
-    // minWidth: 200,
-    // maxWidth: 200,
-    // minHeight: 200,
-    // maxHeight: 200}
     width: 400,
     height: 400,
   },
@@ -57,6 +61,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 let predictResult;
 
 document.querySelector("#snapBtn").addEventListener("click", async () => {
+  searchField.value = "";
   loading.style.display = "flex";
   // context.drawImage(video, 0, 0, 640, 640);
   context.drawImage(video, 0, 0, 400, 400, 0, 0, 400, 400);
@@ -86,9 +91,181 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
     let tempNumArr = possibility.split(".");
     let possibilityNum = parseInt(tempNumArr[0]);
     console.log(result["result"]);
+
     if (possibilityNum > 40) {
+      // if posssibility num > 40
+      // 1. show result
       document.querySelector(".productName").textContent = result["result"];
       document.querySelector(".possibility").textContent = `${possibilityNum}%`;
+
+      // 2. show scraped price details + sorting buttons
+
+      const res = await fetch(`/marketdata/${result["result"]}`);
+      let json = await res.json();
+
+      sortButtonsContainer.style.display = "flex";
+
+      let parent = document.querySelector(".priceDisplay");
+      while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+      }
+
+      for (let data of json) {
+        console.log(data);
+        let node = priceCard.cloneNode(true);
+        node.querySelector(".priceCard > a").href = data.product_link;
+        node.querySelector(".productPic").src = data.display_pic;
+        node.querySelector(".supermarket").textContent = data.market_name;
+        node.querySelector(".displayName").textContent =
+          data.product_display_name;
+        node.querySelector(".quantity").textContentsrc = data.quantity;
+        node.querySelector(".price").textContent = "$" + data.price;
+        node.querySelector(".bargain").textContent = data.bargain;
+        document.querySelector(".priceDisplay").append(node);
+      }
+
+      market1.addEventListener("click", async () => {
+        let parent = document.querySelector(".priceDisplay");
+        while (parent.firstChild) {
+          parent.removeChild(parent.firstChild);
+        }
+        let item = document.querySelector(".productName").textContent;
+
+        const res1 = await fetch(`/marketdata/${item}/1`);
+        let json = await res1.json();
+        console.log(json);
+        for (let data of json) {
+          console.log(data);
+          let node = priceCard.cloneNode(true);
+          node.querySelector(".priceCard > a").href = data.product_link;
+          node.querySelector(".productPic").src = data.display_pic;
+          node.querySelector(".supermarket").textContent = data.market_name;
+          node.querySelector(".displayName").textContent =
+            data.product_display_name;
+          node.querySelector(".quantity").textContentsrc = data.quantity;
+          node.querySelector(".price").textContent = "$" + data.price;
+          node.querySelector(".bargain").textContent = data.bargain;
+          document.querySelector(".priceDisplay").append(node);
+        }
+      });
+
+      market2.addEventListener("click", async () => {
+        let parent = document.querySelector(".priceDisplay");
+        while (parent.firstChild) {
+          parent.removeChild(parent.firstChild);
+        }
+        let item = document.querySelector(".productName").textContent;
+
+        const res2 = await fetch(`/marketdata/${item}/2`);
+        let json = await res2.json();
+        console.log(json);
+        for (let data of json) {
+          console.log(data);
+          let node = priceCard.cloneNode(true);
+          node.querySelector(".priceCard > a").href = data.product_link;
+          node.querySelector(".productPic").src = data.display_pic;
+          node.querySelector(".supermarket").textContent = data.market_name;
+          node.querySelector(".displayName").textContent =
+            data.product_display_name;
+          node.querySelector(".quantity").textContentsrc = data.quantity;
+          node.querySelector(".price").textContent = "$" + data.price;
+          node.querySelector(".bargain").textContent = data.bargain;
+          document.querySelector(".priceDisplay").append(node);
+        }
+      });
+
+      market3.addEventListener("click", async () => {
+        let parent = document.querySelector(".priceDisplay");
+        while (parent.firstChild) {
+          parent.removeChild(parent.firstChild);
+        }
+        let item = document.querySelector(".productName").textContent;
+        const res3 = await fetch(`/marketdata/${item}/3`);
+        let json = await res3.json();
+        console.log(json);
+        for (let data of json) {
+          console.log(data);
+          let node = priceCard.cloneNode(true);
+          node.querySelector(".priceCard > a").href = data.product_link;
+          node.querySelector(".productPic").src = data.display_pic;
+          node.querySelector(".supermarket").textContent = data.market_name;
+          node.querySelector(".displayName").textContent =
+            data.product_display_name;
+          node.querySelector(".quantity").textContentsrc = data.quantity;
+          node.querySelector(".price").textContent = "$" + data.price;
+          node.querySelector(".bargain").textContent = data.bargain;
+          document.querySelector(".priceDisplay").append(node);
+        }
+      });
+
+      market4.addEventListener("click", async () => {
+        let parent = document.querySelector(".priceDisplay");
+        while (parent.firstChild) {
+          parent.removeChild(parent.firstChild);
+        }
+        let item = document.querySelector(".productName").textContent;
+        const res4 = await fetch(`/marketdata/${item}/4`);
+        let json = await res4.json();
+        console.log(json);
+        for (let data of json) {
+          console.log(data);
+          let node = priceCard.cloneNode(true);
+          node.querySelector(".priceCard > a").href = data.product_link;
+          node.querySelector(".productPic").src = data.display_pic;
+          node.querySelector(".supermarket").textContent = data.market_name;
+          node.querySelector(".displayName").textContent =
+            data.product_display_name;
+          node.querySelector(".quantity").textContentsrc = data.quantity;
+          node.querySelector(".price").textContent = "$" + data.price;
+          node.querySelector(".bargain").textContent = data.bargain;
+          document.querySelector(".priceDisplay").append(node);
+        }
+      });
+
+      showAll.addEventListener("click", async () => {
+        let parent = document.querySelector(".priceDisplay");
+        while (parent.firstChild) {
+          parent.removeChild(parent.firstChild);
+        }
+        let item = document.querySelector(".productName").textContent;
+        const resAll = await fetch(`/marketdata/${item}`);
+        let json = await resAll.json();
+        console.log(json);
+        for (let data of json) {
+          console.log(data);
+          let node = priceCard.cloneNode(true);
+          node.querySelector(".priceCard > a").href = data.product_link;
+          node.querySelector(".productPic").src = data.display_pic;
+          node.querySelector(".supermarket").textContent = data.market_name;
+          node.querySelector(".displayName").textContent =
+            data.product_display_name;
+          node.querySelector(".quantity").textContentsrc = data.quantity;
+          node.querySelector(".price").textContent = "$" + data.price;
+          node.querySelector(".bargain").textContent = data.bargain;
+          document.querySelector(".priceDisplay").append(node);
+        }
+      });
+
+      // 3. fetch scraped recipe
+
+      tabTwo.addEventListener("click", async () => {
+        document.querySelector(".recipeSection").innerHTML = "";
+        let item = document.querySelector(".productName").textContent;
+        const result_recipe = await fetch(`/recipes/${item}`);
+        let json_recipe = await result_recipe.json();
+        console.log(json_recipe);
+
+        for (let data of json_recipe) {
+          console.log(data);
+          let node = recipeCard.cloneNode(true);
+          node.querySelector(".recipeCard > a").href = data.url;
+          node.querySelector(".recipePic").src = data.image;
+          node.querySelector(".recipeName").textContent = data.recipe_name;
+          node.querySelector(".ingredients").textContent = data.ingredients;
+          document.querySelector(".recipeSection").append(node);
+        }
+      });
+      // 4. cookie if else
       let newCookie;
       if (!getCookie("perfectc9")) {
         newCookie = `{"history": ["${result["result"]}"]}`;
@@ -109,9 +286,11 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
         setCookie("perfectc9", JSON.stringify(cookieJSON), 999);
         refreshCookie();
       }
+      // else if possibility is not > 40
     } else {
       document.querySelector(".productName").textContent = "未能確定結果";
     }
+<<<<<<< HEAD
 
     // show price details & sorting buttons after identifying item
 
@@ -272,7 +451,10 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
     }
 
     loading.style.display = "none";
+=======
+>>>>>>> be255a64c3cbe7ddc5955ae9356ec9bdf9a714db
   });
+  loading.style.display = "none";
 });
 
 console.log(predictResult);
@@ -380,8 +562,9 @@ searchBtn.addEventListener("click", async () => {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
   }
-
+  document.querySelector(".recipeSection").innerHTML = "";
   sortButtonsContainer.style.display = "flex";
+
   let searchFieldText = document.querySelector(".searchField").value;
   console.log(searchFieldText);
 
@@ -400,6 +583,32 @@ searchBtn.addEventListener("click", async () => {
     node.querySelector(".price").textContent = "$" + data.price;
     node.querySelector(".bargain").textContent = data.bargain;
     document.querySelector(".priceDisplay").append(node);
+  }
+
+  const result_recipe = await fetch(`/recipes/${searchFieldText}`);
+  let json_recipe = await result_recipe.json();
+  console.log(json_recipe);
+  // let parentRecipe = document.querySelector(".recipeSection");
+  // recipeCard.innerHTML = data
+  //   .map(
+  //     (obj) => `
+  // <div class="recipeCard">
+  //                 <a class="recipeLink" href="${obj.url}">
+  //                   <img class="recipePic" src="${image}">
+  //                   <p class="recipeName">${recipe_name}</p>
+  //                   <p class="ingredients">${ingredients}/p>
+  //                 </a>
+  //               </div>`
+  //   )
+  //   .join("");
+  for (let data of json_recipe) {
+    console.log(data);
+    let node = recipeCard.cloneNode(true);
+    node.querySelector(".recipeCard > a").href = data.url;
+    node.querySelector(".recipePic").src = data.image;
+    node.querySelector(".recipeName").textContent = data.recipe_name;
+    node.querySelector(".ingredients").textContent = data.ingredients;
+    document.querySelector(".recipeSection").append(node);
   }
 
   market1.addEventListener("click", async () => {
@@ -530,29 +739,35 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
   });
-});
 
-searchBtn.addEventListener("click", async () => {
-  // let parentRecipe =
-  //   document.querySelector(".recipeSection").nextElementSibling;
-  // while (parentRecipe.firstChild) {
-  //   parentRecipe.removeChild(parentRecipe.firstChild);
-  // }
-  let searchFieldText = document.querySelector(".searchField").value;
-  console.log(searchFieldText);
+  tabTwo.addEventListener("click", async () => {
+    document.querySelector(".recipeSection").innerHTML = "";
+    let searchFieldText = document.querySelector(".searchField").value;
+    const result_recipe = await fetch(`/recipes/${searchFieldText}`);
 
-  const result_recipe = await fetch(`/recipes/${searchFieldText}`);
-
-  let json_recipe = await result_recipe.json();
-  console.log(json_recipe);
-
-  for (let data of json_recipe) {
-    console.log(data);
-    let node = recipeCard.cloneNode(true);
-    node.querySelector(".recipeCard > a").href = data.url;
-    node.querySelector(".recipePic").src = data.image;
-    node.querySelector(".recipeName").textContent = data.recipe_name;
-    node.querySelector(".ingredients").textContent = data.ingredients;
-    document.querySelector(".recipeSection").append(node);
-  }
+    let json_recipe = await result_recipe.json();
+    console.log(json_recipe);
+    // let parentRecipe = document.querySelector(".recipeSection");
+    // recipeCard.innerHTML = data
+    //   .map(
+    //     (obj) => `
+    // <div class="recipeCard">
+    //                 <a class="recipeLink" href="${obj.url}">
+    //                   <img class="recipePic" src="${image}">
+    //                   <p class="recipeName">${recipe_name}</p>
+    //                   <p class="ingredients">${ingredients}/p>
+    //                 </a>
+    //               </div>`
+    //   )
+    //   .join("");
+    for (let data of json_recipe) {
+      console.log(data);
+      let node = recipeCard.cloneNode(true);
+      node.querySelector(".recipeCard > a").href = data.url;
+      node.querySelector(".recipePic").src = data.image;
+      node.querySelector(".recipeName").textContent = data.recipe_name;
+      node.querySelector(".ingredients").textContent = data.ingredients;
+      document.querySelector(".recipeSection").append(node);
+    }
+  });
 });

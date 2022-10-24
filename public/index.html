@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="bg_ripple.css" />
+  <link rel="stylesheet" href="tabs.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="tabs.css">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#63C5DA">
-  <meta content='yes' name='mobile-web-app-capable' />
-  <link rel="apple-touch-icon" href="/icon/icon96.png">
-  <meta name="apple-mobile-web-app-status-bar" content="#63C5DA">
-  <title>格價專員v1.1.0</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#63C5DA" />
+  <!-- <meta name='mobile-web-app-capable' content='yes'/> -->
+  <link rel="apple-touch-icon" href="/icon/icon96.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#63C5DA" />
+  <title>格價專員v1.2.1</title>
 </head>
 
 <body>
@@ -74,18 +74,14 @@
     <button class="searchBtn">搵野</button>
     <hr />
 
-
     <!-- tabs for price and recipes -->
-
 
     <div class="wrapper">
       <div class="tabs">
         <div class="tab">
-          <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
-          <label for="tab-1" class="tab-label">價格</label>
+          <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch" />
+          <label for="tab-1" class="tab-label" id="tabOne">價格</label>
           <div class="tab-content">
-
-
             <h2>各市場價格</h2>
 
             <div class="sortButtonsContainer">
@@ -98,7 +94,7 @@
             <section class="priceDisplay">
               <!-- <div class="parent"> -->
               <div class="priceCard">
-                <a class=" productLink" href="https://www.tecky.io">
+                <a class="productLink" href="https://www.tecky.io">
                   <img class="productPic" src="../predict_images/coke.jpg" alt="" />
                   <p class="supermarket"></p>
                   <p class="displayName"></p>
@@ -109,17 +105,12 @@
               </div>
               <!-- </div> -->
             </section>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod optio veritatis eaque, neque assumenda
-            quisquam magni doloremque, dolores sequi exercitationem officia laboriosam ad distinctio repellat qui.
-            Aliquid cumque in consectetur!
+            <p>請先對著產品拍照</p>
           </div>
-
-
-
         </div>
         <div class="tab recipeTab">
-          <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
-          <label for="tab-2" class="tab-label">食譜</label>
+          <input type="radio" name="css-tabs" id="tab-2" class="tab-switch" />
+          <label for="tab-2" class="tab-label" id="tabTwo">食譜</label>
           <div class="tab-content">
             <h2>相關食譜</h2>
             <section class="recipeSection">
@@ -132,19 +123,11 @@
               </div>
             </section>
 
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, ab. Nisi totam velit nostrum voluptas
-            tempora nesciunt labore consequatur, impedit explicabo sit cum. Velit, odio? Optio illo tempore quasi
-            blanditiis?
+            <p>請先對著產品拍照</p>
           </div>
         </div>
-
       </div>
-
     </div>
-
-
-
-
     <!-- price section -->
     <!-- <h2>各市場價格</h2>
 
@@ -208,7 +191,6 @@
   <!-- <h4>Hello World</h4>
     <p id="test-name">test-name</p>
     <p id="test-password">test-password</p> -->
-
 
   <!-- javascript -->
 
