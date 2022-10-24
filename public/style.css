@@ -46,7 +46,7 @@ section.takePic > button {
 
 div#interaction_part {
   outline: 2px solid black;
-  height: 190px;
+  height: auto;
   width: 300px;
   background: aliceblue;
   color: black;
@@ -62,9 +62,9 @@ div.resultDisplay {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 300px;
-  height: 120px;
-  outline: 2px solid black;
+  width: 280px;
+  height: auto;
+  /* outline: 2px solid black; */
 }
 
 .result_content {
@@ -72,7 +72,7 @@ div.resultDisplay {
 }
 
 #searchDisplay {
-  outline: 2px solid black;
+  /* outline: 2px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,8 +117,8 @@ section.resultDisplay {
   position: fixed;
   bottom: 0;
   right: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 50, 0.3);
   z-index: 100;
 }
@@ -134,8 +134,8 @@ section.resultDisplay {
 
 /* #loading #loading_game, */
 #loading #loading_game iframe {
-  height: 510px;
-  width: 720px;
+  height: 380px;
+  width: 500px;
 }
 
 .history {
@@ -163,8 +163,7 @@ section.resultDisplay {
 .priceDisplay {
   display: grid;
   gap: 15px 15px;
-  grid-template-columns:  auto auto auto auto auto auto;
-
+  grid-template-columns: auto auto auto auto auto auto;
 }
 
 .recipeSection {
@@ -175,12 +174,12 @@ section.resultDisplay {
 
 @media (max-width: 1600px) {
   .priceDisplay {
-    grid-template-columns:  auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
   }
 }
 @media (max-width: 1300px) {
   .priceDisplay {
-    grid-template-columns:  auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
   }
   .recipeSection {
     grid-template-columns: auto auto auto;
@@ -189,7 +188,7 @@ section.resultDisplay {
 
 @media (max-width: 1000px) {
   .priceDisplay {
-    grid-template-columns:  auto auto auto;
+    grid-template-columns: auto auto auto;
   }
 }
 
@@ -292,14 +291,12 @@ section.resultDisplay {
   right: 0;
   height: 520px;
   width: 310px;
-  border: 2px solid black;
 }
 
 .live2d {
   position: fixed;
   bottom: 0;
   right: 0;
-  border: 2px solid black;
   z-index: -10;
 }
 
@@ -311,7 +308,7 @@ section.resultDisplay {
 /* border: 2px solid black; */
 /* } */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   canvas#live2d {
     width: 150px;
     height: 200px;
@@ -336,12 +333,12 @@ section.resultDisplay {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
+    width: 180px;
+    height: 180px;
+    /* border: 2px solid black; */
   }
   #searchDisplay {
-    outline: 2px solid black;
+    /* outline: 2px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,7 +361,7 @@ section.resultDisplay {
   } */
 
   #loading #loading_game iframe {
-    height: 310px;
-    width: 520px;
+    height: 280px;
+    width: 360px;
   }
 }
