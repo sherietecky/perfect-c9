@@ -19,15 +19,14 @@ recipeCard.remove();
 let canvas = document.querySelector("#canvas");
 let context = canvas.getContext("2d");
 let video = document.querySelector("#video");
+// add for ios to try
+video.setAttribute('autoplay', '');
+video.setAttribute('muted', '');
+video.setAttribute('playsinline', '');
 const constraints = {
   audio: false,
   video: {
     facingMode: "environment",
-    // mandatory: {
-    // minWidth: 200,
-    // maxWidth: 200,
-    // minHeight: 200,
-    // maxHeight: 200}
     width: 400,
     height: 400,
   },
