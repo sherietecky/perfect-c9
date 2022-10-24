@@ -17,7 +17,17 @@ function getRandomInt_difference(max) {
     return a;
   }
 }
-// console.log(getRandomInt_difference(5));
+function getRandomInt_difference2(max) {
+  let a = (Math.floor(Math.random() * max) + 1) * 10 - 30;
+  console.log(a);
+  if (a == 0) {
+    return getRandomInt_difference(max);
+  } else if (a !== 0) {
+    return a;
+  }
+}
+console.log(getRandomInt_difference(5));
+console.log(getRandomInt_difference2(5));
 
 let num_question_type;
 let num1;
@@ -68,13 +78,13 @@ function generateQuestion() {
   if (num_answer_position == 1) {
     answer_boxes[0].textContent = returnAnswer();
     answer_boxes[1].textContent = returnAnswer() + getRandomInt_difference(5);
-    answer_boxes[2].textContent = returnAnswer() + getRandomInt_difference(5);
+    answer_boxes[2].textContent = returnAnswer() - getRandomInt_difference(5);
     if (answer_boxes[1].textContent == answer_boxes[2].textContent) {
       answer_boxes[1].textContent = returnAnswer() + getRandomInt_difference(5);
-      answer_boxes[2].textContent = returnAnswer() + getRandomInt_difference(5);
+      answer_boxes[2].textContent = returnAnswer() - getRandomInt_difference(5);
     }
   } else if (num_answer_position == 2) {
-    answer_boxes[0].textContent = returnAnswer() + getRandomInt_difference(5);
+    answer_boxes[0].textContent = returnAnswer() - getRandomInt_difference(5);
     answer_boxes[1].textContent = returnAnswer();
     answer_boxes[2].textContent = returnAnswer() + getRandomInt_difference(5);
     if (answer_boxes[0].textContent == answer_boxes[2].textContent) {
@@ -83,10 +93,10 @@ function generateQuestion() {
     }
   } else {
     answer_boxes[0].textContent = returnAnswer() + getRandomInt_difference(5);
-    answer_boxes[1].textContent = returnAnswer() + getRandomInt_difference(5);
+    answer_boxes[1].textContent = returnAnswer() - getRandomInt_difference(5);
     answer_boxes[2].textContent = returnAnswer();
     if (answer_boxes[0].textContent == answer_boxes[1].textContent) {
-      answer_boxes[0].textContent = returnAnswer() + getRandomInt_difference(5);
+      answer_boxes[0].textContent = returnAnswer() - getRandomInt_difference(5);
       answer_boxes[1].textContent = returnAnswer() + getRandomInt_difference(5);
     }
   }
