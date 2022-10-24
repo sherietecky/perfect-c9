@@ -23,9 +23,9 @@ let canvas = document.querySelector("#canvas");
 let context = canvas.getContext("2d");
 let video = document.querySelector("#video");
 // add for ios to try
-video.setAttribute('autoplay', '');
-video.setAttribute('muted', '');
-video.setAttribute('playsinline', '');
+video.setAttribute("autoplay", "");
+video.setAttribute("muted", "");
+video.setAttribute("playsinline", "");
 const constraints = {
   audio: false,
   video: {
@@ -127,6 +127,9 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
           parent.removeChild(parent.firstChild);
         }
         let item = document.querySelector(".productName").textContent;
+
+        // let searchItem = document.querySelector(".productName").textContent
+        // console.log(searchItem);
 
         const res1 = await fetch(`/marketdata/${item}/1`);
         let json = await res1.json();
