@@ -23,6 +23,7 @@ export async function seed(knex: Knex): Promise<void> {
   // const trx = await knex.transaction();
   // try {
   // Deletes ALL existing entries
+
   await knex("price").del();
 
   // read json file
@@ -70,12 +71,12 @@ export async function seed(knex: Knex): Promise<void> {
     }
   }
 
-  const hktvmallData = jsonfile.readFileSync(
-    path.join(__dirname, "..", "market_json", "hktvmallAll.json")
+  const abouthaiData = jsonfile.readFileSync(
+    path.join(__dirname, "..", "market_json", "abouthaiAll.json")
   );
 
-  let hktvmallDataArr = Object.values(hktvmallData);
-  for (let arr of hktvmallDataArr) {
+  let abouthaiDataArr = Object.values(abouthaiData);
+  for (let arr of abouthaiDataArr) {
     console.log(arr);
     let newArr: PriceData[] | any = arr;
     for (let obj of newArr) {
@@ -92,15 +93,19 @@ export async function seed(knex: Knex): Promise<void> {
     }
   }
 
-  const abouthaiData = jsonfile.readFileSync(
-    path.join(__dirname, "..", "market_json", "abouthaiAll.json")
+  const hktvmallData = jsonfile.readFileSync(
+    path.join(__dirname, "..", "market_json", "hktvmallAll.json")
   );
 
-  let abouthaiDataArr = Object.values(abouthaiData);
-  for (let arr of abouthaiDataArr) {
+  let hktvmallDataArr = Object.values(hktvmallData);
+  for (let arr of hktvmallDataArr) {
     console.log(arr);
     let newArr: PriceData[] | any = arr;
+
     for (let obj of newArr) {
+
+      console.log(obj)
+
       await knex("price").insert({
         market_id: obj.market_id,
         product_id: obj.search_item_id,
