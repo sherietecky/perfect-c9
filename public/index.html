@@ -76,7 +76,7 @@
 
       <!-- search bar -->
       <div class="typeSearch">
-        <input class="searchField" type="text" placeholder="打字 Search..." />
+        <input class="searchField" type="text" placeholder="打字 Search..."/>
         <button class="searchBtn">搵野 <i class="fa fa-search"></i></button>
       </div>
       <hr />
@@ -134,7 +134,7 @@
                 <div class="recipeCard">
                   <a class="recipeLink" href="https://www.tecky.io">
                     <img class="recipePic" src="../predict_images/coke.jpg" />
-                    <p class="recipeName">[recipe name]</p>
+                     <p class="recipeName">[recipe name]</p>
                     <p class="ingredients">[ingredients]</p>
                   </a>
                 </div>
@@ -190,10 +190,15 @@
     <div id="live2d_container">
       <div id="interaction_part">
         <div class="resultDisplay displayContent">
-          <img src="" class="result_content" alt="請先對著想辨認的產品拍照" />
+          <img src="img/question-marks.png" class="result_content" alt="請先對著想辨認的產品拍照" />
           <div id="result_info" class="result_content">
-            <div class="productName">[product name]</div>
-            <div class="possibility">[possibility]</div>
+            <div> AI推測:
+              <span class="productName">
+              </span>
+            
+          </div>
+            <div>準確率:</div>
+            <span class="possibility"></span>
           </div>
         </div>
         <div id="searchDisplay" class="displayContent">
