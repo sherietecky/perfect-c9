@@ -60,13 +60,16 @@ const form = formidable({
   filter: (part) => part.mimetype?.startsWith("image/") || false,
 });
 
+let image_filename: string;
 app.post("/snap", (req, res) => {
   console.log("you can connect to main.ts");
 
   form.parse(req, async (err, fields, files) => {
     let image = files.predict_image;
     let imageFile = Array.isArray(image) ? image[0] : image;
-    let image_filename = imageFile ? imageFile.newFilename : "";
+    image_filename = imageFile ? imageFile.newFilename : "";
+    // console.log(image_filename);
+
     try {
       let result = await fetch(
         `http://${process.env.HOST}:8000/predict?filename=${image_filename}`
@@ -117,6 +120,10 @@ app.get("/recipes/:product", async (req, res) => {
   );
   res.json(response.rows);
   return;
+});
+
+app.get("/result_image", async (req, res) => {
+  res.json(image_filename);
 });
 
 app.listen(3000, () => {
