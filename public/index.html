@@ -8,25 +8,12 @@
   <link rel="stylesheet" href="bg_ripple.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="tabs.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#63C5DA">
+  <meta content='yes' name='mobile-web-app-capable'/>
+  <link rel="apple-touch-icon" href="/icon/icon96.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#63C5DA">
   <title>格價專員v1.1.0</title>
-  <style>
-    .live2d {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-    }
-
-    /* canvas#live2d { */
-    /* border: 2px solid black; */
-    /* } */
-
-    @media only screen and (max-width: 768px) {
-      canvas#live2d {
-        width: 150px;
-        height: 225px;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -42,9 +29,10 @@
   <!-- loader -->
   <div id="loading">
     <div id="loader"></div>
-    <div id="loading_game">
+    <div id="loading_game" style="background-color: rgb(81, 76, 76);">
       <!-- <script src="https://cdn.htmlgames.com/embed.js?game=CarromPool&amp;bgcolor=white"></script> -->
-      <object type="text/html" data="loading_game.html" width="600" height="800"></object>
+      <!-- <object type="text/html" data="loading_game.html" width="600" height="800"></object> -->
+      <iframe src="loading_game.html" height="510" width="720"></iframe>
     </div>
   </div>
 
@@ -71,14 +59,14 @@
     </section>
 
     <!-- result section -->
-    <h2>Results</h2>
+    <!-- <h2>Results</h2>
     <section class="resultDisplay">
       <img src="/predict_images/coke.jpg" alt="" />
       <div class="productName">[product name]</div>
       <div class="possibility">[possibility]</div>
       <div>search history:</div>
       <div class="history">[history]</div>
-    </section>
+    </section> -->
 
     <!-- search bar -->
     <h2>打字 Search</h2>
@@ -109,14 +97,14 @@
             </div>
             <section class="priceDisplay">
               <!-- <div class="parent"> -->
-              <div class="priceCard"">
-        <a class=" productLink" href="https://www.tecky.io">
-                <img class="productPic" src="../predict_images/coke.jpg" alt="" />
-                <p class="supermarket"></p>
-                <p class="displayName"></p>
-                <p class="quantity"></p>
-                <p class="price"></p>
-                <p class="bargain"></p>
+              <div class="priceCard">
+                <a class=" productLink" href="https://www.tecky.io">
+                  <img class="productPic" src="../predict_images/coke.jpg" alt="" />
+                  <p class="supermarket"></p>
+                  <p class="displayName"></p>
+                  <p class="quantity"></p>
+                  <p class="price"></p>
+                  <p class="bargain"></p>
                 </a>
               </div>
               <!-- </div> -->
@@ -199,7 +187,20 @@
   </div>
 
   <!-- game and live2d character -->
-  <div>
+  <div id="live2d_container">
+    <div id="interaction_part">
+      <div class="resultDisplay displayContent">
+        <img src="/predict_images/coke.jpg" class="result_content" alt="" />
+        <div id="result_info" class="result_content">
+          <div class="productName">[product name]</div>
+          <div class="possibility">[possibility]</div>
+        </div>
+      </div>
+      <div id="searchDisplay" class="displayContent">
+        <div>你想找以下產品嗎？:</div>
+        <div class="history">[history]</div>
+      </div>
+    </div>
     <canvas class="live2d" id="live2d" width="300" height="400"></canvas>
   </div>
 
@@ -218,7 +219,8 @@
   <script>
     loadlive2d(LAppDefine.CANVAS_ID, LAppDefine.MODELS[0][3]);
     // loadlive2d("live2d", "model/22/model.default.json");
-  </script>
+    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>

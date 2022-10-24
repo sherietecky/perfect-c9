@@ -44,7 +44,47 @@ section.takePic > button {
 
 /* result section */
 
-section.resultDisplay > img {
+div#interaction_part {
+  outline: 2px solid black;
+  height: 170px;
+  width: 300px;
+  background: aliceblue;
+  color: black;
+  border-radius: 50px;
+}
+
+div.displayContent {
+  margin: 0px 0px;
+}
+
+div.resultDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 120px;
+  outline: 2px solid black;
+}
+
+.result_content {
+  margin: 0px 10px;
+}
+
+#searchDisplay {
+  outline: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.resultDisplay > img {
+  height: 100px;
+  width: 100px;
+}
+
+/* section.resultDisplay > img {
   height: 100px;
   width: 100px;
   display: inline;
@@ -66,7 +106,7 @@ section.resultDisplay {
   border-style: solid;
   display: flex;
   flex-direction: column;
-}
+} */
 
 /* loading */
 
@@ -182,4 +222,66 @@ section.resultDisplay {
     width: 20vw;
     height: 10vh;
   }
+}
+
+/* live2d */
+#live2d_container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 500px;
+  width: 310px;
+  border: 2px solid black;
+}
+
+.live2d {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: 2px solid black;
+  z-index: -10;
+}
+
+section.resultDisplay {
+  position: fixed;
+}
+
+/* canvas#live2d { */
+/* border: 2px solid black; */
+/* } */
+
+@media only screen and (max-width: 768px) {
+  canvas#live2d {
+    width: 150px;
+    height: 225px;
+  }
+
+  div#live2d_container {
+    height: 400px;
+    width: 200px;
+  }
+
+  div#interaction_part {
+    outline: 2px solid black;
+    height: 200px;
+    width: 300px;
+  }
+
+  div.resultDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 160px;
+    border: 2px solid black;
+  }
+  /* 
+  .result_content {
+    margin: 0px 20px;
+  } */
+
+  /* div.resultDisplay > img {
+    height: 100px;
+    width: 100px;
+  } */
 }
