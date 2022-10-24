@@ -1,8 +1,7 @@
 from sanic import Sanic
 from sanic.response import json
 import os
-# if os.name == 'posix':
-#     import tensorflow as tf
+import tensorflow as tf
 import numpy as np
 
 app = Sanic("predict")
@@ -24,7 +23,7 @@ def try_request(request):
 @app.route("/predict")
 def predict(request):
     # if os.name != 'posix':
-    import tensorflow as tf
+    # import tensorflow as tf
 
     print("hello, you can connect to python server")
 

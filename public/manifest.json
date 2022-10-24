@@ -1,11 +1,13 @@
 {
-  "name": "格價專員",
+  "name": "格價專員app",
   "short_name": "格價專員",
   "start_url": "index.html",
+  "display_override": ["fullscreen", "minimal-ui"],
   "display": "standalone",
   "background_color": "#63C5DA",
   "theme_color": "#63C5DA",
   "orientation": "portrait-primary",
+  "scope": "/",
   "icons": [
     {
         "src": "/icon/icon72.png",
