@@ -1,3 +1,12 @@
+:root {
+  --darker-green: #036666;
+  --dark-green: #527e3a;
+  --green: #a8bc8b;
+  --pale-yellow: #fefadc;
+  --pink: #f6d4ba;
+  --dark-pink: #f1a67e;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap");
 
 /* body {
@@ -14,6 +23,24 @@
 
 body {
   font-family: "Noto Sans TC", sans-serif;
+}
+
+/* title */
+
+#title {
+   /*  leverage cascade for cross-browser gradients  */
+   background: linear-gradient(
+    to right, 
+    #0bfeff, 
+    #0bff50
+    /* hsl(98 100% 62%), 
+    hsl(204 100% 59%) */
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight:bolder
 }
 
 /* take pic section */
