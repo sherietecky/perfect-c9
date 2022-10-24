@@ -157,13 +157,43 @@ section.resultDisplay {
 .priceDisplay {
   display: grid;
   gap: 15px 15px;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns:  auto auto auto auto auto auto;
+
 }
 
 .recipeSection {
   display: grid;
   gap: 15px 15px;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto;
+}
+
+@media (max-width: 1600px) {
+  .priceDisplay {
+    grid-template-columns:  auto auto auto auto auto;
+  }
+}
+@media (max-width: 1300px) {
+  .priceDisplay {
+    grid-template-columns:  auto auto auto auto;
+  }
+  .recipeSection {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .priceDisplay {
+    grid-template-columns:  auto auto auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .priceDisplay {
+    grid-template-columns: auto auto;
+  }
+  .recipeSection {
+    grid-template-columns: auto auto;
+  }
 }
 
 .priceCard {
