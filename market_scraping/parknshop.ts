@@ -17,7 +17,11 @@ async function scrapPakgai(keyword: string) {
     //   "C:\\Program Files (x86)\\Google\\Chrome\\Application\\Chrome.exe",
     args:['--whitelisted-ips=""'],
   });
-  const context = await browser.newContext(({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36' }));
+  const context = await browser.newContext({
+    extraHTTPHeaders:{
+      'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36'
+    }
+  });
   let page = await context.newPage();
   let url =
     "https://www.parknshop.com/zh-hk/search?text=" +
