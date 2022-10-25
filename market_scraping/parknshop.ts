@@ -8,7 +8,7 @@ import { Knex } from "knex";
 async function scrapPakgai(keyword: string) {
 
   const browser = await chromium.launch({
-    //headless: true,
+    headless: true,
     // /home/ubuntu/chromedriver
     executablePath: '/home/ubuntu/chromedriver',
     // executablePath: '/home/ubuntu/chromedriver --whitelisted-ips=""'
@@ -19,7 +19,7 @@ async function scrapPakgai(keyword: string) {
   });
   const context = await browser.newContext({
     extraHTTPHeaders:{
-      'User-Agent': 'user-agent: insomnia/2022.6.0',
+      'User-Agent': 'insomnia/2022.6.0',
       'Content-Type' : "text/html; charset=UTF-8",
       'Host': 'www.parknshop.com',
       'accept' : '*/*',
