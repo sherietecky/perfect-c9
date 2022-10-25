@@ -441,6 +441,15 @@ div.sortButtonsContainer > button:hover {
   color: white;
 }
 
+div.sortButtonsContainer > button:focus {
+  transform: translateY(-4px);
+  box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.35);
+  transition: all 0.4s;
+  cursor: pointer;
+  background-color: var(--darker-green);
+  color: white;
+}
+
 .recipeSection {
   display: grid;
   gap: 15px 15px;
@@ -493,6 +502,7 @@ div.sortButtonsContainer > button:hover {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  transition: transform 0.25s;
 }
 
 .productPic {
@@ -534,6 +544,16 @@ div.sortButtonsContainer > button:hover {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  transition: transform 0.2s;
+  background-color: white;
+}
+
+.priceCard:hover {
+  transform: skew(-7deg);
+}
+
+.recipeCard:hover {
+  transform: skew(-7deg);
 }
 
 @keyframes spin {

@@ -300,7 +300,10 @@ searchBtn.addEventListener("click", async () => {
     parent.removeChild(parent.firstChild);
   }
   document.querySelector(".recipeSection").innerHTML = "";
+
+  //show sorting buttons and focus show all button
   sortButtonsContainer.style.display = "flex";
+  // showAll.addClass("focus");
 
   // locate search word
   let searchFieldText = document.querySelector(".searchField").value;
@@ -375,7 +378,7 @@ searchBtn.addEventListener("click", async () => {
     document.querySelector(".recipeSection").append(node);
   }
   AOS.init();
-  document.querySelector(".loremText").style.display = 'none'
+  document.querySelector(".loremText").style.display = "none";
 
   // sorting buttons
 
@@ -404,8 +407,7 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
-  document.querySelector(".loremText").style.display = 'none'
-
+    document.querySelector(".loremText").style.display = "none";
   });
 
   market2.addEventListener("click", async () => {
@@ -433,8 +435,7 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
-  document.querySelector(".loremText").style.display = 'none'
-
+    document.querySelector(".loremText").style.display = "none";
   });
 
   market3.addEventListener("click", async () => {
@@ -462,8 +463,7 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
-    document.querySelector(".loremText").style.display = 'none'
-  
+    document.querySelector(".loremText").style.display = "none";
   });
 
   market4.addEventListener("click", async () => {
@@ -491,8 +491,7 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
-  document.querySelector(".loremText").style.display = 'none'
-
+    document.querySelector(".loremText").style.display = "none";
   });
 
   showAll.addEventListener("click", async () => {
@@ -519,8 +518,7 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
-    document.querySelector(".loremText").style.display = 'none'
-  
+    document.querySelector(".loremText").style.display = "none";
   });
 
   tabTwo.addEventListener("click", async () => {
@@ -553,8 +551,7 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".recipeSection").append(node);
     }
     AOS.init();
-  document.querySelector(".loremText").style.display = 'none'
-
+    document.querySelector(".loremText").style.display = "none";
   });
 
   let searchHistory = document.querySelectorAll(".history > div");
