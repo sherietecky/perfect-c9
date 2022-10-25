@@ -17,6 +17,7 @@ loading.style.display = "none";
 sortButtonsContainer.style.display = "none";
 priceCard.remove();
 recipeCard.remove();
+searchField.value = "";
 
 // use the camera
 let canvas = document.querySelector("#canvas");
