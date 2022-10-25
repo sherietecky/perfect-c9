@@ -20,46 +20,46 @@ let tabTwo = document.querySelector("#tabTwo");
 //   });
 // }
 
-function displayNotification() {
-  const notif = new Notification("Message from Perfect C9", {
-    body: "Your result is ready!!!",
-    icon: "https://www.citypng.com/public/uploads/preview/-31622652360keqnmdomq3.png",
-  });
+// function displayNotification() {
+//   const notif = new Notification("Message from Perfect C9", {
+//     body: "Your result is ready!!!",
+//     icon: "https://www.citypng.com/public/uploads/preview/-31622652360keqnmdomq3.png",
+//   });
 
-  notif.onClick = (event) => {
-    event.waitUntil(
-      clients
-        .matchAll({
-          type: "window",
-          includeUncontrolled: true,
-        })
-        .then(function (clientList) {
-          if (data.WebUrl) {
-            let client = null;
+//   notif.onClick = (event) => {
+//     event.waitUntil(
+//       clients
+//         .matchAll({
+//           type: "window",
+//           includeUncontrolled: true,
+//         })
+//         .then(function (clientList) {
+//           if (data.WebUrl) {
+//             let client = null;
 
-            for (let i = 0; i < clientList.length; i++) {
-              let item = clientList[i];
+//             for (let i = 0; i < clientList.length; i++) {
+//               let item = clientList[i];
 
-              if (item.url) {
-                client = item;
-                break;
-              }
-            }
+//               if (item.url) {
+//                 client = item;
+//                 break;
+//               }
+//             }
 
-            if (client && "navigate" in client) {
-              client.focus();
-              event.notification.close();
-              return client.navigate(data.WebUrl);
-            } else {
-              event.notification.close();
-              // if client doesn't have navigate function, try to open a new browser window
-              return clients.openWindow(data.WebUrl);
-            }
-          }
-        })
-    );
-  };
-}
+//             if (client && "navigate" in client) {
+//               client.focus();
+//               event.notification.close();
+//               return client.navigate(data.WebUrl);
+//             } else {
+//               event.notification.close();
+//               // if client doesn't have navigate function, try to open a new browser window
+//               return clients.openWindow(data.WebUrl);
+//             }
+//           }
+//         })
+//     );
+//   };
+// }
 
 // loader, sorting buttons and search results template removed
 loading.style.display = "none";
@@ -173,7 +173,7 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
       }
 
       // 3. show notification
-      displayNotification();
+      // displayNotification();
 
       // 4. show scraped price details + sorting buttons
       const res = await fetch(`/marketdata/${result["result"]}`);
@@ -305,7 +305,10 @@ searchBtn.addEventListener("click", async () => {
     parent.removeChild(parent.firstChild);
   }
   document.querySelector(".recipeSection").innerHTML = "";
+
+  //show sorting buttons and focus show all button
   sortButtonsContainer.style.display = "flex";
+  // showAll.addClass("focus");
 
   // locate search word
   let classification_arr = [
@@ -546,6 +549,7 @@ searchBtn.addEventListener("click", async () => {
     }
     AOS.init();
     document.querySelector(".loremText").style.display = "none";
+    itemOrder();
   });
 
   tabTwo.addEventListener("click", async () => {
@@ -703,3 +707,25 @@ window.addEventListener("resize", widthChangeCallback);
 //     document.querySelector(".priceDisplay").append(node);
 //   }
 // }
+
+// load cheapest item
+function itemOrder() {
+  let nodes = document.querySelector(".priceDisplay").childNodes;
+  let firstNode = nodes[0];
+  console.log("1", firstNode);
+  let secondNode = nodes[1];
+  console.log("1", secondNode);
+  let thirdNode = nodes[2];
+
+  let firstPhotos = firstNode.querySelectorAll("img");
+  let firstPhoto = firstPhotos[1];
+  firstPhoto.src = "img/1st.png";
+
+  let secondPhotos = secondNode.querySelectorAll("img");
+  let secondPhoto = secondPhotos[1];
+  secondPhoto.src = "img/2nd.png";
+
+  let thirdPhotos = thirdNode.querySelectorAll("img");
+  let thirdPhoto = thirdPhotos[1];
+  thirdPhoto.src = "img/3rd.png";
+}
