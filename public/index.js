@@ -556,3 +556,14 @@ searchHistory.forEach((div) => {
     searchBtn.click();
   });
 });
+
+let canvas_live2d = document.querySelector("canvas#live2d");
+let display_boolean = false;
+canvas_live2d.addEventListener("click", () => {
+  display_boolean = !display_boolean;
+  if (display_boolean) {
+    interaction_part.style.display = "flex";
+  } else if (!display_boolean) {
+    interaction_part.style.display = "none";
+  }
+});

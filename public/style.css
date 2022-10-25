@@ -259,10 +259,11 @@ div#interaction_part {
   /* outline: 2px solid black; */
   padding: 10px;
   height: auto;
-  width: 280px;
+  width: 250px;
   background: aliceblue;
   color: black;
   border-radius: 30px;
+  /* display: none; */
 }
 
 div.displayContent {
@@ -395,9 +396,9 @@ section.resultDisplay {
   position: relative;
 }
 
-#live2d_container {
+/* #live2d_container {
   z-index: 10;
-}
+} */
 /* price display section */
 
 .priceDisplay {
@@ -555,21 +556,20 @@ div.sortButtonsContainer > button:hover {
 /* live2d */
 #live2d_container {
   position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 420px;
-  width: 270px;
+  bottom: 60px;
+  right: 10px;
+  height: 400px;
+  width: 250px;
+  z-index: 10;
+  /* position: relative; */
 }
 
-.live2d {
-  /* position: fixed; */
-  /* bottom: 0; */
-  /* right: 0; */
-  z-index: -10;
-}
 canvas#live2d {
   height: 300px;
-  width: 260px;
+  width: 250px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 
 section.resultDisplay {
@@ -587,7 +587,7 @@ section.resultDisplay {
   }
 
   div#live2d_container {
-    height: 430px;
+    height: 500px;
     width: 160px;
     display: flex;
     justify-content: space-between;
@@ -664,12 +664,15 @@ section.resultDisplay {
   background: #629bdd !important;
   font: 2em/4;
   text-align: center;
+  display: none;
 }
+
 #interaction_part:before,
 #interaction_part:after {
   position: absolute;
   z-index: -1;
   content: "";
+  /* display: none; */
 }
 #interaction_part:after {
   top: 0;
@@ -679,51 +682,7 @@ section.resultDisplay {
   border-radius: inherit;
   transform: rotate(2deg) translate(0.35em, -0.15em) scale(1.02);
   background: #f4fbfe;
-}
-#interaction_part:before {
-  border: solid 0 transparent;
-  border-right: solid 3.5em #f4fbfe;
-  border-bottom: solid 0.25em #629bdd;
-  bottom: 0.25em;
-  left: 1.25em;
-  width: 0;
-  height: 1em;
-  transform: rotate(45deg) skewX(75deg);
-}
-
-@media (max-width: 700px) {
-  .resultDisplay.displayContent img {
-    display: none;
-  }
-}
-
-/* bubble speech */
-#interaction_part {
-  position: relative;
-  margin: 0.5em auto;
-  padding: 1em;
-  width: 10em;
-  height: 4em;
-  border-radius: 0.25em;
-  transform: rotate(0deg) rotateY(15deg);
-  background: #629bdd !important;
-  font: 2em/4;
-  text-align: center;
-}
-#interaction_part:before,
-#interaction_part:after {
-  position: absolute;
-  z-index: -1;
-  content: "";
-}
-#interaction_part:after {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: inherit;
-  transform: rotate(2deg) translate(0.35em, -0.15em) scale(1.02);
-  background: #f4fbfe;
+  /* display: none; */
 }
 #interaction_part:before {
   border: solid 0 transparent;

@@ -3,7 +3,6 @@ from sanic.response import json
 import os
 # import tensorflow as tf
 import numpy as np
-import tensorflow as tf
 import time
 
 
@@ -32,6 +31,11 @@ def try_request(request):
 @app.route("/predict")
 def predict(request):
     # if os.name != 'posix':
+    start_tf = time.time()
+    import tensorflow as tf
+    end_tf = time.time()
+    print(f"Tensorflow Loading used {end_tf - start_tf}s")
+
 
     start_route = time.time()
 
