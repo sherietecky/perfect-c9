@@ -14,14 +14,11 @@
     <meta name="apple-mobile-web-app-status-bar" content="#63C5DA" />
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <title>格價專員v1.2.3</title>
+    <title>格價專員v1.2.4</title>
   </head>
 
   <body>
@@ -40,11 +37,7 @@
       <div id="loading_game" style="background-color: rgb(81, 76, 76)">
         <!-- <script src="https://cdn.htmlgames.com/embed.js?game=CarromPool&amp;bgcolor=white"></script> -->
         <!-- <object type="text/html" data="loading_game.html" width="600" height="800"></object> -->
-        <iframe
-          src="loading_game.html"
-          seamless="seamless"
-          scrolling="no"
-          frameborder="0"
+        <iframe src="loading_game.html" seamless="seamless" scrolling="no" frameborder="0"
           allowtransparency="true"
         ></iframe>
       </div>
@@ -104,13 +97,7 @@
       <div class="wrapper">
         <div class="tabs">
           <div class="tab">
-            <input
-              type="radio"
-              name="css-tabs"
-              id="tab-1"
-              checked
-              class="tab-switch"
-            />
+            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch" />
             <label for="tab-1" class="tab-label" id="tabOne">價格</label>
             <div class="tab-content">
               <h2>各市場價格</h2>
@@ -124,13 +111,11 @@
               </div>
               <section class="priceDisplay">
                 <!-- <div class="parent"> -->
-                <div class="priceCard">
+                <div class="priceCard" data-aos=“fade=right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                   <a class="productLink" href="https://www.tecky.io">
-                    <img
-                      class="productPic"
-                      src="../predict_images/coke.jpg"
-                      alt=""
-                    />
+                    <img class="productPic" src="../predict_images/coke.jpg"  alt="" />
                     <p class="supermarket"></p>
                     <p class="displayName"></p>
                     <p class="quantity"></p>
@@ -208,11 +193,7 @@
     <div id="live2d_container">
       <div id="interaction_part">
         <div class="resultDisplay displayContent">
-          <img
-            src="img/question-marks.png"
-            class="result_content"
-            alt="請先對著想辨認的產品拍照"
-          />
+          <img src="img/question-marks.png"  class="result_content" alt="請先對著想辨認的產品拍照"  />
           <div id="result_info" class="result_content">
             <div>
               AI推測:
@@ -239,6 +220,7 @@
 
     <script src="index.js"></script>
     <script src="tabs.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/LAppDefine.js"></script>
     <script src="js/live2d.js"></script>
     <script>
