@@ -401,6 +401,7 @@ searchBtn.addEventListener("click", async () => {
       node.querySelector(".bargain").textContent = data.bargain;
       document.querySelector(".priceDisplay").append(node);
     }
+AOS.init();
   });
 
   market2.addEventListener("click", async () => {
@@ -427,6 +428,8 @@ searchBtn.addEventListener("click", async () => {
       node.querySelector(".bargain").textContent = data.bargain;
       document.querySelector(".priceDisplay").append(node);
     }
+AOS.init();
+
   });
 
   market3.addEventListener("click", async () => {
@@ -453,6 +456,8 @@ searchBtn.addEventListener("click", async () => {
       node.querySelector(".bargain").textContent = data.bargain;
       document.querySelector(".priceDisplay").append(node);
     }
+AOS.init();
+
   });
 
   market4.addEventListener("click", async () => {
@@ -479,6 +484,8 @@ searchBtn.addEventListener("click", async () => {
       node.querySelector(".bargain").textContent = data.bargain;
       document.querySelector(".priceDisplay").append(node);
     }
+AOS.init();
+
   });
 
   showAll.addEventListener("click", async () => {
@@ -504,6 +511,7 @@ searchBtn.addEventListener("click", async () => {
       node.querySelector(".bargain").textContent = data.bargain;
       document.querySelector(".priceDisplay").append(node);
     }
+AOS.init();
   });
 
   tabTwo.addEventListener("click", async () => {
