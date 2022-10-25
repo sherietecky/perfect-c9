@@ -6,7 +6,10 @@ import { knex } from "../db";
 import { Knex } from "knex";
 
 async function scrapAeon(keyword: string) {
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({
+    headless: true,
+  
+  });
   let page = await browser.newPage();
   let url =
     "https://www.aeoncity.com.hk/kh_zh/catalogsearch/result/index/?product_list_limit=100&q=" +
