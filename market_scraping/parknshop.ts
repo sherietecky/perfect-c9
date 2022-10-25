@@ -10,11 +10,12 @@ async function scrapPakgai(keyword: string) {
   const browser = await chromium.launch({
     headless: true,
     // /home/ubuntu/chromedriver
-    executablePath: '/home/ubuntu/chromedriver'
+    executablePath: '/home/ubuntu/chromedriver',
     // executablePath: '/home/ubuntu/chromedriver --whitelisted-ips=""'
     // executablePath: process.env.NODE_ENV === "production"?
     //   "/home/ubuntu/chromedriver":
     //   "C:\\Program Files (x86)\\Google\\Chrome\\Application\\Chrome.exe",
+    args:['--whitelisted-ips=""']
   });
   const context = await browser.newContext();
   let page = await context.newPage();
