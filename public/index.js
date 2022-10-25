@@ -401,7 +401,7 @@ searchBtn.addEventListener("click", async () => {
       node.querySelector(".bargain").textContent = data.bargain;
       document.querySelector(".priceDisplay").append(node);
     }
-AOS.init();
+    AOS.init();
   });
 
   market2.addEventListener("click", async () => {
@@ -428,8 +428,7 @@ AOS.init();
       node.querySelector(".bargain").textContent = data.bargain;
       document.querySelector(".priceDisplay").append(node);
     }
-AOS.init();
-
+    AOS.init();
   });
 
   market3.addEventListener("click", async () => {
@@ -456,8 +455,7 @@ AOS.init();
       node.querySelector(".bargain").textContent = data.bargain;
       document.querySelector(".priceDisplay").append(node);
     }
-AOS.init();
-
+    AOS.init();
   });
 
   market4.addEventListener("click", async () => {
@@ -484,8 +482,7 @@ AOS.init();
       node.querySelector(".bargain").textContent = data.bargain;
       document.querySelector(".priceDisplay").append(node);
     }
-AOS.init();
-
+    AOS.init();
   });
 
   showAll.addEventListener("click", async () => {
@@ -511,7 +508,7 @@ AOS.init();
       node.querySelector(".bargain").textContent = data.bargain;
       document.querySelector(".priceDisplay").append(node);
     }
-AOS.init();
+    AOS.init();
   });
 
   tabTwo.addEventListener("click", async () => {
@@ -565,6 +562,18 @@ searchHistory.forEach((div) => {
     searchBtn.click();
   });
 });
+
+let canvas_live2d = document.querySelector("canvas#live2d");
+let display_boolean = false;
+canvas_live2d.addEventListener("click", () => {
+  display_boolean = !display_boolean;
+  if (display_boolean) {
+    interaction_part.style.display = "flex";
+  } else if (!display_boolean) {
+    interaction_part.style.display = "none";
+  }
+});
+
 
 // load more
 let countPrice = 1;
