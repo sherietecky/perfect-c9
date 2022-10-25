@@ -509,6 +509,14 @@ div.sortButtonsContainer > button:hover {
   line-height: 5px;
 }
 
+.priceCard > img {
+  width: 70px;
+  position: relative;
+  top: -372px;
+  left: -42px;
+  transform: rotate(20deg);
+}
+
 /* suggested recipes */
 
 .recipeCard > a {

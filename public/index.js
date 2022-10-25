@@ -520,7 +520,7 @@ searchBtn.addEventListener("click", async () => {
     }
     AOS.init();
     document.querySelector(".loremText").style.display = 'none'
-  
+    itemOrder ()
   });
 
   tabTwo.addEventListener("click", async () => {
@@ -622,3 +622,26 @@ canvas_live2d.addEventListener("click", () => {
 //     document.querySelector(".priceDisplay").append(node);
 //   }
 // }
+
+
+// load cheapest item
+function itemOrder () {
+  let nodes = document.querySelector(".priceDisplay").childNodes;
+  let firstNode = nodes[0]
+  console.log("1",firstNode)
+  let secondNode = nodes[1]
+  console.log("1",secondNode)
+  let thirdNode = nodes[2]
+
+  let firstPhotos = firstNode.querySelectorAll("img")
+  let firstPhoto = firstPhotos[1]
+  firstPhoto.src = "img/1st.png"
+
+  let secondPhotos = secondNode.querySelectorAll("img")
+  let secondPhoto = secondPhotos[1]
+  secondPhoto.src = "img/2nd.png"
+
+  let thirdPhotos = thirdNode.querySelectorAll("img")
+  let thirdPhoto = thirdPhotos[1]
+  thirdPhoto.src = "img/3rd.png"
+}
