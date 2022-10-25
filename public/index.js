@@ -556,3 +556,6 @@ searchHistory.forEach((div) => {
     searchBtn.click();
   });
 });
+
+// try AOS
+// AOS.init();
