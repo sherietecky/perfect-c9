@@ -255,7 +255,15 @@
       "recipe_URL": "https://icook.tw/recipes/401839"
     }
   ],
-  "寶礦力": [],
+  "寶礦力": [
+    {
+      "product_id": 3,
+      "recipe_name": "寶礦力煉奶草莓啫喱",
+      "ingredients": "食材：寶礦力水特 300ml、砂糖 5g、魚膠片 30g、草莓6粒、煉奶",
+      "image_URL": "https://i.ytimg.com/vi/nG8nuXIfRiE/maxresdefault.jpg",
+      "recipe_URL": "https://www.pinterest.com/pin/823244006876861359/"
+    }
+  ],
   "橙": [
     {
       "product_id": 4,
