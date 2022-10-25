@@ -308,7 +308,11 @@ searchBtn.addEventListener("click", async () => {
 
   //show sorting buttons and focus show all button
   sortButtonsContainer.style.display = "flex";
-  // showAll.addClass("focus");
+
+  showAll.classList.add("buttonActive");
+  // showAll.style.setProperty(focus);
+  // document.querySelector("button.showall").focus();
+  // classlist.add;
 
   // locate search word
   let classification_arr = [
@@ -413,6 +417,7 @@ searchBtn.addEventListener("click", async () => {
   // sorting buttons
 
   market1.addEventListener("click", async () => {
+    showAll.classList.remove("buttonActive");
     let parent = document.querySelector(".priceDisplay");
     while (parent.firstChild) {
       parent.removeChild(parent.firstChild);
@@ -441,6 +446,7 @@ searchBtn.addEventListener("click", async () => {
   });
 
   market2.addEventListener("click", async () => {
+    showAll.classList.remove("buttonActive");
     let parent = document.querySelector(".priceDisplay");
     while (parent.firstChild) {
       parent.removeChild(parent.firstChild);
@@ -469,6 +475,7 @@ searchBtn.addEventListener("click", async () => {
   });
 
   market3.addEventListener("click", async () => {
+    showAll.classList.remove("buttonActive");
     let parent = document.querySelector(".priceDisplay");
     while (parent.firstChild) {
       parent.removeChild(parent.firstChild);
@@ -497,6 +504,7 @@ searchBtn.addEventListener("click", async () => {
   });
 
   market4.addEventListener("click", async () => {
+    showAll.classList.remove("buttonActive");
     let parent = document.querySelector(".priceDisplay");
     while (parent.firstChild) {
       parent.removeChild(parent.firstChild);
