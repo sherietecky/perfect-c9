@@ -1,7 +1,7 @@
 :root {
   --darker-green: #036666;
   --dark-green: #527e3a;
-  --green: RGB(26,188,156);
+  --green: RGB(26, 188, 156);
   --light-green: #c2fbd7;
   --pale-yellow: #fefadc;
   --pink: #f6d4ba;
@@ -25,8 +25,6 @@
 body {
   font-family: "Noto Sans TC", sans-serif;
 }
-<<<<<<< HEAD
-=======
 
 /* title */
 
@@ -46,7 +44,6 @@ body {
   margin-bottom: 10px;
 }
 
->>>>>>> 56a9e1a2753d6c056f030bbb8783888e8a2bfc3c
 /* take pic section */
 
 section.takePic {
@@ -67,8 +64,7 @@ section.takePic > video {
   padding: 0;
   margin: 0;
   outline: 5px solid black;
-  border-radius : 10px 10px 0 0;
-
+  border-radius: 10px 10px 0 0;
 }
 
 section.takePic > button {
@@ -80,12 +76,12 @@ section.takePic > button {
 .video-bottom {
   background: black;
   height: 100px;
-  width:400px;
+  width: 400px;
   outline: 5px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius : 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 .snap-container {
@@ -114,7 +110,6 @@ section.takePic > button {
   background: white;
   transition: all 1s;
   cursor: pointer;
-
 }
 
 #snapBtn:hover {
@@ -157,7 +152,6 @@ section.takePic > button {
   margin-top: 10px;
 }
 
-
 .inputBox {
   position: relative;
   width: 200px;
@@ -185,7 +179,7 @@ section.takePic > button {
 }
 
 .inputBox input:hover ~ span,
-.inputBox input:focus ~ span  {
+.inputBox input:focus ~ span {
   color: var(--dark-green);
   opacity: 1;
   transform: translateX(15px) translateY(-7px);
@@ -225,8 +219,8 @@ section.takePic > button {
 
 .searchBtn:hover {
   /* box-shadow: 10px 9px 62px -18px rgba(88, 207, 173, 0.75); */
-box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-transform: scale(1.1) rotate(-1deg);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transform: scale(1.1) rotate(-1deg);
 }
 
 /* input.searchField {
@@ -412,8 +406,6 @@ section.resultDisplay {
   grid-template-columns: auto auto auto auto auto auto;
 }
 
-
-
 div.sortButtonsContainer {
   display: flex;
   flex-direction: row;
@@ -430,7 +422,7 @@ div.sortButtonsContainer > button {
   border-style: solid;
   border-width: 1px;
   border-color: grey;
-  color: white
+  color: white;
 }
 
 div.sortButtonsContainer > button:hover {
@@ -607,12 +599,8 @@ section.resultDisplay {
   }
 
   div#interaction_part {
-<<<<<<< HEAD
-    outline: 3px solid black;
-=======
     /* outline: 2px solid black; */
     padding: 10px;
->>>>>>> 56a9e1a2753d6c056f030bbb8783888e8a2bfc3c
     height: auto;
     width: 160px;
     display: flex;
