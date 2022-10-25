@@ -20,46 +20,46 @@ let tabTwo = document.querySelector("#tabTwo");
 //   });
 // }
 
-function displayNotification() {
-  const notif = new Notification("Message from Perfect C9", {
-    body: "Your result is ready!!!",
-    icon: "https://www.citypng.com/public/uploads/preview/-31622652360keqnmdomq3.png",
-  });
+// function displayNotification() {
+//   const notif = new Notification("Message from Perfect C9", {
+//     body: "Your result is ready!!!",
+//     icon: "https://www.citypng.com/public/uploads/preview/-31622652360keqnmdomq3.png",
+//   });
 
-  notif.onClick = (event) => {
-    event.waitUntil(
-      clients
-        .matchAll({
-          type: "window",
-          includeUncontrolled: true,
-        })
-        .then(function (clientList) {
-          if (data.WebUrl) {
-            let client = null;
+//   notif.onClick = (event) => {
+//     event.waitUntil(
+//       clients
+//         .matchAll({
+//           type: "window",
+//           includeUncontrolled: true,
+//         })
+//         .then(function (clientList) {
+//           if (data.WebUrl) {
+//             let client = null;
 
-            for (let i = 0; i < clientList.length; i++) {
-              let item = clientList[i];
+//             for (let i = 0; i < clientList.length; i++) {
+//               let item = clientList[i];
 
-              if (item.url) {
-                client = item;
-                break;
-              }
-            }
+//               if (item.url) {
+//                 client = item;
+//                 break;
+//               }
+//             }
 
-            if (client && "navigate" in client) {
-              client.focus();
-              event.notification.close();
-              return client.navigate(data.WebUrl);
-            } else {
-              event.notification.close();
-              // if client doesn't have navigate function, try to open a new browser window
-              return clients.openWindow(data.WebUrl);
-            }
-          }
-        })
-    );
-  };
-}
+//             if (client && "navigate" in client) {
+//               client.focus();
+//               event.notification.close();
+//               return client.navigate(data.WebUrl);
+//             } else {
+//               event.notification.close();
+//               // if client doesn't have navigate function, try to open a new browser window
+//               return clients.openWindow(data.WebUrl);
+//             }
+//           }
+//         })
+//     );
+//   };
+// }
 
 // loader, sorting buttons and search results template removed
 loading.style.display = "none";
@@ -168,7 +168,7 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
       }
 
       // 3. show notification
-      displayNotification();
+      // displayNotification();
 
       // 4. show scraped price details + sorting buttons
       const res = await fetch(`/marketdata/${result["result"]}`);
