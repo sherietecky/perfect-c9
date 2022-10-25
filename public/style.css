@@ -450,6 +450,11 @@ div.sortButtonsContainer > button:hover {
   grid-template-columns: auto auto auto auto;
 }
 
+.recipeName {
+  font-size: large;
+  color: var(--darker-green);
+}
+
 @media (max-width: 1600px) {
   .priceDisplay {
     grid-template-columns: auto auto auto auto auto;
@@ -709,11 +714,10 @@ section.resultDisplay {
   }
 }
 
-
 .animate-pop-up {
   animation-duration: 0.5s;
   animation-name: animate-pop;
-  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
 }
 
 @keyframes animate-pop {
