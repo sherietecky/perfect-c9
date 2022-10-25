@@ -15,7 +15,6 @@
 body {
   font-family: "Noto Sans TC", sans-serif;
 }
-
 /* take pic section */
 
 section.takePic {
@@ -122,6 +121,8 @@ section.resultDisplay {
   width: 100%;
   background-color: rgba(2, 50, 0, 0.707);
   z-index: 100;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 #loader {
@@ -134,10 +135,16 @@ section.resultDisplay {
   margin-bottom: 20px;
 }
 
+#loading #loading_game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* #loading #loading_game, */
 #loading #loading_game iframe {
-  height: 380px;
-  width: 500px;
+  height: 370px;
+  width: 475px;
 }
 
 .history {
@@ -404,15 +411,19 @@ div.sortButtonsContainer > button:hover {
   position: fixed;
   bottom: 0;
   right: 0;
-  height: 520px;
-  width: 310px;
+  height: 420px;
+  width: 270px;
 }
 
 .live2d {
-  position: fixed;
-  bottom: 0;
-  right: 0;
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* right: 0; */
   z-index: -10;
+}
+canvas#live2d {
+  height: 300px;
+  width: 260px;
 }
 
 section.resultDisplay {
@@ -425,19 +436,26 @@ section.resultDisplay {
 
 @media only screen and (max-width: 700px) {
   canvas#live2d {
-    width: 150px;
+    width: 160px;
     height: 200px;
   }
 
   div#live2d_container {
     height: 430px;
-    width: 170px;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
   }
 
   div#interaction_part {
-    outline: 2px solid black;
+    outline: 3px solid black;
     height: auto;
-    width: 180px;
+    width: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -474,9 +492,14 @@ section.resultDisplay {
     height: 100px;
     width: 100px;
   } */
+  #loading #loading_game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   #loading #loading_game iframe {
-    height: 280px;
-    width: 360px;
+    height: 250px;
+    width: 350px;
   }
 }
