@@ -3,7 +3,7 @@
 }
 body {
   /* font-family: "Open Sans"; */
-  background: #2c3e50;
+  background: var(--darker-green);
   color: #ecf0f1;
   line-height: 1.618em;
 }
