@@ -404,7 +404,7 @@ section.resultDisplay {
 .priceDisplay {
   display: grid;
   gap: 15px 15px;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .supermarket {
@@ -447,35 +447,35 @@ div.sortButtonsContainer > button:hover {
 .recipeSection {
   display: grid;
   gap: 15px 15px;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 @media (max-width: 1600px) {
   .priceDisplay {
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 @media (max-width: 1300px) {
   .priceDisplay {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
   }
   .recipeSection {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 1000px) {
   .priceDisplay {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 700px) {
   .priceDisplay {
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
   }
   .recipeSection {
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

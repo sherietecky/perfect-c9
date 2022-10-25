@@ -12,13 +12,13 @@ let recipeCard = document.querySelector(".recipeCard");
 let image_display = document.querySelector("div.resultDisplay > img");
 let tabTwo = document.querySelector("#tabTwo");
 
-if (Notification.permission === "granted") {
-  console.log("already have the notification permission");
-} else if (Notification.permission === "denied") {
-  Notification.requestPermission().then((permission) => {
-    console.log(permission);
-  });
-}
+// if (Notification.permission === "granted") {
+//   console.log("already have the notification permission");
+// } else if (Notification.permission != "granted") {
+//   NotificationrequestPermission().then((permission) => {
+//     console.log(permission);
+//   });
+// }
 
 function displayNotification() {
   const notif = new Notification("Message from Perfect C9", {
