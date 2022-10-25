@@ -8,7 +8,7 @@ import { Knex } from "knex";
 async function scrapPakgai(keyword: string) {
 
   const browser = await chromium.launch({
-    headless: true,
+    //headless: true,
     // /home/ubuntu/chromedriver
     executablePath: '/home/ubuntu/chromedriver',
     // executablePath: '/home/ubuntu/chromedriver --whitelisted-ips=""'
