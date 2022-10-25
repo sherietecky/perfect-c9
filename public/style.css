@@ -25,8 +25,6 @@
 body {
   font-family: "Noto Sans TC", sans-serif;
 }
-<<<<<<< HEAD
-=======
 
 /* title */
 
@@ -46,7 +44,6 @@ body {
   margin-bottom: 10px;
 }
 
->>>>>>> 56a9e1a2753d6c056f030bbb8783888e8a2bfc3c
 /* take pic section */
 
 section.takePic {
@@ -602,12 +599,8 @@ section.resultDisplay {
   }
 
   div#interaction_part {
-<<<<<<< HEAD
-    outline: 3px solid black;
-=======
     /* outline: 2px solid black; */
     padding: 10px;
->>>>>>> 56a9e1a2753d6c056f030bbb8783888e8a2bfc3c
     height: auto;
     width: 160px;
     display: flex;

@@ -294,6 +294,7 @@ searchField.addEventListener("keypress", function (event) {
 });
 
 searchBtn.addEventListener("click", async () => {
+  // clear original result + show sorting  buttons
   let parent = document.querySelector(".priceDisplay");
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
@@ -301,12 +302,38 @@ searchBtn.addEventListener("click", async () => {
   document.querySelector(".recipeSection").innerHTML = "";
   sortButtonsContainer.style.display = "flex";
 
+  // locate search word
   let searchFieldText = document.querySelector(".searchField").value;
   console.log(searchFieldText);
 
+  // add to cookie
+  let newCookie;
+  if (!getCookie("perfectc9")) {
+    newCookie = `{"history": ["${searchFieldText}"]}`;
+    setCookie("perfectc9", newCookie, 999);
+    refreshCookie();
+  } else {
+    let cookieJSON = JSON.parse(getCookie("perfectc9"));
+    let arr = cookieJSON["history"];
+    if (arr.includes(searchFieldText)) {
+      let resultIndex = arr.indexOf(searchFieldText);
+      arr.splice(resultIndex, 1);
+      arr.unshift(searchFieldText);
+      cookieJSON["history"] = arr;
+    } else {
+      arr.unshift(searchFieldText);
+      cookieJSON["history"] = arr;
+    }
+    setCookie("perfectc9", JSON.stringify(cookieJSON), 999);
+    refreshCookie();
+  }
+
+  // fetch data
   const result = await fetch(`/marketdata/${searchFieldText}`);
   let json = await result.json();
   console.log(json);
+
+  // display price & recipe data
 
   for (let data of json) {
     console.log(data);
@@ -346,6 +373,8 @@ searchBtn.addEventListener("click", async () => {
     node.querySelector(".ingredients").textContent = data.ingredients;
     document.querySelector(".recipeSection").append(node);
   }
+
+  // sorting buttons
 
   market1.addEventListener("click", async () => {
     let parent = document.querySelector(".priceDisplay");
@@ -505,6 +534,15 @@ searchBtn.addEventListener("click", async () => {
       node.querySelector(".ingredients").textContent = data.ingredients;
       document.querySelector(".recipeSection").append(node);
     }
+  });
+
+  let searchHistory = document.querySelectorAll(".history > div");
+
+  searchHistory.forEach((div) => {
+    div.addEventListener("click", async () => {
+      searchField.value = div.textContent;
+      searchBtn.click();
+    });
   });
 });
 
