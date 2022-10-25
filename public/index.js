@@ -163,6 +163,11 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
           arr.unshift(result["result"]);
           cookieJSON["history"] = arr;
         }
+        // console.log(arr.length);
+        if (arr.length >= 7) {
+          arr.splice(6);
+          cookieJSON["history"] = arr;
+        }
         setCookie("perfectc9", JSON.stringify(cookieJSON), 999);
         refreshCookie();
       }
@@ -303,9 +308,30 @@ searchBtn.addEventListener("click", async () => {
   sortButtonsContainer.style.display = "flex";
 
   // locate search word
+  let classification_arr = [
+    "可口可樂",
+    "啤酒",
+    "寶礦力",
+    "橙",
+    "檸檬茶",
+    "牛奶",
+    "牛油果",
+    "益力多",
+    "維他奶",
+    "茄子",
+    "蘋果",
+    "西蘭花",
+    "香蕉",
+  ];
   let searchFieldText = document.querySelector(".searchField").value;
   console.log(searchFieldText);
-
+  if (searchFieldText == "") {
+    return;
+  }
+  if (!classification_arr.includes(searchFieldText)) {
+    console.log("現時尚未支援此產品");
+    return;
+  }
   // add to cookie
   let newCookie;
   if (!getCookie("perfectc9")) {
@@ -322,6 +348,10 @@ searchBtn.addEventListener("click", async () => {
       cookieJSON["history"] = arr;
     } else {
       arr.unshift(searchFieldText);
+      cookieJSON["history"] = arr;
+    }
+    if (arr.length >= 7) {
+      arr.splice(6);
       cookieJSON["history"] = arr;
     }
     setCookie("perfectc9", JSON.stringify(cookieJSON), 999);
@@ -375,7 +405,7 @@ searchBtn.addEventListener("click", async () => {
     document.querySelector(".recipeSection").append(node);
   }
   AOS.init();
-  document.querySelector(".loremText").style.display = 'none'
+  document.querySelector(".loremText").style.display = "none";
 
   // sorting buttons
 
@@ -404,8 +434,7 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
-  document.querySelector(".loremText").style.display = 'none'
-
+    document.querySelector(".loremText").style.display = "none";
   });
 
   market2.addEventListener("click", async () => {
@@ -433,8 +462,7 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
-  document.querySelector(".loremText").style.display = 'none'
-
+    document.querySelector(".loremText").style.display = "none";
   });
 
   market3.addEventListener("click", async () => {
@@ -462,8 +490,7 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
-    document.querySelector(".loremText").style.display = 'none'
-  
+    document.querySelector(".loremText").style.display = "none";
   });
 
   market4.addEventListener("click", async () => {
@@ -491,8 +518,7 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
-  document.querySelector(".loremText").style.display = 'none'
-
+    document.querySelector(".loremText").style.display = "none";
   });
 
   showAll.addEventListener("click", async () => {
@@ -519,8 +545,7 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
-    document.querySelector(".loremText").style.display = 'none'
-  
+    document.querySelector(".loremText").style.display = "none";
   });
 
   tabTwo.addEventListener("click", async () => {
@@ -553,8 +578,7 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".recipeSection").append(node);
     }
     AOS.init();
-  document.querySelector(".loremText").style.display = 'none'
-
+    document.querySelector(".loremText").style.display = "none";
   });
 
   let searchHistory = document.querySelectorAll(".history > div");
@@ -584,31 +608,68 @@ let myMediaQuery = window.matchMedia("(max-width: 700px)");
 console.log(myMediaQuery);
 
 function widthChangeCallback(myMediaQuery) {
-  if (myMediaQuery.matches) {
-    // console.log("I am smaller than 700px");
+  if (window.innerWidth < 700) {
+    console.log("I am smaller than 700px");
+    interaction_part.style.display = "none";
+    document.querySelector("#live2d_container").style.height = "200px";
     display_boolean = false;
-    // console.log(`The display boolean is ${display_boolean}`);
+    canvas_live2d.addEventListener("click", () => {
+      display_boolean = !display_boolean;
+      if (display_boolean) {
+        interaction_part.style.display = "flex";
+        document.querySelector("#live2d_container").style.height = "550px";
+      } else if (!display_boolean) {
+        interaction_part.style.display = "none";
+        document.querySelector("#live2d_container").style.height = "200px";
+      }
+    });
   } else {
+    document.querySelector("#live2d_container").style.height = "430px";
+    interaction_part.style.display = "flex";
     display_boolean = true;
+    canvas_live2d.addEventListener("click", () => {
+      display_boolean = !display_boolean;
+      if (display_boolean) {
+        interaction_part.style.display = "flex";
+        document.querySelector("#live2d_container").style.height = "430px";
+      } else if (!display_boolean) {
+        interaction_part.style.display = "none";
+        document.querySelector("#live2d_container").style.height = "250px";
+      }
+    });
     // console.log(`The display boolean is ${display_boolean}`);
   }
 }
-myMediaQuery.addEventListener("change", widthChangeCallback);
 
 if (window.innerWidth > 700) {
   display_boolean = true;
+  canvas_live2d.addEventListener("click", () => {
+    display_boolean = !display_boolean;
+    if (display_boolean) {
+      interaction_part.style.display = "flex";
+      document.querySelector("#live2d_container").style.height = "430px";
+    } else if (!display_boolean) {
+      interaction_part.style.display = "none";
+      document.querySelector("#live2d_container").style.height = "250px";
+    }
+  });
 } else {
   display_boolean = false;
+  canvas_live2d.addEventListener("click", () => {
+    // display_boolean = false;
+    display_boolean = !display_boolean;
+    if (display_boolean) {
+      interaction_part.style.display = "flex";
+      document.querySelector("#live2d_container").style.height = "550px";
+    } else if (!display_boolean) {
+      interaction_part.style.display = "none";
+      document.querySelector("#live2d_container").style.height = "200px";
+    }
+  });
 }
 
-canvas_live2d.addEventListener("click", () => {
-  display_boolean = !display_boolean;
-  if (display_boolean) {
-    interaction_part.style.display = "flex";
-  } else if (!display_boolean) {
-    interaction_part.style.display = "none";
-  }
-});
+// myMediaQuery.addEventListener("resize", widthChangeCallback);
+window.addEventListener("resize", widthChangeCallback);
 
 // load more
 // let countPrice = 1;

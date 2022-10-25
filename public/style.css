@@ -568,7 +568,7 @@ div.sortButtonsContainer > button:hover {
   position: fixed;
   bottom: 60px;
   right: 10px;
-  height: 460px;
+  height: 430px;
   width: 250px;
   z-index: 10;
   /* position: relative; */
@@ -580,6 +580,7 @@ canvas#live2d {
   position: fixed;
   bottom: 10px;
   right: 10px;
+  z-index: 100;
   /* outline: 2px solid #527e3a; */
   /* border-radius: 500px; */
 }
@@ -599,10 +600,11 @@ section.resultDisplay {
     position: fixed;
     bottom: 10px;
     left: 10px;
+    z-index: 100;
   }
 
   div#live2d_container {
-    height: 530px;
+    height: 550px;
     width: 160px;
     display: flex;
     justify-content: space-between;
@@ -611,6 +613,7 @@ section.resultDisplay {
     position: fixed;
     bottom: 5px;
     left: 10px;
+    z-index: 10;
   }
 
   div#interaction_part {
@@ -713,7 +716,7 @@ section.resultDisplay {
 
 @media (max-width: 700px) {
   .resultDisplay.displayContent img {
-    display: none;
+    /* display: none; */
   }
 }
 
