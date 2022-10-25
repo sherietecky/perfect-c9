@@ -1,0 +1,1807 @@
+{
+  "可口可樂": [
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 可口可樂８罐裝",
+      "quantity": "330MLX8",
+      "price": "$37.00",
+      "bargain": "$56.5 / 2件",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82%EF%BC%98%E7%BD%90%E8%A3%9D/p/BP_114639"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 無糖可口可樂汽水",
+      "quantity": "330MLX8",
+      "price": "$37.00",
+      "bargain": "$56.5 / 2件",
+      "link": "https://www.parknshop.com/zh-hk/%E7%84%A1%E7%B3%96%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82%E6%B1%BD%E6%B0%B4/p/BP_122586"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 可口可樂",
+      "quantity": "2L",
+      "price": "$15.00",
+      "bargain": "$23 / 2件",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82/p/BP_129098"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 無糖可口可樂汽水",
+      "quantity": "1.25L",
+      "price": "$12.00",
+      "bargain": "最新推廣",
+      "link": "https://www.parknshop.com/zh-hk/%E7%84%A1%E7%B3%96%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82%E6%B1%BD%E6%B0%B4/p/BP_126771"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 無糖可口可樂汽水",
+      "quantity": "500ML",
+      "price": "$9.00",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E7%84%A1%E7%B3%96%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82%E6%B1%BD%E6%B0%B4/p/BP_121291"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 可口可樂500毫升",
+      "quantity": "500ML",
+      "price": "$9.00",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82500%E6%AF%AB%E5%8D%87/p/BP_119341"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂  無糖可口可樂汽水高罐裝",
+      "quantity": "4X330ML",
+      "price": "$25.00",
+      "bargain": "最新推廣",
+      "link": "https://www.parknshop.com/zh-hk/%E7%84%A1%E7%B3%96%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82%E6%B1%BD%E6%B0%B4%E9%AB%98%E7%BD%90%E8%A3%9D/p/BP_406251"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 加系可口可樂 （無糖） 汽水高罐",
+      "quantity": "4X330ML",
+      "price": "$26.00",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8A%A0%E7%B3%BB%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82-%EF%BC%88%E7%84%A1%E7%B3%96%EF%BC%89-%E6%B1%BD%E6%B0%B4%E9%AB%98%E7%BD%90/p/BP_406253"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 加系可口可樂（無糖）",
+      "quantity": "500ML",
+      "price": "$9.50",
+      "bargain": "$17 / 2件",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8A%A0%E7%B3%BB%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82%EF%BC%88%E7%84%A1%E7%B3%96%EF%BC%89/p/BP_491924"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 檸檬味可口可樂",
+      "quantity": "330MLx8",
+      "price": "$37.00",
+      "bargain": "$56.5 / 2件",
+      "link": "https://www.parknshop.com/zh-hk/%E6%AA%B8%E6%AA%AC%E5%91%B3%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82/p/BP_188399"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 無糖可口可樂汽水",
+      "quantity": "2L",
+      "price": "$15.00",
+      "bargain": "$23 / 2件",
+      "link": "https://www.parknshop.com/zh-hk/%E7%84%A1%E7%B3%96%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82%E6%B1%BD%E6%B0%B4/p/BP_159738"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 無糖可口可樂汽水迷你罐裝",
+      "quantity": "6X200ML",
+      "price": "$27.00",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E7%84%A1%E7%B3%96%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82%E6%B1%BD%E6%B0%B4%E8%BF%B7%E4%BD%A0%E7%BD%90%E8%A3%9D/p/BP_348207"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 可口可樂 汽水迷你罐  6X200ML",
+      "quantity": "6X200ML",
+      "price": "$27.00",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82-%E6%B1%BD%E6%B0%B4%E8%BF%B7%E4%BD%A0%E7%BD%90-6x200ml/p/BP_348205"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 無糖可口可樂汽水",
+      "quantity": "330MLX12",
+      "price": "$48.00",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E7%84%A1%E7%B3%96%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82%E6%B1%BD%E6%B0%B4/p/BP_160725"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 可口可樂",
+      "quantity": "330MLX12",
+      "price": "$48.00",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82/p/BP_162147"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 可口可樂高罐",
+      "quantity": "4X330ML",
+      "price": "$25.00",
+      "bargain": "最新推廣",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82%E9%AB%98%E7%BD%90/p/BP_406250"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 加系可口可樂（無糖）",
+      "quantity": "8X330ML",
+      "price": "$37.00",
+      "bargain": "$56.5 / 2件",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8A%A0%E7%B3%BB%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82%EF%BC%88%E7%84%A1%E7%B3%96%EF%BC%89/p/BP_491833"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 1,
+      "product_display_name": "可口可樂 可口可樂",
+      "quantity": "1.25L",
+      "price": "$12.00",
+      "bargain": "最新推廣",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8F%AF%E5%8F%A3%E5%8F%AF%E6%A8%82/p/BP_123871"
+    }
+  ],
+  "啤酒": [
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "K1664 白啤酒四罐巨罐裝",
+      "quantity": "4X500ML",
+      "price": "$69.90",
+      "bargain": "$100 / 2件",
+      "image": "https://api.parknshop.com/medias/BLANC-4S-KING-CAN-449839.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxOTA5NDl8aW1hZ2UvanBlZ3xoYjAvaDMwLzkzMTkzODUzNjY1NTgvQkxBTkMgNFMgS0lORyBDQU4tNDQ5ODM5LmpwZ3w5NzJjOTJmNDQ5OWNhZjk1YjNiZGJjZGJmYjdhMmU4MmM0NDlmOGVhMmU5MmY5OWNmMmJkODJkYjEwMmQzMDhk",
+      "link": "https://www.parknshop.com/zh-hk/%E7%99%BD%E5%95%A4%E9%85%92%E5%9B%9B%E7%BD%90%E5%B7%A8%E7%BD%90%E8%A3%9D/p/BP_449839"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "藍妹 啤酒十二罐裝",
+      "quantity": "330MLX12",
+      "price": "$120.00",
+      "bargain": "最新推廣",
+      "image": "https://api.parknshop.com/medias/BEER-12S-CAN-121561.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1MTk3OTV8aW1hZ2UvanBlZ3xoZTYvaDVhLzkzMTg5NzgyMjQxNTgvQkVFUiAxMlMgQ0FOLTEyMTU2MS5qcGd8NTlmY2EyY2ZmODZkYzgwZGQyNzhlNTI4MjVhOTAxZTQ3Yzc0YTAyNTlmZDkzNzVhYzAzZjkwNzA1MTM3Mzg1NQ",
+      "link": "https://www.parknshop.com/zh-hk/%E5%95%A4%E9%85%92%E5%8D%81%E4%BA%8C%E7%BD%90%E8%A3%9D/p/BP_121561"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "朝日 啤酒六罐裝",
+      "quantity": "330MLX6",
+      "price": "$55.90",
+      "bargain": "最新推廣",
+      "image": "https://api.parknshop.com/medias/Beer-Can-6S-388704.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyMDE4MDZ8aW1hZ2UvanBlZ3xoYzAvaDM3LzkzMTg0NjYyODk2OTQvQmVlciBDYW4gNlMtMzg4NzA0LmpwZ3w0MWI0ZDI0YzZjMzMyYjVlZGRmNzQzYzlhNzQ2YTQyNWZiYTdkMTJiMmM2MDQyY2U1ZTE4OGNmMDJkMGVjNDgx",
+      "link": "https://www.parknshop.com/zh-hk/%E5%95%A4%E9%85%92%E5%85%AD%E7%BD%90%E8%A3%9D/p/BP_388704"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "台灣啤酒 水果系列鳳梨口味啤酒",
+      "quantity": "330ML",
+      "price": "$10.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/BEER-WITH-PINEAPPLE-FLAVOUR-412338.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMDY0ODJ8aW1hZ2UvanBlZ3xoOWIvaDlkLzkzMjI2MjI1MTcyNzgvQkVFUiBXSVRIIFBJTkVBUFBMRSBGTEFWT1VSLTQxMjMzOC5qcGd8NDJhMjM2OGViNDE5MzZhOWRlMGNjN2VjYWNiN2FhMmEyMDdkMWRjMGUxMDdjNDE2Y2Q1OTQ3MzY1NzNkZGYxZQ",
+      "link": "https://www.parknshop.com/zh-hk/%E6%B0%B4%E6%9E%9C%E7%B3%BB%E5%88%97%E9%B3%B3%E6%A2%A8%E5%8F%A3%E5%91%B3%E5%95%A4%E9%85%92/p/BP_412338"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "常陸野貓頭廌啤酒 日本常陸野猫頭鷹小麥柑橘白啤酒",
+      "quantity": "330ML",
+      "price": "$35.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/WHITE-ALE-JAPAN-BREWED-473412.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3MzQ1MHxpbWFnZS9qcGVnfGgyZS9oNjAvOTMyMjIzNDQxMzA4Ni9XSElURSBBTEUgSkFQQU4gQlJFV0VELTQ3MzQxMi5qcGd8MzdlMDllNDA0ZjI0NmE5MzMxZjkyOGI5ODFmNjQxNGRkMTg0YWE4N2E2NzU1YjQ0ZTQyNmY2ZmNkY2JiNDNjNw",
+      "link": "https://www.parknshop.com/zh-hk/%E6%97%A5%E6%9C%AC%E5%B8%B8%E9%99%B8%E9%87%8E%E7%8C%AB%E9%A0%AD%E9%B7%B9%E5%B0%8F%E9%BA%A5%E6%9F%91%E6%A9%98%E7%99%BD%E5%95%A4%E9%85%92/p/BP_473412"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "艾立加 小麥啤酒樽裝",
+      "quantity": "500ML",
+      "price": "$22.90",
+      "bargain": "最新推廣",
+      "image": "https://api.parknshop.com/medias/-Yeast-Beer-Bot-124863.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w5MzQ1NnxpbWFnZS9qcGVnfGgwMC9oYmMvOTMxODg1OTE3ODAxNC8gWWVhc3QgQmVlciBCb3QtMTI0ODYzLmpwZ3wxMmI0ZTlhNTA2OTQ2ODQ1YmQ0YWM1YjBmYTJkNjg3ZGM3ZGYyZDdlYTg4ZjBkMzM4Yjc5MzZjOWU5NGQ4Njkw",
+      "link": "https://www.parknshop.com/zh-hk/%E5%B0%8F%E9%BA%A5%E5%95%A4%E9%85%92%E6%A8%BD%E8%A3%9D/p/BP_124863"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "ESTRELLA 西班牙啤酒",
+      "quantity": "330ML",
+      "price": "$14.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/DAMM-BEER-454093.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0NjM1OXxpbWFnZS9qcGVnfGhkYS9oZTYvOTMxOTQ1NTI5MzQ3MC9EQU1NIEJFRVItNDU0MDkzLmpwZ3xmYWUxOTZhNDRhZTZkMzUxZWE1ODg4MjJmODE1MWEyOWQ3OWJiNGVmYzk5YzBmYWE4YjZhM2IzY2FmNmRmMDI3",
+      "link": "https://www.parknshop.com/zh-hk/%E8%A5%BF%E7%8F%AD%E7%89%99%E5%95%A4%E9%85%92/p/BP_454093"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "常陸野貓頭廌啤酒 盬梅愛爾啤酒",
+      "quantity": "330ML",
+      "price": "$40.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ANBAI-ALE-477380.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxODIxNzV8aW1hZ2UvanBlZ3xoM2YvaDc1LzkzMjE2NDgyOTE4NzAvQU5CQUkgQUxFLTQ3NzM4MC5qcGd8OTkwNzU0ZjQ4M2JlNjQyYWFiNDVmNTQ1ODUwMDliMDUxMWMzMjAyZWRkMDEwMWQ3OWZhNmViYTRjMjY1MGFkOA",
+      "link": "https://www.parknshop.com/zh-hk/%E7%9B%AC%E6%A2%85%E6%84%9B%E7%88%BE%E5%95%A4%E9%85%92/p/BP_477380"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "藍冰 啤酒4罐裝",
+      "quantity": "500MLX4",
+      "price": "$21.90",
+      "bargain": "$111 / 6件",
+      "image": "https://api.parknshop.com/medias/BEER-CAN-4-S-129093.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNjQ3ODV8aW1hZ2UvanBlZ3xoM2QvaGZhLzkzMTg2NDY3NzU4MzgvQkVFUiBDQU4gNOKAmVMtMTI5MDkzLmpwZ3wyYjI4MmNiNjQzMDgyNzhmOWE5OWNiZmZlYjBkYjk0OGQ3ZTE3YjM0YTA0ZTgwMWQwNjE2MTJlYzI2NDM3MTVh",
+      "link": "https://www.parknshop.com/zh-hk/%E5%95%A4%E9%85%924%E7%BD%90%E8%A3%9D/p/BP_129093"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "森堡 啤酒",
+      "quantity": "500MLX4",
+      "price": "$28.50",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/BEER-397525.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0ODc2NzN8aW1hZ2UvanBlZ3xoYzEvaDMyLzkzMTg2Nzg0NjI0OTQvQkVFUi0zOTc1MjUuanBnfDdmZWQwZDNmMjZlZjc5Y2M4YjE2MjQ3YzIyZDdhOGQ0NjVmOGEwYjg5ZTFhZjRiYmE2YTk4NTUwODQxYzUzOGM",
+      "link": "https://www.parknshop.com/zh-hk/%E5%95%A4%E9%85%92/p/BP_397525"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "朝日 啤酒十二罐裝",
+      "quantity": "330MLX12",
+      "price": "$85.00",
+      "bargain": "最新推廣",
+      "image": "https://api.parknshop.com/medias/Beer-Can-12S-388705.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNTEzODB8aW1hZ2UvanBlZ3xoMzgvaGE1LzkzMTg0MzA2MzgxMTAvQmVlciBDYW4gMTJTLTM4ODcwNS5qcGd8Y2JjZGJmOTNjMjI0NmM3ODZlM2Q2MGVjNzQwNjgzYzE2NWUzZjk0MjI1ZmM1YjNmMzU2N2ZhNjRhZTJkMWU2Nw",
+      "link": "https://www.parknshop.com/zh-hk/%E5%95%A4%E9%85%92%E5%8D%81%E4%BA%8C%E7%BD%90%E8%A3%9D/p/BP_388705"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "泰象啤 啤酒大罐裝",
+      "quantity": "490ML",
+      "price": "$9.90",
+      "bargain": "$18.9 / 2件",
+      "image": "https://api.parknshop.com/medias/BEER-KING-CAN-393105.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w5ODUxM3xpbWFnZS9qcGVnfGg4OC9oNzkvOTMyMjQ5NDE5Nzc5MC9CRUVSIEtJTkcgQ0FOLTM5MzEwNS5qcGd8YmNkMThkZDI3MTk2MDViNjYxMDgxOTVjM2QxMzM4ZDg3NjUzZGI1YjU2ODQwNTlkNTY1NWM5OTY0M2M1MDcwZQ",
+      "link": "https://www.parknshop.com/zh-hk/%E5%95%A4%E9%85%92%E5%A4%A7%E7%BD%90%E8%A3%9D/p/BP_393105"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "青島 青島純生啤酒大罐裝4罐500ML",
+      "quantity": "500MLX4",
+      "price": "$26.90",
+      "bargain": "$60 / 3件",
+      "image": "https://api.parknshop.com/medias/KING-DRAFT-BEER-181498.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0NDUwNjB8aW1hZ2UvanBlZ3xoNzcvaGUwLzkzMTg4NTgzMjYwNDYvS0lORyBEUkFGVCBCRUVSLTE4MTQ5OC5qcGd8MTE5ZGI2ZThjOGQ5ZTQ0YmI4NmQ4ODRlZjQ5OThkM2ZlYTRkMWJkYTRmNDVkOWQzMDZlNTAxNjFhMzJhYTYyYg",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9D%92%E5%B3%B6%E7%B4%94%E7%94%9F%E5%95%A4%E9%85%92%E5%A4%A7%E7%BD%90%E8%A3%9D4%E7%BD%90500ml/p/BP_181498"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "騎士 啤酒",
+      "quantity": "330MLX24",
+      "price": "$63.50",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/BEER-184625.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMjI3NTB8aW1hZ2UvanBlZ3xoMDIvaDg3LzkzMTg2OTUwNDMxMDIvQkVFUi0xODQ2MjUuanBnfGEyMzUzYjYzOTE0OTI4OTdkODMyMmZlZmMyZTJjYTU0OGUwNDQyYjMzYTE0ZWU1M2IzMGRmMjk5OTEzMDY3YTk",
+      "link": "https://www.parknshop.com/zh-hk/%E5%95%A4%E9%85%92/p/BP_184625"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "好卡頓 白啤酒 細樽4樽裝",
+      "quantity": "330MLX4",
+      "price": "$49.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/WHITE-BEER-BOT-4S-354865.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMDY4NTV8aW1hZ2UvanBlZ3xoMmEvaGU0LzkzMTg1MTUxNzk1NTAvV0hJVEUgQkVFUiBCT1QgNFMtMzU0ODY1LmpwZ3xhZmZiMDVkN2Q2ZjEwNjQxZWE0NGVmYTlhODI2YjYzYWVjMTM1ZjU3MmZlZTYyYjkwYzU3ODcwMTk1OWI0NDYy",
+      "link": "https://www.parknshop.com/zh-hk/%E7%99%BD%E5%95%A4%E9%85%92-%E7%B4%B0%E6%A8%BD4%E6%A8%BD%E8%A3%9D/p/BP_354865"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "朝日 極泡罐裝",
+      "quantity": "340ML",
+      "price": "$15.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/zoom-front-410126.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTYyODB8aW1hZ2UvanBlZ3xoMGQvaGE5Lzk1OTAwNzM0NTg3MTgvUE5TSEstNDEwMTI2LWZyb250LmpwZ3w2MWI0ODJmZmRlY2Q1YTI3ZDg3NGZjOGJlMzkzM2I2MjM1ZTYwZTAyZGFjNzM1MmU2MzdiZDNhNTEyN2YxMjNm",
+      "link": "https://www.parknshop.com/zh-hk/%E6%A5%B5%E6%B3%A1%E7%BD%90%E8%A3%9D/p/BP_410126"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "賓得寶 健怡薑啤",
+      "quantity": "375ML",
+      "price": "$15.50",
+      "bargain": "$28 / 2件",
+      "image": "https://api.parknshop.com/medias/zoom-front-107108.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w4NzAwOHxpbWFnZS9qcGVnfGhmZi9oMWQvOTU5NTY4MTkzMTI5NC9QTlNISy0xMDcxMDgtZnJvbnQuanBnfDAyMzE4NTQ1NzFmMWEyM2Y5NDk0MzkzYTM5Yjg1ZDdhMTkwODEwZmQ1M2JkNGI0ZmFjZjdiOTRjNzI3NTE4ZTU",
+      "link": "https://www.parknshop.com/zh-hk/%E5%81%A5%E6%80%A1%E8%96%91%E5%95%A4/p/BP_107108"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 2,
+      "product_display_name": "百威 啤酒十二罐裝",
+      "quantity": "330MLX12",
+      "price": "$75.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/BEER-12S-CAN-109999.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNDM1NDZ8aW1hZ2UvanBlZ3xoNDUvaDg2LzkzMTg0OTgyMDU3MjYvQkVFUiAxMlMgQ0FOLTEwOTk5OS5qcGd8YjViYWU3MGZkOTE1YzIxMWVjM2NiZTM1ZGViMDZlODczMzY3ZWI0ZmE5NmEwOWEyZGQwMzE5NDMzNmRkZWI3Mg",
+      "link": "https://www.parknshop.com/zh-hk/%E5%95%A4%E9%85%92%E5%8D%81%E4%BA%8C%E7%BD%90%E8%A3%9D/p/BP_109999"
+    }
+  ],
+  "寶礦力": [
+    {
+      "market_id": 2,
+      "search_item_id": 3,
+      "product_display_name": "寶礦力水特 電解質補充飲料沖劑",
+      "quantity": "5'S",
+      "price": "$48.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/zoom-front-152639.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTk0NzN8aW1hZ2UvanBlZ3xoM2IvaDEzLzk1NTUyMjI0NjI0OTQvUE5TSEstMTUyNjM5LWZyb250LmpwZ3w2MjIyMzEzODhiYmE5ZDYzNmJlMTVhMWRiNWY1NjkwMGZmM2RiNGYyODNhOGFlNDRmZWZmODlhZDc4YWJmZWYy",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%BB%E8%A7%A3%E8%B3%AA%E8%A3%9C%E5%85%85%E9%A3%B2%E6%96%99%E6%B2%96%E5%8A%91/p/BP_152639"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 3,
+      "product_display_name": "寶礦力水特 電解質補充飲品",
+      "quantity": "6X350ML",
+      "price": "$37.40",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/SWEATION-SUPPLY-ION-DRINK-182519.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNzQwOTR8aW1hZ2UvanBlZ3xoZjkvaDAzLzkzMTg5NDA4MzU4NzAvU1dFQVRJT04gU1VQUExZIElPTiBEUklOSy0xODI1MTkuanBnfDdhNTVhOWZiZmQzODllOWYyYzU1MGFjYjM1MmIzYjhmOGMyY2ZlYzE5ZjFjMmMzMTA1YWRiMWI2NTdjYWUwOWQ",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%BB%E8%A7%A3%E8%B3%AA%E8%A3%9C%E5%85%85%E9%A3%B2%E5%93%81/p/BP_182519"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 3,
+      "product_display_name": "寶礦力水特 電解質補充飲料",
+      "quantity": "500ML",
+      "price": "$9.20",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ION-SUPPLY-DRINK-125853.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNTM3MDZ8aW1hZ2UvanBlZ3xoYTkvaDlhLzkzMTg0MzA5NjU3OTAvSU9OIFNVUFBMWSBEUklOSy0xMjU4NTMuanBnfGQ2MzI2MDdhODEyM2YxMmNlOTk1MDIzM2FlNGJlNDgyMzBkZDhhNmEyNWU1N2I3M2FjYjcxZWZlMzJkNGM0ZjM",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%BB%E8%A7%A3%E8%B3%AA%E8%A3%9C%E5%85%85%E9%A3%B2%E6%96%99/p/BP_125853"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 3,
+      "product_display_name": "寶礦力水特 電解質補充飲料",
+      "quantity": "4X500ML",
+      "price": "$33.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ION-SUPPLY-DRINK-132085.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNTU1ODZ8aW1hZ2UvanBlZ3xoY2IvaGE0LzkzMTkwNDMzOTk3MTAvSU9OIFNVUFBMWSBEUklOSy0xMzIwODUuanBnfDE1ODA2ODJjYTFmYmYyZDA1ZmI3NTJiNjdkZTA0M2ExZDA0Yjk5YzFmNzQ4YTU5MGI2MjYwNmFhMTk4Zjk0NWE",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%BB%E8%A7%A3%E8%B3%AA%E8%A3%9C%E5%85%85%E9%A3%B2%E6%96%99/p/BP_132085"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 3,
+      "product_display_name": "寶礦力水特 電解質補充飲料",
+      "quantity": "2X1.5L",
+      "price": "$29.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/zoom-front-316454.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyMDE2MTR8aW1hZ2UvanBlZ3xoMmUvaGQwLzk0OTQ0NzI4NTE0ODYvUE5TSEstMzE2NDU0LWZyb250LmpwZ3xhYjMxN2M2NTZlYmY4ZWJhZjFmNGQzN2UzOTExZmUxZTM2Y2ZhNGMwYWQ4MmU0ZDNjYzJhOGM0NjY4Zjg3MTlj",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%BB%E8%A7%A3%E8%B3%AA%E8%A3%9C%E5%85%85%E9%A3%B2%E6%96%99/p/BP_316454"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 3,
+      "product_display_name": "寶礦力水特 電解質補充飲料",
+      "quantity": "6X340ML",
+      "price": "$33.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ION-SUPPLY-DRINK-158723.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MDM1NTZ8aW1hZ2UvanBlZ3xoNTAvaDI5LzkzMTg1NzYwOTUyNjIvSU9OIFNVUFBMWSBEUklOSy0xNTg3MjMuanBnfDdhYTlkNDM3NWFiYmU0NjdhZjkwMzdkYWUyNTZjZWViZDY4YWIzNThhZjhkMmYyODBiYzQ3NWVlYmQ3YmM2YWM",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%BB%E8%A7%A3%E8%B3%AA%E8%A3%9C%E5%85%85%E9%A3%B2%E6%96%99/p/BP_158723"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 3,
+      "product_display_name": "寶礦力水特 電解質補充飲料",
+      "quantity": "6X240ML",
+      "price": "$24.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ION-SUPPLY-DRINK-150313.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMjA2MTJ8aW1hZ2UvanBlZ3xoMzYvaDcyLzkzMTg4MDc2MzM5NTAvSU9OIFNVUFBMWSBEUklOSy0xNTAzMTMuanBnfDZlYzBkNDNmMTgxNGZjNzkwOTJkMjZiOGQwMzkzZTA2YWI1OGRlMGJhNGNiMDZiZGNlODVlYWNlZmYyNTM2OTM",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%BB%E8%A7%A3%E8%B3%AA%E8%A3%9C%E5%85%85%E9%A3%B2%E6%96%99/p/BP_150313"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 3,
+      "product_display_name": "寶礦力水特 電解質補充飲料２４’Ｓ",
+      "quantity": "24X500ML",
+      "price": "$220.80",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ION-SUPPLY-DRINK-24S-466326.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1NTI5OXxpbWFnZS9qcGVnfGg5YS9oZmYvOTMxODQyMTk4NzM1OC9JT04gU1VQUExZIERSSU5LIDI0Uy00NjYzMjYuanBnfGI0MGExNjQ1YzU3ZWFkYWZjY2E0ZWI4YzFkMGI3M2U0YzI0NmRjMzAwYjcwMDQ3NjQwODE1MDZiNTExZWU2YWE",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%BB%E8%A7%A3%E8%B3%AA%E8%A3%9C%E5%85%85%E9%A3%B2%E6%96%99%EF%BC%92%EF%BC%94%E2%80%99%EF%BD%93/p/BP_466326"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 3,
+      "product_display_name": "寶礦力水特 電解質補充飲料",
+      "quantity": "350MLX8",
+      "price": "$40.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/SWEAT-ION-SUPPLY-DRINK-8P-307254.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w5NTkyMXxpbWFnZS9qcGVnfGg0ZS9oNDQvOTMxOTU3NTYxNzU2Ni9TV0VBVCBJT04gU1VQUExZIERSSU5LIDhQLTMwNzI1NC5qcGd8MmY1ZDhlNWZiZDQyMWFkNDUzZjE5MzViOTg0MTMyZTU5NzdhNGEzY2RhMWFlNDhmMWU1N2ZjYzMyMTk5ZmYyOQ",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%BB%E8%A7%A3%E8%B3%AA%E8%A3%9C%E5%85%85%E9%A3%B2%E6%96%99/p/BP_307254"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 3,
+      "product_display_name": "寶礦力水特 電解質補充飲料",
+      "quantity": "3X900ML",
+      "price": "$39.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ION-SUPPLY-DRINK-413996.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyMDY3NDV8aW1hZ2UvanBlZ3xoZGQvaDgwLzkzMjM1NjAxNzM1OTgvSU9OIFNVUFBMWSBEUklOSy00MTM5OTYuanBnfDZiN2U1NjJiOTZjZjNjZGU1NDhmZDRiY2E0YWMwZTdmNWI2MzFhNTc0ZGMxMjE5ZjA5MzdkZjY5MzM4M2Y3NmY",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%BB%E8%A7%A3%E8%B3%AA%E8%A3%9C%E5%85%85%E9%A3%B2%E6%96%99/p/BP_413996"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 3,
+      "product_display_name": "寶礦力水特 電解質水（低卡）",
+      "quantity": "500ML",
+      "price": "$9.20",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ION-WATER-LOW-KCAL-306097.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNDE0M3xpbWFnZS9qcGVnfGg5Ny9oMGYvOTMyMzIzODQ1NzM3NC9JT04gV0FURVIgTE9XIEtDQUwtMzA2MDk3LmpwZ3wxZWUzZjcwYTMzMTM2ZmRhNDNlNTc5ZmRjZmY1MTk4ZDczNTk1NzZkMTYzMmE4NWUwMmUwMmE1MDg2MDZjN2Fl",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%BB%E8%A7%A3%E8%B3%AA%E6%B0%B4%EF%BC%88%E4%BD%8E%E5%8D%A1%EF%BC%89/p/BP_306097"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 3,
+      "product_display_name": "寶礦力水特 電解質水（低卡）",
+      "quantity": "350ML",
+      "price": "$6.50",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ION-WATER-410818.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MjQwM3xpbWFnZS9qcGVnfGgyZi9oNDIvOTMyMjgyMjgyODA2Mi9JT04gIFdBVEVSLTQxMDgxOC5qcGd8ZDk0ZDQzMDZjNmM1OTkwZmJkZmE1YjM4YzI2OGRmYjQzNDk1ZWQ4ZTAwMDliOGZlYWEyOGIzMTQ1NTA0ZDBiYQ",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%BB%E8%A7%A3%E8%B3%AA%E6%B0%B4%EF%BC%88%E4%BD%8E%E5%8D%A1%EF%BC%89/p/BP_410818"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 3,
+      "product_display_name": "寶礦力水特 電解質水（低卡）",
+      "quantity": "4X350ML",
+      "price": "$26.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ION-WATER-LOW-KCAL-416190.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTkyMTd8aW1hZ2UvanBlZ3xoYzcvaDA4LzkzMjMyMzg2NTM5ODIvSU9OIFdBVEVSIExPVyBLQ0FMLTQxNjE5MC5qcGd8ZjYyYzEyMDFiNjNmNjJkYTJlY2JlZmI0YTMwYjllMjUzZmRjYjZmZmVhNDJlNmQyN2JiZDNkZjUzMDc3YWI1ZQ",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%BB%E8%A7%A3%E8%B3%AA%E6%B0%B4%EF%BC%88%E4%BD%8E%E5%8D%A1%EF%BC%89/p/BP_416190"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 3,
+      "product_display_name": "寶礦力水特 電解質補充飲料1.5公升",
+      "quantity": "1.5L",
+      "price": "$18.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ION-SUPPLY-DRINK-15L-151827.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3MzE3N3xpbWFnZS9qcGVnfGg2MC9oNTQvOTMxODk5NDY3MzY5NC9JT04gU1VQUExZIERSSU5LIDE1TC0xNTE4MjcuanBnfDJiNTJhYzgzMWEwNTY0MTgxNmFiOGY1MzIwNDBmZTY3NWUwYzZkZjJlYjk2ZWYzOGUxNTE0YWRkZTZhMjJmMmU",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%BB%E8%A7%A3%E8%B3%AA%E8%A3%9C%E5%85%85%E9%A3%B2%E6%96%991.5%E5%85%AC%E5%8D%87/p/BP_151827"
+    }
+  ],
+  "橙": [
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "新奇士- 特大裝鮮橙",
+      "quantity": "EACH",
+      "price": "$8.40",
+      "bargain": "$19.9 / 3件",
+      "image": "https://api.parknshop.com/medias/XL-ORANGE-USASOUTH-AFRICA-74982.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0OTQzNTR8aW1hZ2UvanBlZ3xoNjgvaGQ3LzkzMTk2NjI2NDkzNzQvWEwgT1JBTkdFIFVTQVNPVVRIIEFGUklDQS03NDk4Mi5qcGd8NDM0YmU5ODAyNjI2MmQ1MTgyNGNmYjZkZmI1ZjYwNjcwZjRlNWYwMDA5MGMyNTY0Yjk1OTE2MmMwMTdmNjBhMg",
+      "link": "https://www.parknshop.com/zh-hk/%E7%89%B9%E5%A4%A7%E8%A3%9D%E9%AE%AE%E6%A9%99/p/BP_74982"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "菓汁先生 橙汁飲品（營養升級版）",
+      "quantity": "1.1L",
+      "price": "$23.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/zoom-front-413003.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMzI3MDh8aW1hZ2UvanBlZ3xoMTkvaDdhLzk1ODYwNjAwNjY4NDYvUE5TSEstNDEzMDAzLWZyb250LmpwZ3wwY2IxZDc1MTM0MGIzZTdiNDAxNzI4MWQ2ZTUzNjkxNWZjNWUwN2MwZGVkY2FhYWQ4NWE2Y2E2MThiNmFlN2Uw",
+      "link": "https://www.parknshop.com/zh-hk/%E6%A9%99%E6%B1%81%E9%A3%B2%E5%93%81%EF%BC%88%E7%87%9F%E9%A4%8A%E5%8D%87%E7%B4%9A%E7%89%88%EF%BC%89/p/BP_413003"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "威寶 濃縮殺菌洗地水",
+      "quantity": "2.2LIT",
+      "price": "$50.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/DISINFECTANT-FLOOR-CLEAN-111132.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyMTc2MjZ8aW1hZ2UvanBlZ3xoNWYvaGFjLzkzMTg5Nzc5NjIwMTQvRElTSU5GRUNUQU5UIEZMT09SIENMRUFOLTExMTEzMi5qcGd8MTliMGFhNzQyOTgyYjU4NThhZTU4ZjI4ZjRjODY3ZDkzMDZlZDJhYTc5ZmIwOTA3MTVkN2RjMTRhOWNkMTkxNQ",
+      "link": "https://www.parknshop.com/zh-hk/%E6%BF%83%E7%B8%AE%E6%AE%BA%E8%8F%8C%E6%B4%97%E5%9C%B0%E6%B0%B4/p/BP_111132"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "DIMES 純橙汁",
+      "quantity": "1L",
+      "price": "$13.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/100-Orange-Juice-359575.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMTE0ODF8aW1hZ2UvanBlZ3xoMTEvaGMyLzkzMTg5NDI0NDE1MDIvMTAwIE9yYW5nZSBKdWljZS0zNTk1NzUuanBnfGJkNGQ1OTk1OTNlYzA0M2I4NWE4NGY3NDQ2ODRiMWE2ZTJjYTBkODNmOTkxMjU1MmIwZDE4ZjQxZTVjYzdkM2Y",
+      "link": "https://www.parknshop.com/zh-hk/%E7%B4%94%E6%A9%99%E6%B1%81/p/BP_359575"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "羅便臣 濃縮無糖橙味飲品",
+      "quantity": "1L",
+      "price": "$32.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/Orange-No-added-Sugar-Cordial-Drink-156408.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNzU0OTJ8aW1hZ2UvanBlZ3xoZjEvaGRmLzkzMTg4NjY0MTk3NDIvT3JhbmdlIE5vIGFkZGVkIFN1Z2FyIENvcmRpYWwgRHJpbmstMTU2NDA4LmpwZ3xjYTRiZTEwNjNjODhlMTVlN2VmNzNmMmY3NDE0OGNkMmJjYjAyNmZjNmQ4MmUzN2NiMzRkZGY5YzhlZWQzOTY3",
+      "link": "https://www.parknshop.com/zh-hk/%E6%BF%83%E7%B8%AE%E7%84%A1%E7%B3%96%E6%A9%99%E5%91%B3%E9%A3%B2%E5%93%81/p/BP_156408"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "西瑞斯 熱情果橙雜果汁",
+      "quantity": "1L",
+      "price": "$29.50",
+      "bargain": "$50 / 2件",
+      "image": "https://api.parknshop.com/medias/WHISPERS-OF-SUMMER-JUICE-169207.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMDA1NDR8aW1hZ2UvanBlZ3xoOTAvaDE4LzkzMTg0ODY3MDQxNTgvV0hJU1BFUlMgT0YgU1VNTUVSIEpVSUNFLTE2OTIwNy5qcGd8MTc1OWQ5M2VhMjAxZjhkNzVjYjA0ZDcyMmVmZjgyMzBmNmEyODQxNTNlMDUzYmQzMmY4YTU4ZGRjOTUyMTZhZA",
+      "link": "https://www.parknshop.com/zh-hk/%E7%86%B1%E6%83%85%E6%9E%9C%E6%A9%99%E9%9B%9C%E6%9E%9C%E6%B1%81/p/BP_169207"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "FRESHMARKET 鮮橙5個裝",
+      "quantity": "PACK",
+      "price": "$25.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ORANGES-5S-PACK-75126.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzODk0OTR8aW1hZ2UvanBlZ3xoMzEvaGE0LzkzMTkyNTIzOTQwMTQvT1JBTkdFUyA1UyBQQUNLLTc1MTI2LmpwZ3w1YTE2ZTU2ZmM5NjRmYjg5MDc1MDc2NDgzMWQxNzg4ZDdhNzE3NzliODQ0MmJiMjk4ODgzNmU5ZTNmZGNlMWEy",
+      "link": "https://www.parknshop.com/zh-hk/%E9%AE%AE%E6%A9%995%E5%80%8B%E8%A3%9D/p/BP_75126"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "TENGA 橙色衝刺自慰杯",
+      "quantity": "UNIT",
+      "price": "$549.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/FLIP-ORB-ORANGE-CRASH-478682.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1NDgyMXxpbWFnZS9qcGVnfGhiNC9oNWYvOTMyMzgxNDU1MTU4Mi9GTElQIE9SQiBPUkFOR0UgQ1JBU0gtNDc4NjgyLmpwZ3xjM2Y2MmJiNTQ1OGNjYmU3ZTVlNTMxNWM1NGM3ZjE0YjM0ZjdlMDM1YzI4ZWU3OTY5NzRhYTNmNTgxZTVmMjhi",
+      "link": "https://www.parknshop.com/zh-hk/%E6%A9%99%E8%89%B2%E8%A1%9D%E5%88%BA%E8%87%AA%E6%85%B0%E6%9D%AF/p/BP_478682"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "葡萄適 葡萄適 Sport 運動飲品 750mL - 橙味",
+      "quantity": "750ML",
+      "price": "$14.90",
+      "bargain": "$24.9 / 2件",
+      "image": "https://api.parknshop.com/medias/LUCOZADE-SPORT-750ml-Orange-327901.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyODk3MDZ8aW1hZ2UvanBlZ3xoNzQvaDZkLzkzMTg5MzE3MjYzNjYvTFVDT1pBREUgU1BPUlQgNzUwbWwgT3JhbmdlLTMyNzkwMS5qcGd8ZjUyNmYyNDY3ZjE3Y2UwNTZjNzI3ZTUwYjY5ZTM5NmJiMGRmZDQxNGI2ZTVkMmI5ODYxZWE4NmMxNDNjZWM1YQ",
+      "link": "https://www.parknshop.com/zh-hk/%E8%91%A1%E8%90%84%E9%81%A9-sport-%E9%81%8B%E5%8B%95%E9%A3%B2%E5%93%81-750ml-%E6%A9%99%E5%91%B3/p/BP_327901"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "葡萄適 橙味運動飲料樽裝",
+      "quantity": "450ML",
+      "price": "$7.50",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ORANGE-SPORT-DRINK-BOTTLE-119578.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1OTA5NnxpbWFnZS9qcGVnfGgyZi9oMDgvOTMxODkwODc1NTk5OC9PUkFOR0UgU1BPUlQgRFJJTksgQk9UVExFLTExOTU3OC5qcGd8ZTA0MDdiYWM3ZmY2MGVmYmI2MTEwZTAzMTE3ZGRmZGU4NWUyMzIwYmM3YzYxNjk1NTY2Mzc2ZTk0NWJkYzcwOQ",
+      "link": "https://www.parknshop.com/zh-hk/%E6%A9%99%E5%91%B3%E9%81%8B%E5%8B%95%E9%A3%B2%E6%96%99%E6%A8%BD%E8%A3%9D/p/BP_119578"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "葡萄適 葡萄適葡萄糖能量飲品300mL 4's 包裝- 橙味",
+      "quantity": "300MLX4",
+      "price": "$26.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/LUCOZADE-ENERGY-300mlx4s-Orange-184117.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMjAyNzV8aW1hZ2UvanBlZ3xoOTAvaDY0LzkzMTg5MDkzNzg1OTAvTFVDT1pBREUgRU5FUkdZIDMwMG1seDRzIE9yYW5nZS0xODQxMTcuanBnfGI2MTIyMWUwMTFlYTIyOGJjZDY2NjQ3OTI3MjhhNGNkMWExYjM0NjBmNjg5YmMwYTY2YTEzOTJhYzA2YWE0MzI",
+      "link": "https://www.parknshop.com/zh-hk/%E8%91%A1%E8%90%84%E9%81%A9%E8%91%A1%E8%90%84%E7%B3%96%E8%83%BD%E9%87%8F%E9%A3%B2%E5%93%81300ml-4-s-%E5%8C%85%E8%A3%9D-%E6%A9%99%E5%91%B3/p/BP_184117"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "四洲 懷舊版粒粒橙汁",
+      "quantity": "240ML",
+      "price": "$3.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/TSUBU-TSUBU-ORANGE-DRINK-385123.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3MTIzM3xpbWFnZS9qcGVnfGgxMy9oYmYvOTMyMjE2ODA1Nzg4Ni9UU1VCVSBUU1VCVSAgT1JBTkdFIERSSU5LLTM4NTEyMy5qcGd8YWRiNDU3NWMwNWYzOGQ2NDVmNzczNTAyMjY4NDE2ZGRjMWRhZDMwMWNlYzRjOGM4ODViOTRkMDk5NDI1NzQ3MA",
+      "link": "https://www.parknshop.com/zh-hk/%E6%87%B7%E8%88%8A%E7%89%88%E7%B2%92%E7%B2%92%E6%A9%99%E6%B1%81/p/BP_385123"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "READY 純鮮橙汁含果肉（非濃縮）",
+      "quantity": "1L",
+      "price": "$37.90",
+      "bargain": "$68 / 2件",
+      "image": "https://api.parknshop.com/medias/ORANGE-JUICE-WITH-PULP-NFC-401347.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzODIzOHxpbWFnZS9qcGVnfGg5Yi9oZDcvOTMyMjI1NjU5NzAyMi9PUkFOR0UgSlVJQ0UgV0lUSCBQVUxQIE5GQy00MDEzNDcuanBnfDk4NjViM2Q5MzE5MjMxYWFjNDQ2Y2IwYTZkYWU3ODczNjgxOTZiYTIxNWEwZGEzNWNkNzUxNDUyOGRhMDAzZDM",
+      "link": "https://www.parknshop.com/zh-hk/%E7%B4%94%E9%AE%AE%E6%A9%99%E6%B1%81%E5%90%AB%E6%9E%9C%E8%82%89%EF%BC%88%E9%9D%9E%E6%BF%83%E7%B8%AE%EF%BC%89/p/BP_401347"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "加利奧 有機橙汁",
+      "quantity": "1L",
+      "price": "$36.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ORG-PURE-ORANGE-JUICE-491713.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzOTc0MzZ8aW1hZ2UvanBlZ3xoZGQvaDlhLzkzMjE4NDA2NzI3OTgvT1JHIFBVUkUgT1JBTkdFIEpVSUNFLTQ5MTcxMy5qcGd8MjI4N2ZlNDIzM2IzODE5YWJhMzk5ZmM5MTNmNGMyNmZjZDY0M2VhMGNjNDA4NTY2YzhhMjkxNDAzZjVkOWI1ZQ",
+      "link": "https://www.parknshop.com/zh-hk/%E6%9C%89%E6%A9%9F%E6%A9%99%E6%B1%81/p/BP_491713"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "道地 橙味紅茶",
+      "quantity": "250MLX6",
+      "price": "$15.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/zoom-front-176369.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w5NzcyM3xpbWFnZS9qcGVnfGhiYS9oMTQvOTU2NDIwMzE4ODI1NC9QTlNISy0xNzYzNjktZnJvbnQuanBnfDVmZGI1MjBmYTRjMzQyZjQ2YTcwMDM5ZmNkZGY4MzBkNDE3NjIyMmE4MGMwZDVjOTM3ODM1NWY0NDA2OTM4ZGI",
+      "link": "https://www.parknshop.com/zh-hk/%E6%A9%99%E5%91%B3%E7%B4%85%E8%8C%B6/p/BP_176369"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "菓汁先生 菓汁先生100%橙汁",
+      "quantity": "1L",
+      "price": "$22.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/COMBIBLOC-ORANGE-JUICE-119122.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNDA4NzN8aW1hZ2UvanBlZ3xoMGUvaDQ4LzkzMTg1MDkwNTE5MzQvQ09NQklCTE9DIE9SQU5HRSBKVUlDRS0xMTkxMjIuanBnfDVkNTAwYmQ1MzI3YzY4Y2FkYmE5MmQzMjE5ZGM5Y2ZjMmEzNTY5YmMzOTU1MmQ3ODIwZmIyZWMwZjQ5ZDRmNmY",
+      "link": "https://www.parknshop.com/zh-hk/%E8%8F%93%E6%B1%81%E5%85%88%E7%94%9F100-%E6%A9%99%E6%B1%81/p/BP_119122"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "金冠牌 柑肉",
+      "quantity": "11OZ",
+      "price": "$16.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/MANDARIN-ORANGES-112923.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1MzA5MzJ8aW1hZ2UvanBlZ3xoYmQvaDc3LzkzMTg4NDkyODIwNzgvTUFOREFSSU4gT1JBTkdFUy0xMTI5MjMuanBnfGE3MDkxY2FhZTU5Nzk3NjExZjFmYTRlMTJlYWU3MDJmMzY5MGYwYTY1NDExNmVmNDcyZmM0MWFiZTgzMzVjZGU",
+      "link": "https://www.parknshop.com/zh-hk/%E6%9F%91%E8%82%89/p/BP_112923"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 4,
+      "product_display_name": "GOLDEN CIRCLE 橙汁迷你裝",
+      "quantity": "150MLX6",
+      "price": "$31.50",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ORANGE-JUICE-MINI-PK-103159.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNzQyNjZ8aW1hZ2UvanBlZ3xoYzkvaDViLzkzMTkwNjg1NjU1MzQvT1JBTkdFIEpVSUNFIE1JTkkgUEstMTAzMTU5LmpwZ3xmM2EyM2JmNzUyN2IwZmM4MzU1MGQ2YTZkMDNlYTMwYmM3ZWNmNzZjMjEwYzIzMzY2YzBkM2Y4MzcyZjdjODRl",
+      "link": "https://www.parknshop.com/zh-hk/%E6%A9%99%E6%B1%81%E8%BF%B7%E4%BD%A0%E8%A3%9D/p/BP_103159"
+    }
+  ],
+  "檸檬茶": [
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "維他 檸檬茶",
+      "quantity": "250MLX6",
+      "price": "$17.00",
+      "bargain": "$29 / 2件",
+      "image": "https://api.parknshop.com/medias/-LEMON-TEA-250ML-6PACK-185711.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0NjY0MTR8aW1hZ2UvanBlZ3xoNmQvaDQzLzkzMTg3Mjk2MTMzNDIvIExFTU9OIFRFQSAyNTBNTCA2UEFDSy0xODU3MTEuanBnfGM0NDQyZDQzODg0NzhmMDY2MzIwNDZjNzNiMmMxNTA3ODFlN2JkNzA2ZTI2NTNiOTNiNDg5YTgwNTA3MGM2OGI",
+      "link": "https://www.parknshop.com/zh-hk/%E6%AA%B8%E6%AA%AC%E8%8C%B6/p/BP_185711"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "維他 混合裝９包檸檬茶＋３包原味鈣思寶",
+      "quantity": "12X250ML",
+      "price": "$25.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/MIXED9S-LEMONTEA3S-CAL-ORG-476821.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMDI5MTV8aW1hZ2UvanBlZ3xoODMvaGQzLzkzMjA1MDMzNDUxODIvTUlYRUQ5UyBMRU1PTlRFQTNTIENBTC1PUkctNDc2ODIxLmpwZ3w5ODE1MWU0ZGVmZDUyMTliMDhkODFhZjNkNjU0ZjY4M2E5ZWJlYTBkNmVjMDViYmJkYmExNzZhYjYxNjQ0ZmFm",
+      "link": "https://www.parknshop.com/zh-hk/%E6%B7%B7%E5%90%88%E8%A3%9D%EF%BC%99%E5%8C%85%E6%AA%B8%E6%AA%AC%E8%8C%B6%EF%BC%8B%EF%BC%93%E5%8C%85%E5%8E%9F%E5%91%B3%E9%88%A3%E6%80%9D%E5%AF%B6/p/BP_476821"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "雀巢 檸檬茶",
+      "quantity": "315MLX6",
+      "price": "$27.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/Lemon-Tea-155831.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMzY0MTV8aW1hZ2UvanBlZ3xoYmQvaDQzLzkzMTg1NzY4MTYxNTgvTGVtb24gVGVhLTE1NTgzMS5qcGd8ZTdlZjlmNTA3NGJhNjQ0YWNhMGUyNDI2N2U0NGEyODU0NjVkNDU2N2FlMTMzNTk2YmIyYWU2YmE4NzYxOGE0Ng",
+      "link": "https://www.parknshop.com/zh-hk/%E6%AA%B8%E6%AA%AC%E8%8C%B6/p/BP_155831"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "維他 SUPERICY檸檬茶250毫升(6包裝)",
+      "quantity": "250MLx6",
+      "price": "$12.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/-SUPERICY-LEMON-TEA-250ML-6PACK-122622.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMDk1NDB8aW1hZ2UvanBlZ3xoNjQvaDY0LzkzMTg3MjEzNTU4MDYvIFNVUEVSSUNZIExFTU9OIFRFQSAyNTBNTCA2UEFDSy0xMjI2MjIuanBnfDAxOGNmNTc5OGVhZjk4ZDBlMmVmMDNmNjI4NWE3ZDc3ZTY2MWJmMTliOWNlMjhjMzFjZmI3Y2E1YWM4YWYwNTc",
+      "link": "https://www.parknshop.com/zh-hk/supericy%E6%AA%B8%E6%AA%AC%E8%8C%B6250%E6%AF%AB%E5%8D%87-6%E5%8C%85%E8%A3%9D/p/BP_122622"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "維他 錫蘭檸檬茶250毫升(6包裝)",
+      "quantity": "250MLx6",
+      "price": "$17.00",
+      "bargain": "$29 / 2件",
+      "image": "https://api.parknshop.com/medias/-CEYLON-LEMON-TEA-250ML-6PACK-188623.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMjYzNTd8aW1hZ2UvanBlZ3xoODEvaDgwLzkzMTkwMzI5Nzk0ODYvIENFWUxPTiBMRU1PTiBURUEgMjUwTUwgNlBBQ0stMTg4NjIzLmpwZ3wzNDM2Yjg3OWJhMTY3OGE3MjBiZWJiZjgzM2E2MDJmMzkwZGI0ZDA5MTBlZjM5MDBhZmE1YjY2NDEwMjdhMWQz",
+      "link": "https://www.parknshop.com/zh-hk/%E9%8C%AB%E8%98%AD%E6%AA%B8%E6%AA%AC%E8%8C%B6250%E6%AF%AB%E5%8D%87-6%E5%8C%85%E8%A3%9D/p/BP_188623"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "維他 檸檬茶250毫升(9包裝)",
+      "quantity": "250MLX9",
+      "price": "$25.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/-LEMON-TEA-250ML-9PACK-193709.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0NDAxNzR8aW1hZ2UvanBlZ3xoYzUvaGU1LzkzMTkwODE2NzI3MzQvIExFTU9OIFRFQSAyNTBNTCA5UEFDSy0xOTM3MDkuanBnfDA5MDYxNTc0MDM5NjAxYjFkNDIzOGU0ZTZlZDE4MGFhNjc4MGUyMzcwNTkzM2U1NTZjYmJhMmZkNTRhNWUwOTM",
+      "link": "https://www.parknshop.com/zh-hk/%E6%AA%B8%E6%AA%AC%E8%8C%B6250%E6%AF%AB%E5%8D%87-9%E5%8C%85%E8%A3%9D/p/BP_193709"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "樂天 錫蘭檸檬茶",
+      "quantity": "240MLX6",
+      "price": "$22.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/CEYLON-TEA-432242.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1MzQ0MDZ8aW1hZ2UvanBlZ3xoODEvaDk4LzkzMjI1NzAxMjEyNDYvQ0VZTE9OIFRFQS00MzIyNDIuanBnfDAxNDMzY2ZiMTIzY2VlZDk1N2I1NDIxZGMzNWQ4ODc4ZWQ5MmIyMjZjYjM1Y2E1ODE3YjIyMTNjZDgxODMzNDA",
+      "link": "https://www.parknshop.com/zh-hk/%E9%8C%AB%E8%98%AD%E6%AA%B8%E6%AA%AC%E8%8C%B6/p/BP_432242"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "維他 ９包檸檬茶＋３包２５０ＭＬ",
+      "quantity": "12X250ML",
+      "price": "$25.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/MIXED9S-LEMONTEA3S-OAT-MILK-476822.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMDA3NTB8aW1hZ2UvanBlZ3xoNDkvaDRiLzkzMjA1MTc4NjE0MDYvTUlYRUQ5UyBMRU1PTlRFQTNTIE9BVCBNSUxLLTQ3NjgyMi5qcGd8ZDEyZmMxOTQxNDRkMTFmMTM1YTIxYjRmOWU2ZWVlZDdkZTQ3MzVkMThiNjk5ODY0NjZhYzQ3MDllNjkwNmQ4MQ",
+      "link": "https://www.parknshop.com/zh-hk/%EF%BC%99%E5%8C%85%E6%AA%B8%E6%AA%AC%E8%8C%B6%EF%BC%8B%EF%BC%93%E5%8C%85%EF%BC%92%EF%BC%95%EF%BC%90%EF%BD%8D%EF%BD%8C/p/BP_476822"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "雀巢 冰極檸檬茶",
+      "quantity": "480ML",
+      "price": "$8.50",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/Ice-Rush-Lemon-Tea-106183.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3MzU1OHxpbWFnZS9qcGVnfGgxYy9oMDMvOTMxODkzMjc3NDk0Mi9JY2UgUnVzaCBMZW1vbiBUZWEtMTA2MTgzLmpwZ3wxNDAyY2IzMjg0NDAwNWFjNzczMjM4YjBkOGRjYWM4ODIzOGIxMDhjOTc5YzExOWVjOWUxM2NkMjQ5ZGVmMTFm",
+      "link": "https://www.parknshop.com/zh-hk/%E5%86%B0%E6%A5%B5%E6%AA%B8%E6%AA%AC%E8%8C%B6/p/BP_106183"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "維他 氣泡檸檬茶６罐裝",
+      "quantity": "310MLX6",
+      "price": "$30.00",
+      "bargain": "$48 / 2件",
+      "image": "https://api.parknshop.com/medias/SPARKLING-LEMON-TEA-349125.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNDIyOTF8aW1hZ2UvanBlZ3xoNzIvaDg4LzkzMjM0MzY3MDM3NzQvU1BBUktMSU5HICBMRU1PTiBURUEtMzQ5MTI1LmpwZ3xhZjhiMzFlOWIxNGNkOTM2ZTBkYzkxN2I0MjNhYTQ4YTQwOGE3ZWE0YzE1YTY1MDJiMmM5ZDZmOWIzN2IyZmEz",
+      "link": "https://www.parknshop.com/zh-hk/%E6%B0%A3%E6%B3%A1%E6%AA%B8%E6%AA%AC%E8%8C%B6%EF%BC%96%E7%BD%90%E8%A3%9D/p/BP_349125"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "維他 低糖檸檬茶250毫升(9包裝)",
+      "quantity": "250MLx9",
+      "price": "$25.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/-LOW-SUGAR-LEMON-TEA-250ML-9PACK-355420.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTY1MjJ8aW1hZ2UvanBlZ3xoNzIvaDQ2LzkzMTkzMDU1NzY0NzgvIExPVyBTVUdBUiBMRU1PTiBURUEgMjUwTUwgOVBBQ0stMzU1NDIwLmpwZ3w2NWFlYWZjNWNlM2E1OGIwNDZmZTFmM2VjYjliYjc2ZDA3YjgwMDE3M2VjZGFjODBlZTczZWE1YTg2YWIxZDVi",
+      "link": "https://www.parknshop.com/zh-hk/%E4%BD%8E%E7%B3%96%E6%AA%B8%E6%AA%AC%E8%8C%B6250%E6%AF%AB%E5%8D%87-9%E5%8C%85%E8%A3%9D/p/BP_355420"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "雀巢 檸檬茶",
+      "quantity": "250MLx6",
+      "price": "$16.00",
+      "bargain": "最新推廣",
+      "image": "https://api.parknshop.com/medias/Lemon-Tea-175971.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMzAyOTV8aW1hZ2UvanBlZ3xoZTYvaDQxLzkzMTg4Njg3NDYyNzAvTGVtb24gVGVhLTE3NTk3MS5qcGd8ZjlmMjc4MDliM2Q3NjlhOTMyMTZkMDZlOTY3YjgxNTY0ZjQxZTJhNTg5OWNjYTkwYWM2Y2I2M2RiZGIxYWZlOQ",
+      "link": "https://www.parknshop.com/zh-hk/%E6%AA%B8%E6%AA%AC%E8%8C%B6/p/BP_175971"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "維他 原箱鍚蘭檸檬茶飲品２５０毫升６包Ｘ４",
+      "quantity": "250MLX24",
+      "price": "$58.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/CEYLON-LEMON-TEA-DRK-250MLX64CASE-420111.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w4NzkyNnxpbWFnZS9qcGVnfGg1OC9oMjcvOTMyMjg0NDU4NjAxNC9DRVlMT04gTEVNT04gVEVBIERSSyAyNTBNTFg2NENBU0UtNDIwMTExLmpwZ3w1NDU2M2JkNzJlNDc2MzA0NjNmZDBhNzQwMmZmODJkOTEwOGNkODNmNjY1NGRjNzE3NjJkYzQwYTRhOWExMjdj",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8E%9F%E7%AE%B1%E9%8D%9A%E8%98%AD%E6%AA%B8%E6%AA%AC%E8%8C%B6%E9%A3%B2%E5%93%81%EF%BC%92%EF%BC%95%EF%BC%90%E6%AF%AB%E5%8D%87%EF%BC%96%E5%8C%85%EF%BD%98%EF%BC%94/p/BP_420111"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "維他 青檸檸檬茶",
+      "quantity": "250MLx6",
+      "price": "$12.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/VITA-Lime-Lemon-Tea-250ml-6pack-250MLx6-327801.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMjU2MjZ8aW1hZ2UvanBlZ3xoY2MvaDgxLzkzMTg3NTU1NjU1OTgvVklUQSBMaW1lIExlbW9uIFRlYSAyNTBtbCA2cGFjayAyNTBNTHg2LTMyNzgwMS5qcGd8YmZmNGZlMmQ2NmI3MDM1NzJmZDNmOWUwNmJjZmQ1N2Y3ZWJkNTg1M2I2NjE4MDgzOWE0NGU5ODk2MDQyMjRkNg",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9D%92%E6%AA%B8%E6%AA%B8%E6%AA%AC%E8%8C%B6/p/BP_327801"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "維他 9包檸檬茶飲品＋3包 250ML",
+      "quantity": "12X250ML",
+      "price": "$25.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/9P-LEMON-TEA-DRINK-3P-250ML-498353.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w4MzI0MHxpbWFnZS9qcGVnfGhhNy9oMDMvOTMyMzA4NDEyMDA5NC85UCBMRU1PTiBURUEgRFJJTksgIDNQIDI1ME1MLTQ5ODM1My5qcGd8OGY2YTMwNTA1OWM3YzJkMTBjY2U3NTAwYzY4MjhlNzc2ZWQ1NDI3YWY4ZTM5NGJlZWI4MGNkZDQzODE2NDgyOQ",
+      "link": "https://www.parknshop.com/zh-hk/9%E5%8C%85%E6%AA%B8%E6%AA%AC%E8%8C%B6%E9%A3%B2%E5%93%81%EF%BC%8B3%E5%8C%85-250ml/p/BP_498353"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "雀巢 冰極檸檬茶",
+      "quantity": "250MLX6",
+      "price": "$16.00",
+      "bargain": "最新推廣",
+      "image": "https://api.parknshop.com/medias/Ice-Rush-Lemon-Tea-178946.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNDM1OTZ8aW1hZ2UvanBlZ3xoZTAvaDEwLzkzMTg3NjI0Nzk2NDYvSWNlIFJ1c2ggTGVtb24gVGVhLTE3ODk0Ni5qcGd8ZWFlNzRlODNhY2Y0NWE4NjNkYjUxYzY4NmY2ODEzNWMxOGFmMzRiMDMzZTdiMTY3ZGU2NTA2ZjhhZTY1MzA2MA",
+      "link": "https://www.parknshop.com/zh-hk/%E5%86%B0%E6%A5%B5%E6%AA%B8%E6%AA%AC%E8%8C%B6/p/BP_178946"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "紅茶花伝 CRAFTEA 檸檬茶飲料",
+      "quantity": "500ML",
+      "price": "$8.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/LEMON-TEA-BEVERAGE-403522.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0OTg3NnxpbWFnZS9qcGVnfGg1Ni9oMjMvOTMyMzUwMTgxMzc5MC9MRU1PTiBURUEgQkVWRVJBR0UtNDAzNTIyLmpwZ3xkNWM4Y2Y1Y2MxYWJmMWY1OGVkMjgzZjFlNWVhOGFhNjg3NDRlMjkwYWFlMDZmNzBmYWU0YThmMTc0MzVlMzkw",
+      "link": "https://www.parknshop.com/zh-hk/%E6%AA%B8%E6%AA%AC%E8%8C%B6%E9%A3%B2%E6%96%99/p/BP_403522"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 5,
+      "product_display_name": "陽光 檸檬茶",
+      "quantity": "250MLX6",
+      "price": "$16.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/Lemon-Tea-188168.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1NDAzOTF8aW1hZ2UvanBlZ3xoODMvaDhiLzkzMTkwNDA3NDU1MDIvTGVtb24gVGVhLTE4ODE2OC5qcGd8MGZjZDgyYTU5Mjg2MDk1YWM3OWFiMGRkOGJlOTJkNjM4YWY5ZjE1OTJiNmFkYTQ3ZmNiNGEyNmNhZGNhOGM5MQ",
+      "link": "https://www.parknshop.com/zh-hk/%E6%AA%B8%E6%AA%AC%E8%8C%B6/p/BP_188168"
+    }
+  ],
+  "牛奶": [
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "明治 4.3特濃牛奶",
+      "quantity": "946ML",
+      "price": "$28.90",
+      "bargain": "$52 / 2件",
+      "image": "https://api.parknshop.com/medias/43-DELUXE-MILK-364783.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyODkyMDd8aW1hZ2UvanBlZ3xoMWQvaDlkLzkzMTg1NjE4MDg0MTQvNDMgREVMVVhFIE1JTEstMzY0NzgzLmpwZ3w0NjY4YmY1N2I3OTEwNWJmZjUzMzE1YjJkZGZkMGJhMjNmYWE1YTFkMGJiMDcyZDMxNTk5ZDhlOTAzNjY5MWM0",
+      "link": "https://www.parknshop.com/zh-hk/4.3%E7%89%B9%E6%BF%83%E7%89%9B%E5%A5%B6/p/BP_364783"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "子母 有機純牛奶 1升",
+      "quantity": "1L",
+      "price": "$28.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/zoom-front-378817.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0ODU5NDh8aW1hZ2UvanBlZ3xoY2QvaDMzLzk1MTIwMzI1MDE3OTAvUE5TSEstMzc4ODE3LWZyb250LmpwZ3w2MWMzYjJkY2QwZWU3ZmE1MzEwZjk5MTJiMzQzMTkyNzYyOTI5MjUzNTE2ZmVjYWJhMjIzMDA5ODAwMzg5MWJm",
+      "link": "https://www.parknshop.com/zh-hk/%E6%9C%89%E6%A9%9F%E7%B4%94%E7%89%9B%E5%A5%B6-1%E5%8D%87/p/BP_378817"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "保利 UHT 牛奶",
+      "quantity": "250MLX6",
+      "price": "$45.00",
+      "bargain": "$111 / 3件",
+      "image": "https://api.parknshop.com/medias/PAULS-PURE-MILK-UHT-EXPORT-4X6X250ML-113808.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNDIzMDl8aW1hZ2UvanBlZ3xoNDgvaDc0LzkzMTg4MzY1MzUzMjYvUEFVTFMgUFVSRSBNSUxLIFVIVCBFWFBPUlQgNFg2WDI1ME1MLTExMzgwOC5qcGd8YzdhOTlmZWIzYWU0Njc0NzczMTYxMjNkYmQ2NThlY2NlNDA3ODc3OWVjYWVmMzFhZjVkMzRlZDgwYjc1YWFmOA",
+      "link": "https://www.parknshop.com/zh-hk/uht-%E7%89%9B%E5%A5%B6/p/BP_113808"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "保利 UHT 牛奶",
+      "quantity": "1LX3",
+      "price": "$54.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/PAULS-PURE-MILK-UHT-EXPORT-4X3X1L-HK-110103.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMDUwNzB8aW1hZ2UvanBlZ3xoYjIvaDk1LzkzMTg2NDc5MjI3MTgvUEFVTFMgUFVSRSBNSUxLIFVIVCBFWFBPUlQgNFgzWDFMIEhLLTExMDEwMy5qcGd8NmIwZGQ2ZmJkZjFiYTU3NzlmNWYyYjAyOWNhMjI0ZDA5NjEzNzQxNzRjZmMyZGY4NTc1MjQwZDM0YWFhODU1OQ",
+      "link": "https://www.parknshop.com/zh-hk/uht-%E7%89%9B%E5%A5%B6/p/BP_110103"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "維記牛奶 鮮牛奶",
+      "quantity": "946ML",
+      "price": "$29.50",
+      "bargain": "$52 / 2件",
+      "image": "https://api.parknshop.com/medias/FRESH-MILK-120646.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyODQ4Nzh8aW1hZ2UvanBlZ3xoNjUvaGY5LzkzMTg1ODY0ODI3MTgvRlJFU0ggTUlMSy0xMjA2NDYuanBnfGJjNWI3YmFiMWY2MjNjZTk5MTg0M2NjNDFiMjg0ODRjYTNlNDg1MGFlMDQ1OGQ5MjhkMmQyZTY2ODRlMmJkYTE",
+      "link": "https://www.parknshop.com/zh-hk/%E9%AE%AE%E7%89%9B%E5%A5%B6/p/BP_120646"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "維記牛奶 鮮牛奶",
+      "quantity": "1.5L",
+      "price": "$45.50",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/FRESH-MILK-134940.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyNDIzOTV8aW1hZ2UvanBlZ3xoZWYvaDBiLzkzMTg5MDg4ODcwNzAvRlJFU0ggTUlMSy0xMzQ5NDAuanBnfGJjMDk5MzM5YmM4NDExZTQzOGFiYmMyMzdlZDA2YWY4NzYwYjA4YTgzMWFiZjc3NWM0ZWU3NDhhNTRlYTYyZDM",
+      "link": "https://www.parknshop.com/zh-hk/%E9%AE%AE%E7%89%9B%E5%A5%B6/p/BP_134940"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "維記牛奶 高鈣低脂牛奶飲品",
+      "quantity": "236ML",
+      "price": "$7.90",
+      "bargain": "$12 / 2件",
+      "image": "https://api.parknshop.com/medias/-HI-CALCIUM-LOW-FAT-MILK-DRINK-190436.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMzg1NzZ8aW1hZ2UvanBlZ3xoZmEvaDM1LzkzMTk0NzM5Mzg0NjIvIEhJLUNBTENJVU0gTE9XIEZBVCBNSUxLIERSSU5LLTE5MDQzNi5qcGd8MWNkY2NmOWEwNGI4MGZlZDE0OTVkOWVmZjNiNDIxOTU5MTRlMWRjODNkNmQ2NTViZDc1ODEzYzE1YzQ3MWFlNg",
+      "link": "https://www.parknshop.com/zh-hk/%E9%AB%98%E9%88%A3%E4%BD%8E%E8%84%82%E7%89%9B%E5%A5%B6%E9%A3%B2%E5%93%81/p/BP_190436"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "DEVONDALE 牛奶",
+      "quantity": "1L",
+      "price": "$20.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/Full-Cream-UHT-Milk-127128.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2Njk5N3xpbWFnZS9qcGVnfGg4Ny9oZjgvOTMxODU5NDE4MzE5OC9GdWxsIENyZWFtIFVIVCBNaWxrLTEyNzEyOC5qcGd8ZTljYWIxMmU4MmRhMWIwOGVjZGFlNTdhNjRkYjFkZTc2Mjg1MDFhMGNjMmQyZWE5NTlmYmVlMGFkYTMzYzVmMQ",
+      "link": "https://www.parknshop.com/zh-hk/%E7%89%9B%E5%A5%B6/p/BP_127128"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "雀巢- 牛奶公司鮮牛奶",
+      "quantity": "946ML",
+      "price": "$26.80",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/Dairy-Farm-Fresh-Milk-120639.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTUwODZ8aW1hZ2UvanBlZ3xoNGEvaDljLzkzMTg0NzIzODQ1NDIvRGFpcnkgRmFybSBGcmVzaCBNaWxrLTEyMDYzOS5qcGd8NzE2ZGM5ODc3YmZmNDIxOWQ3MTVlMTczZWY4ZTFmMWFmNjRkNDM4YzQzYTQ1NDU2ZmI3NjljNzY2MWMxMmNiOQ",
+      "link": "https://www.parknshop.com/zh-hk/%E7%89%9B%E5%A5%B6%E5%85%AC%E5%8F%B8%E9%AE%AE%E7%89%9B%E5%A5%B6/p/BP_120639"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "明治 頂級鮮牛奶",
+      "quantity": "236ML",
+      "price": "$12.90",
+      "bargain": "$16 / 2件",
+      "image": "https://api.parknshop.com/medias/PREMIUM-QUALITY-MILK-402904.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTU4MTB8aW1hZ2UvanBlZ3xoMGUvaGNlLzkzMjIzODgwOTUwMDYvUFJFTUlVTSBRVUFMSVRZIE1JTEstNDAyOTA0LmpwZ3w2NGIxZWU5NTU0ODE2M2UyY2RhYjhmNDVjZDM1YTVjYmMxYzU0ZTU2MTgzOGY5MzZkODk2OGE1ZDBhZjJjZDE0",
+      "link": "https://www.parknshop.com/zh-hk/%E9%A0%82%E7%B4%9A%E9%AE%AE%E7%89%9B%E5%A5%B6/p/BP_402904"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "蘭特 超高溫消毒低脂牛奶飲品",
+      "quantity": "1L",
+      "price": "$21.00",
+      "bargain": "$33 / 2件",
+      "image": "https://api.parknshop.com/medias/-UHT-SKIMMED-MILK-421137.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzOTY5MTJ8aW1hZ2UvanBlZ3xoODAvaDg5LzkzMTkwMDgzNzA3MTgvIFVIVCBTS0lNTUVEIE1JTEstNDIxMTM3LmpwZ3w0Y2YwYmYwMTA3Y2RhMThkNzBmYzAxY2FkYzE3ZWQxNjA2NDIzZmY1NjVlMGViMGIwZTIyYWE1Yzg5YjRlN2M2",
+      "link": "https://www.parknshop.com/zh-hk/%E8%B6%85%E9%AB%98%E6%BA%AB%E6%B6%88%E6%AF%92%E4%BD%8E%E8%84%82%E7%89%9B%E5%A5%B6%E9%A3%B2%E5%93%81/p/BP_421137"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "子母 天然純牧原味牛奶飲品",
+      "quantity": "3X946ML",
+      "price": "$52.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/zoom-front-463125.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3NDExODB8aW1hZ2UvanBlZ3xoNTUvaDg2Lzk1MTIxNzQ4NDU5ODIvUE5TSEstNDYzMTI1LWZyb250LmpwZ3xmZTE0M2M4Yjg2ODMzMTU0MjY2ZjdkNjAwNjA0NjY3MGZhYTE4NWI0NzgwMzI3MGQwZmI3ZmQ0Y2JhNGVlYmJi",
+      "link": "https://www.parknshop.com/zh-hk/%E5%A4%A9%E7%84%B6%E7%B4%94%E7%89%A7%E5%8E%9F%E5%91%B3%E7%89%9B%E5%A5%B6%E9%A3%B2%E5%93%81/p/BP_463125"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "DARLIE JOLLY JUNIOR 兒童牙膏2至6歲香草(牛奶味)",
+      "quantity": "60G",
+      "price": "$16.90",
+      "bargain": "最新推廣",
+      "image": "https://api.parknshop.com/medias/JOLLYJUNIOR-VANILLA-MILK-TP-292409.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3OTA4M3xpbWFnZS9qcGVnfGgxYS9oZDMvOTMyMDc0NDUxNzY2Mi9KT0xMWUpVTklPUiBWQU5JTExBIE1JTEsgVFAtMjkyNDA5LmpwZ3xiN2I4ODg2YjdlMWRkYTJmMjVjOGUyMDBjMjY5OWQyOTRjYTc1ODE1ZWI3ODYxZjVjNzgzZTFkODQ0MDcxNTEw",
+      "link": "https://www.parknshop.com/zh-hk/jolly-junior-%E5%85%92%E7%AB%A5%E7%89%99%E8%86%8F2%E8%87%B36%E6%AD%B2%E9%A6%99%E8%8D%89-%E7%89%9B%E5%A5%B6%E5%91%B3/p/BP_292409"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "蒙牛 特侖蘇純牛奶",
+      "quantity": "250MLX8",
+      "price": "$68.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/MILK-DELUXE-PURE-MILK-371260.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w5MjU1MXxpbWFnZS9qcGVnfGgwMi9oMjkvOTMxODY1NzQyNTQzOC9NSUxLIERFTFVYRSBQVVJFIE1JTEstMzcxMjYwLmpwZ3wxMmExNzAzZjVkYzdhNTc2ODA0MDM5MTJhZTU1ZGRmMGRmYzNmNWU2MzM2NGFlY2E0YjU2MzM5NjBlZDRiMTFm",
+      "link": "https://www.parknshop.com/zh-hk/%E7%89%B9%E4%BE%96%E8%98%87%E7%B4%94%E7%89%9B%E5%A5%B6/p/BP_371260"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "黑白 全脂牛奶",
+      "quantity": "1L",
+      "price": "$21.00",
+      "bargain": "$36 / 2件",
+      "image": "https://api.parknshop.com/medias/-UHT-MILK-487709.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNTMyNzZ8aW1hZ2UvanBlZ3xoMjEvaDg2LzkzMjEyMzQ4OTA3ODIvIFVIVCBNSUxLLTQ4NzcwOS5qcGd8N2Y3YjUwYTFiOGM3NzBhMTY3NzEyYjBkMTdlMzkxYTkwOTVjMDFiZjIzZWNkOTI1ZmZhMzQyM2ZiNWI0YWRhYQ",
+      "link": "https://www.parknshop.com/zh-hk/%E5%85%A8%E8%84%82%E7%89%9B%E5%A5%B6/p/BP_487709"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "蒙牛 純牛奶",
+      "quantity": "3X1L",
+      "price": "$45.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/PURE-MILK-358217.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTcwNDd8aW1hZ2UvanBlZ3xoODYvaDNiLzkzMTg0NTM3NzIzMTgvUFVSRSBNSUxLLTM1ODIxNy5qcGd8YjI3ZGIyZWM2MTNjNDUwMWExZTUwYmE2MGI5ZmU1MmMwMzAxYmM3MDdlNzlhNTM4OWRjNTA5Yjk5ZjU5M2QxNA",
+      "link": "https://www.parknshop.com/zh-hk/%E7%B4%94%E7%89%9B%E5%A5%B6/p/BP_358217"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "哈維鮮奶 純牛奶",
+      "quantity": "1L",
+      "price": "$19.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/UHT-FULL-CREAM-MILK-199429.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MjQ3Mjd8aW1hZ2UvanBlZ3xoNjIvaDg3LzkzMTg3NzY0Mzg4MTQvVUhUIEZVTEwgQ1JFQU0gTUlMSy0xOTk0MjkuanBnfDlhNGFjNmVhZDRmOTc5OTEwMzY3MmEzYTQzYzUyNWVlMTA1NjU2ZDlhOGQ1NDBkOGYzMTMwNTk5NjI2YjQwZWQ",
+      "link": "https://www.parknshop.com/zh-hk/%E7%B4%94%E7%89%9B%E5%A5%B6/p/BP_199429"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 6,
+      "product_display_name": "大阿蘇 牛奶",
+      "quantity": "1L",
+      "price": "$26.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/-MILK-403324.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMDU2MTF8aW1hZ2UvanBlZ3xoODQvaDJlLzkzMjI3NDI2Nzc1MzQvIE1JTEstNDAzMzI0LmpwZ3xkNWVjNDNkYThiMzlhZDk1YjIzOWZhMzY0YzRmNjg5OWI0NzFmMmQ1ZGM5NTUyMmY4NzA0ZmYxYjBiZTUzY2Fk",
+      "link": "https://www.parknshop.com/zh-hk/%E7%89%9B%E5%A5%B6/p/BP_403324"
+    }
+  ],
+  "牛油果": [
+    {
+      "market_id": 2,
+      "search_item_id": 7,
+      "product_display_name": "牛油果(每個)",
+      "quantity": "EACH",
+      "price": "$11.00",
+      "bargain": "$28 / 3件",
+      "image": "https://api.parknshop.com/medias/AVOCADO-EACH-75516.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2NzQ3MzJ8aW1hZ2UvanBlZ3xoNzEvaGUwLzkzMTkxOTY1MjQ1NzQvQVZPQ0FETyBFQUNILTc1NTE2LmpwZ3w2YTgxZWMyZTVlZTMzNzkyNDcxM2E4ZWYxMGZmYmMxMGZiODNmMGZmYzQ2YmI3ZmUxNmRhZDNkNzc5NDBiZWE5",
+      "link": "https://www.parknshop.com/zh-hk/%E7%89%9B%E6%B2%B9%E6%9E%9C-%E6%AF%8F%E5%80%8B/p/BP_75516"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 7,
+      "product_display_name": "LA TOURANGELLE 牛油果油",
+      "quantity": "250ML",
+      "price": "$122.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/zoom-front-392438.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxODUzNzN8aW1hZ2UvanBlZ3xoNDIvaDhhLzkzMDc3NzE5OTQxNDIvUE5TSEstMzkyNDM4LWZyb250LmpwZ3wwMjhmNjRhYzEzOTgyNjdjNjEyZjhhOThhMmI2NmU0NWZjYmFhMDFjMmEzZDljZjZmNjUwYTczNWI2MTI1MDZj",
+      "link": "https://www.parknshop.com/zh-hk/%E7%89%9B%E6%B2%B9%E6%9E%9C%E6%B2%B9/p/BP_392438"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 7,
+      "product_display_name": "YUCATAU 牛油果醬- 原味",
+      "quantity": "8OZ",
+      "price": "$62.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/EXTRA-VIRGIN-AVOCADO-OIL-339826.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3OTEzM3xpbWFnZS9qcGVnfGg1OS9oMWIvOTMyMjc3NTkwNDI4Ni9FWFRSQSBWSVJHSU4gQVZPQ0FETyBPSUwtMzM5ODI2LmpwZ3wzODdhMjEzNjQwNzU0NzE4ODVhZWVlOWM3NzY5MzhmNGMwNmE1MWE0Mzc4MjVmYjIxODlhMDE0MjJiMWNmZjUx",
+      "link": "https://www.parknshop.com/zh-hk/%E7%89%9B%E6%B2%B9%E6%9E%9C%E9%86%AC-%E5%8E%9F%E5%91%B3/p/BP_191501"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 7,
+      "product_display_name": "OLIVADO 特級初搾牛油果油 250ML",
+      "quantity": "250ML",
+      "price": "$108.90",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E7%89%B9%E7%B4%9A%E5%88%9D%E6%90%BE%E7%89%9B%E6%B2%B9%E6%9E%9C%E6%B2%B9-250ml/p/BP_339826"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 7,
+      "product_display_name": "獅球嘜 初搾牛油果芥花籽油",
+      "quantity": "3X900ML",
+      "price": "$125.90",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E5%88%9D%E6%90%BE%E7%89%9B%E6%B2%B9%E6%9E%9C%E8%8A%A5%E8%8A%B1%E7%B1%BD%E6%B2%B9/p/BP_401706"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 7,
+      "product_display_name": "嘉寶 有機梨藍莓蘋果牛油果果蓉",
+      "quantity": "3.5OZ",
+      "price": "$24.00",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E6%9C%89%E6%A9%9F%E6%A2%A8%E8%97%8D%E8%8E%93%E8%98%8B%E6%9E%9C%E7%89%9B%E6%B2%B9%E6%9E%9C%E6%9E%9C%E8%93%89/p/BP_247209"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 7,
+      "product_display_name": "UNIMAT 牛油果輕食果昔140克",
+      "quantity": "140G",
+      "price": "$198.00",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E7%89%9B%E6%B2%B9%E6%9E%9C%E8%BC%95%E9%A3%9F%E6%9E%9C%E6%98%94140%E5%85%8B/p/BP_259247"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 7,
+      "product_display_name": "CAT DAILY 可換貓草玩具-牛油果 (*商戶直送-PetnShop) *滿$150免運",
+      "quantity": "250G",
+      "price": "$45.00",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8F%AF%E6%8F%9B%E8%B2%93%E8%8D%89%E7%8E%A9%E5%85%B7-%E7%89%9B%E6%B2%B9%E6%9E%9C-*%E5%95%86%E6%88%B6%E7%9B%B4%E9%80%81-petnshop-*%E6%BB%BF-150%E5%85%8D%E9%81%8B/p/BP_387850"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 7,
+      "product_display_name": "DENZEL'S 狗小食條—牛油果蜂蜜和三文魚",
+      "quantity": "3'S",
+      "price": "$33.90",
+      "bargain": "$34 / 2件",
+      "link": "https://www.parknshop.com/zh-hk/%E7%8B%97%E5%B0%8F%E9%A3%9F%E6%A2%9D%E2%80%94%E7%89%9B%E6%B2%B9%E6%9E%9C%E8%9C%82%E8%9C%9C%E5%92%8C%E4%B8%89%E6%96%87%E9%AD%9A/p/BP_435589"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 7,
+      "product_display_name": "固力果 百高發酵牛油健康餅",
+      "quantity": "58G",
+      "price": "$12.00",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E7%99%BE%E9%AB%98%E7%99%BC%E9%85%B5%E7%89%9B%E6%B2%B9%E5%81%A5%E5%BA%B7%E9%A4%85/p/BP_337497"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 7,
+      "product_display_name": "NIVEA 妮維雅有機天然牛油果深層保濕潤膚乳",
+      "quantity": "350ML",
+      "price": "$49.90",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E5%A6%AE%E7%B6%AD%E9%9B%85%E6%9C%89%E6%A9%9F%E5%A4%A9%E7%84%B6%E7%89%9B%E6%B2%B9%E6%9E%9C%E6%B7%B1%E5%B1%A4%E4%BF%9D%E6%BF%95%E6%BD%A4%E8%86%9A%E4%B9%B3/p/BP_809260"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 7,
+      "product_display_name": "FAMI NUTS 蜂蜜牛油腰果",
+      "quantity": "300G",
+      "price": "$39.90",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E8%9C%82%E8%9C%9C%E7%89%9B%E6%B2%B9%E8%85%B0%E6%9E%9C/p/BP_466169"
+    }
+  ],
+  "益力多": [
+    {
+      "market_id": 2,
+      "search_item_id": 8,
+      "product_display_name": "益力多 ＬＴ活性乳酸菌飲品—低糖高纖",
+      "quantity": "100MLX5",
+      "price": "$19.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/LT-PROBIOTICS-DRK-LOW-SUGARHI-FIBRE-BP-495608.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyNzAxNHxpbWFnZS9qcGVnfGhlNi9oZTYvOTMzOTM4NjEzNDU1OC9MVCBQUk9CSU9USUNTIERSSy1MT1cgU1VHQVJISS1GSUJSRS1CUF80OTU2MDguanBnfDg2MjBhODc1ZmQwZmIwYjNiNDllZGNlYzczZjc0OGM4NDdhOWUzNjAxZWViNjgxMTlhNjMxYWIwMWQ4MzFlMjg",
+      "link": "https://www.parknshop.com/zh-hk/%EF%BD%8C%EF%BD%94%E6%B4%BB%E6%80%A7%E4%B9%B3%E9%85%B8%E8%8F%8C%E9%A3%B2%E5%93%81%E2%80%94%E4%BD%8E%E7%B3%96%E9%AB%98%E7%BA%96/p/BP_495608"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 8,
+      "product_display_name": "益力多 益力多活性乳酸菌飲品",
+      "quantity": "5X100ML",
+      "price": "$11.00",
+      "bargain": "$20.9 / 2件",
+      "image": "https://api.parknshop.com/medias/PROBIOTICS-DRINK-BP-190742.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyNjU2MXxpbWFnZS9qcGVnfGgxZC9oOGIvOTMzNjUwNzQ5ODUyNi9QUk9CSU9USUNTIERSSU5LLUJQXzE5MDc0Mi5qcGd8MmMzMmIzYjYxYTJiOTgyOTg5NzMxMzFlMmJiNWRhYmYxMjEzMGFlNTdhODhhNmU1MGQ0OGU4NDI4ZTc4MjNlMw",
+      "link": "https://www.parknshop.com/zh-hk/%E7%9B%8A%E5%8A%9B%E5%A4%9A%E6%B4%BB%E6%80%A7%E4%B9%B3%E9%85%B8%E8%8F%8C%E9%A3%B2%E5%93%81/p/BP_190742"
+    }
+  ],
+  "維他奶": [
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 ９包麥精豆奶＋３包２５０ＭＬ",
+      "quantity": "12X250ML",
+      "price": "$30.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/cat-front-BP-498366.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNjUwMDR8aW1hZ2UvanBlZ3xoYWIvaDA3Lzk0MTY3OTA4Njc5OTgvUE5TSEstQlBfNDk4MzY2LWZyb250LmpwZ3w3MTQ4OWEzMmQ0MWJmN2Q0Y2YzYzg4YTBhY2UwNzhkNTliODBhYTZjZWQzODk0MzEzNjk0M2Q1MjA4NGJjYTQw",
+      "link": "https://www.parknshop.com/zh-hk/%EF%BC%99%E5%8C%85%E9%BA%A5%E7%B2%BE%E8%B1%86%E5%A5%B6%EF%BC%8B%EF%BC%93%E5%8C%85%EF%BC%92%EF%BC%95%EF%BC%90%EF%BD%8D%EF%BD%8C/p/BP_498366"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 純低糖黑豆漿 250mlX6",
+      "quantity": "250MLX6",
+      "price": "$21.00",
+      "bargain": "$35 / 2件",
+      "image": "https://api.parknshop.com/medias/PURE-LOWSUGAR-BLACK-SOYABEAN-EXTRACT-BP-383575.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MzI0NnxpbWFnZS9qcGVnfGg2OC9oNmIvOTMzNjM1ODIwNzUxOC9QVVJFIExPV1NVR0FSIEJMQUNLIFNPWUFCRUFOIEVYVFJBQ1QtQlBfMzgzNTc1LmpwZ3xmMGRkNDUzNDgzNDg3NGRkYTI4ZmEzNDZkZmZmZTJjN2EwYTJkY2M5NDliMjVhYmJhMWJjMTBkOThhZGU5YmMx",
+      "link": "https://www.parknshop.com/zh-hk/%E7%B4%94%E4%BD%8E%E7%B3%96%E9%BB%91%E8%B1%86%E6%BC%BF-250mlx6/p/BP_383575"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 ９包豆奶 + ３包２５０ＭＬ",
+      "quantity": "12X250ML",
+      "price": "$30.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/cat-front-BP-498365.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNzAwMDV8aW1hZ2UvanBlZ3xoZDcvaGFmLzk0MjEyNDQyMzU4MDYvUE5TSEstQlBfNDk4MzY1LWZyb250LmpwZ3xiZWE5YzA3NDgyMmFkZDM5YWRmNDI1NDIxY2RkNDE4YTU3NzEwMmI0NmE4N2Q1OThjYzkxMDUyMDllMDkyYzBl",
+      "link": "https://www.parknshop.com/zh-hk/%EF%BC%99%E5%8C%85%E8%B1%86%E5%A5%B6-%EF%BC%93%E5%8C%85%EF%BC%92%EF%BC%95%EF%BC%90%EF%BD%8D%EF%BD%8C/p/BP_498365"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 低糖豆奶250毫升(9包裝)",
+      "quantity": "250MLX9",
+      "price": "$30.00",
+      "bargain": "$52 / 2件",
+      "image": "https://api.parknshop.com/medias/cat-front-BP-307195.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxODg5NTd8aW1hZ2UvanBlZ3xoMzIvaGVhLzkzNjQzOTkyNTk2NzgvUE5TSEstQlBfMzA3MTk1LWZyb250LmpwZ3w0Y2MzMGI5NTk1NmUyMjMxNmI3N2RlNTQ5YmQzODkwZDQ0ZGM2ZmMzN2RjZjM0OGRhODAyOWUzMDg2MTUzNTk5",
+      "link": "https://www.parknshop.com/zh-hk/%E4%BD%8E%E7%B3%96%E8%B1%86%E5%A5%B6250%E6%AF%AB%E5%8D%87-9%E5%8C%85%E8%A3%9D/p/BP_307195"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 低糖麥精豆奶250毫升(9包裝)",
+      "quantity": "250MLx9",
+      "price": "$30.00",
+      "bargain": "$52 / 2件",
+      "image": "https://api.parknshop.com/medias/cat-front-BP-305720.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNDExMzB8aW1hZ2UvanBlZ3xoN2IvaDhkLzkzNjQzOTg2MDQzMTgvUE5TSEstQlBfMzA1NzIwLWZyb250LmpwZ3wxY2E5YTIwODU1NTllMDI5NjA5YWRlN2Q5M2Q5MWZkOTE0MzZhZmU5ZTAxN2EwYzU5ZWVmOWZkZWUwMWNkMjAx",
+      "link": "https://www.parknshop.com/zh-hk/%E4%BD%8E%E7%B3%96%E9%BA%A5%E7%B2%BE%E8%B1%86%E5%A5%B6250%E6%AF%AB%E5%8D%87-9%E5%8C%85%E8%A3%9D/p/BP_305720"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 維他奶低糖純豆漿 250mlX6",
+      "quantity": "250MLX6",
+      "price": "$21.00",
+      "bargain": "$35 / 2件",
+      "image": "https://api.parknshop.com/medias/PURE-LOW-SUGAR-SOYABEAN-EXTRACT-BP-350690.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MTc5NnxpbWFnZS9qcGVnfGg3Mi9oMzIvOTMzNjc2MDg5MzQ3MC9QVVJFIExPVyBTVUdBUiBTT1lBQkVBTiBFWFRSQUNULUJQXzM1MDY5MC5qcGd8ZGI0ZWQ5ODg0M2IxZTY1MDMzNGI3YmQ0Zjg4ZDQ1NDA0YzcyZTFhNWNkMjRlMDU0MThiODgyOTYxM2ZjMGNkMA",
+      "link": "https://www.parknshop.com/zh-hk/%E7%B6%AD%E4%BB%96%E5%A5%B6%E4%BD%8E%E7%B3%96%E7%B4%94%E8%B1%86%E6%BC%BF-250mlx6/p/BP_350690"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 原味豆奶250毫升(9包裝)",
+      "quantity": "250MLx9",
+      "price": "$30.00",
+      "bargain": "$52 / 2件",
+      "image": "https://api.parknshop.com/medias/cat-front-BP-307846.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxODE0MzR8aW1hZ2UvanBlZ3xoNWUvaGZlLzkzNjQzOTk5MTUwMzgvUE5TSEstQlBfMzA3ODQ2LWZyb250LmpwZ3w5MGEzM2NlMGRlY2RhMzBkNjFlOWE0ZjFjODkzODMwZjRlNWNiNWFhNWM2YTJhYTdhNWIyMjc2Mjc3YWQ2NjE2",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8E%9F%E5%91%B3%E8%B1%86%E5%A5%B6250%E6%AF%AB%E5%8D%87-9%E5%8C%85%E8%A3%9D/p/BP_307846"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 麥精維他奶９包裝",
+      "quantity": "250MLx9",
+      "price": "$30.00",
+      "bargain": "$52 / 2件",
+      "image": "https://api.parknshop.com/medias/cat-front-BP-307847.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNDIwMDZ8aW1hZ2UvanBlZ3xoZGMvaGU4LzkzNjQ0MDA1NzAzOTgvUE5TSEstQlBfMzA3ODQ3LWZyb250LmpwZ3w5Y2Q0YWE2N2I5ODlkYWRiZDdmMjAwYmU4MGIxMDQ2ODI4NDE4NTBlZTAxZWUyZTliNzhiY2UwNDBhMjQ5MjA2",
+      "link": "https://www.parknshop.com/zh-hk/%E9%BA%A5%E7%B2%BE%E7%B6%AD%E4%BB%96%E5%A5%B6%EF%BC%99%E5%8C%85%E8%A3%9D/p/BP_307847"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 原味豆奶125毫升(4包裝)",
+      "quantity": "4X125ML",
+      "price": "$12.00",
+      "bargain": "$20 / 2件",
+      "image": "https://api.parknshop.com/medias/cat-front-BP-154248.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3NjcxNzJ8aW1hZ2UvanBlZ3xoNjQvaDQ0Lzk1MTIzMzI5NTE1ODIvUE5TSEstQlBfMTU0MjQ4LWZyb250LmpwZ3w0NTViODI0ZWU1NjBiMjhiMjVhNzIxNDY5YzVmNjk2ZWM5NmQ1YzQ1MjRlMjQ4OTI3MzViZjRhNjUyM2ZmYWZk",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8E%9F%E5%91%B3%E8%B1%86%E5%A5%B6125%E6%AF%AB%E5%8D%87-4%E5%8C%85%E8%A3%9D/p/BP_154248"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 維他乳酸味飲品125毫升(4包裝)",
+      "quantity": "125MLX4",
+      "price": "$12.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/YOGHURT-FLAVOURED-DRINK-BP-116765.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2MTg4NXxpbWFnZS9qcGVnfGgxNS9oOGIvOTMzNjk5NzkwNDQxNC9ZT0dIVVJUIEZMQVZPVVJFRCBEUklOSy1CUF8xMTY3NjUuanBnfDdmNjliYTY3YmJiMDgyNjY1NjY0YWM5M2U2YWE0OTJiZjQ4MjQ0YjQ2NWFlZDcyNGEyYTI0MTZhMTJiZDNlY2Q",
+      "link": "https://www.parknshop.com/zh-hk/%E7%B6%AD%E4%BB%96%E4%B9%B3%E9%85%B8%E5%91%B3%E9%A3%B2%E5%93%81125%E6%AF%AB%E5%8D%87-4%E5%8C%85%E8%A3%9D/p/BP_116765"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 原箱低糖麥精維他奶２５０毫升６包Ｘ４",
+      "quantity": "250MLX24",
+      "price": "$70.00",
+      "bargain": "組合優惠",
+      "image": "https://api.parknshop.com/medias/LOW-SUGAR-MALTED-SBMK250MLX64CASE-BP-420108.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyOTM4M3xpbWFnZS9qcGVnfGhlYi9oNWEvOTM0MDY1MjcxNjA2Mi9MT1cgU1VHQVIgTUFMVEVEIFNCTUsyNTBNTFg2NENBU0UtQlBfNDIwMTA4LmpwZ3w4Zjk5OGE2NDJmOGM0OTZhY2M2YmY2ZjQ2ZjhmOGI1NjBmOTRlNjUxZDkzOTRmZmVlMmNhY2VmYTc0Yjg5MjEz",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8E%9F%E7%AE%B1%E4%BD%8E%E7%B3%96%E9%BA%A5%E7%B2%BE%E7%B6%AD%E4%BB%96%E5%A5%B6%EF%BC%92%EF%BC%95%EF%BC%90%E6%AF%AB%E5%8D%87%EF%BC%96%E5%8C%85%EF%BD%98%EF%BC%94/p/BP_420108"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 澳洲無添加糖燕麥奶",
+      "quantity": "1L",
+      "price": "$32.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/AUSTRALIA-OAT-MILK-UNSWEETENED-BP-358555.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyNzk4MHxpbWFnZS9qcGVnfGg1ZC9oMWMvOTMzOTc0NTIzOTA3MC9BVVNUUkFMSUEgT0FUIE1JTEsgVU5TV0VFVEVORUQtQlBfMzU4NTU1LmpwZ3xkNjIzNTRmOTg1YTliOGMwZmIzZDQzYmRjMmFmYzM0YjdiMDM1ZmU4M2M4NDc1ZjhmYmE0NmZhODI0ZjBiZThm",
+      "link": "https://www.parknshop.com/zh-hk/%E6%BE%B3%E6%B4%B2%E7%84%A1%E6%B7%BB%E5%8A%A0%E7%B3%96%E7%87%95%E9%BA%A5%E5%A5%B6/p/BP_358555"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 原味豆奶1公升(3包裝)",
+      "quantity": "1L x 3",
+      "price": "$29.00",
+      "bargain": "易賞錢會員價",
+      "image": "https://api.parknshop.com/medias/cat-front-BP-181708.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNjYyNjJ8aW1hZ2UvanBlZ3xoODEvaDdmLzkzNjYxNDcwMDY0OTQvUE5TSEstQlBfMTgxNzA4LWZyb250LmpwZ3xiNzE4YjFmYTgxYzFlZjZhNWM4YjQxMDExNmEyMmZhYTMzODUwY2NhOTY5ZmVlMDQ4NjJiY2IxZGZhZTAzMDJh",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8E%9F%E5%91%B3%E8%B1%86%E5%A5%B61%E5%85%AC%E5%8D%87-3%E5%8C%85%E8%A3%9D/p/BP_181708"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 原箱低糖維他奶２５０毫升６包裝Ｘ４",
+      "quantity": "250MLX24",
+      "price": "$70.00",
+      "bargain": "組合優惠",
+      "image": "https://api.parknshop.com/medias/LOW-SUGAR-SOYABEAN-MK250MLX64CASE-BP-420107.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMTMwMnxpbWFnZS9qcGVnfGgxYS9oNTQvOTM0MDY1MjUxOTQ1NC9MT1cgU1VHQVIgU09ZQUJFQU4gTUsyNTBNTFg2NENBU0UtQlBfNDIwMTA3LmpwZ3w4MWU0NzFlNzIyNTI4MzFmMTBiYjkwZTIyZDcyOTQyN2FmN2YzMTMzMjM2NmFjYjk0ODYwODNmMThhOTNkNmM3",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8E%9F%E7%AE%B1%E4%BD%8E%E7%B3%96%E7%B6%AD%E4%BB%96%E5%A5%B6%EF%BC%92%EF%BC%95%EF%BC%90%E6%AF%AB%E5%8D%87%EF%BC%96%E5%8C%85%E8%A3%9D%EF%BD%98%EF%BC%94/p/BP_420107"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 低糖豆奶1公升(單包裝)",
+      "quantity": "1L",
+      "price": "$12.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/cat-front-BP-325562.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNTkyNjJ8aW1hZ2UvanBlZ3xoOWEvaDU2LzkzNjUzOTY4MTU5MDIvUE5TSEstQlBfMzI1NTYyLWZyb250LmpwZ3wyOTQ5NDI0NTQzMjc2NGU5MGY0ZTZmZjJiYzZlNDQ4Y2E2NjJkNzllYmQ0NmM3MTU2M2Y4MzE3NzZhMjNiYjIz",
+      "link": "https://www.parknshop.com/zh-hk/%E4%BD%8E%E7%B3%96%E8%B1%86%E5%A5%B61%E5%85%AC%E5%8D%87-%E5%96%AE%E5%8C%85%E8%A3%9D/p/BP_325562"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 山水鮮豆漿946毫升(單包裝)",
+      "quantity": "946ML",
+      "price": "$18.00",
+      "bargain": "$33 / 3件",
+      "image": "https://api.parknshop.com/medias/SANSUI-ORG-SB-SOYAMILK-BP-134067.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1NzM0OHxpbWFnZS9qcGVnfGgzYy9oMjEvOTMzNzQ2MDA5NzA1NC9TQU5TVUkgT1JHIFNCIFNPWUFNSUxLLUJQXzEzNDA2Ny5qcGd8MDhhZmMwMDJlMDc2MDM3NGU1Njg5ZWQwZjMyZGFlZDliMjRhMTcwM2M4NjI5ZjQxNDIzM2U1MzEwMGYxY2YxMQ",
+      "link": "https://www.parknshop.com/zh-hk/%E5%B1%B1%E6%B0%B4%E9%AE%AE%E8%B1%86%E6%BC%BF946%E6%AF%AB%E5%8D%87-%E5%96%AE%E5%8C%85%E8%A3%9D/p/BP_134067"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 原箱維他奶２５０毫升６包裝Ｘ４",
+      "quantity": "250MLX24",
+      "price": "$70.00",
+      "bargain": "組合優惠",
+      "image": "https://api.parknshop.com/medias/SOYA-BEAN-MILK-250MLX64-CASE-BP-420104.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMDg2MnxpbWFnZS9qcGVnfGg2OS9oNjIvOTM0MDY1Mjk3ODIwNi9TT1lBIEJFQU4gTUlMSyAyNTBNTFg2NCBDQVNFLUJQXzQyMDEwNC5qcGd8OTU0OTYwNTVjZDUwOGZhOGI1Mjc1ODAzZmMyOTI2ZTZjZGE5YWEyZDg2NjliZTI0YjYwOTdmYzhmNGVlZTU4ZQ",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8E%9F%E7%AE%B1%E7%B6%AD%E4%BB%96%E5%A5%B6%EF%BC%92%EF%BC%95%EF%BC%90%E6%AF%AB%E5%8D%87%EF%BC%96%E5%8C%85%E8%A3%9D%EF%BD%98%EF%BC%94/p/BP_420104"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 9,
+      "product_display_name": "維他奶 澳洲原味豆奶",
+      "quantity": "1L",
+      "price": "$32.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/AUSTRALIA-SOY-MILK-ORIGINAL-BP-497047.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0ODcwN3xpbWFnZS9qcGVnfGgwNS9oY2IvOTMzOTQwOTAwNjYyMi9BVVNUUkFMSUEgU09ZIE1JTEsgT1JJR0lOQUwtQlBfNDk3MDQ3LmpwZ3xmNGIxMzk1NWU1MzEyOGQ2Y2I0Y2M0ZWQ3ZmRkYjNkMTRiNWRkMWMwZGU0YzMxMWVjYzE1MWYyMjIwZGEzZmUy",
+      "link": "https://www.parknshop.com/zh-hk/%E6%BE%B3%E6%B4%B2%E5%8E%9F%E5%91%B3%E8%B1%86%E5%A5%B6/p/BP_497047"
+    }
+  ],
+  "茄子": [
+    {
+      "market_id": 2,
+      "search_item_id": 10,
+      "product_display_name": "李錦記 魚香茄子醬",
+      "quantity": "80G",
+      "price": "$8.00",
+      "bargain": "$16 / 3件",
+      "image": "https://api.parknshop.com/medias/SPICY-GARLIC-EGG-PLANT-SAUCE-159742.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyNzAyMjd8aW1hZ2UvanBlZ3xoNDIvaGNmLzkzMTg5MTQ3NTI1NDIvU1BJQ1kgR0FSTElDIEVHRyBQTEFOVCBTQVVDRS0xNTk3NDIuanBnfDEzNjJiNTZhMThjODE5ZTY4YzE1YmEwZWJiMDYxYzA0ZTRiNGEyY2ExYTAxMzk3Y2Q5MDZkZTMzZGUwODc5OTk",
+      "link": "https://www.parknshop.com/zh-hk/%E9%AD%9A%E9%A6%99%E8%8C%84%E5%AD%90%E9%86%AC/p/BP_159742"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 10,
+      "product_display_name": "淘大 魚香茄子醬",
+      "quantity": "80G",
+      "price": "$6.50",
+      "bargain": "$21.5 / 4件",
+      "image": "https://api.parknshop.com/medias/POUCH-PACK-SAUCE-FOR-SPICY-EGGPLANT-157831.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w5ODkwNXxpbWFnZS9qcGVnfGhmZi9oMDgvOTMxODk2NjQ2MDQ0Ni9QT1VDSCBQQUNLLVNBVUNFIEZPUiBTUElDWSBFR0dQTEFOVC0xNTc4MzEuanBnfDUxNWM0MWY5YWM0NzFlNWUzMjc1ZmNmMmYyYWY4ZWUyYWMxMjQ3M2YyOTFmMjU3YWE1ODMwNzU0NTYxNjI1MTE",
+      "link": "https://www.parknshop.com/zh-hk/%E9%AD%9A%E9%A6%99%E8%8C%84%E5%AD%90%E9%86%AC/p/BP_157831"
+    }
+  ],
+  "蘋果": [
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "FARMFRESH 加拿蘋果8個裝（新西蘭）",
+      "quantity": "PKT",
+      "price": "$16.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/GALA-APPLE-8PC-NEW-ZEALAND-63171.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w4NDE1NnxpbWFnZS9qcGVnfGhhZS9oYWUvOTMyMjQxODExMDQ5NC9HQUxBIEFQUExFIDhQQyBORVcgWkVBTEFORC02MzE3MS5qcGd8ZTMxMjdhMjQxYTg4MjA5ZDNlMjFlMzkyN2FmOTZjYTZmYTkyZWIyYWNmYzY2ZTcxYzI2YmU0ZmIxYWJjNGI0NQ",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8A%A0%E6%8B%BF%E8%98%8B%E6%9E%9C8%E5%80%8B%E8%A3%9D%EF%BC%88%E6%96%B0%E8%A5%BF%E8%98%AD%EF%BC%89/p/BP_63171"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "YUAN XIANG 中國山東蘋果(個)",
+      "quantity": "EACH",
+      "price": "$4.90",
+      "bargain": "$13.9 / 3件",
+      "image": "https://api.parknshop.com/medias/CHINA-SHANDONG-APPLE-EACH-37157.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2MzczOHxpbWFnZS9qcGVnfGhhNC9oMmEvOTMxOTI3OTA2NzE2Ni9DSElOQSBTSEFORE9ORyBBUFBMRSAgRUFDSC0zNzE1Ny5qcGd8MmMxM2E5NzcxODY1NTBmOTg3Nzk5NzMxYWQzOGYwY2ZkZjA0OGNiZjMxMTNhMzQ5ZDI5YTliYzYzZThjZTI2Yg",
+      "link": "https://www.parknshop.com/zh-hk/%E4%B8%AD%E5%9C%8B%E5%B1%B1%E6%9D%B1%E8%98%8B%E6%9E%9C-%E5%80%8B/p/BP_37157"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "加利奧 有機蘋果酒",
+      "quantity": "75CL",
+      "price": "$26.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ORG-CIDER-367298.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNzc2NTd8aW1hZ2UvanBlZ3xoMDcvaDFlLzkzMjAwMzgzMzQ0OTQvT1JHIENJREVSLTM2NzI5OC5qcGd8YTAxNDFjNjkxNGU1M2Q2NTMzMDkyYTVmNTYwYjE2OGJlOGU0MjE3NTkxMGVmM2VhYjBlZTY2ZjI1NjBlNThjNA",
+      "link": "https://www.parknshop.com/zh-hk/%E6%9C%89%E6%A9%9F%E8%98%8B%E6%9E%9C%E9%85%92/p/BP_367298"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "維他 蘋果綠茶250毫升(6包裝)",
+      "quantity": "250MLX6",
+      "price": "$12.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/-APPLE-GREEN-TEA-250ML-6PACK-116012.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNDUwNDB8aW1hZ2UvanBlZ3xoMTYvaGY3LzkzMTg1NDkwNjE2NjIvIEFQUExFIEdSRUVOIFRFQSAyNTBNTCA2UEFDSy0xMTYwMTIuanBnfDQ2ODU3Y2M3MDRjNjY2ZjhmNWFjODE3OGJmYWE2ZGY5MDFjYTIwYmMzZDM0N2VlNjExYjk0ZmQzNWJkZDU2MGU",
+      "link": "https://www.parknshop.com/zh-hk/%E8%98%8B%E6%9E%9C%E7%B6%A0%E8%8C%B6250%E6%AF%AB%E5%8D%87-6%E5%8C%85%E8%A3%9D/p/BP_116012"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "細裝加拿蘋果",
+      "quantity": "EACH",
+      "price": "$3.50",
+      "bargain": "$11.9 / 4件",
+      "image": "https://api.parknshop.com/medias/SMALL-ROYAL-GALA-APPLE-NZRSA-74072.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2MDM4MjJ8aW1hZ2UvanBlZ3xoYTMvaGU5LzkzMjA1NTc1NzYyMjIvU01BTEwgUk9ZQUwgR0FMQSBBUFBMRSBOWlJTQS03NDA3Mi5qcGd8MDU5MzQ4OGJhODVlN2NjZGI2YWI2ZTllOGI4NGNjOTEyMDM5NzQwZTViMDgyODYyMmYwYzUwMmRmOTljNTJmNA",
+      "link": "https://www.parknshop.com/zh-hk/%E7%B4%B0%E8%A3%9D%E5%8A%A0%E6%8B%BF%E8%98%8B%E6%9E%9C/p/BP_74072"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "維他 原箱蘋果綠茶飲品",
+      "quantity": "250MLX24",
+      "price": "$51.60",
+      "bargain": "組合優惠",
+      "image": "https://api.parknshop.com/medias/APPLE-GREEN-TEA-DRINK-CASE-341029.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3MjcwMXxpbWFnZS9qcGVnfGg0Ny9oZTUvOTMyMzMwOTY5NTAwNi9BUFBMRSBHUkVFTiBURUEgRFJJTksgQ0FTRS0zNDEwMjkuanBnfDgxNjFhZDBhOGNlY2FhYmViMjljNzQ5NmE4NGIzOGRiMzEwNTg5ZWY2OTM2NDBlYzgzM2E5ZGQ4ZDBmNDNkNzc",
+      "link": "https://www.parknshop.com/zh-hk/%E5%8E%9F%E7%AE%B1%E8%98%8B%E6%9E%9C%E7%B6%A0%E8%8C%B6%E9%A3%B2%E5%93%81/p/BP_341029"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "菓汁先生 番石榴蘋果汁飲品（營養升級版）",
+      "quantity": "1.1L",
+      "price": "$9.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/zoom-front-477894.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMzM3ODh8aW1hZ2UvanBlZ3xoZmUvaDA4Lzk1ODYwOTA2MDY2MjIvUE5TSEstNDc3ODk0LWZyb250LmpwZ3w5MWNiZjM1MjE0NjA1NmYzNzZlMWQ1MzUxYWM0NTUzYjUxYmFjZDM1NjU5NzhhOWRhMmZmNTlhMWZmYmVlNmM0",
+      "link": "https://www.parknshop.com/zh-hk/%E7%95%AA%E7%9F%B3%E6%A6%B4%E8%98%8B%E6%9E%9C%E6%B1%81%E9%A3%B2%E5%93%81%EF%BC%88%E7%87%9F%E9%A4%8A%E5%8D%87%E7%B4%9A%E7%89%88%EF%BC%89/p/BP_477894"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "紅蘋果(個)",
+      "quantity": "EACH",
+      "price": "$4.50",
+      "bargain": "$11.9 / 3件",
+      "image": "https://api.parknshop.com/medias/RED-DELICIOUS-APPLE-EACH-73753.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w5MzcxNXxpbWFnZS9qcGVnfGhiYS9oOWEvOTMxOTI1MjYyMzM5MC9SRUQgREVMSUNJT1VTIEFQUExFIEVBQ0gtNzM3NTMuanBnfGUxMjUwNTFmMWUwYTY5YjM4YjkwYjBlMzE5MzgyNmYwNDc0NzVhNzJmMzlkY2M0MTIxNGNlZTljMWQ3MzdiNDU",
+      "link": "https://www.parknshop.com/zh-hk/%E7%B4%85%E8%98%8B%E6%9E%9C-%E5%80%8B/p/BP_73753"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "SHINY 青森完熟蘋果汁",
+      "quantity": "1000ML",
+      "price": "$26.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/AOMORI-KANJUKU-RINGO-APPLE-J-433032.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w5Mzg2OXxpbWFnZS9qcGVnfGgzNy9oMTgvOTMxOTQwODMzNjkyNi9BT01PUkkgS0FOSlVLVSBSSU5HTyBBUFBMRSBKLTQzMzAzMi5qcGd8OTA4NjgwODRmODIzNmRjNDU3MDczMGE2YWE2ZTkxNzI5N2NkMzY0MzhjYjkyYTYzMzhkYmYyOTI3MTY3ZmFlYw",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9D%92%E6%A3%AE%E5%AE%8C%E7%86%9F%E8%98%8B%E6%9E%9C%E6%B1%81/p/BP_433032"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "道地 蘋果味綠茶",
+      "quantity": "250MLX6",
+      "price": "$15.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/GREEN-TEA-APPLE-FLAVOUR-188873.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTY5MDJ8aW1hZ2UvanBlZ3xoZmEvaDM4LzkzMTg2NDg1NzgwNzgvR1JFRU4gVEVBIEFQUExFIEZMQVZPVVItMTg4ODczLmpwZ3wyNDk4MTBhMmIxNTI4ZjI5YTMyN2FmYzMwZWM5ZmM0ODVjOGMyYjVhOGNkNzBkNzZkZWVlZDAxNWIwNWE0ODA5",
+      "link": "https://www.parknshop.com/zh-hk/%E8%98%8B%E6%9E%9C%E5%91%B3%E7%B6%A0%E8%8C%B6/p/BP_188873"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "BLESS 蘋果汁",
+      "quantity": "1000ML",
+      "price": "$62.00",
+      "bargain": "$118 / 2件",
+      "image": "https://api.parknshop.com/medias/S03-1000-APPLE-JUICE-1000ML-88683.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMDgwOHxpbWFnZS9qcGVnfGhiZi9oMGIvOTMyMjIyNTk1ODk0Mi9TMDMtMTAwMCBBUFBMRSBKVUlDRSAxMDAwTUwtODg2ODMuanBnfDdlNmI4NGU2ODRhOWMzMGRkZTYzODg0MmVlNjhhZjQxMTBiNDZiMTliZDVlNWNlYTkwMDIxMGU3OWJjN2MyZDc",
+      "link": "https://www.parknshop.com/zh-hk/%E8%98%8B%E6%9E%9C%E6%B1%81/p/BP_88683"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "菓子本舖 蘋果味蒟蒻",
+      "quantity": "240G",
+      "price": "$11.00",
+      "bargain": "$22 / 3件",
+      "image": "https://api.parknshop.com/medias/KONNAYKU-JELLY-APPLE-484869.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1MTMzOTZ8aW1hZ2UvanBlZ3xoN2EvaDhlLzkzMjE3NTMyNDc3NzQvS09OTkFZS1UgSkVMTFkgLSBBUFBMRS00ODQ4NjkuanBnfDA2YjgyMmQ4MzA5MzBlOWNkZWUwOWZkMzE5ZDAwYjJlOTk2MDIzNzI2YTZiYjI3N2YwODU1YjliOGY2MzFlYTQ",
+      "link": "https://www.parknshop.com/zh-hk/%E8%98%8B%E6%9E%9C%E5%91%B3%E8%92%9F%E8%92%BB/p/BP_484869"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "樹頂 100%蘋果汁",
+      "quantity": "64OZ",
+      "price": "$42.50",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/100-Apple-Juice-137968.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyOTg5MjR8aW1hZ2UvanBlZ3xoMjMvaGQ3LzkzMTg4NDA5NTkwMDYvMTAwIEFwcGxlIEp1aWNlLTEzNzk2OC5qcGd8MDUxM2QyZTdlYWIyZDJiMDE3MWEwNTgxNjM1NDUwZjI3N2M3OGI3YmVlMWI3YWMxOThkOWFlYjk5NWJkZGVkNA",
+      "link": "https://www.parknshop.com/zh-hk/100-%E8%98%8B%E6%9E%9C%E6%B1%81/p/BP_137968"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "樹頂 100%蘋果汁",
+      "quantity": "296ML",
+      "price": "$9.50",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/100-Apple-Juice-158878.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyNzcwNDV8aW1hZ2UvanBlZ3xoYzUvaDc4LzkzMTg5ODM4NjAyNTQvMTAwIEFwcGxlIEp1aWNlLTE1ODg3OC5qcGd8YzFjMzY4ZGVkYjYzZTAzYWUzZGNiNjRiYmM2ZGFiMDUyYzFmMmUyNWEwNGM3MTRiOTQyODg0MWUxNmUyY2JiNw",
+      "link": "https://www.parknshop.com/zh-hk/100-%E8%98%8B%E6%9E%9C%E6%B1%81/p/BP_158878"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "DIMES 純蘋果汁",
+      "quantity": "IL",
+      "price": "$13.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/100-Apple-Juice-316425.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyODYwMjF8aW1hZ2UvanBlZ3xoMTEvaDg4LzkzMTg4NjU5OTM3NTgvMTAwIEFwcGxlIEp1aWNlLTMxNjQyNS5qcGd8NzE2NTZjNDJjMTAzOGIxMjM0NDNkMjE3MWM5OGMzNzM4NWFlMGVkNDM4YTVmMGY0M2E5OWFkNjI0M2FlZWE0OA",
+      "link": "https://www.parknshop.com/zh-hk/%E7%B4%94%E8%98%8B%E6%9E%9C%E6%B1%81/p/BP_316425"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "美粒果酷兒 蘋果汁飲品",
+      "quantity": "200MLX6",
+      "price": "$17.00",
+      "bargain": "$29 / 2件",
+      "image": "https://api.parknshop.com/medias/Apple-Juice-Drink-418236.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMjI5OTR8aW1hZ2UvanBlZ3xoYTcvaDAxLzkzMTg4MDE5MzIzMTgvQXBwbGUgSnVpY2UgRHJpbmstNDE4MjM2LmpwZ3xlZTY0ZWRlMzZjYjc5M2ExNjc5OWI1OTc3ZTQ5NzYzNTI0NjZkODM5MTgyNDM4OTc0ZmVjYWJlOThlNmM4YzE3",
+      "link": "https://www.parknshop.com/zh-hk/%E8%98%8B%E6%9E%9C%E6%B1%81%E9%A3%B2%E5%93%81/p/BP_418236"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "維他 蘋果汁250毫升(6包裝)",
+      "quantity": "6X250ML",
+      "price": "$17.00",
+      "bargain": "$27 / 2件",
+      "image": "https://api.parknshop.com/medias/-APPLE-JUICE-250ML-6PACK-119335.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0NzY4MDJ8aW1hZ2UvanBlZ3xoNWYvaDAyLzkzMTg5MDg0MjgzMTgvIEFQUExFIEpVSUNFIDI1ME1MIDZQQUNLLTExOTMzNS5qcGd8MzJiOWYxODk3NDBmNGQxNGYyYjkyNzYyMzdhNzQ3Y2VlNDk5NzdjNmFkN2IzM2M4ZTVlN2U0YmIyYTZjNTFkMQ",
+      "link": "https://www.parknshop.com/zh-hk/%E8%98%8B%E6%9E%9C%E6%B1%81250%E6%AF%AB%E5%8D%87-6%E5%8C%85%E8%A3%9D/p/BP_119335"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 11,
+      "product_display_name": "GOLDEN CIRCLE 蘋果汁迷你裝",
+      "quantity": "150MLX6",
+      "price": "$31.50",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/APPLE-JUICE-MINI-PK-102676.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMDAwMDJ8aW1hZ2UvanBlZ3xoNDQvaGM4LzkzMTg4MTczMzMyNzgvQVBQTEUgSlVJQ0UgTUlOSSBQSy0xMDI2NzYuanBnfGJiMWM2ZjNjZDhhMmM0NDBmNWUwNjZlOTMwYTIzYzVhZGIxOTJhNjNlODg1ODU3YzVkNGIzZDM2MWQwM2ZiZTE",
+      "link": "https://www.parknshop.com/zh-hk/%E8%98%8B%E6%9E%9C%E6%B1%81%E8%BF%B7%E4%BD%A0%E8%A3%9D/p/BP_102676"
+    }
+  ],
+  "西蘭花": [
+    {
+      "market_id": 2,
+      "search_item_id": 12,
+      "product_display_name": "西蘭花(每個)",
+      "quantity": "EACH",
+      "price": "$5.90",
+      "bargain": "$9.9 / 2件",
+      "image": "https://api.parknshop.com/medias/BROCCOLI-EACH-45554.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMzMyMzh8aW1hZ2UvanBlZ3xoODkvaGE0LzkzMTkyNTIzNjEyNDYvQlJPQ0NPTEkgRUFDSC00NTU1NC5qcGd8Mjc3ZTBhMmJkMjA0Yjc1OGEwZjJmNDc1NzMxZTU2OTJmZjE4ODA0ZTVjZTg1YjczNzJiZmYxZGJjMTU3NjM0Yw",
+      "link": "https://www.parknshop.com/zh-hk/%E8%A5%BF%E8%98%AD%E8%8A%B1-%E6%AF%8F%E5%80%8B/p/BP_45554"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 12,
+      "product_display_name": "BELCANDO 狗鮮肉濕包-三文魚+西蘭花",
+      "quantity": "100G",
+      "price": "$24.00",
+      "bargain": "$50 / 3件",
+      "image": "https://api.parknshop.com/medias/TOPPING-SALMON-WITH-BROCCOLI-409389.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMDE1MjF8aW1hZ2UvanBlZ3xoYzMvaDgxLzkzMjI0MzYyMzExOTgvVE9QUElORy0gU0FMTU9OIFdJVEggQlJPQ0NPTEktNDA5Mzg5LmpwZ3xhNjRjZTY4N2MyNmE1ODE3NzI0MTFlZjdlNDYwYmVhMDlmYjZkNGY2MDljN2QzNDQ0ODc4MWM5Y2M3YTJlY2Q1",
+      "link": "https://www.parknshop.com/zh-hk/%E7%8B%97%E9%AE%AE%E8%82%89%E6%BF%95%E5%8C%85-%E4%B8%89%E6%96%87%E9%AD%9A-%E8%A5%BF%E8%98%AD%E8%8A%B1/p/BP_409389"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 12,
+      "product_display_name": "ELLA'S KITCHEN Ella's Kitchen 有機梨豌豆及西蘭花蓉120克",
+      "quantity": "120G",
+      "price": "$23.90",
+      "bargain": "$71.7 / 4件",
+      "image": "https://api.parknshop.com/medias/Ellas-Kitchen-Broccoli-Pears-Peas-Smoothie-120g-349519.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxOTk0MDV8aW1hZ2UvanBlZ3xoNzYvaDI5LzkzMTg3Mzg4MjExNTAvRWxsYXMgS2l0Y2hlbiBCcm9jY29saSBQZWFycyAgUGVhcyBTbW9vdGhpZSAxMjBnLTM0OTUxOS5qcGd8NTVhZTQzN2M2ZDAxOGNlMjQ4OGVmMTc0NjE2MGM5MzZiMWMwMGRlMGVkNTQzYWNkNjg3ODY1ZGM0OTJhNTE0MA",
+      "link": "https://www.parknshop.com/zh-hk/ella-s-kitchen-%E6%9C%89%E6%A9%9F%E6%A2%A8%E8%B1%8C%E8%B1%86%E5%8F%8A%E8%A5%BF%E8%98%AD%E8%8A%B1%E8%93%89120%E5%85%8B/p/BP_349519"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 12,
+      "product_display_name": "媽媽農場 紐西蘭花生醬（奇亞籽）",
+      "quantity": "380G",
+      "price": "$51.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/PEANUT-BUTTER-WITH-CHIA-SEEDS-497429.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w4MTM2MnxpbWFnZS9qcGVnfGg5NS9oNmEvOTMyMjE0MDcyOTM3NC9QRUFOVVQgQlVUVEVSIFdJVEggQ0hJQSBTRUVEUy00OTc0MjkuanBnfGY1ZjY0Y2U3NzcyM2ZmMmRjNDRjZWY0NDEyYTA2ZGNjYTUxNTU0ZmQ1MjFlZWE1Mjg0ZGQ1Mjc2Njc4ZTRjYmY",
+      "link": "https://www.parknshop.com/zh-hk/%E7%B4%90%E8%A5%BF%E8%98%AD%E8%8A%B1%E7%94%9F%E9%86%AC%EF%BC%88%E5%A5%87%E4%BA%9E%E7%B1%BD%EF%BC%89/p/BP_497429"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 12,
+      "product_display_name": "媽媽農場 紐西蘭花生醬（亞麻籽，葵花籽，杏仁）",
+      "quantity": "380G",
+      "price": "$51.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/PEANUT-BUTTER-LSA-497430.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w4MjAwN3xpbWFnZS9qcGVnfGgyZS9oMDIvOTMyMjE0NDE3MDAxNC9QRUFOVVQgQlVUVEVSIExTQS00OTc0MzAuanBnfDYyOGI0N2Q0OTAzZDM3ZGRhZTE2NTE4MTY0ZmQ3Mzc1ODc0ZWEyYTllZDkzNzUzYzY5ZmQ0NzhkYzRjZmU3NGQ",
+      "link": "https://www.parknshop.com/zh-hk/%E7%B4%90%E8%A5%BF%E8%98%AD%E8%8A%B1%E7%94%9F%E9%86%AC%EF%BC%88%E4%BA%9E%E9%BA%BB%E7%B1%BD%EF%BC%8C%E8%91%B5%E8%8A%B1%E7%B1%BD%EF%BC%8C%E6%9D%8F%E4%BB%81%EF%BC%89/p/BP_497430"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 12,
+      "product_display_name": "嘉寶 有機手指泡芙條芝士白豆蓉西蘭花味",
+      "quantity": "1.59OZ",
+      "price": "$45.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/Lil-Crunchies-OR-WhtChedBroc-255593.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTU5NzR8aW1hZ2UvanBlZ3xoZjYvaDVjLzkzMjIxOTMxOTA5NDIvTGls4oCZIENydW5jaGllcyBPUiBXaHRDaGVkQnJvYy0yNTU1OTMuanBnfDIxMTY1NTUxYWQwN2E5MGFiZDg1MDY1MDAyZWJhYzcwNzViMTU5YTA2MmYwOTVhMDhiMjIwMThlZTM2M2JhOTI",
+      "link": "https://www.parknshop.com/zh-hk/%E6%9C%89%E6%A9%9F%E6%89%8B%E6%8C%87%E6%B3%A1%E8%8A%99%E6%A2%9D%E8%8A%9D%E5%A3%AB%E7%99%BD%E8%B1%86%E8%93%89%E8%A5%BF%E8%98%AD%E8%8A%B1%E5%91%B3/p/BP_255593"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 12,
+      "product_display_name": "FULL GREEN 西蘭花椰菜花飯 (*商戶直送-ORGANIC MAMA LTD) *滿$500免運",
+      "quantity": "200G",
+      "price": "$38.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/Cauliflower-Rice-With-Broccoli-Supplier-Direct-Delivery-ORGANIC-MAMA-LTD-Over-500-Enjoy-Free-Delivery-112604.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNDc4MzN8aW1hZ2UvanBlZ3xoNzAvaDRkLzkzMjMyMTM4NDg2MDYvQ2F1bGlmbG93ZXIgUmljZSBXaXRoIEJyb2Njb2xpIFN1cHBsaWVyIERpcmVjdCBEZWxpdmVyeS1PUkdBTklDIE1BTUEgTFREIE92ZXIgNTAwIEVuam95IEZyZWUgRGVsaXZlcnktMTEyNjA0LmpwZ3wzYjUxMTBhZDYzNzQ3Y2QyODMwMGMzNmJhYTZjNGZhMDA2ODM2NjIyZGM0ZDQ3N2NkZDljOGM4YmYzOTAyMDhl",
+      "link": "https://www.parknshop.com/zh-hk/%E8%A5%BF%E8%98%AD%E8%8A%B1%E6%A4%B0%E8%8F%9C%E8%8A%B1%E9%A3%AF-*%E5%95%86%E6%88%B6%E7%9B%B4%E9%80%81-organic-mama-ltd-*%E6%BB%BF-500%E5%85%8D%E9%81%8B/p/BP_112604"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 12,
+      "product_display_name": "TIBERINO 全天然即煮西蘭花猫耳朵粉",
+      "quantity": "200G",
+      "price": "$48.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ORECCHIETTE-PASTA-WITH-BROCCOLI-429296.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyMDMxNjl8aW1hZ2UvanBlZ3xoMjEvaDcxLzkzMjM3ODAxNDUxODIvT1JFQ0NISUVUVEUgUEFTVEEgV0lUSCBCUk9DQ09MSS00MjkyOTYuanBnfDJkYzk1MzY4Y2ZhN2FmOTRhNWRmNGI4YzlhYzE4MjEzZTUxMmFiYTZiNTQ1NTUwMmIzMDZkNmJhNTlhNmFmMmE",
+      "link": "https://www.parknshop.com/zh-hk/%E5%85%A8%E5%A4%A9%E7%84%B6%E5%8D%B3%E7%85%AE%E8%A5%BF%E8%98%AD%E8%8A%B1%E7%8C%AB%E8%80%B3%E6%9C%B5%E7%B2%89/p/BP_429296"
+    }
+  ],
+  "香蕉": [
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "都樂 超甜香蕉（菲律賓）",
+      "quantity": "PACK",
+      "price": "$20.00",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/zoom-front-68357.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MjM1ODF8aW1hZ2UvanBlZ3xoZjQvaDVkLzk1MDY1MDYxNzg1OTAvUE5TSEstNjgzNTctZnJvbnQuanBnfDc0MWI4ZTA2YmQyODM3MTA0NWMxZDFmZGU0ZWU0N2M0ZmQ2N2IwODViOGI4ODUwY2NmNGNmYzVkZjBjZTlkYWY",
+      "link": "https://www.parknshop.com/zh-hk/%E8%B6%85%E7%94%9C%E9%A6%99%E8%95%89%EF%BC%88%E8%8F%B2%E5%BE%8B%E8%B3%93%EF%BC%89/p/BP_68357"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "香蕉船 香蕉船兒童溫和防曬乳液 (走珠式設計)SPF50+ 75ml",
+      "quantity": "75ML",
+      "price": "$98.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/Banana-Boat-Kids-Sunscreen-Roll-On-SPF50-75ml-290077.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2MjcwNHxpbWFnZS9qcGVnfGgwYy9oNWYvOTMyMDg1NzQwMzQyMi9CYW5hbmEgQm9hdCAgIEtpZHMgU3Vuc2NyZWVuIFJvbGwgT24gU1BGNTAgNzVtbC0yOTAwNzcuanBnfGYxZjI0ODAyN2ZkOWFhNTFkODA1M2E5MTQyZDU1MGQwMTRjYWFkNTI1MzhhMDdhN2UyMzYxYzNiN2E2NzUxOGM",
+      "link": "https://www.parknshop.com/zh-hk/%E9%A6%99%E8%95%89%E8%88%B9%E5%85%92%E7%AB%A5%E6%BA%AB%E5%92%8C%E9%98%B2%E6%9B%AC%E4%B9%B3%E6%B6%B2-%E8%B5%B0%E7%8F%A0%E5%BC%8F%E8%A8%AD%E8%A8%88-spf50-75ml/p/BP_290077"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "香蕉船 香蕉船特強運動型防曬噴霧 SPF100 PA++++ 170克",
+      "quantity": "170G",
+      "price": "$156.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/ULTRA-SPORT-SUNSCREEN-SPRAY-SPF100-310911.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1NjAyMnxpbWFnZS9qcGVnfGhhMC9oNGMvOTMyMzIzNDU1Nzk4Mi9VTFRSQSBTUE9SVCBTVU5TQ1JFRU4gU1BSQVkgU1BGMTAwLTMxMDkxMS5qcGd8NTI1NWNiMGM1OTkwZWZkNzAxMmJjZWU0YzIzZDNlZTgyMzRmYjRlYWQ5ODhiYmFlNjVhOTBjZTE0MDYyN2RkYQ",
+      "link": "https://www.parknshop.com/zh-hk/%E9%A6%99%E8%95%89%E8%88%B9%E7%89%B9%E5%BC%B7%E9%81%8B%E5%8B%95%E5%9E%8B%E9%98%B2%E6%9B%AC%E5%99%B4%E9%9C%A7-spf100-pa-170%E5%85%8B/p/BP_310911"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "香蕉船 香蕉船特強運動型防曬乳 SPF100 PA++++ 90ml",
+      "quantity": "90ML",
+      "price": "$114.90",
+      "bargain": "",
+      "image": "https://api.parknshop.com/medias/BANANA-BOAT-ULTRA-SPORT-SUNSCREEN-LOTION-SPF100-PA-90ML-809313.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2NDI5OXxpbWFnZS9qcGVnfGgyZC9oYzMvOTMxODUwMzAyMjYyMi9CQU5BTkEgQk9BVCBVTFRSQSBTUE9SVCBTVU5TQ1JFRU4gTE9USU9OIFNQRjEwMCBQQSA5ME1MLTgwOTMxMy5qcGd8OWQ4MzdjMzhhZDlkNmI1ODAwMjg2NDM2NTc0MDA2NzBmMjMyMTE3MTFlZjM1ZThhMmQ3MGQ3OGQxODJhYTU1NQ",
+      "link": "https://www.parknshop.com/zh-hk/%E9%A6%99%E8%95%89%E8%88%B9%E7%89%B9%E5%BC%B7%E9%81%8B%E5%8B%95%E5%9E%8B%E9%98%B2%E6%9B%AC%E4%B9%B3-spf100-pa-90ml/p/BP_809313"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "香蕉船 香蕉船控油空氣感防曬乳 SPF50+ 90ml",
+      "quantity": "90ML",
+      "price": "$98.90",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E9%A6%99%E8%95%89%E8%88%B9%E6%8E%A7%E6%B2%B9%E7%A9%BA%E6%B0%A3%E6%84%9F%E9%98%B2%E6%9B%AC%E4%B9%B3-spf50-90ml/p/BP_809311"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "香蕉船 香蕉船控油空氣感防曬噴霧 SPF50+ 170g",
+      "quantity": "170G",
+      "price": "$142.90",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E9%A6%99%E8%95%89%E8%88%B9%E6%8E%A7%E6%B2%B9%E7%A9%BA%E6%B0%A3%E6%84%9F%E9%98%B2%E6%9B%AC%E5%99%B4%E9%9C%A7-spf50-170g/p/BP_809312"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "香蕉船 香蕉船全效防禦運動型防曬噴霧 SPF50+ PA++++ 170g",
+      "quantity": "170G",
+      "price": "$142.90",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E9%A6%99%E8%95%89%E8%88%B9%E5%85%A8%E6%95%88%E9%98%B2%E7%A6%A6%E9%81%8B%E5%8B%95%E5%9E%8B%E9%98%B2%E6%9B%AC%E5%99%B4%E9%9C%A7-spf50-pa-170g/p/BP_325885"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "小皮 有機藍莓香蕉希臘式乳酪",
+      "quantity": "100G",
+      "price": "$20.90",
+      "bargain": "$70 / 4件",
+      "link": "https://www.parknshop.com/zh-hk/%E6%9C%89%E6%A9%9F%E8%97%8D%E8%8E%93%E9%A6%99%E8%95%89%E5%B8%8C%E8%87%98%E5%BC%8F%E4%B9%B3%E9%85%AA/p/BP_496988"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "ORGANIX 有機香蕉軟燕麥條（１２個月或以上）",
+      "quantity": "6X30G",
+      "price": "$79.90",
+      "bargain": "$127 / 2件",
+      "link": "https://www.parknshop.com/zh-hk/%E6%9C%89%E6%A9%9F%E9%A6%99%E8%95%89%E8%BB%9F%E7%87%95%E9%BA%A5%E6%A2%9D%EF%BC%88%EF%BC%91%EF%BC%92%E5%80%8B%E6%9C%88%E6%88%96%E4%BB%A5%E4%B8%8A%EF%BC%89/p/BP_493867"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "BINGGRAE 香蕉味牛奶飲品",
+      "quantity": "200MLX6",
+      "price": "$45.90",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E9%A6%99%E8%95%89%E5%91%B3%E7%89%9B%E5%A5%B6%E9%A3%B2%E5%93%81/p/BP_411631"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "小皮 有機香蕉希臘式乳酪",
+      "quantity": "100G",
+      "price": "$20.90",
+      "bargain": "$70 / 4件",
+      "link": "https://www.parknshop.com/zh-hk/%E6%9C%89%E6%A9%9F%E9%A6%99%E8%95%89%E5%B8%8C%E8%87%98%E5%BC%8F%E4%B9%B3%E9%85%AA/p/BP_496987"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "DENZEL'S 狗小食粒—香蕉莓三文魚",
+      "quantity": "100G",
+      "price": "$20.00",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E7%8B%97%E5%B0%8F%E9%A3%9F%E7%B2%92%E2%80%94%E9%A6%99%E8%95%89%E8%8E%93%E4%B8%89%E6%96%87%E9%AD%9A/p/BP_435588"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "RIVERD REPUBLIC 狗零食 無添加 沙冰泥棒（香蕉乳酪）",
+      "quantity": "13G X 4",
+      "price": "$25.00",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/%E7%8B%97%E9%9B%B6%E9%A3%9F-%E7%84%A1%E6%B7%BB%E5%8A%A0-%E6%B2%99%E5%86%B0%E6%B3%A5%E6%A3%92%EF%BC%88%E9%A6%99%E8%95%89%E4%B9%B3%E9%85%AA%EF%BC%89/p/BP_445302"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "奧莉有機 奧莉有機 有機香蕉雜莓乳酪 120克",
+      "quantity": "120G",
+      "price": "$29.90",
+      "bargain": "$59 / 3件",
+      "link": "https://www.parknshop.com/zh-hk/%E5%A5%A7%E8%8E%89%E6%9C%89%E6%A9%9F-%E6%9C%89%E6%A9%9F%E9%A6%99%E8%95%89%E9%9B%9C%E8%8E%93%E4%B9%B3%E9%85%AA-120%E5%85%8B/p/BP_459845"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "嘉寶 香蕉星星餅",
+      "quantity": "42G",
+      "price": "$28.90",
+      "bargain": "$60 / 3件",
+      "link": "https://www.parknshop.com/zh-hk/%E9%A6%99%E8%95%89%E6%98%9F%E6%98%9F%E9%A4%85/p/BP_113627"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "嘉頓 雪芳蛋糕－香蕉味",
+      "quantity": "60G",
+      "price": "$8.00",
+      "bargain": "$12.4 / 2件",
+      "link": "https://www.parknshop.com/zh-hk/%E9%9B%AA%E8%8A%B3%E8%9B%8B%E7%B3%95%EF%BC%8D%E9%A6%99%E8%95%89%E5%91%B3/p/BP_134299"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "喜寶 HiPP 喜寶有機蘋果香蕉唧唧裝",
+      "quantity": "100G",
+      "price": "$28.80",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/hipp-%E5%96%9C%E5%AF%B6%E6%9C%89%E6%A9%9F%E8%98%8B%E6%9E%9C%E9%A6%99%E8%95%89%E5%94%A7%E5%94%A7%E8%A3%9D/p/BP_228432"
+    },
+    {
+      "market_id": 2,
+      "search_item_id": 13,
+      "product_display_name": "喜寶 HiPP 喜寶有機蘋果香梨香蕉唧唧裝",
+      "quantity": "100G",
+      "price": "$28.80",
+      "bargain": "",
+      "link": "https://www.parknshop.com/zh-hk/hipp-%E5%96%9C%E5%AF%B6%E6%9C%89%E6%A9%9F%E8%98%8B%E6%9E%9C%E9%A6%99%E6%A2%A8%E9%A6%99%E8%95%89%E5%94%A7%E5%94%A7%E8%A3%9D/p/BP_228433"
+    }
+  ]
+}
