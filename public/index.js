@@ -193,7 +193,7 @@ document.querySelector("#snapBtn").addEventListener("click", async () => {
   loading.style.display = "none";
 });
 
-console.log(predictResult);
+// console.log(predictResult);
 
 // convert dataURI to Blob
 function dataURItoBlob(dataURI) {
@@ -579,7 +579,28 @@ searchHistory.forEach((div) => {
 });
 
 let canvas_live2d = document.querySelector("canvas#live2d");
-let display_boolean = false;
+let display_boolean = true;
+let myMediaQuery = window.matchMedia("(max-width: 700px)");
+console.log(myMediaQuery);
+
+function widthChangeCallback(myMediaQuery) {
+  if (myMediaQuery.matches) {
+    // console.log("I am smaller than 700px");
+    display_boolean = false;
+    // console.log(`The display boolean is ${display_boolean}`);
+  } else {
+    display_boolean = true;
+    // console.log(`The display boolean is ${display_boolean}`);
+  }
+}
+myMediaQuery.addEventListener("change", widthChangeCallback);
+
+if (window.innerWidth > 700) {
+  display_boolean = true;
+} else {
+  display_boolean = false;
+}
+
 canvas_live2d.addEventListener("click", () => {
   display_boolean = !display_boolean;
   if (display_boolean) {
@@ -588,7 +609,6 @@ canvas_live2d.addEventListener("click", () => {
     interaction_part.style.display = "none";
   }
 });
-
 
 // load more
 // let countPrice = 1;
