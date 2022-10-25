@@ -12,51 +12,55 @@
 
 <body>
     <section>
-        <div id="gameContainer">
-            <div class="popup" id="success">
-                <div class="popup-content">
-                    <div class="imgbox">
-                        <img src="checked.png" alt="" class="img">
+        <div id="animated_card">
+            <div id="gameContainer">
+                <div class="popup" id="success">
+                    <div class="popup-content">
+                        <div class="imgbox">
+                            <img src="checked.png" alt="" class="img">
+                        </div>
+                        <div class="title">
+                            <h3>You are correct!</h3>
+                        </div>
+                        <form action="">
+                            <a href="#" class="button" id="s_button">NEXT</a>
+                        </form>
                     </div>
-                    <div class="title">
-                        <h3>You are correct!</h3>
-                    </div>
-                    <form action="">
-                        <a href="#" class="button" id="s_button">NEXT</a>
-                    </form>
                 </div>
-            </div>
-            <div class="popup" id="error">
-                <div class="popup-content">
-                    <div class="imgbox">
-                        <img src="cancel.png" alt="" class="img">
+                <div class="popup" id="error">
+                    <div class="popup-content">
+                        <div class="imgbox">
+                            <img src="cancel.png" alt="" class="img">
+                        </div>
+                        <div class="title">
+                            <h3>You are wrong!</h3>
+                        </div>
+                        <form action="">
+                            <a href="#" class="button" id="e_button">TRY AGAIN</a>
+                        </form>
                     </div>
-                    <div class="title">
-                        <h3>You are wrong!</h3>
+                </div>
+                <div class="display" id="dis_1">
+                    <div id="animated_card2">
+                        <div id="question_container">
+                            <p id="question">請回答以下題目</p>
+                            <p id="question_number"></p>
+                        </div>
                     </div>
-                    <form action="">
-                        <a href="#" class="button" id="e_button">TRY AGAIN</a>
-                    </form>
                 </div>
-            </div>
-            <div class="display" id="dis_1">
-                <div id="question_container">
-                    <p id="question">請回答以下題目</p>
-                    <p id="question_number"></p>
-                </div>
-            </div>
-            <div class="display" id="dis_2">
-                <div id="answers">
-                    <button class="answer"></button>
-                    <button class="answer"></button>
-                    <button class="answer"></button>
-                </div>
-                <div id="count_cointainer">
-                    <div class="counts">
-                        <p>正確次數：<span id="count_no"></span></p>
-                        <p>錯誤次數：<span id="count_no"></span></p>
+                <div class="display" id="dis_2">
+                    <div id="answers">
+                        <button class="answer"></button>
+                        <button class="answer"></button>
+                        <button class="answer"></button>
                     </div>
-                    <div class="counts" id="wrong"></div>
+                    <div id="count_cointainer">
+                        <div class="counts">
+                            <p>正確次數：<span id="count_no"></span></p>
+                            <p>錯誤次數：<span id="count_no"></span></p>
+                        </div>
+                        <div class="counts" id="wrong"></div>
+                    </div>
                 </div>
             </div>
         </div>

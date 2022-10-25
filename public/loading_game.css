@@ -9,11 +9,35 @@ section {
   justify-content: center;
   align-items: center;
   margin: 0;
-  /* height: 350px; */
+  height: 370px;
+  background: #333;
+  /* overflow: hidden; */
+}
+
+#animated_card {
+  /* inset: 5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 365px;
+  width: 475px;
+  background: #000;
+  transition: 0.5s;
+  overflow: hidden;
+  /* outline: 3px solid black; */
+  /* outline: 3px solid rgba(0, 0, 0, 0.2); */
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
 
 #gameContainer {
-  outline: 2px solid black;
+  /* margin-top: 10px; */
+  /* outline: 2px solid black; */
+  background: rgb(73, 71, 71);
+  outline: 2px solid rgba(0, 0, 0, 0.1);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
   height: 350px;
   width: 460px;
   position: relative;
@@ -21,13 +45,49 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  z-index: 5;
+}
+
+section #animated_card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 120px;
+  background: linear-gradient(
+    transparent,
+    #45f3ff,
+    #45f3ff,
+    #45f3ff,
+    transparent
+  );
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+section #animated_card::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: #292929;
 }
 
 .display#dis_1 {
-  height: 120px;
+  height: 140px;
+  width: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .display#dis_2 {
   height: 120px;
@@ -37,20 +97,65 @@ section {
   flex-direction: column;
 }
 
+.display#dis_1 #animated_card2 {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  overflow: hidden;
+}
+.display#dis_1 #animated_card2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 150px;
+  background: linear-gradient(
+    transparent,
+    #ff3c7b,
+    #ff3c7b,
+    #ff3c7b,
+    transparent
+  );
+  animation: animate2 3s linear infinite;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.display#dis_1 #animated_card2::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #292929;
+}
+
 #question_container {
   height: 120px;
-  width: 500px;
+  width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 10;
+  color: #d2285e;
 }
 #question_container #question {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 #question_container p:nth-child(2) {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 #answers {
@@ -65,33 +170,52 @@ section {
 #answers .answer {
   /* border: 2px solid purple; */
   margin: 0px 30px;
-  height: 50px;
-  width: 100px;
+  height: 40px;
+  width: 80px;
   font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #3c3c3c;
+  outline: 2px solid #000;
 }
 
 #count_cointainer .counts {
   display: flex;
   font-size: 20px;
+  color: #45f3ff;
 }
 #count_cointainer .counts p {
   margin: 0px 40px 0px 40px;
 }
 
 @media only screen and (max-width: 400px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #animated_card {
+    height: 250px;
+    width: 475px;
+  }
+  section #animated_card::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background: #292929;
+    /* height: 250px; */
+  }
   section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 380px; */
-    /* height: 300px; */
+    height: 250px;
+    width: 350px;
   }
 
   #gameContainer {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     height: 240px;
     width: 340px;
     position: relative;
