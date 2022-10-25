@@ -374,6 +374,8 @@ searchBtn.addEventListener("click", async () => {
     node.querySelector(".ingredients").textContent = data.ingredients;
     document.querySelector(".recipeSection").append(node);
   }
+  AOS.init();
+  document.querySelector(".loremText").style.display = 'none'
 
   // sorting buttons
 
@@ -402,6 +404,8 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
+  document.querySelector(".loremText").style.display = 'none'
+
   });
 
   market2.addEventListener("click", async () => {
@@ -429,6 +433,8 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
+  document.querySelector(".loremText").style.display = 'none'
+
   });
 
   market3.addEventListener("click", async () => {
@@ -456,6 +462,8 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
+    document.querySelector(".loremText").style.display = 'none'
+  
   });
 
   market4.addEventListener("click", async () => {
@@ -483,6 +491,8 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
+  document.querySelector(".loremText").style.display = 'none'
+
   });
 
   showAll.addEventListener("click", async () => {
@@ -509,6 +519,8 @@ searchBtn.addEventListener("click", async () => {
       document.querySelector(".priceDisplay").append(node);
     }
     AOS.init();
+    document.querySelector(".loremText").style.display = 'none'
+  
   });
 
   tabTwo.addEventListener("click", async () => {
@@ -540,6 +552,9 @@ searchBtn.addEventListener("click", async () => {
       node.querySelector(".ingredients").textContent = data.ingredients;
       document.querySelector(".recipeSection").append(node);
     }
+    AOS.init();
+  document.querySelector(".loremText").style.display = 'none'
+
   });
 
   let searchHistory = document.querySelectorAll(".history > div");
