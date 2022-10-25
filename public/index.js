@@ -330,6 +330,7 @@ searchBtn.addEventListener("click", async () => {
 
   // fetch data
   const result = await fetch(`/marketdata/${searchFieldText}`);
+  // const result = await fetch(`/marketdata/${countPrice}/${searchFieldText}`);
   let json = await result.json();
   console.log(json);
 
@@ -572,3 +573,37 @@ canvas_live2d.addEventListener("click", () => {
     interaction_part.style.display = "none";
   }
 });
+
+
+// load more
+// let countPrice = 1;
+// let loadmorePrice = document.querySelector(".loadmorePrice");
+// loadmorePrice.addEventListener("click", async () => {
+//   countPrice += 1;
+//   getPageNum();
+//   return countPrice;
+// });
+
+// async function getPageNum() {
+//   let searchFieldText = document.querySelector(".searchField").value;
+//   console.log(searchFieldText);
+//   let getPage = await fetch(`/marketdata/${countPrice}/${searchFieldText}`, {
+//     method: "post",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify({ page: countPrice, product: searchFieldText }),
+//   });
+//   let pageNum = await getPage.json();
+
+//   for (let data of pageNum) {
+//     console.log(data);
+//     let node = priceCard.cloneNode(true);
+//     node.querySelector(".priceCard > a").href = data.product_link;
+//     node.querySelector(".productPic").src = data.display_pic;
+//     node.querySelector(".supermarket").textContent = data.market_name;
+//     node.querySelector(".displayName").textContent = data.product_display_name;
+//     node.querySelector(".quantity").textContentsrc = data.quantity;
+//     node.querySelector(".price").textContent = "$" + data.price;
+//     node.querySelector(".bargain").textContent = data.bargain;
+//     document.querySelector(".priceDisplay").append(node);
+//   }
+// }

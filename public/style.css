@@ -407,6 +407,15 @@ section.resultDisplay {
   grid-template-columns: auto auto auto auto auto auto;
 }
 
+.supermarket {
+  font-size: large;
+}
+
+.price {
+  font-size: 25px;
+  color: var(--darker-green);
+}
+
 div.sortButtonsContainer {
   display: flex;
   flex-direction: row;
@@ -477,7 +486,7 @@ div.sortButtonsContainer > button:hover {
   border-color: rgb(26, 188, 156);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  display: inline-flex;
+  /* display: inline-flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
