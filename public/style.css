@@ -557,11 +557,11 @@ div.sortButtonsContainer > button:focus {
 }
 
 .priceCard:hover {
-  transform: skew(-7deg);
+  transform: scale(1.03);
 }
 
 .recipeCard:hover {
-  transform: skew(-7deg);
+  transform: scale(1.03);
 }
 
 @keyframes spin {
