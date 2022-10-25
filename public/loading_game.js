@@ -10,7 +10,6 @@ function getRandomInt_plus(max) {
 
 function getRandomInt_difference(max) {
   let a = (Math.floor(Math.random() * max) + 1) * 10 - 30;
-  console.log(a);
   if (a == 0) {
     return getRandomInt_difference(max);
   } else if (a !== 0) {
@@ -26,8 +25,8 @@ function getRandomInt_difference2(max) {
     return a;
   }
 }
-console.log(getRandomInt_difference(5));
-console.log(getRandomInt_difference2(5));
+// console.log(getRandomInt_difference(5));
+// console.log(getRandomInt_difference2(5));
 
 let num_question_type;
 let num1;

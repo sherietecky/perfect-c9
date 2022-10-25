@@ -263,11 +263,8 @@ div#interaction_part {
   background: aliceblue;
   color: black;
   border-radius: 30px;
-  /* display: none; */
-}
-
-div.displayContent {
-  margin: 0px 0px;
+  /* display: block; */
+  flex-direction: column;
 }
 
 div.resultDisplay {
@@ -275,7 +272,7 @@ div.resultDisplay {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 280px;
+  width: 240px;
   height: auto;
   /* outline: 2px solid black; */
 }
@@ -571,7 +568,7 @@ div.sortButtonsContainer > button:hover {
   position: fixed;
   bottom: 60px;
   right: 10px;
-  height: 400px;
+  height: 460px;
   width: 250px;
   z-index: 10;
   /* position: relative; */
@@ -583,6 +580,8 @@ canvas#live2d {
   position: fixed;
   bottom: 10px;
   right: 10px;
+  /* outline: 2px solid #527e3a; */
+  /* border-radius: 500px; */
 }
 
 section.resultDisplay {
@@ -597,10 +596,13 @@ section.resultDisplay {
   canvas#live2d {
     width: 160px;
     height: 200px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
   }
 
   div#live2d_container {
-    height: 500px;
+    height: 530px;
     width: 160px;
     display: flex;
     justify-content: space-between;
@@ -608,7 +610,7 @@ section.resultDisplay {
     flex-direction: column;
     position: fixed;
     bottom: 5px;
-    right: 10px;
+    left: 10px;
   }
 
   div#interaction_part {
@@ -616,7 +618,7 @@ section.resultDisplay {
     padding: 10px;
     height: auto;
     width: 160px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -643,6 +645,8 @@ section.resultDisplay {
 
   div.displayContent {
     margin: 0px 0px;
+    /* height: 20px; */
+    /* width: 40px; */
   }
   /* 
   .result_content {
@@ -677,7 +681,6 @@ section.resultDisplay {
   background: #629bdd !important;
   font: 2em/4;
   text-align: center;
-  display: none;
 }
 
 #interaction_part:before,
@@ -685,8 +688,8 @@ section.resultDisplay {
   position: absolute;
   z-index: -1;
   content: "";
-  /* display: none; */
 }
+
 #interaction_part:after {
   top: 0;
   right: 0;
@@ -695,8 +698,8 @@ section.resultDisplay {
   border-radius: inherit;
   transform: rotate(2deg) translate(0.35em, -0.15em) scale(1.02);
   background: #f4fbfe;
-  /* display: none; */
 }
+
 #interaction_part:before {
   border: solid 0 transparent;
   border-right: solid 3.5em #f4fbfe;

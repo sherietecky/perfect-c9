@@ -1,71 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bg_ripple.css" />
-    <link rel="stylesheet" href="tabs.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="manifest" href="manifest.json" />
-    <meta name="theme-color" content="#63C5DA" />
-    <!-- <meta name='mobile-web-app-capable' content='yes'/> -->
-    <link rel="apple-touch-icon" href="/icon/icon96.png" />
-    <meta name="apple-mobile-web-app-status-bar" content="#63C5DA" />
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="bg_ripple.css" />
+  <link rel="stylesheet" href="tabs.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#63C5DA" />
+  <!-- <meta name='mobile-web-app-capable' content='yes'/> -->
+  <link rel="apple-touch-icon" href="/icon/icon96.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#63C5DA" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <title>格價專員v1.2.4</title>
-  </head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <body>
-    <!-- background ripple -->
-    <div class="ripple-background">
-      <div class="circle xxlarge shade1"></div>
-      <div class="circle xlarge shade2"></div>
-      <div class="circle large shade3"></div>
-      <div class="circle medium shade4"></div>
-      <div class="circle small shade5"></div>
+  <title>格價專員v1.2.4</title>
+</head>
+
+<body>
+  <!-- background ripple -->
+  <div class="ripple-background">
+    <div class="circle xxlarge shade1"></div>
+    <div class="circle xlarge shade2"></div>
+    <div class="circle large shade3"></div>
+    <div class="circle medium shade4"></div>
+    <div class="circle small shade5"></div>
+  </div>
+
+  <!-- loader -->
+  <div id="loading">
+    <div id="loader"></div>
+    <div id="loading_game" style="background-color: rgb(81, 76, 76)">
+      <!-- <script src="https://cdn.htmlgames.com/embed.js?game=CarromPool&amp;bgcolor=white"></script> -->
+      <!-- <object type="text/html" data="loading_game.html" width="600" height="800"></object> -->
+      <iframe src="loading_game.html" seamless="seamless" scrolling="no" frameborder="0"
+        allowtransparency="true"></iframe>
     </div>
+  </div>
 
-    <!-- loader -->
-    <div id="loading">
-      <div id="loader"></div>
-      <div id="loading_game" style="background-color: rgb(81, 76, 76)">
-        <!-- <script src="https://cdn.htmlgames.com/embed.js?game=CarromPool&amp;bgcolor=white"></script> -->
-        <!-- <object type="text/html" data="loading_game.html" width="600" height="800"></object> -->
-        <iframe
-          src="loading_game.html"
-          seamless="seamless"
-          scrolling="no"
-          frameborder="0"
-          allowtransparency="true"
-        ></iframe>
-      </div>
-    </div>
-
-    <!-- whole page container -->
-    <div id="container">
-      <!-- take pic section -->
-      <section class="takePic">
-        <h1 id="title">你想搵咩? 影來睇睇</h1>
-        <video id="video" autoplay></video>
-        <div class="video-bottom">
-          <div class="snap-container">
-            <div class="snap-container-2">
-              <div id="snapBtn"></div>
-            </div>
+  <!-- whole page container -->
+  <div id="container">
+    <!-- take pic section -->
+    <section class="takePic">
+      <h1 id="title">你想搵咩? 影來睇睇</h1>
+      <video id="video" autoplay></video>
+      <div class="video-bottom">
+        <div class="snap-container">
+          <div class="snap-container-2">
+            <div id="snapBtn"></div>
           </div>
         </div>
-        <!-- <button id="snapBtn">Snap</button> -->
+      </div>
+      <!-- <button id="snapBtn">Snap</button> -->
 
-        <!-- <form
+      <!-- <form
       id="form"
         method="post"
         action="/snap"
@@ -74,13 +67,13 @@
         <input type="file" name="predict_image" id="predict_image"/>
         <button type="submit">submit</button>
       </form> -->
-        <div class="canva-container">
-          <canvas id="canvas" width="400" height="400"></canvas>
-        </div>
-      </section>
+      <div class="canva-container">
+        <canvas id="canvas" width="400" height="400"></canvas>
+      </div>
+    </section>
 
-      <!-- result section -->
-      <!-- <h2>Results</h2>
+    <!-- result section -->
+    <!-- <h2>Results</h2>
     <section class="resultDisplay">
       <img src="/predict_images/coke.jpg" alt="" />
       <div class="productName">[product name]</div>
@@ -89,112 +82,81 @@
       <div class="history">[history]</div>
     </section> -->
 
-      <!-- search bar -->
-      <div class="typeSearch">
-        <div class="inputBox">
-          <input class="searchField" type="text" />
-          <span>Search</span>
-        </div>
-        <button class="searchBtn">搵野 <i class="fa fa-search"></i></button>
+    <!-- search bar -->
+    <div class="typeSearch">
+      <div class="inputBox">
+        <input class="searchField" type="text" />
+        <span>Search</span>
       </div>
-      <hr />
+      <button class="searchBtn">搵野 <i class="fa fa-search"></i></button>
+    </div>
+    <hr />
 
-      <!-- tabs for price and recipes -->
+    <!-- tabs for price and recipes -->
 
-      <div class="wrapper">
-        <div class="tabs">
-          <div class="tab">
-            <input
-              type="radio"
-              name="css-tabs"
-              id="tab-1"
-              checked
-              class="tab-switch"
-            />
-            <label for="tab-1" class="tab-label" id="tabOne">價格</label>
-            <div class="tab-content">
-              <h2>各市場價格</h2>
+    <div class="wrapper">
+      <div class="tabs">
+        <div class="tab">
+          <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch" />
+          <label for="tab-1" class="tab-label" id="tabOne">價格</label>
+          <div class="tab-content">
+            <h2>各市場價格</h2>
 
-              <div class="sortButtonsContainer">
-                <button class="showAll">全部舖頭</button>
-                <button class="market1">Aeon City</button>
-                <button class="market2">百佳</button>
-                <button class="market3">HKTV Mall</button>
-                <button class="market4">阿布泰</button>
+            <div class="sortButtonsContainer">
+              <button class="showAll">全部舖頭</button>
+              <button class="market1">Aeon City</button>
+              <button class="market2">百佳</button>
+              <button class="market3">HKTV Mall</button>
+              <button class="market4">阿布泰</button>
+            </div>
+            <section class="priceDisplay" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+              <!-- <div class="parent"> -->
+              <div class="priceCard">
+                <a class="productLink" href="https://www.tecky.io">
+                  <p class="supermarket"></p>
+                  <img class="productPic" src="../predict_images/coke.jpg" alt="" />
+                  <p class="displayName"></p>
+                  <p class="quantity"></p>
+                  <p class="price"></p>
+                  <p class="bargain"></p>
+                </a>
               </div>
-              <section
-                class="priceDisplay"
-                data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-              >
-                <!-- <div class="parent"> -->
-                <div class="priceCard">
-                  <a class="productLink" href="https://www.tecky.io">
-                    <p class="supermarket"></p>
-                    <img
-                      class="productPic"
-                      src="../predict_images/coke.jpg"
-                      alt=""
-                    />
-                    <p class="displayName"></p>
-                    <p class="quantity"></p>
-                    <p class="price"></p>
-                    <p class="bargain"></p>
-                    <!-- css effect -->
-                    <!-- <div class="go-corner" href="#">
-      <div class="go-arrow">
-        →
-      </div>
-    </div> -->
-                    <!-- css effect -->
-                  </a>
-                </div>
-                <!-- </div> -->
-              </section>
-              <p>
-                <span class="loremText">
-                  請先對著產品拍照 / 輸入關鍵字搜尋
-                </span>
-              </p>
-            </div>
+              <!-- </div> -->
+            </section>
+            <p>
+              <span class="loremText">
+                請先對著產品拍照 / 輸入關鍵字搜尋
+              </span>
+            </p>
           </div>
-          <div class="tab recipeTab">
-            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch" />
-            <label for="tab-2" class="tab-label" id="tabTwo">食譜</label>
-            <div class="tab-content">
-              <h2>相關食譜</h2>
-              <section
-                class="recipeSection"
-                data-aos="fade-left"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-              >
-                <div class="recipeCard">
-                  <a
-                    class="recipeLink"
-                    href="https://www.tecky.io"
-                    target="”_blank”"
-                  >
-                    <p class="recipeName">[recipe name]</p>
-                    <img class="recipePic" src="../predict_images/coke.jpg" />
+        </div>
+        <div class="tab recipeTab">
+          <input type="radio" name="css-tabs" id="tab-2" class="tab-switch" />
+          <label for="tab-2" class="tab-label" id="tabTwo">食譜</label>
+          <div class="tab-content">
+            <h2>相關食譜</h2>
+            <section class="recipeSection" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+              <div class="recipeCard">
+                <a class="recipeLink" href="https://www.tecky.io" target="”_blank”">
+                  <p class="recipeName">[recipe name]</p>
+                  <img class="recipePic" src="../predict_images/coke.jpg" />
 
-                    <p class="ingredients">[ingredients]</p>
-                  </a>
-                </div>
-              </section>
+                  <p class="ingredients">[ingredients]</p>
+                </a>
+              </div>
+            </section>
 
-              <p>
-                <span class="loremText">
-                  請先對著產品拍照 / 輸入關鍵字搜尋
-                </span>
-              </p>
-            </div>
+            <p>
+              <span class="loremText">
+                請先對著產品拍照 / 輸入關鍵字搜尋
+              </span>
+            </p>
           </div>
         </div>
       </div>
-      <!-- price section -->
-      <!-- <h2>各市場價格</h2>
+    </div>
+    <!-- price section -->
+    <!-- <h2>各市場價格</h2>
 
       <div class="sortButtonsContainer">
         <button class="showAll">全部舖頭</button>
@@ -204,7 +166,7 @@
         <button class="market4">阿布泰</button>
       </div>    
       <section class="priceDisplay"></section> -->
-      <!-- <div class="priceCard"">
+    <!-- <div class="priceCard"">
         <a class="productLink" href="https://www.tecky.io" >
         <img class="productPic" src="../predict_images/coke.jpg" alt="" />
         <p class="supermarket"></p>
@@ -216,8 +178,8 @@
       </div>
     </section>
     <hr /> -->
-      <!-- recipe section -->
-      <!-- <h2>相關食譜</h2>
+    <!-- recipe section -->
+    <!-- <h2>相關食譜</h2>
 <section class="recipeSection">
 <div class="recipeCard">
   <a class="recipeLink" href="https://www.tecky.io">
@@ -231,51 +193,48 @@
 <hr />
     -->
 
-      <!-- end of whole page container   -->
-    </div>
+    <!-- end of whole page container   -->
+  </div>
 
-    <!-- game and live2d character -->
-    <div id="live2d_container">
-      <div id="interaction_part">
-        <div class="resultDisplay displayContent">
-          <img
-            src="img/question-marks.png"
-            class="result_content"
-            alt="請先對著想辨認的產品拍照"
-          />
-          <div id="result_info" class="result_content">
-            <div>
-              AI推測:
-              <span class="productName"> </span>
-            </div>
-            準確率:
-            <span class="possibility"></span>
+  <!-- game and live2d character -->
+  <div id="live2d_container">
+    <div id="interaction_part">
+      <div class="resultDisplay displayContent">
+        <img src="img/question-marks.png" class="result_content" alt="請先對著想辨認的產品拍照" />
+        <div id="result_info" class="result_content">
+          <div>
+            AI推測:
+            <span class="productName"> </span>
           </div>
-        </div>
-        <div id="searchDisplay" class="displayContent">
-          <div>你想找以下產品嗎？:</div>
-          <div class="history">沒有搜尋記錄</div>
+          準確率:
+          <span class="possibility"></span>
         </div>
       </div>
-      <canvas class="live2d" id="live2d" width="300" height="400"></canvas>
+      <div id="searchDisplay" class="displayContent">
+        <div>你想找以下產品嗎？:</div>
+        <div class="history">沒有搜尋記錄</div>
+      </div>
     </div>
+    <canvas class="live2d" id="live2d" width="300" height="400"></canvas>
+  </div>
 
-    <!-- testing connection section -->
-    <!-- <h4>Hello World</h4>
+  <!-- testing connection section -->
+  <!-- <h4>Hello World</h4>
     <p id="test-name">test-name</p>
     <p id="test-password">test-password</p> -->
 
-    <!-- javascript -->
+  <!-- javascript -->
 
-    <script src="index.js"></script>
-    <script src="tabs.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/LAppDefine.js"></script>
-    <script src="js/live2d.js"></script>
-    <script>
-      loadlive2d(LAppDefine.CANVAS_ID, LAppDefine.MODELS[0][3]);
+  <script src="index.js"></script>
+  <script src="tabs.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/LAppDefine.js"></script>
+  <script src="js/live2d.js"></script>
+  <script>
+    loadlive2d(LAppDefine.CANVAS_ID, LAppDefine.MODELS[0][3]);
       // loadlive2d("live2d", "model/22/model.default.json");
-    </script>
-    <script src="app.js"></script>
-  </body>
+  </script>
+  <script src="app.js"></script>
+</body>
+
 </html>
