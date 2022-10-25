@@ -441,6 +441,15 @@ div.sortButtonsContainer > button:hover {
   color: white;
 }
 
+.buttonActive {
+  transform: translateY(-4px);
+  box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.35);
+  transition: all 0.4s;
+  cursor: pointer;
+  background-color: var(--darker-green) !important;
+  color: white;
+}
+
 div.sortButtonsContainer > button:focus {
   transform: translateY(-4px);
   box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.35);
