@@ -596,7 +596,7 @@ div.sortButtonsContainer > button:focus {
   position: fixed;
   bottom: 60px;
   right: 10px;
-  height: 430px;
+  height: 460px;
   width: 250px;
   z-index: 10;
   /* position: relative; */
@@ -764,4 +764,49 @@ section.resultDisplay {
     opacity: 1;
     transform: scale(1, 1);
   }
+}
+
+#unqualified.popup {
+  /* display: none; */
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  z-index: 20;
+  display: none;
+}
+
+@media (max-width: 700px) {
+  #unqualified.popup {
+    /* display: none; */
+    top: 40%;
+    left: 10%;
+  }
+}
+.inputError-content {
+  /* display: block; */
+  width: 300px;
+  height: 240px;
+  background: white;
+  box-shadow: 4px 4px 70px 10px rgb(0 0 0/11%);
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  background: #a3c1c0;
+}
+
+.inputError-content .imgBox {
+  text-align: center;
+}
+
+.inputError-content .imgBox .img {
+  width: 75px;
+  margin-top: 30px;
+  /* color: #036666; */
+}
+
+.inputError-content .inputError-title {
+  color: #016666;
 }

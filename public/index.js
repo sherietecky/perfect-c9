@@ -333,6 +333,11 @@ searchBtn.addEventListener("click", async () => {
   }
   if (!classification_arr.includes(searchFieldText)) {
     console.log("現時尚未支援此產品");
+    document.querySelector("#unqualified.popup").style.display = "flex";
+    // document.querySelector("#unqualified.popup").style.transition = "fadeIn 1s";
+    setTimeout(() => {
+      document.querySelector("#unqualified.popup").style.display = "none";
+    }, 1000);
     return;
   }
   // add to cookie
@@ -608,8 +613,10 @@ searchHistory.forEach((div) => {
 
 let canvas_live2d = document.querySelector("canvas#live2d");
 let display_boolean = true;
-let myMediaQuery = window.matchMedia("(max-width: 700px)");
-console.log(myMediaQuery);
+// let myMediaQuery = window.matchMedia("(max-width: 700px)");
+// console.log(myMediaQuery);
+
+window.addEventListener("resize", widthChangeCallback);
 
 function widthChangeCallback(myMediaQuery) {
   if (window.innerWidth < 700) {
@@ -628,14 +635,14 @@ function widthChangeCallback(myMediaQuery) {
       }
     });
   } else {
-    document.querySelector("#live2d_container").style.height = "430px";
+    document.querySelector("#live2d_container").style.height = "460px";
     interaction_part.style.display = "flex";
     display_boolean = true;
     canvas_live2d.addEventListener("click", () => {
       display_boolean = !display_boolean;
       if (display_boolean) {
         interaction_part.style.display = "flex";
-        document.querySelector("#live2d_container").style.height = "430px";
+        document.querySelector("#live2d_container").style.height = "460px";
       } else if (!display_boolean) {
         interaction_part.style.display = "none";
         document.querySelector("#live2d_container").style.height = "250px";
@@ -651,7 +658,7 @@ if (window.innerWidth > 700) {
     display_boolean = !display_boolean;
     if (display_boolean) {
       interaction_part.style.display = "flex";
-      document.querySelector("#live2d_container").style.height = "430px";
+      document.querySelector("#live2d_container").style.height = "460px";
     } else if (!display_boolean) {
       interaction_part.style.display = "none";
       document.querySelector("#live2d_container").style.height = "250px";
@@ -659,6 +666,7 @@ if (window.innerWidth > 700) {
   });
 } else {
   display_boolean = false;
+  document.querySelector("#live2d_container").style.height = "200px";
   canvas_live2d.addEventListener("click", () => {
     // display_boolean = false;
     display_boolean = !display_boolean;
@@ -673,7 +681,6 @@ if (window.innerWidth > 700) {
 }
 
 // myMediaQuery.addEventListener("resize", widthChangeCallback);
-window.addEventListener("resize", widthChangeCallback);
 
 // load more
 // let countPrice = 1;
