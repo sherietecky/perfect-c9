@@ -1,5 +1,5 @@
 import { Page, chromium } from "playwright";
-import fs from "fs";
+//import fs from "fs";
 import jsonfile from "jsonfile";
 import path from "path";
 import { knex } from "../db";
@@ -15,9 +15,9 @@ async function scrapPakgai(keyword: string) {
     // executablePath: process.env.NODE_ENV === "production"?
     //   "/home/ubuntu/chromedriver":
     //   "C:\\Program Files (x86)\\Google\\Chrome\\Application\\Chrome.exe",
-    args:['--whitelisted-ips=""']
+    args:['--whitelisted-ips=""'],
   });
-  const context = await browser.newContext();
+  const context = await browser.newContext(({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36' }));
   let page = await context.newPage();
   let url =
     "https://www.parknshop.com/zh-hk/search?text=" +
