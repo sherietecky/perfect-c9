@@ -1,16 +1,16 @@
 from sanic import Sanic
 from sanic.response import json
 # import os
-import tensorflow as tf
+# import tensorflow as tf
 import numpy as np
-import time
+# import time
 
 
 app = Sanic("predict")
 
 # start = time.time()
-model_dir = "./perfect-c9.model_v3"
-predict_Model = tf.keras.models.load_model(model_dir)
+# model_dir = "./perfect-c9.model_v3"
+# predict_Model = tf.keras.models.load_model(model_dir)
 # end = time.time()
 # print(end - start)
 # print("=======================================")
@@ -32,7 +32,7 @@ def try_request(request):
 def predict(request):
     # if os.name != 'posix':
     # start_tf = time.time()
-    # import tensorflow as tf
+    import tensorflow as tf
     # end_tf = time.time()
     # print(f"Tensorflow Loading used {end_tf - start_tf}s")
 
@@ -46,8 +46,8 @@ def predict(request):
                    '牛油果', '益力多', '維他奶', '茄子', '蘋果', '西蘭花', '香蕉']
 
     # start = time.time()
-    # model_dir = "./perfect-c9.model_v3"
-    # predict_Model = tf.keras.models.load_model(model_dir)
+    model_dir = "./perfect-c9.model_v3"
+    predict_Model = tf.keras.models.load_model(model_dir)
     # end = time.time()
     # print(f"Model Loading used {end - start}s")
     print("=======================================")
