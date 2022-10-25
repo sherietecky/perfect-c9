@@ -3,9 +3,18 @@ from sanic.response import json
 import os
 # import tensorflow as tf
 import numpy as np
+import tensorflow as tf
+import time
+
 
 app = Sanic("predict")
 
+# start = time.time()
+# model_dir = "./perfect-c9.model_v3"
+# predict_Model = tf.keras.models.load_model(model_dir)
+# end = time.time()
+# print(end - start)
+# print("=======================================")
 
 @app.route("/")
 def test(request):
@@ -23,7 +32,8 @@ def try_request(request):
 @app.route("/predict")
 def predict(request):
     # if os.name != 'posix':
-    import tensorflow as tf
+
+    start_route = time.time()
 
     print("hello, you can connect to python server")
 
@@ -31,9 +41,12 @@ def predict(request):
     class_names = ['可口可樂', '啤酒', '寶礦力', '橙', '檸檬茶', '牛奶',
                    '牛油果', '益力多', '維他奶', '茄子', '蘋果', '西蘭花', '香蕉']
 
+    start = time.time()
     model_dir = "./perfect-c9.model_v3"
     predict_Model = tf.keras.models.load_model(model_dir)
-
+    end = time.time()
+    print(f"Model Loading used {end - start}s")
+    print("=======================================")
     imgPath = "./predict_images/"+request.args["filename"][0]
     image = tf.keras.preprocessing.image.load_img(
         imgPath, color_mode="rgb", target_size=(imgSize, imgSize))
@@ -57,7 +70,8 @@ def predict(request):
         if i == 0:
             json_result["result"] = result_label
             json_result["possibility"] = result_poss
-
+    end_route = time.time()
+    print(f"The whole predict route used {end_route - start_route}s")
     return json(json_result)
 
 
