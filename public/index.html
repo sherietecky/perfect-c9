@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <title>格價專員v1.2.3</title>
 </head>
 
@@ -110,7 +112,10 @@
             </div>
             <section class="priceDisplay">
               <!-- <div class="parent"> -->
-              <div class="priceCard">
+              <!-- <div class="priceCard animate-pop-up"> -->
+              <div class="priceCard" data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
                 <a class="productLink" href="https://www.tecky.io">
                   <img class="productPic" src="../predict_images/coke.jpg" alt="" />
                   <p class="supermarket"></p>
@@ -217,6 +222,7 @@
 
   <script src="index.js"></script>
   <script src="tabs.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/LAppDefine.js"></script>
   <script src="js/live2d.js"></script>
   <script>
