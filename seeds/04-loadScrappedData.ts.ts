@@ -50,7 +50,7 @@ export async function seed(knex: Knex): Promise<void> {
   }
 
   const pakgaiData = jsonfile.readFileSync(
-    path.join(__dirname, "..", "market_json", "pakgaiAll.json")
+    path.join(__dirname, "..", "market_json", "pakgaiAll3.json")
   );
 
   let pakgaiDataArr = Object.values(pakgaiData);
@@ -103,8 +103,7 @@ export async function seed(knex: Knex): Promise<void> {
     let newArr: PriceData[] | any = arr;
 
     for (let obj of newArr) {
-
-      console.log(obj)
+      console.log(obj);
 
       await knex("price").insert({
         market_id: obj.market_id,
