@@ -267,16 +267,12 @@ div#interaction_part {
   flex-direction: column;
 }
 
-div.displayContent {
-  margin: 0px 0px;
-}
-
 div.resultDisplay {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 280px;
+  width: 240px;
   height: auto;
   /* outline: 2px solid black; */
 }
@@ -606,7 +602,7 @@ section.resultDisplay {
   }
 
   div#live2d_container {
-    height: 500px;
+    height: 530px;
     width: 160px;
     display: flex;
     justify-content: space-between;
@@ -649,6 +645,8 @@ section.resultDisplay {
 
   div.displayContent {
     margin: 0px 0px;
+    /* height: 20px; */
+    /* width: 40px; */
   }
   /* 
   .result_content {
