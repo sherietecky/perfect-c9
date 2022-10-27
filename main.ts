@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 import formidable from "formidable";
 // import expressSession from 'express-session'
 import { knex } from "./db";
-import { Knex } from "knex";
+// import { Knex } from "knex";
 
 let app = express();
 
@@ -59,6 +59,10 @@ const form = formidable({
   maxFileSize: 10000 * 1024 ** 2, // the default limit is 10MB
   filter: (part) => part.mimetype?.startsWith("image/") || false,
 });
+
+
+
+
 
 let image_filename: string;
 app.post("/snap", (req, res) => {

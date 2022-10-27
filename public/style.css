@@ -514,6 +514,26 @@ div.sortButtonsContainer > button:focus {
   transition: transform 0.25s;
 }
 
+/* .priceDisplay .priceCard:nth-child(1) span {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.priceDisplay .priceCard:nth-child(1) span::before {
+content: 'No.1';
+position: absolute;
+width: 100%;
+height: 40px;
+background: lightblue;
+transform: rotate(-45deg) translateY(45px);
+} */
+
 .productPic {
   height: 100px;
   width: 100px;
