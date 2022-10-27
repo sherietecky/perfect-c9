@@ -1,4 +1,4 @@
-
+import { Knex } from "knex";
 import { knex } from "../db";
 
 
@@ -8,7 +8,7 @@ export class C9Service {
   }
 
     async getHomepage(){
-        await this.knex.raw(`select * from price join product on price.product_id = product.id join market on price.market_id = market.id where product.product_name='${product}' order by price`)
+        // await this.knex.raw(`select * from price join product on price.product_id = product.id join market on price.market_id = market.id where product.product_name='${product}' order by price`)
     }
 
 }

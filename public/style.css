@@ -400,7 +400,7 @@ section.resultDisplay {
 
 .priceDisplay {
   display: grid;
-  gap: 15px 15px;
+  gap: 20px 20px;
   grid-template-columns: repeat(6, 1fr);
 }
 
@@ -514,26 +514,94 @@ div.sortButtonsContainer > button:focus {
   transition: transform 0.25s;
 }
 
-/* .priceDisplay .priceCard:nth-child(1) span {
+.priceDisplay .priceCard:nth-child(1) span {
   position: absolute;
-  width: 150px;
-  height: 150px;
-  background: red;
+  top:-10px;
+  left:-10px;
+  width: 180px;
+  height: 180px;
+  background: rgba(0, 0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+/* transform: translateX(-30px) translateY(-30px); */
+
 }
 
 .priceDisplay .priceCard:nth-child(1) span::before {
 content: 'No.1';
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 3px;
+color: white;
 position: absolute;
 width: 100%;
 height: 40px;
-background: lightblue;
-transform: rotate(-45deg) translateY(45px);
+background:  #F55536;
+transform: rotate(-45deg) translateY(-60px);
+box-shadow: 0 5px 10px  rgba(0, 0, 0, 0.05);
+z-index: 5;
+}
+
+.priceDisplay .priceCard:nth-child(1) span::after {
+content: '';
+position: absolute;
+top:115px;
+left:0px;
+width: 10px;
+height: 10px;
+background: #FABC3C;
+z-index: 4;
+box-shadow: 115px -115px #FABC3C;
+}
+
+/* .priceDisplay .priceCard:nth-child(2) span {
+  position: absolute;
+  top:-10px;
+  left:-10px;
+  width: 180px;
+  height: 180px;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.priceDisplay .priceCard:nth-child(2) span::before {
+content: 'No.1';
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 3px;
+color: white;
+position: absolute;
+width: 100%;
+height: 40px;
+background:  #62baea;
+transform: rotate(-45deg) translateY(-60px);
+box-shadow: 0 5px 10px  rgba(0, 0, 0, 0.05);
+z-index: 5;
+}
+
+.priceDisplay .priceCard:nth-child(2) span::after {
+content: '';
+position: absolute;
+top:115px;
+left:0px;
+width: 10px;
+height: 10px;
+background: #016666;
+z-index: 4;
+box-shadow: 115px -115px #016666;
 } */
 
+.supermarket {
+  text-align: center;
+}
 .productPic {
   height: 100px;
   width: 100px;
