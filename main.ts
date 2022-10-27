@@ -60,7 +60,17 @@ const form = formidable({
   filter: (part) => part.mimetype?.startsWith("image/") || false,
 });
 
+
 let image_filename: string;
+
+
+import {C9Router} from './MVC/routes'
+import {C9Service} from './MVC/service'
+let c9Service = new C9Service(knex)
+let c9router = new C9Router(c9Service)
+app.use('/c9',c9router.router())
+
+
 app.post("/snap", (req, res) => {
   console.log("you can connect to main.ts");
 
