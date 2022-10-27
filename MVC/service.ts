@@ -1,8 +1,8 @@
-import dotenv from "dotenv";
-import { knex } from "../../db";
-import { Knex } from "knex";
 
-export class c9Service {
+import { knex } from "../db";
+
+
+export class C9Service {
   constructor(private knex: Knex) {
     this.knex=knex;
   }
