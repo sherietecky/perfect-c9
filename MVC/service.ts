@@ -1,19 +1,25 @@
-import { knex } from "../db";
 import { Knex } from "knex";
+import { knex } from "../db";
+import dotenv from "dotenv";
 
 export class C9Service {
   constructor(private knex: Knex) {
     this.knex = knex;
   }
 
+  async takePic(image_filename: string) {
+    let result = await fetch(
+      `http://${process.env.HOST}:5000/predict?filename=${image_filename}`
+    );
+    let resultJson = await result.json();
+    return resultJson;
+  }
 
-  
-
+  async getPic(image_filename: string) {}
 
   async getProductPrice(product: string) {
     const result = await this.knex.raw(
-      `select * from price join product on price.product_id = product.id join market on price.market_id = market.id where product.product_name='($1)' order by price`,
-      [product]
+      `select * from price join product on price.product_id = product.id join market on price.market_id = market.id where product.product_name='${product}' order by price`
     );
     return result.rows;
   }

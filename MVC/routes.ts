@@ -9,7 +9,10 @@ const c9Controller = new C9Controller(c9Service);
 
 export const C9Routes = express.Router();
 
-C9Routes.get("/recipes/:product", c9Controller.getProductPrice);
+C9Routes.get("/", c9Controller.toHome);
+C9Routes.post("/snap", c9Controller.snap);
+C9Routes.post("/result_image", c9Controller.getResultImage);
+C9Routes.get("/marketdata/:product", c9Controller.getProductPrice);
 C9Routes.get("/marketdata/:product/:marketID", c9Controller.sortByMarket);
 C9Routes.get("/recipes/:product", c9Controller.getRecipes);
 

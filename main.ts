@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 import formidable from "formidable";
 // import expressSession from 'express-session'
 import { knex } from "./db";
-import { Knex } from "knex";
+// import { Knex } from "knex";
 
 let app = express();
 
@@ -83,6 +83,10 @@ app.post("/snap", (req, res) => {
   });
 });
 
+app.get("/result_image", async (req, res) => {
+  res.json(image_filename);
+});
+
 app.get("/marketdata/:product", async (req, res) => {
   const { product } = req.params;
   try {
@@ -137,10 +141,6 @@ app.get("/recipes/:product", async (req, res) => {
   );
   res.json(response.rows);
   return;
-});
-
-app.get("/result_image", async (req, res) => {
-  res.json(image_filename);
 });
 
 app.listen(3000, () => {
