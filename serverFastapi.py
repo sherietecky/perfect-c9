@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.encoders import jsonable_encoder
 import numpy as np
 import tensorflow as tf
 from PIL import Image
@@ -50,4 +51,4 @@ async def search(filename):
             json_result["result"] = result_label
             json_result["possibility"] = result_poss
 
-    return json_result
+    return jsonable_encoder(json_result)
