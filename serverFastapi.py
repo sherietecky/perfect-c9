@@ -25,8 +25,8 @@ async def root():
 #     args = request.args
 #     return args
 
-@app.get("/predict/{filename}")
-async def search(filename):
+@app.get("/predict")
+async def search(filename: str):
     imgPath = "./predict_images/"+filename
     image = tf.keras.preprocessing.image.load_img(
         imgPath, color_mode="rgb", target_size=(imgSize, imgSize))
