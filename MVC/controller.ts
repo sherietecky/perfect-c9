@@ -6,9 +6,17 @@ import formidable from "formidable";
 export class C9Controller {
   constructor(private c9CService: C9Service) {}
 
-  toHome = async (req: Request, res: Response) => {
+  toHome = (req: Request, res: Response) => {
     res.sendFile(path.resolve("public", "index.html"));
   };
+
+  predict = (req: Request, res: Response) => {
+  };
+
+  // getPredictImage = (req: Request, res: Response) => {
+  //   const { img } = req.params;
+  //   res.sendFile(path.resolve("predict_images", img));
+  // };
 
   snap = async (req: Request, res: Response) => {
     let image_filename: string = "";

@@ -1,6 +1,6 @@
 import { Knex } from "knex";
-import { knex } from "../db";
-import dotenv from "dotenv";
+// import { knex } from "../db";
+// import dotenv from "dotenv";
 
 export class C9Service {
   constructor(private knex: Knex) {
@@ -15,7 +15,7 @@ export class C9Service {
     return resultJson;
   }
 
-  async getPic(image_filename: string) {}
+  // async getPic(image_filename: string) {}
 
   async getProductPrice(product: string) {
     const result = await this.knex.raw(

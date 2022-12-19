@@ -512,6 +512,7 @@ div.sortButtonsContainer > button:focus {
   align-items: center;
   padding: 20px;
   transition: transform 0.25s;
+  z-index: 4;
 }
 
 .priceDisplay .priceCard:nth-child(1) span {
@@ -553,7 +554,7 @@ left:0px;
 width: 10px;
 height: 10px;
 background: #FABC3C;
-z-index: 4;
+z-index: 3;
 box-shadow: 115px -115px #FABC3C;
 }
 

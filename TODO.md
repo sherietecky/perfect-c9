@@ -1,4 +1,13 @@
-lecture review:
+function improvement:
+- corn job regular check price
+- visualise price change over a period of time
+- no need to use ENV to connect to python server
+
+layout improvement:
+- when no price result from the supermarket, show no result text
+- no.1 tag a bit z-index issue
+
+<!-- lecture review:
 v deploy tgt
 v train model
 v scraping
@@ -55,4 +64,4 @@ optional:
 - scarpe recipe
 - save search price history
 - corn job regular check price
-- visualise price change over a period of time
+- visualise price change over a period of time -->

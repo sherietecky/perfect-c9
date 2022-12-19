@@ -73,7 +73,7 @@ app.post("/snap", (req, res) => {
 
     try {
       let result = await fetch(
-        `http://${process.env.HOST}:5000/predict?filename=${image_filename}`
+        `http://${process.env.HOST}:8000/predict?filename=${image_filename}`
       );
       let output = await result.json();
       res.json(output);

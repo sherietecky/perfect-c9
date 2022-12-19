@@ -11,6 +11,7 @@ export const c9Controller = new C9Controller(c9Service);
 
 app.use("/", C9Routes);
 app.use(express.static('public'));
+app.use(express.static('predict_images'));
 
 app.listen(4000, () => {
   console.log("listening on port 4000");
