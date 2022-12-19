@@ -1,9 +1,9 @@
 // import { Client } from "pg";
 // import fs from "fs";
-import dotenv from "dotenv";
+// import dotenv from "dotenv"; o: may not need in db.ts
 import Knex from "knex";
 
-dotenv.config({ path: "../.env" });
+// dotenv.config({ path: "../.env" }); o: may not need in db.ts
 
 let profiles = require("./knexfile");
 let profile = profiles.development;

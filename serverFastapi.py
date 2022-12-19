@@ -1,10 +1,9 @@
-from flask import Flask, request, jsonify
+from fastapi import FastAPI
 import numpy as np
 import tensorflow as tf
 from PIL import Image
 
-app = Flask("project")
-app.run(debug=False)
+app = FastAPI()
 
 print("================== 1. on flask python server ==================")
 
@@ -16,19 +15,18 @@ predict_Model = tf.keras.models.load_model(model_dir)
 
 print("================== 2. model loaded ==================")
 
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
 
 # @app.route('/try', methods=['GET'])
 # def search():
 #     args = request.args
 #     return args
 
-@app.route('/predict', methods=['GET'])
-def search():
-    # args = request.args
-    imgPath = "./predict_images/"+request.args["filename"]
+@app.get("/predict/{filename}")
+async def search(filename):
+    imgPath = "./predict_images/"+filename
     image = tf.keras.preprocessing.image.load_img(
         imgPath, color_mode="rgb", target_size=(imgSize, imgSize))
 
@@ -51,7 +49,5 @@ def search():
         if i == 0:
             json_result["result"] = result_label
             json_result["possibility"] = result_poss
-    # end_route = time.time()
-    # print(f"The whole predict route used {end_route - start_route}s")
-    return jsonify(json_result)
-    # return json_response(json_result)
+
+    return json_result

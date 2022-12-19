@@ -12,6 +12,16 @@ let recipeCard = document.querySelector(".recipeCard");
 let image_display = document.querySelector("div.resultDisplay > img");
 let tabTwo = document.querySelector("#tabTwo");
 
+let marketBtns = document.querySelectorAll("button");
+
+// for(let btn of marketBtns){
+//   btn.addEventListener("click",async e=>{
+//     let id = btn.dataset.id
+
+//     }
+//   )
+// }  
+
 // if (Notification.permission === "granted") {
 //   console.log("already have the notification permission");
 // } else if (Notification.permission != "granted") {

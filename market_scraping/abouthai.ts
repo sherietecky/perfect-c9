@@ -5,6 +5,7 @@ import jsonfile from "jsonfile";
 import path from "path";
 import { knex } from "../db";
 import { Knex } from "knex";
+import { getEnvironmentData } from "worker_threads";
 
 async function scrapAbouthai(keyword: string) {
   const browser = await chromium.launch({ headless: true });
@@ -159,3 +160,11 @@ autoScrap([
 // }
 
 // scrapAbouthai("蘋果");
+async function main(){
+  // await getData()
+  // await renderDisplay()
+}
+
+window.addEventListener('load', () => {
+  main();
+});

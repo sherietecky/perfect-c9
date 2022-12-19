@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 import formidable from "formidable";
 // import expressSession from 'express-session'
 import { knex } from "./db";
-import { Knex } from "knex";
+// import { Knex } from "knex";
 
 let app = express();
 
@@ -61,6 +61,7 @@ const form = formidable({
 });
 
 let image_filename: string;
+
 app.post("/snap", (req, res) => {
   console.log("you can connect to main.ts");
 
@@ -72,7 +73,7 @@ app.post("/snap", (req, res) => {
 
     try {
       let result = await fetch(
-        `http://${process.env.HOST}:5000/predict?filename=${image_filename}`
+        `http://${process.env.HOST}:8000/predict?filename=${image_filename}`
       );
       let output = await result.json();
       res.json(output);
@@ -80,6 +81,10 @@ app.post("/snap", (req, res) => {
       res.end("cannot connect to DB");
     }
   });
+});
+
+app.get("/result_image", async (req, res) => {
+  res.json(image_filename);
 });
 
 app.get("/marketdata/:product", async (req, res) => {
@@ -136,10 +141,6 @@ app.get("/recipes/:product", async (req, res) => {
   );
   res.json(response.rows);
   return;
-});
-
-app.get("/result_image", async (req, res) => {
-  res.json(image_filename);
 });
 
 app.listen(3000, () => {
